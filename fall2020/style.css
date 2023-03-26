@@ -11,12 +11,257 @@ margin-top: 10%;
 
 
 }
+/* Default styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* specify the width you want for the sidebar */
+  position: fixed; /* fixed position to keep it always visible */
+  left: 0; /* position it on the left side */
+  top: 0; /* position it at the top */
+  bottom: 0; /* set the height to cover the whole height of the viewport */
+
+  overflow-y: auto; /* enable vertical scrolling if the content exceeds the height */
+  z-index: 1; /* set a higher z-index to make it appear above other elements */
+  overflow: auto;
+
+
+
+}
+
+/* Style for light mode */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Style for dark mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+
+.button-blue-yellow {
+  filter: brightness(110%) hue-rotate(45deg) saturate(150%);
+}
+
+
+.blue-yellow-filter-active {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+
+#keyboard-input {
+  background-color: royalblue;
+  color:white
+}
+
+
+
+#keyboard-input:hover {
+  background-color: dodgerblue;
+  color:white
+}
+
+.green-red-filter {
+  filter: invert(100%) sepia(100%) saturate(5) hue-rotate(105deg);
+}
+
+.color-tint {
+  filter: brightness(110%) contrast(90%) saturate(150%) hue-rotate(190deg);
+}
+
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+font-size: 10px;
+}
+
+#keyboard {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 10px;
+  background-color: royalblue;
+  border: 1px solid #ccc;
+  color: white
+}
+
+
+.red-green-filter-active {
+  filter: sepia(100%) hue-rotate(-100deg) saturate(200%);
+}
+.button-blue-yellow {
+  filter: invert(75%) sepia(100%) saturate(400%) hue-rotate(195deg) brightness(1.2);
+}
+
+
+
+
+#keyboard-buttons button {
+
+  padding: 10px;
+}
+
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+:focus {
+  outline: 2px solid white;
+  background-color: royalblue
+}
+
+
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+/* Style the image container */
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the modal content */
+.modal-content {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style the image caption */
+.caption {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the download link */
+.download {
+  margin-top: 20px;
+}
+
+.download a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.download a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the image when it's open */
+.modal-content img {
+  margin-top: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+h6 {
+  color:white;
+  background-color: hotpink;
+  padding: 5px;
+}
+/* Increase contrast */
+.contrast-increase {
+  filter: contrast(1.5);
+}
+
+/* Decrease contrast */
+.contrast-decrease {
+  filter: contrast(0.5);
+}
+
+
 
 #download-button {
   background-color: blue;
   color: white;
   font-size: 16px;
   padding: 10px 20px;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: #555 /* Light Black */
 }
 
 div.sticky {
