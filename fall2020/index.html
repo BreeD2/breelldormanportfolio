@@ -152,7 +152,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   width: 100%;
   font-size: 10px;
   padding: 5px;
-  margin-top: 40%;
+  margin-top: 26%;
     margin-bottom: 0%;
     border: 2px solid hotpink
 }
@@ -163,7 +163,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   width: 100%;
   font-size: 15px;
   padding: 5px;
-  margin-top: 40%;
+  margin-top: 26%;
     margin-bottom: 0%;
     border: 2px solid hotpink
 }
@@ -270,6 +270,26 @@ body.dark-mode {
   filter: invert(100%);
 }
 
+h6 {
+  color:white;
+  background-color: hotpink;
+  padding: 5px;
+  border:3px solid mediumpurple
+}
+h6:hover {
+  color:white;
+  background-color: mediumpurple;
+  padding: 5px;
+}
+/* Increase contrast */
+.contrast-increase {
+  filter: contrast(1.5);
+}
+
+/* Decrease contrast */
+.contrast-decrease {
+  filter: contrast(0.5);
+}
 
 </style>
 
@@ -631,19 +651,38 @@ invertButton.addEventListener("click", function() {
   <!-- Grid for photos -->
   <div class="w3-row-padding" style="margin:0 -16px">
     <div class="w3-quarter">
+      <div class="w3-text">
+    <h6>Black/White Painting of Bottles and Patterns</h6>
+  </div>
       <img src="surfaceresearch/project1.jpg" style="width:100%">
     </div>
     <div class="w3-quarter">
       <!-- Use <embed> tag to display PDF -->
+      <div class="w3-text">
+    <h6>Daily Routine Tessellation & Key</h6>
+  </div>
       <embed src="surfaceresearch/project2.pdf" style="width:100%; height:500px" type="application/pdf">
     </div>
     <div class="w3-quarter">
+      <div class="w3-text">
+    <h6>Printmaking of Teurn Soknai</h6>
+  </div>
       <img src="surfaceresearch/project3.jpg" style="width:100%">
+      <div class="w3-text">
+    <h6>Flower & Wheel Pattern</h6>
+  </div>
       <img src="surfaceresearch/project3.1.jpg" style="width:100%">
+      <div class="w3-text">
+    <h6>Flower Pattern</h6>
+  </div>
+
       <img src="surfaceresearch/project3.2.jpg" style="width:100%">
     </div>
     <div class="w3-quarter">
       <!-- Use <embed> tag to display PDF -->
+      <div class="w3-text">
+    <h6>Collage of Yellow, Orange, Blue, & Yellow Items</h6>
+  </div>
       <embed src="surfaceresearch/project4.pdf" style="width:100%; height:500px" type="application/pdf">
     </div>
   </div>
@@ -660,14 +699,29 @@ invertButton.addEventListener("click", function() {
   <div class="w3-row-padding" style="margin:0 -16px">
     <div class="w3-third">
       <!-- Use <video> tag to display videos -->
+      <div class="w3-text">
+    <h6>The March on Washington for Jobs & Freedom</h6>
+  </div>
       <video width="100%" controls>
         <source src="timestudio/project1.mov" type="video/mp4">
       </video>
+      <div class="w3-text">
+    <h6>VCU Golden Rams</h6>
+  </div>
       <video width="100%" controls>
         <source src="timestudio/project2.mov" type="video/mp4">
       </video>
+      <div class="w3-text">
+    <h6>VCU Ram (1/2)</h6>
+  </div>
       <img src="timestudio/project2.1.png" style="width:100%">
+      <div class="w3-text">
+    <h6>VCU Ram (2/2)</h6>
+  </div>
       <img src="timestudio/project2.2.png" style="width:100%">
+      <div class="w3-text">
+    <h6>Violin</h6>
+  </div>
       <img src="timestudio/project2.3.png" style="width:100%">
     </div>
     <div class="w3-third">
@@ -738,14 +792,6 @@ window.onclick = function(event) {
 </script>
 
 
-<div class="sticky">
-    <a href="..//contact/index.html" style="font-size:19px;color:white;left:10%;position:absolute;text-decoration:none">Contact</button></a>
-
-      <a href="..//resume/index.html"style="font-size:19px;color:white;left:47%;position:absolute;text-decoration:none">Resume</button></a>
-
-
-<a href="..//about/index.html"style="left:84%;position:absolute;font-size:19px;color:white;text-decoration:none;padding:1px;">About</button></a>
-</div>
 
 </body>
 </html>
@@ -842,6 +888,16 @@ function closeNav() {
  <p>“Creativity is nothing but the way to solve new problems.” – Diana Santos, VP Product Strategy & Design, Intelia <p>
    <br><br>
 </footer>
+
+<div class="sticky">
+    <a href="..//contact/index.html" style="font-size:19px;color:white;left:10%;position:absolute;text-decoration:none;top: 29%;">Contact</button></a>
+
+      <a href="..//resume/index.html"style="font-size:19px;color:white;left:47%;position:absolute;top: 29%;text-decoration:none">Resume</button></a>
+
+
+<a href="..//about/index.html"style="left:84%;position:absolute;font-size:19px;color:white;text-decoration:none;padding:1px;top: 29%;">About</button></a>
+</div>
+
 
 
   <script>
