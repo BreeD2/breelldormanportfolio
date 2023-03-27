@@ -12,6 +12,18 @@ margin-top: 0%;
 
 }
 
+h6 {
+  color:white;
+  background-color: hotpink;
+  padding: 5px;
+  border:3px solid mediumpurple
+}
+h6:hover {
+  color:white;
+  background-color: mediumpurple;
+  padding: 5px;
+}
+
 .head {
   color: aqua
 ;
