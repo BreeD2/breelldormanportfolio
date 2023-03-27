@@ -74,12 +74,908 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
-<!-- Header -->
+<div class="sidebar">
+
+
+
+  <!-- Dropdown button -->
+  <div class="dropdown">
+    <h5 id="time" ></h5>
+
+    <button class="dropbtn">Settings</button>
+
+    <!-- Dropdown content -->
+    <div class="dropdown-content">
+      <!-- Invert button -->
+
+      <!-- Background button -->
+      <button id="toggle-mode-btn">Toggle Mode</button>
+
+      <button class="invert-btn">Invert</button>
+
+      <button id="brightnessUpBtn">Increase Brightness</button>
+      <button id="brightnessDownBtn">Decrease Brightness</button>
+
+      <button id="contrast-up-btn">Increase Contrast</button>
+     <button id="contrast-down-btn">Decrease Contrast</button>
+
+
+
+
+      <!-- Zoom in button -->
+      <button class="zoom-in-btn">Zoom In</button>
+
+      <!-- Zoom out button -->
+      <button class="zoom-out-btn">Zoom Out</button>
+
+      <!-- Color filters -->
+      <button class="filter-btn" data-filter="grayscale(100%)">Grayscale</button>
+      <button class="filter-btn" data-filter="sepia(100%)">Sepia</button>
+      <button class="filter-btn" data-filter="saturate(200%)">Saturate</button>
+      <button class="filter-btn" data-filter="hue-rotate(90deg)">Hue Rotate</button>
+
+
+      <button class="filter-btn red-green-filter">Red-Green Filter</button>
+      <button class="filter-btn red-green-filter" data-filter="hue-rotate(120deg)">Green-Red Filter</button>
+      <button class="filter-btn blue-yellow-filter">Blue/Yellow Filter</button>
+      <button class="tint-btn">Color Tint</button>
+
+        <button class="filter-btn" data-filter="blur(1px)">Blur</button>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+/* Default styles */
+/* Default styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  left: -200px; /* Set initial position to be outside of viewport */
+  top: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #ccc;
+  transition: left 0.5s ease-in-out; /* Add transition effect */
+}
+
+/* Style the trigger element */
+.trigger {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+/* Show sidebar when trigger element is hovered over */
+.trigger:hover + .sidebar {
+  left: 0;
+}
+
+/* Hide sidebar when mouse is moved away */
+.sidebar:hover {
+  left: 0;
+}
+
+.sidebar:not(:hover) {
+  left: -200px;
+}
+
+
+#time {
+  color:white;
+  background-color: mediumpurple;
+  width: 100%;
+  font-size: 10px;
+  padding: 5px;
+  margin-top: 26%;
+    margin-bottom: 0%;
+    border: 2px solid hotpink
+}
+
+#time:hover {
+  color:white;
+  background-color: hotpink;
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 26%;
+    margin-bottom: 0%;
+    border: 2px solid hotpink
+}
+
+button {
+  color: white;
+  background-color: mediumpurple;
+  padding: 5px;
+  margin: 0;
+  font-size: 10px;
+  width: 100%;
+  box-sizing: border-box;
+    border: 1px solid hotpink
+
+}
+
+
+button:hover {
+  color:White;
+  background-color: hotpink;
+
+
+  font-size: 15px
+}
+
+/* Style for light mode */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Style for dark mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.button-blue-yellow {
+  filter: brightness(110%) hue-rotate(45deg) saturate(150%);
+}
+
+.blue-yellow-filter-active {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+/* Default styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* specify the width you want for the sidebar */
+  position: fixed; /* fixed position to keep it always visible */
+  left: 0; /* position it on the left side */
+  top: 0; /* position it at the top */
+  bottom: 0; /* set the height to cover the whole height of the viewport */
+
+  overflow-y: auto; /* enable vertical scrolling if the content exceeds the height */
+  z-index: 1; /* set a higher z-index to make it appear above other elements */
+  overflow: auto;
+
+
+
+}
+
+/* Style for light mode */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Style for dark mode */
+body.dark-mode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+
+.button-blue-yellow {
+  filter: brightness(110%) hue-rotate(45deg) saturate(150%);
+}
+
+
+.blue-yellow-filter-active {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+
+#keyboard-input {
+  background-color: royalblue;
+  color:white
+}
+
+
+
+#keyboard-input:hover {
+  background-color: dodgerblue;
+  color:white
+}
+
+.green-red-filter {
+  filter: invert(100%) sepia(100%) saturate(5) hue-rotate(105deg);
+}
+
+.color-tint {
+  filter: brightness(110%) contrast(90%) saturate(150%) hue-rotate(190deg);
+}
+
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+font-size: 10px;
+}
+
+#keyboard {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 10px;
+  background-color: royalblue;
+  border: 1px solid #ccc;
+  color: white
+}
+
+
+.red-green-filter-active {
+  filter: sepia(100%) hue-rotate(-100deg) saturate(200%);
+}
+.button-blue-yellow {
+  filter: invert(75%) sepia(100%) saturate(400%) hue-rotate(195deg) brightness(1.2);
+}
+
+
+
+
+#keyboard-buttons button {
+
+  padding: 10px;
+}
+
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+:focus {
+  outline: 2px solid white;
+  background-color: royalblue
+}
+
+
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+/* Style the image container */
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Style the modal content */
+.modal-content {
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style the image caption */
+.caption {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the download link */
+.download {
+  margin-top: 20px;
+}
+
+.download a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.download a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Style the image when it's open */
+.modal-content img {
+  margin-top: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+#contact {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+
+
+.head {
+  color: oldlace
+;
+  font-style: normal;
+  font-family: helvetica;
+  font-size: 55px;
+  margin: 3%;
+  text-shadow: 3px 3px black;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  transition: width 2s, height 4s;
+
+}
+
+.head:hover {
+  color: black
+;
+  font-style: normal;
+  font-family: helvetica;
+  font-size: 60px;
+  margin: 3%;
+  text-shadow: 3px 3px oldlace;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #cc99ff
+;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #ffb3ff;}
+
+ul.topnav li a.active {background-color:hotpink;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid white;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+#keyboard-input {
+  background-color: royalblue;
+  color:white
+}
+
+#keyboard-input:hover {
+  background-color: dodgerblue;
+  color:white
+}
+
+.green-red-filter {
+  filter: invert(100%) sepia(100%) saturate(5) hue-rotate(105deg);
+}
+
+.color-tint {
+  filter: brightness(110%) contrast(90%) saturate(150%) hue-rotate(190deg);
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+  font-size: 10px;
+}
+
+#keyboard {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 10px;
+  background-color: royalblue;
+  border: 1px solid #ccc;
+  color: white
+}
+
+.red-green-filter-active {
+  filter: sepia(100%) hue-rotate(-100deg) saturate(200%);
+}
+
+.button-blue-yellow {
+  filter: invert(75%) sepia(100%) saturate(400%) hue-rotate(195deg) brightness(1.2);
+}
+
+#keyboard-buttons button {
+  padding: 10px;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+:focus {
+  outline: 2px solid white;
+  background-color: royalblue
+}
+
+/* Invert filter */
+.invert {
+  filter: invert(100%);
+}
+
+h6 {
+  color:white;
+  background-color: hotpink;
+  padding: 5px;
+  border:3px solid mediumpurple
+}
+h6:hover {
+  color:white;
+  background-color: mediumpurple;
+  padding: 5px;
+}
+/* Increase contrast */
+.contrast-increase {
+  filter: contrast(1.5);
+}
+
+/* Decrease contrast */
+.contrast-decrease {
+  filter: contrast(0.5);
+}
+
+</style>
+
+<script>
+  var now = new Date();
+  var hours = now.getHours();
+  var ft = now.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true
+  });
+
+  // set initial mode to light
+  var isDarkMode = false;
+
+  function toggleMode() {
+    var body = document.body;
+    var btn = document.getElementById("toggle-mode-btn");
+
+    if (isDarkMode) {
+      // switch to light mode
+      body.style.background = "papayawhip";
+      body.style.background = "papayawhip";
+      body.style.background = "aliceblue";
+      body.style.color = "white";
+      btn.textContent = "Dark Mode";
+      isDarkMode = false;
+    } else {
+      // switch to dark mode
+      body.style.background = "black";
+      body.style.background = "black";
+      body.style.background = "black";
+      body.style.color = "white";
+      btn.textContent = "Light Mode";
+      isDarkMode = true;
+    }
+  }
+
+  // add event listener to toggle mode button
+  document.getElementById("toggle-mode-btn").addEventListener("click", toggleMode);
+
+  var type = "";
+  if (3 <= hours && hours < 6) {//Morning
+      document.write('<body style="background: #F3904F; background: -webkit-linear-gradient(to right, #3B4371, #F3904F); background: linear-gradient(to right, rebeccapurple, lightsteelblue); color: white">');
+      var type = "Towards Morning";
+  }
+
+  if (6 <= hours && hours < 9) {//Morning
+      document.write('<body style="background: #F3904F; background: -webkit-linear-gradient(to right, #3B4371, #F3904F); background: linear-gradient(to right, lightsteelblue, lightskyblue); color: white">');
+      var type = "Early Morning";
+  }
+  if (9 <= hours && hours < 12) {//Day
+      document.write('<body style="background: #00B4DB; background: -webkit-linear-gradient(to right, #0083B0, #00B4DB); background: linear-gradient(to right, lightskyblue, #00B4DB); color: white">');
+      var type = "Morning";
+  }
+  if (12 <= hours && hours < 15) {//Day
+      document.write('<body style="background: #00B4DB; background: -webkit-linear-gradient(to right, #0083B0, #00B4DB); background: linear-gradient(to right, ,deepskyblue); color: white">');
+      var type = "Early Afternoon";
+  }
+  if (15 <= hours && hours < 17) {//Day
+      document.write('<body style="background: #00B4DB; background: -webkit-linear-gradient(to right, #0083B0, #00B4DB); background: linear-gradient(to right, deepskyblue,#C06C84); color: white">');
+      var type = "Late Afternoon";
+  }
+  if (17 <= hours && hours < 19) {//Evening
+      document.write('<body style="background: #355C7D; background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);\n color: white">');
+      var type = "Evening";
+  }
+  if (19 <= hours && hours < 24) {//Night
+      document.write('<body style="background: #0f2027; background: -webkit-linear-gradient(to right, #0f2027, #203a43, );  background: linear-gradient(to right, darkslateblue, midnightblue); color : white;">');
+      var type = "Nighttime";
+  }
+  if (0 <= hours && hours < 3) {//Night
+      document.write('<body style="background: #0f2027; background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);  background: linear-gradient(to right, #0f2027, midnightblue, rebeccapurple); color : white">');
+      var type = "Late Nighttime";
+  }
+    document.getElementById("time").innerHTML = `The time is ${ft} it is ${type}`;
+    //CSS gradient backgrounds from https://uigradients.com
+</script>
+
+<script>
+const toggleModeBtn = document.getElementById("toggle-mode-btn");
+toggleModeBtn.addEventListener("click", function() {
+  const body = document.getElementsByTagName("body")[0];
+  body.classList.toggle("dark-mode");
+});
+</script>
+
+<script>
+// Select the tint button
+const tintBtn = document.querySelector('.tint-btn');
+
+// Add a click event listener to the tint button
+tintBtn.addEventListener('click', function() {
+  // Toggle the color tint filter on the body element
+  document.body.classList.toggle('color-tint');
+});
+
+</script>
+
+<script>
+const myButton = document.querySelector(".red-green-filter");
+
+myButton.addEventListener("click", function() {
+  document.body.classList.toggle("red-green-filter-active");
+});
+
+
+</script>
+
+
+<script>
+const buttons = document.querySelectorAll('.buttons button');
+const blurButton = document.getElementById('blur-button');
+const img = document.querySelector('img');
+let currentFilter = '';
+
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    currentFilter = button.getAttribute('data-filter');
+    img.style.filter = currentFilter;
+  });
+});
+
+blurButton.addEventListener('click', () => {
+  img.style.filter = 'blur(5px)';
+});
+</script>
+
+<script>
+const opacityButton = document.querySelector('.opacity-btn');
+opacityButton.addEventListener('click', function() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.opacity = '0.5';
+});
+
+
+</script>
+
+
+
+<script>
+// Get the HTML element that you want to modify the contrast of
+const htmlElement = document.documentElement;
+
+// Get the buttons for increasing and decreasing contrast
+const contrastUpBtn = document.getElementById("contrast-up-btn");
+const contrastDownBtn = document.getElementById("contrast-down-btn");
+
+// Set up event listeners for the buttons
+contrastUpBtn.addEventListener("click", increaseContrast);
+contrastDownBtn.addEventListener("click", decreaseContrast);
+
+// Function to increase contrast
+function increaseContrast() {
+  htmlElement.style.filter = "contrast(1.5)";
+}
+
+// Function to decrease contrast
+function decreaseContrast() {
+  htmlElement.style.filter = "contrast(0.5)";
+}
+
+
+</script>
+
+<script>
+const blueYellowFilterButton = document.querySelector('.blue-yellow-filter');
+blueYellowFilterButton.addEventListener('click', function() {
+  const body = document.querySelector('body');
+  body.classList.toggle('blue-yellow-filter-active');
+});
+
+</script>
+
+
+
+
+<script>
+
+// Get the mode button element
+var modeButton = document.querySelector(".mode-btn");
+
+// Add event listener for the mode button
+modeButton.addEventListener("click", function() {
+  var body = document.querySelector("body");
+  body.classList.toggle("invert");
+
+  // Save the current mode to local storage
+  if (body.classList.contains("invert")) {
+    localStorage.setItem("mode", "dark");
+  } else {
+    localStorage.setItem("mode", "light");
+  }
+});
+
+// Check local storage for the current mode
+var mode = localStorage.getItem("mode");
+if (mode === "dark") {
+  document.body.classList.add("invert");
+} else if (mode === "light") {
+  document.body.classList.remove("invert");
+}
+</script>
+
+
+<script>
+// Get the brightness up button element
+var brightnessUpButton = document.getElementById("brightnessUpBtn");
+
+// Add event listener for the brightness up button
+brightnessUpButton.addEventListener("click", function() {
+  brightness += brightnessStep;
+  updateBrightness();
+});
+
+// Define the updateBrightness function
+function updateBrightness() {
+  document.body.style.filter = "brightness(" + brightness + "%)";
+}
+</script>
+
+
+
+
+<!-- Script -->
+<script>
+  // Brightness control variables
+  var brightness = 100;
+  var brightnessStep = 10;
+
+  // Brightness control functions
+  function increaseBrightness() {
+    brightness += brightnessStep;
+    updateBrightness();
+  }
+
+  function decreaseBrightness() {
+    brightness -= brightnessStep;
+    updateBrightness();
+  }
+
+  function updateBrightness() {
+    document.body.style.filter = "brightness(" + brightness + "%)";
+  }
+
+  // Add event listeners to brightness control buttons
+  document.getElementById("brightnessUpBtn").addEventListener("click", increaseBrightness);
+  document.getElementById("brightnessDownBtn").addEventListener("click", decreaseBrightness);
+</script>
+
+
+<script>
+// Get the color filter buttons
+var filterButtons = document.querySelectorAll(".filter-btn");
+
+// Add a click event listener to each filter button
+filterButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    var body = document.querySelector("body");
+    var filter = this.getAttribute("data-filter");
+    body.style.filter = filter;
+  });
+});
+
+
+</script>
+
+
+
+
+
+<script>
+// Get the brightness button
+var brightnessButton = document.querySelector(".brightness-btn");
+
+// Add a click event listener to the button
+brightnessButton.addEventListener("click", function() {
+  // Get the body element
+  var body = document.querySelector("body");
+
+  // Get the current brightness value
+  var currentBrightness = parseFloat(window.getComputedStyle(body).getPropertyValue("filter").split("(")[1].split(")")[0]);
+
+  // Increase the brightness by 10%
+  var newBrightness = currentBrightness + 0.1;
+
+  // Set the new brightness value
+  body.style.filter = "brightness(" + newBrightness + ")";
+});
+</script>
+
+<script>
+// Get the zoom-in button
+var zoomInButton = document.querySelector(".zoom-in-btn");
+
+// Add a click event listener to the button
+zoomInButton.addEventListener("click", function() {
+  // Get the body element
+  var body = document.querySelector("body");
+
+  // Get the current zoom value
+  var currentZoom = parseFloat(window.getComputedStyle(body).getPropertyValue("zoom"));
+
+  // Increase the zoom by 10%
+  var newZoom = currentZoom + 0.1;
+
+  // Set the new zoom value
+  body.style.zoom = newZoom;
+});
+
+// Get the zoom-out button
+var zoomOutButton = document.querySelector(".zoom-out-btn");
+
+// Add a click event listener to the button
+zoomOutButton.addEventListener("click", function() {
+  // Get the body element
+  var body = document.querySelector("body");
+
+  // Get the current zoom value
+  var currentZoom = parseFloat(window.getComputedStyle(body).getPropertyValue("zoom"));
+
+  // Decrease the zoom by 10%
+  var newZoom = currentZoom - 0.1;
+
+  // Set the new zoom value
+  body.style.zoom = newZoom;
+});
+
+
+</script>
+
+<script>
+// Get the invert button
+var invertButton = document.querySelector(".invert-btn");
+
+// Add a click event listener to the button
+invertButton.addEventListener("click", function() {
+  // Get the body element
+  var body = document.querySelector("body");
+
+  // Toggle the invert filter
+  body.classList.toggle("invert");
+
+  // Update the button text
+  if (body.classList.contains("invert")) {
+    invertButton.textContent = "Uninvert";
+  } else {
+    invertButton.textContent = "Invert";
+  }
+});
+
+</script>
+
+
 
 <!-- Header with image -->
 <br>
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:100px;" id="home">
-  <img class="w3-image" src="project1.jpg" alt="porfolioart" width="1600" height="300">
+  <img class="w3-image" src="project1.jpg" alt="porfolioart" width="2000" height="300">
   <div class="w3-display-bottomleft w3-padding">
   <span class="w3-tag w3-large">An area full of designs</span>
 </div>
