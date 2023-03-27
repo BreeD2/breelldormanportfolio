@@ -4,7 +4,7 @@
 
 
 body {
-background: khaki;
+background: palevioletred;
 margin:auto;
 margin-top: 10%;
 
@@ -39,14 +39,19 @@ ul.topnav {
 
 
 h1:hover {
-  color:blue
+  color:white;
+  background-color: hotpink;
+  border: 4px solid mediumpurple
 }
 
 p:hover {
-  color:blue
+  color:white;
+
 }
 h4:hover {
-  color:blue
+  color:white;
+  background-color: hotpink;
+  border: 4px solid mediumpurple
 }
 
 ul.topnav li {float: left;}
@@ -157,19 +162,6 @@ li a {
 }
 
 
-div.sticky {
-  position: -webkit-sticky;
-  position: fixed;
-  bottom: 0%;
-  width:100%;
-  height:8%;
-  z-index:1;
-  margin-top: 10%;
-  background-color: black;
-  padding: 15px;
-  font-size: 20px;
-
-}
 
 a:hover {
 color: black;

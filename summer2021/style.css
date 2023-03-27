@@ -5,15 +5,16 @@
 
 body {
 background: #ffccff;
-margin:auto;
-margin-top: 10%;
+
+
 
 
 }
-footer {
 
+
+footer {
   width:100%;
-  background-color:pink
+  background-color:red
 }
 
 .head {
@@ -42,19 +43,7 @@ footer {
 
 }
 
-div.sticky {
-  position: -webkit-sticky;
-  position: fixed;
-  bottom: 0%;
-  width:100%;
-  height:8%;
-  z-index:1;
-  margin-top: 10%;
-  background-color: black;
-  padding: 15px;
-  font-size: 20px;
 
-}
 
 a:hover {
 color: black;
