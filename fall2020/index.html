@@ -136,12 +136,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <style>
 .sidebar {
+
+
+}
+
+/* Default styles */
+.sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  position: sticky;
-  left: 100%;
-  margin-left: 0;
+  width: 200px; /* specify the width you want for the sidebar */
+  position: fixed; /* fixed position to keep it always visible */
+  left: 0; /* position it on the left side */
+  top: 0; /* position it at the top */
+  bottom: 0; /* set the height to cover the whole height of the viewport */
+
+  overflow-y: auto; /* enable vertical scrolling if the content exceeds the height */
+  z-index: 1; /* set a higher z-index to make it appear above other elements */
+  overflow: auto;
+
+
+
 }
 
 
@@ -163,6 +177,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   font-size: 15px;
   padding: 5px;
   margin-top: 26%;
+
     margin-bottom: 0%;
     border: 2px solid hotpink
 }
@@ -644,7 +659,7 @@ invertButton.addEventListener("click", function() {
 <!-- Surface Research Section -->
 <div class="w3-padding-64 w3-content" id="surfaceresearch">
   <div class="head">Surface Research</div>
-  <hr style="width:490px;margin-top: -1%" class="w3-white"><br>
+  <hr style="width:490px;margin-top: -7%" class="w3-white"><br>
 
   <!-- Grid for photos -->
   <div class="w3-row-padding" style="margin:0 -16px">
@@ -679,7 +694,7 @@ invertButton.addEventListener("click", function() {
     <div class="w3-quarter">
       <!-- Use <embed> tag to display PDF -->
       <div class="w3-text">
-    <h6>Collage of Yellow, Orange, Blue, & Yellow Items</h6>
+    <h6>Collage of Yellow, Orange, Blue, & Green Items</h6>
   </div>
       <embed src="surfaceresearch/project4.pdf" style="width:100%; height:500px" type="application/pdf">
     </div>

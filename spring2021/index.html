@@ -74,6 +74,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
+
 <div class="sidebar">
 
 
@@ -130,46 +131,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 <style>
+.sidebar {
 
+
+}
+
+/* Default styles */
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  position: fixed;
-  left: -200px; /* Set initial position to be outside of viewport */
-  top: 0;
-  height: 100%;
-  width: 200px;
-  background-color: #ccc;
-  transition: left 0.5s ease-in-out; /* Add transition effect */
-}
+  width: 200px; /* specify the width you want for the sidebar */
+  position: fixed; /* fixed position to keep it always visible */
+  left: 0; /* position it on the left side */
+  top: 0; /* position it at the top */
+  bottom: 0; /* set the height to cover the whole height of the viewport */
 
-/* Style the trigger element */
-.trigger {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
-  cursor: pointer;
-}
+  overflow-y: auto; /* enable vertical scrolling if the content exceeds the height */
+  z-index: 1; /* set a higher z-index to make it appear above other elements */
+  overflow: auto;
 
-/* Show sidebar when trigger element is hovered over */
-.trigger:hover + .sidebar {
-  left: 0;
-}
 
-/* Hide sidebar when mouse is moved away */
-.sidebar:hover {
-  left: 0;
-}
 
-.sidebar:not(:hover) {
-  left: -200px;
 }
 
 
@@ -191,6 +173,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   font-size: 15px;
   padding: 5px;
   margin-top: 26%;
+
     margin-bottom: 0%;
     border: 2px solid hotpink
 }
@@ -668,6 +651,8 @@ invertButton.addEventListener("click", function() {
 });
 
 </script>
+
+
 
 
 

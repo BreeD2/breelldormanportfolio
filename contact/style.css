@@ -169,36 +169,71 @@ cursor:none
 input[type=text], select, textarea {
   width: 100%;
   padding: 15px;
-  border: 2px solid black;
+  border: 2px solid hotpink;
   margin-top: 20px;
   margin-bottom: 16px;
   resize: vertical;
-  color: black;
-  background-color: ivory;
+  color: white;
+  background-color: mediumpurple;
 
 }
 
 input[type=text], select, textarea {
 cursor: text;
+color:white
 
 }
 
+
+label[for="email"] {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+input[type=email], select, textarea {
+cursor: text;
+color:white
+
+}
+
+
+
 input[type=submit] {
-  background-color: lemonchiffon;
-  color: black;
+  background-color: hotpink;
+  color: white;
   padding: 20px;
   margin-top:4%;
-  border: 1px solid black;
-  cursor: alias;
+  border: 3px solid mediumpurple;
 
 
+
+}
+
+
+input[type="email"]::placeholder {
+  color: white;
+
+}
+
+#subject::placeholder {
+  color: white;}
+
+input[type="submit"]::placeholder {
+  color: white;
+
+}
+
+input[type="text"]::placeholder {
+  color: white;
 }
 
 input[type=submit]:hover {
-  background-color: black;
+  background-color: mediumpurple;
   cursor: all-scroll;
   color:white;
   padding:20px;
+    border: 2px solid mediumpurple;
 
 }
 
