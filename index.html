@@ -590,32 +590,51 @@ invertButton.addEventListener("click", function() {
 
 </script>
 
-
-<div class="slideshow">
-  <video width="100%" controls>
-<source src="video1.mov" type="video/mp4"style="width:100%;"></video
-  <img src="image2.jpg">
-  <img src="image3.jpg">
+<div class="slideshow"style="width:100%;">
+  <video width="100%" controls class="active">
+    <source src="video1.mov" type="video/mp4" style="width:100%;">
+  </video>
+  <embed src="2.pdf" style="width:100%; height:500px" type="application/pdf">
+  <img src="3.jpg">
 </div>
 
 
 
-     </div>
-   </header>
-  </div>
-</header>
+
+
 
 <script>
-const images = document.querySelectorAll('.slideshow img');
-let currentImage = 0;
+// Get all elements inside the slideshow
+const slideshow = document.querySelector('.slideshow');
+const elements = slideshow.children;
 
-function showImage() {
-  images[currentImage].classList.remove('active');
-  currentImage = (currentImage + 1) % images.length;
-  images[currentImage].classList.add('active');
+// Set the index of the active element to 0
+let activeIndex = 0;
+
+// Set the interval to 5 seconds
+const interval = 5000;
+
+// Function to show the next element
+function showNext() {
+  // Remove the active class from the current element
+  elements[activeIndex].classList.remove('active');
+
+  // Increment the active index
+  activeIndex++;
+
+  // If the active index is greater than or equal to the number of elements,
+  // reset it to 0
+  if (activeIndex >= elements.length) {
+    activeIndex = 0;
+  }
+
+  // Add the active class to the new active element
+  elements[activeIndex].classList.add('active');
 }
 
-setInterval(showImage, 5000);
+// Call the showNext function every interval
+setInterval(showNext, interval);
+
 </script>
 
 
