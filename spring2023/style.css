@@ -14,19 +14,29 @@ margin-top: 10%;
 
 .slideshow {
   position: relative;
+  width: 100%;
+  height: 100vh; /* Use the full height of the viewport */
+  overflow: hidden; /* Hide overflowing images */
 }
 
 .slideshow img {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%; /* Make the image width 100% of the container */
+  height: 100%; /* Make the image height 100% of the container */
+  object-fit: cover; /* Preserve aspect ratio while covering the entire container */
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .slideshow img.active {
   opacity: 1;
+  z-index: 1; /* Bring active image to the front */
 }
+
+
+
 
 h6 {
   color:white;
