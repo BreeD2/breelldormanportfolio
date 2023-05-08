@@ -591,20 +591,11 @@ invertButton.addEventListener("click", function() {
 </script>
 
 
-<!-- Header with image -->
-<br>
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:100px;" id="home">
-  <img class="w3-image" src="project1.jpg" alt="porfolioart" width="1600" height="300">
-  <div class="w3-display-bottomleft w3-padding">
-  <span class="w3-tag w3-large">An area full of designs</span>
+<div class="slideshow">
+  <img src="image1.jpg">
+  <img src="image2.jpg">
+  <img src="image3.jpg">
 </div>
-<div class="w3-display-middle w3-center">
-  <span class="w3-text-white w3-hide-small w3-black w3-padding-16" style="font-size:70px;"><br>Bree Dorman's Artistry</span>
-  <span class="w3-text-white w3-hide-large w3-hide-medium w3-black" style="font-size:50px;"><b>Bree Dorman's<br>Artistry</b></span>
-  <p><a href="fall2020/index.html" class="w3-button w3-large w3-black w3-hover-pink w3-padding-16 w3-hover-padding-16">Let me see Bree's journey of designs</a></p>
-
-</div>
-</header>
 
 
 
@@ -613,7 +604,18 @@ invertButton.addEventListener("click", function() {
   </div>
 </header>
 
+<script>
+const images = document.querySelectorAll('.slideshow img');
+let currentImage = 0;
 
+function showImage() {
+  images[currentImage].classList.remove('active');
+  currentImage = (currentImage + 1) % images.length;
+  images[currentImage].classList.add('active');
+}
+
+setInterval(showImage, 5000);
+</script>
 
 
 

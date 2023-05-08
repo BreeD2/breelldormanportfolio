@@ -12,6 +12,22 @@ margin-top: 10%;
 
 }
 
+.slideshow {
+  position: relative;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
 h6 {
   color:white;
   background-color: hotpink;
