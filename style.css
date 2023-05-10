@@ -11,6 +11,13 @@ margin-top: 10%;
 
 }
 
+figcaption {
+  color:White;
+  background-color: hotpink;
+  padding: 5px;
+  width:100%;
+}
+
 h6 {
   color:white;
   background-color: hotpink;
