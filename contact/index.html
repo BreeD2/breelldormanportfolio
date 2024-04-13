@@ -3,12 +3,12 @@
 <html>
  <head>
    <title>Contact</title>
-   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-   <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
- <link rel="manifest" href="site.webmanifest">
- <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
+   <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="..//favicon-16x16.png">
+ <link rel="manifest" href="..//site.webmanifest">
+ <link rel="mask-icon" href="..//safari-pinned-tab.svg" color="#5bbad5">
  <meta name="msapplication-TileColor" content="#da532c">
  <meta name="theme-color" content="#ffffff">
    <center>
@@ -18,76 +18,38 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<style>
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
 
 
       <!-- Navigation Bar with Logo and Website Name -->
       <div class="topnav" id="myTopnav">
-        <a href="..//index.html" class="logo">
-          <img src="favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Bree Dorman</span>
+        <a href="index.html" class="logo">
+          <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Bree Dorman</span>
 
      </a>
      <!-- User Information Dropdown -->
-     <div class="dropdown2">
-         <button class="dropbtn2">
-             <i class="fa fa-user"></i> <span id="userName">2020</span> <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content2">
-             <a href="..//fall2020/index.html">Fall 2020</a>
-         </div>
-     </div>
+     <a href="..//index.html" aria-label="Home">Home</a>
+     <a href="..//websites/index.html"  aria-label="View my website design projects">Websites</a>
+     <a href="..//posters/index.html" aria-label="View my poster design projects">Posters</a>
+     <a href="..//videos/index.html" aria-label="View my video projects">Videos</a>
+     <a href="..//books/index.html" aria-label="View my book design projects">Books</a>
+     <a href="..//about/index.html" aria-label="Learn more about me">About</a>
+     <a href="contact/index.html"class="active" aria-label="Contact me">Contact</a>
+     <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
 
-     <div class="dropdown2">
-         <button class="dropbtn2">
-             <i class="fa fa-user"></i> <span id="userName">2021</span> <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content2">
-           <a href="..//spring2021/index.html">Spring 2021</a>
-           <a href="..//summer2021/index.html">Summer 2021</a>
-             <a href="..//fall2021/index.html">Fall 2021</a>
-         </div>
-     </div>
 
-     <div class="dropdown2">
-         <button class="dropbtn2">
-             <i class="fa fa-user"></i> <span id="userName">2022</span> <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content2">
-           <a href="..//spring2022/index.html">Spring 2022</a>
-           <a href="..//summer2022/index.html">Summer 2022</a>
-           <a href="..//fall2022/index.html">Fall 2022</a>
-         </div>
-     </div>
 
-     <div class="dropdown2">
-         <button class="dropbtn2">
-             <i class="fa fa-user"></i> <span id="userName">2023</span> <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content2">
-           <a href="..//spring2023/index.html">Spring 2023</a>
-             <a href="..//summer2023/index.html">Summer 2023</a>
-         </div>
-     </div>
 
-     <div class="dropdown2">
-         <button class="dropbtn2">
-             <i class="fa fa-user"></i> <span id="userName">2024</span> <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content2">
-           <a href="..//spring2024/index.html">Spring 2024</a>
 
-         </div>
-     </div>
          <!-- Accessibility Button and Dropdown -->
          <!-- User Information Dropdown -->
          <input type="text" id="searchInput2" placeholder="Search.." onkeyup="searchFunction()">
@@ -107,6 +69,56 @@
    <!-- Moved searchResults outside the topnav -->
    <div id="searchResults2" class="search-results2"></div>
 
+
+
+
+ <aside class="sidebar">
+     <h3>Accessibility</h3>
+     <div id="google_translate_element"></div>
+             <button onclick="resetSettings()">Reset Settings</button>
+             <button onclick="increaseFont()">Increase Font Size</button>
+             <button onclick="decreaseFont()">Decrease Font Size</button>
+             <button onclick="toggleLightMode()">Toggle Light Mode</button>
+             <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+
+
+
+
+
+
+<ul class="search-results" id="searchResults"></ul>
+<div id="game-list2">
+
+<br><br><br>
+</div>
+</aside>
+
+<!--  Toggle Button -->
+<div class="menu-toggle" aria-label="Toggle Sidebar">
+<i class="fas fa-wheelchair"></i>
+
+
+
+</div>
+
+<div id="searchResults">
+
+
+
+    </div>
+
+
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;width:200px;" id="mySidebar">
+        <button onclick="toggleSidebar()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <!-- Add your sidebar content here -->
+    </div>
+
+
+        <div id="main-content" class="content">
 
 
 

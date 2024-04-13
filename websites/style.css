@@ -4994,7 +4994,7 @@ body {
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: dodgerblue;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -5002,7 +5002,7 @@ body {
 }
 
 .project a:hover {
-  background-color: #0056b3;
+  background-color:dodgerblue;
 }
 
 .project:hover {

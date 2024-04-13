@@ -4851,9 +4851,7 @@ button {
   padding: 60px
 }
 
-#main-content > div {
-  background-color: mediumpurple
-}
+
 .light-mode #main-content > div {
     background-color: white;
     color:black
@@ -5009,4 +5007,8 @@ body {
 
 .project:hover {
   transform: translateY(-5px);
+}
+
+.portfolio {
+  margin-top: 100px
 }
