@@ -2482,9 +2482,7 @@ color: black; /* Dark text color for readability */
 }
 
 
-body.dark-mode #about h2 {
-  color: black; /* Slightly darker color for headings for emphasis */
-}
+
 
 body.dark-mode #about p {
 color: white;
@@ -5064,4 +5062,48 @@ left:15px;
     border-radius: 5px;
     top: 0px;
     }
+}
+
+.dark-mode #main-content > header > p {
+  color:white
+}
+
+.light-mode #main-content > header > p {
+  color:white
+}
+
+.dark-mode #main-content > header > h1 {
+  color:white
+}
+
+.dark-mode #about > h2 {
+  color:white
+}
+
+.light-mode #about > h2 {
+  color:black
+}
+
+.dark-mode #main-content > header {
+  background-color: dimgrey
+}
+
+.dark-mode #work > div > div > p {
+  background-color: black;
+  color:white
+}
+
+.light-mode #work > div > div > p {
+  background-color: white;
+  color:black
+}
+
+.light-mode #work > div > div > a {
+  background-color: white;
+  color:black
+}
+
+.dark-mode #work > div > div > a {
+  background-color: black;
+  color:white
 }
