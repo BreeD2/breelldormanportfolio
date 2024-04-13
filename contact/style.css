@@ -535,7 +535,6 @@ left:15px;
 .search-results2.visible {
     display: block; /* Make visible when needed */
 }
-
 @media screen and (min-width: 1060px) {
 
 #clearSearch {
@@ -543,13 +542,13 @@ left:15px;
       cursor: pointer;
       /* Additional styling to position the X button appropriately */
       position: absolute;
-      right: 50px;
-      top: 12px;
+      right: 35px;
+      top: 1px;
       border: none;
       background: transparent;
       font-size: 16px;
       color:black;
-      z-index: 6
+      z-index: 10;
   }
 }
 @media screen and (max-width: 1060px) {
@@ -560,12 +559,12 @@ left:15px;
       /* Additional styling to position the X button appropriately */
       position: absolute;
       background-color: red;
-      right:100px;
-      top:281px;
+      right:90px;
+      top:489px;
       border: none;
       background: transparent;
       font-size: 16px;
-      color:grey;
+      color:black;
       z-index:1000;
 
 
@@ -5222,4 +5221,58 @@ input[type="submit"]:hover {
   margin-top: 360px;
   z-index: 3
 }
+}
+
+@media (min-width: 1060px) {
+
+.search-results2 {
+      width: 18%;
+    margin: 0 auto; /* Center the box */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+
+    background-color: #fff; /* White background */
+    position: fixed; /* Positions relative to the nearest positioned ancestor */
+    z-index: 5; /* Ensures it's above other content */
+
+    top: 100px; /* Positions the results directly below the search bar */
+    left: 50%;
+    float: right;
+    padding: 6px;
+    border: none;
+  top: 6%;
+margin-left:29.4%;
+    font-size: 10px;
+    border-radius: 5px
+}}
+
+.search-results2 {
+    display: none; /* Hide the container initially */
+    /* Other styles remain unchanged */;
+    text-align: left;
+    z-index: 5
+}
+
+
+@media (max-width: 1060px) {
+    .search-results2 {
+  width: calc(100% - 30px);
+    margin: 0 auto; /* Center the box */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+
+    background-color: #fff; /* White background */
+    position: fixed; /* Positions relative to the nearest positioned ancestor */
+    z-index: 3; /* Ensures it's above other content */
+
+
+    float: right;
+    padding: 6px;
+    border: none;
+  margin-top: 518px;
+left:15px;
+    font-size: 10px;
+    border-radius: 5px;
+    top: 0px;
+    }
 }

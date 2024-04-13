@@ -32,7 +32,7 @@
 
       <!-- Navigation Bar with Logo and Website Name -->
       <div class="topnav" id="myTopnav">
-        <a href="index.html" class="logo">
+        <a href="..//index.html" class="logo">
           <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Bree Dorman</span>
 
      </a>
@@ -663,5 +663,62 @@ function myFunction() {
 }
 </script>
 
+
+<script>
+const searchFunction = () => {
+    const input = document.getElementById('searchInput2').value.toLowerCase();
+    const resultsContainer = document.getElementById('searchResults2');
+    const clearButton = document.getElementById('clearSearch');
+
+    // Toggle visibility of results container and clear button based on input
+    if (input) {
+        resultsContainer.style.display = 'block';
+        clearButton.style.display = 'inline'; // Show the clear button when there's input
+    } else {
+        resultsContainer.style.display = 'none';
+        clearButton.style.display = 'none'; // Hide the clear button when input is empty
+    }
+
+    resultsContainer.innerHTML = ''; // Clear previous results
+
+
+    const searchData = [
+        { name: 'About', url: '..//about/index.html' },
+          { name: 'Book', url: '..//books/index.html' },
+            { name: 'Contact', url: '..//contact/index.html' },
+              { name: 'Home', url: 'index.html' },
+                { name: 'Posters', url: '..//posters/index.html' },
+                { name: 'Resume', url: '..//resume/index.html' },
+                  { name: 'Videos', url: '..//videos/index.html' },
+                  { name: 'Websites', url: '..//websites/index.html' },
+
+
+        // Add more results as needed
+    ];
+
+    const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
+
+    filteredData.forEach(item => {
+        const div = document.createElement('div');
+        const a = document.createElement('a');
+        a.textContent = item.name;
+        a.href = item.url;
+
+        div.appendChild(a);
+        resultsContainer.appendChild(div);
+    });
+};
+
+const clearSearchFunction = () => {
+    document.getElementById('searchInput2').value = ''; // Clear input
+    document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
+    document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
+    document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
+};
+
+// Optionally, automatically trigger the search function when the input is cleared
+document.getElementById('searchInput2').addEventListener('input', searchFunction);
+
+</script>
    </body>
  </html>
