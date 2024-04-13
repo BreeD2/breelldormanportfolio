@@ -488,28 +488,6 @@ margin-left:29.4%;
 }
 
 
-@media (max-width: 1060px) {
-    .search-results2 {
-  width: calc(100% - 30px);
-    margin: 0 auto; /* Center the box */
-    padding: 10px;
-    border: 1px solid #ddd; /* Light grey border */
-
-    background-color: #fff; /* White background */
-    position: fixed; /* Positions relative to the nearest positioned ancestor */
-    z-index: 3; /* Ensures it's above other content */
-
-
-    float: right;
-    padding: 6px;
-    border: none;
-  margin-top: 300px;
-left:15px;
-    font-size: 10px;
-    border-radius: 5px;
-    top: 0px;
-    }
-}
 
 .search-results2 div {
     padding: 8px;

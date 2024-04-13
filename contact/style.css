@@ -474,7 +474,7 @@ body.light-mode .topnav a.active {
     float: right;
     padding: 6px;
     border: none;
-  top: 5.1%;
+  top: 6%;
 margin-left:29.4%;
     font-size: 10px;
     border-radius: 5px
@@ -571,7 +571,6 @@ left:15px;
       margin-right: -70px
   }
 }
-
 body.light-mode .topnav a {
   color: #000; /* Black font color for the links in the navbar */;
 
@@ -4993,7 +4992,7 @@ body {
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: dodgerblue;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -5001,7 +5000,7 @@ body {
 }
 
 .project a:hover {
-  background-color: #0056b3;
+  background-color:dodgerblue;
 }
 
 .project:hover {
@@ -5012,94 +5011,70 @@ body {
   margin-top: 100px
 }
 
+@media (min-width: 1060px) {
 
+.search-results2 {
+      width: 18%;
+    margin: 0 auto; /* Center the box */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
 
+    background-color: #fff; /* White background */
+    position: fixed; /* Positions relative to the nearest positioned ancestor */
+    z-index: 5; /* Ensures it's above other content */
 
+    top: 100px; /* Positions the results directly below the search bar */
+    left: 50%;
+    float: right;
+    padding: 6px;
+    border: none;
+  top: 5%;
+margin-left:29.4%;
+    font-size: 10px;
+    border-radius: 5px
+}}
 
-
-img {
-    max-width: 100%;
-    height: auto;
+.search-results2 {
+    display: none; /* Hide the container initially */
+    /* Other styles remain unchanged */;
+    text-align: left;
+    z-index: 5
 }
 
-/* Responsive Design - Adjustments for smaller screens */
-@media only screen and (max-width: 600px) {
-    .w3-hide-small {
-        display: none;
+
+@media (max-width: 1060px) {
+    .search-results2 {
+  width: calc(100% - 30px);
+    margin: 0 auto; /* Center the box */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+
+    background-color: #fff; /* White background */
+    position: fixed; /* Positions relative to the nearest positioned ancestor */
+    z-index: 3; /* Ensures it's above other content */
+
+
+    float: right;
+    padding: 6px;
+    border: none;
+  margin-top: 518px;
+left:15px;
+    font-size: 10px;
+    border-radius: 5px;
+    top: 0px;
     }
 }
 
 
 
-section {
-    padding: 20px;
-    text-align: center;
-}
 
-#about {
-    background: #f4f4f4;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project p {
-    padding: 10px;
-    margin: 0;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    background: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 600px;
-    margin-top: 100px;
-    margin: 0px
-}
-
-.text-center {
-    text-align: center;
-}
-
-.head {
-    color: mediumpurple;
-}
-
-.intro {
-    color:black
-}
-
-input[type="email"], input[type="text"], select, textarea {
-    width: 100%;
+input[type="email"], input[type="text"], select,{
+  max-width: 500px;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: helvetica
 }
 
 input[type="submit"] {
@@ -5112,9 +5087,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: hotpink;
-}
 
 
 
@@ -5215,64 +5187,40 @@ input[type="submit"]:hover {
     color:black
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 1060px) {
-#searchResults2 {
-  margin-top: 360px;
-  z-index: 3
-}
-}
 
-@media (min-width: 1060px) {
 
-.search-results2 {
-      width: 18%;
-    margin: 0 auto; /* Center the box */
-    padding: 10px;
-    border: 1px solid #ddd; /* Light grey border */
 
-    background-color: #fff; /* White background */
-    position: fixed; /* Positions relative to the nearest positioned ancestor */
-    z-index: 5; /* Ensures it's above other content */
 
-    top: 100px; /* Positions the results directly below the search bar */
-    left: 50%;
-    float: right;
-    padding: 6px;
-    border: none;
-  top: 6%;
-margin-left:29.4%;
-    font-size: 10px;
-    border-radius: 5px
-}}
-
-.search-results2 {
-    display: none; /* Hide the container initially */
-    /* Other styles remain unchanged */;
-    text-align: left;
-    z-index: 5
+.dark-mode #main-content > div.container > div > div > form > label {
+color:white
 }
 
+.dark-mode #main-content > div.container > div > h2  {
+color:white
+}
 
-@media (max-width: 1060px) {
-    .search-results2 {
-  width: calc(100% - 30px);
-    margin: 0 auto; /* Center the box */
-    padding: 10px;
-    border: 1px solid #ddd; /* Light grey border */
+.dark-mode #main-content > div.container > div > div > form > input[type=submit]  {
+color:white;
+background-color: black
+}
 
-    background-color: #fff; /* White background */
-    position: fixed; /* Positions relative to the nearest positioned ancestor */
-    z-index: 3; /* Ensures it's above other content */
+.light-mode #main-content > div.container > div > div > form > label {
+color:black
+}
 
+.light-mode #main-content > div.container > div > h2  {
+color:black
+}
 
-    float: right;
-    padding: 6px;
-    border: none;
-  margin-top: 518px;
-left:15px;
-    font-size: 10px;
-    border-radius: 5px;
-    top: 0px;
-    }
+.light-mode #main-content > div.container > div > div > form > input[type=submit]  {
+color:black;
+background-color: whitesmoke
+}
+
+.light-mode #main-content > div.footer > p {
+color:black
+}
+
+.dark-mode #main-content > div.footer > p {
+color:white
 }
