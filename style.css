@@ -1835,7 +1835,7 @@ select:hover {
 
 
 #about h2 {
-  margin-bottom: 20px; /* Space below the heading */;
+  margin-top: 100px; /* Space below the heading */;
       color:white;
     font-size: 28px; /* Slightly larger font size for headings */;
 
@@ -4877,7 +4877,7 @@ body {
 
 #work h2 {
     text-align: center;
-    margin-bottom: 20px;
+margin-top: 100px; /* Space below the heading */;
 }
 
 .gallery {

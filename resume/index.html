@@ -1,7 +1,129 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+ <head>
+   <title>Resume</title>
+   <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
+   <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="..//favicon-16x16.png">
+ <link rel="manifest" href="..//site.webmanifest">
+ <link rel="mask-icon" href="..//safari-pinned-tab.svg" color="#5bbad5">
+ <meta name="msapplication-TileColor" content="#da532c">
+ <meta name="theme-color" content="#ffffff">
+   <center>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet"href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+      <!-- Navigation Bar with Logo and Website Name -->
+      <div class="topnav" id="myTopnav">
+        <a href="..//index.html" class="logo">
+          <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Bree Dorman</span>
+
+     </a>
+     <!-- User Information Dropdown -->
+     <a href="..//index.html" aria-label="Home">Home</a>
+     <a href="..//websites/index.html"  aria-label="View my website design projects">Websites</a>
+     <a href="..//posters/index.html" aria-label="View my poster design projects">Posters</a>
+     <a href="..//videos/index.html" aria-label="View my video projects">Videos</a>
+     <a href="..//books/index.html" aria-label="View my book design projects">Books</a>
+     <a href="..//about/index.html" aria-label="Learn more about me">About</a>
+     <a href="..//contact/index.html" aria-label="Contact me">Contact</a>
+     <a href="index.html" class="active"aria-label="View my resume">Resume</a>
+
+
+
+
+
+         <!-- Accessibility Button and Dropdown -->
+         <!-- User Information Dropdown -->
+         <input type="text" id="searchInput2" placeholder="Search.." onkeyup="searchFunction()">
+         <button id="clearSearch" onclick="clearSearchFunction()">X</button>
+           <!-- Other navigation items -->
+
+
+
+
+
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+
+
+   </div>
+   <!-- Moved searchResults outside the topnav -->
+   <div id="searchResults2" class="search-results2"></div>
+
+
+
+
+ <aside class="sidebar">
+     <h3>Accessibility</h3>
+     <div id="google_translate_element"></div>
+             <button onclick="resetSettings()">Reset Settings</button>
+             <button onclick="increaseFont()">Increase Font Size</button>
+             <button onclick="decreaseFont()">Decrease Font Size</button>
+             <button onclick="toggleLightMode()">Toggle Light Mode</button>
+             <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+
+
+
+
+
+
+<ul class="search-results" id="searchResults"></ul>
+<div id="game-list2">
+
+<br><br><br>
+</div>
+</aside>
+
+<!--  Toggle Button -->
+<div class="menu-toggle" aria-label="Toggle Sidebar">
+<i class="fas fa-wheelchair"></i>
+
+
+
+</div>
+
+<div id="searchResults">
+
+
+
+    </div>
+
+
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;width:200px;" id="mySidebar">
+        <button onclick="toggleSidebar()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <!-- Add your sidebar content here -->
+    </div>
+
+
+        <div id="main-content" class="content">
+
 
 <!-- Header -->
 
-<br><br>
+
 
 <iframe src="breedormanresume.pdf" width="100%" height="1000px"download>
                          </iframe>
@@ -9,139 +131,85 @@
 
 
 
-     </div>
-   </header>
-  </div>
-</header>
 
 
+<!-- Footer Section -->
+<div class="footer">
+    <h3>© 2022-2024 Bree Dorman's Artistry</h3>
+    <img src="..//favicon.ico" alt="Bree's Logo">
+    <p>1-804-728-7493</p>
+    <p><a href="mailto:brekd816@gmail.com">brekd816@gmail.com</a></p>
+</div>
+</div>
 
 
-
-
-
-</body>
-</html>
 
 
 <script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-purple";
-}
-document.getElementById("myLink").click();
-</script>
-
-<script>
-
-$('.like-btn').on('click', function() {
-   $(this).toggleClass('is-active');
-});
-
-$('.minus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
-
-    if (value &amp;amp;gt; 1) {
-        value = value - 1;
-    } else {
-        value = 0;
-    }
-
-  $input.val(value);
-
-});
-
-$('.plus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
-
-    if (value &amp;amp;lt; 100) {
-        value = value + 1;
-    } else {
-        value =100;
-    }
-
-    $input.val(value);
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('sidebar-visible');
 });
 
 </script>
 
 
-</body>
-</html>
+
+<script>
+const searchFunction = () => {
+    const input = document.getElementById('searchInput2').value.toLowerCase();
+    const resultsContainer = document.getElementById('searchResults2');
+    const clearButton = document.getElementById('clearSearch');
+
+    // Toggle visibility of results container and clear button based on input
+    if (input) {
+        resultsContainer.style.display = 'block';
+        clearButton.style.display = 'inline'; // Show the clear button when there's input
+    } else {
+        resultsContainer.style.display = 'none';
+        clearButton.style.display = 'none'; // Hide the clear button when input is empty
+    }
+
+    resultsContainer.innerHTML = ''; // Clear previous results
 
 
-<!-- Footer -->
-<footer class="w3-container w3-center w3-pink">
-  <div class="w3-large w3-padding-16 w3-font-size-small ">
-
-<h1 style="font-size:24px">© 2022-2023 Bree Dorman's Artistry<h1>
-</div>
-<img src="favicon.ico"><br>
-
- <p>1-804-728-7493<p>
-  <p><a href="mailto:brekd816@gmail.com">brekd816@gmail.com</a></p>
- <p>“Creativity is nothing but the way to solve new problems.” – Diana Santos, VP Product Strategy & Design, Intelia <p>
-   <br><br>
-</footer>
+    const searchData = [
+        { name: 'About', url: '..//about/index.html' },
+          { name: 'Book', url: '..//books/index.html' },
+            { name: 'Contact', url: '..//contact/index.html' },
+              { name: 'Home', url: 'index.html' },
+                { name: 'Posters', url: '..//posters/index.html' },
+                { name: 'Resume', url: '..//resume/index.html' },
+                  { name: 'Videos', url: '..//videos/index.html' },
+                  { name: 'Websites', url: '..//websites/index.html' },
 
 
+        // Add more results as needed
+    ];
 
-<div class="sticky">
-    <a href="..//contact/index.html" style="font-size:19px;color:white;left:10%;position:absolute;text-decoration:none;top: 29%;">Contact</button></a>
+    const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
 
-      <a href="..//resume/index.html"style="font-size:19px;color:white;left:47%;position:absolute;top: 29%;text-decoration:none;
-      color: white;
-      background-color: mediumpurple;
-      border: 2px solid hotpink;
-      padding: 1px;">Resume</button></a>
+    filteredData.forEach(item => {
+        const div = document.createElement('div');
+        const a = document.createElement('a');
+        a.textContent = item.name;
+        a.href = item.url;
 
+        div.appendChild(a);
+        resultsContainer.appendChild(div);
+    });
+};
 
-<a href="..//about/index.html"style="left:84%;position:absolute;font-size:19px;color:white;text-decoration:none;padding:1px;top: 29%;">About</button></a>
-</div>
+const clearSearchFunction = () => {
+    document.getElementById('searchInput2').value = ''; // Clear input
+    document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
+    document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
+    document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
+};
 
-<style>
+// Optionally, automatically trigger the search function when the input is cleared
+document.getElementById('searchInput2').addEventListener('input', searchFunction);
 
-.sticky {
-  position: sticky;
-  color: white;
-  bottom: 0%;
-  width: 100%;
-  height: 40%;
-  z-index: 0;
-  margin-top: 0px;
-  background-color: black;
-  padding: 35px;
-  font-size: 20px;
-}
-
-
-a:hover {
-color: white;
-background-color: mediumpurple;
-border: 2px solid hotpink;
-padding: 1px;
-
-}
-
-</style>
-
-
+</script>
 
 
 
@@ -159,75 +227,199 @@ function myFunction() {
 
 
 
-   <script src="jquery-3.6.0.min.js"></script>
-   <script src="jquery.marquee.min.js"></script>
-   <script src="function.js"></script>
 
-
-
-   <script>
-   const d = new Date(2022, 7, 11, 23, 56);
-   document.getElementById("demo").innerHTML = d;
-   </script>
 
 <script>
-   $('.like-btn').on('click', function() {
-      $(this).toggleClass('is-active');
-   });
 
-   $('.minus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
+      function search() {
+          var searchInput = document.getElementById("searchInput").value;
+          var searchResults = document.getElementById("searchResults");
 
-    if (value &amp;amp;gt; 1) {
-        value = value - 1;
-    } else {
-        value = 0;
-    }
+          // Implement your search functionality here
+          // For simplicity, I'm just showing and hiding the search-results div in this example
+          if (searchInput.trim() !== "") {
+              searchResults.style.display = "block";
+              searchResults.innerHTML = "Search results for: " + searchInput;
+          } else {
+              searchResults.style.display = "none";
+          }
+      }
+  </script>
 
-  $input.val(value);
 
-});
 
-$('.plus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var searchResults = document.getElementById("searchResults2");
 
-    if (value &amp;amp;lt; 100) {
-        value = value + 1;
-    } else {
-        value =100;
-    }
-
-    $input.val(value);
-});
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    // Show searchResults2 when opening the menu
+    searchResults.style.display = "block";
+  } else {
+    x.className = "topnav";
+    // Hide searchResults2 when closing the menu
+    searchResults.style.display = "none";
+  }
+}
 </script>
 
 <script>
-const minusButton = document.getElementById('minus');
-const plusButton = document.getElementById('plus');
-const inputField = document.getElementById('input');
+    document.addEventListener('DOMContentLoaded', function () {
+        storeOriginalFontSizes(); // Store original font sizes for specified elements
+    });
 
-minusButton.addEventListener('click', event => {
-  event.preventDefault();
-  const currentValue = Number(inputField.value) || 0;
-  inputField.value = currentValue - 1;
-});
+    // Store the original font sizes
+    function storeOriginalFontSizes() {
+        const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, button#signupButton, p, .featured-games, .featured-games-title, .footer, #game2-info > h3, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div,#featured-games > div.featured-games-title,#about > div, #main-content > div.opening-screen > div > div, #enter-site-button';
+        document.querySelectorAll(selector).forEach(element => {
+            element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
+        });
+    }
 
-plusButton.addEventListener('click', event => {
-  event.preventDefault();
-  const currentValue = Number(inputField.value) || 0;
-  inputField.value = currentValue + 1;
-});
+    // Adjust the font size of elements
+    function adjustFontSize(factor, selector) {
+        document.querySelectorAll(selector).forEach(element => {
+            const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+            element.style.fontSize = `${currentFontSize * factor}px`;
+        });
+    }
 
-</script>
+    // Increase font size
+    function increaseFont() {
+        adjustFontSize(1.1, '.sidebar *, #signupContainer, .underwelcome, .opening-screen button, p, #game2-info > h3, .featured-games-title, .footer, .featured-games, #about > div, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div, #main-content > div.opening-screen > div > div, .dropdown-content, #featured-games > div.featured-games-title, #enter-site-button');
+    }
+
+    // Decrease font size
+    function decreaseFont() {
+        adjustFontSize(0.9, '.sidebar *, #signupContainer, .underwelcome, .dropdown-content, #about > div, #game1-info > h3, #game3-info > h3, .dropdown, #game2-info > h3, .opening-screen button, #main-content > div.opening-screen > div > div, .featured-games, #featured-games > div.featured-games-title, .featured-games-title, p, .footer, #main-content > div.opening-screen > div, #enter-site-button');
+    }
+
+    // Reset font sizes to their original values
+    function resetFont() {
+        const selector = '.sidebar *, #signupContainer, .underwelcome, .opening-screen button,  #about > div, #game1-info > h3, #game3-info > h3, .featured-games, #game2-info > h3,#featured-games > div.featured-games-title, #main-content > div.opening-screen > div, .featured-games-title, p, .footer, #enter-site-button';
+        document.querySelectorAll(selector).forEach(element => {
+            const originalFontSize = element.getAttribute('data-original-font-size');
+            if (originalFontSize) element.style.fontSize = originalFontSize;
+        });
+    }
+
+    // Inverts colors
+    function invertColors() {
+        document.body.classList.toggle('invert-colors');
+    }
+
+    // Cancels any ongoing speech synthesis
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+    }
+
+    // Toggles light mode
+    function toggleLightMode() {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+    }
+
+    // Toggles dark mode
+    function toggleDarkMode() {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+    }
 
 
+    // Reset settings including font sizes and other visual modifications
+    function resetSettings() {
+        resetFont(); // Resets font sizes
+        // Add other reset actions here (e.g., removing classes, resetting filters)
+        document.body.style.filter = '';
+        document.body.style.webkitFilter = '';
+        document.body.classList.remove('dark-mode');
+        document.body.classList.remove('invert-colors');
+        document.body.classList.remove('light-mode');
 
-     </script>
-   </body>
- </html>
+    }
+    // Increase font size
+        function increaseFont() {
+            adjustFontSize(1.1, '.sidebar *, .game-container, .game-info, #likeButton, #commentButton,#likesCount, #ratingDisplay, #rateButton, .game-title,#commentsSection > strong, .footer');
+        }
+
+        // Decrease font size
+        function decreaseFont() {
+            adjustFontSize(0.9, '.sidebar *, .game-container, .game-info, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+        }
+
+        // Toggle Light Mode
+      function toggleLightMode() {
+          document.body.classList.remove('dark-mode');
+          document.body.classList.add('light-mode');
+          localStorage.setItem('theme', 'light'); // Persist theme choice
+          updateStylesBasedOnTheme();
+      }
+
+      // Toggle Dark Mode
+      function toggleDarkMode() {
+          document.body.classList.remove('light-mode');
+          document.body.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark'); // Persist theme choice
+          updateStylesBasedOnTheme();
+      }
+
+      // Resets settings to default and clears theme preference
+      function resetSettings() {
+        resetFont(); // Resets font sizes
+      document.body.style.filter = '';
+      document.body.style.webkitFilter = '';
+      document.body.classList.remove('dark-mode', 'light-mode', 'invert-colors');
+      localStorage.removeItem('theme'); // Clear the stored theme preference
+
+      }
+
+      function applyDefaultTheme() {
+          // Remove specific theme-related classes
+          document.body.classList.remove('dark-mode', 'light-mode');
+
+          // Revert styles of elements affected by theme changes
+          var dropup = document.getElementById('accessibility-dropup');
+          if (dropup) {
+              dropup.style.backgroundColor = ''; // Set this to your default background color
+              dropup.style.color = ''; // Set this to your default text color
+          }
+
+          // Update the UI elements to reflect the default theme
+          updateStylesBasedOnTheme();
+      }
+    function updateStylesBasedOnTheme() {
+      var dropup = document.getElementById('accessibility-dropup');
+      if (document.body.classList.contains('light-mode')) {
+          dropup.style.backgroundColor = 'white';
+          dropup.style.color = 'black';
+      } else if (document.body.classList.contains('dark-mode')) {
+          dropup.style.backgroundColor = 'dodgerblue';
+          dropup.style.color = 'white';
+      } else {
+          // Handle the default theme's styles here
+          dropup.style.backgroundColor = ''; // Your site's default background color
+          dropup.style.color = ''; // Your site's default text color
+      }
+   }
+
+      // Applies the saved theme or sets to default if none is saved
+    function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
+        } else if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+        } else {
+            // Apply a default theme here if no preference is saved
+            applyDefaultTheme();
+        }
+        updateStylesBasedOnTheme();
+    }
+    // Ensure the saved theme is applied as soon as the document is fully loaded
+      document.addEventListener('DOMContentLoaded', applySavedTheme);
+    </script>
+</body>
