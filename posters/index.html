@@ -54,6 +54,7 @@
          <!-- User Information Dropdown -->
          <input type="text" id="searchInput2" placeholder="Search.." onkeyup="searchFunction()">
          <button id="clearSearch" onclick="clearSearchFunction()">X</button>
+
            <!-- Other navigation items -->
 
 
@@ -124,17 +125,17 @@
             <div class="project">
               <img src="reminiscencecollection.jpg" alt="Reminiscence Collection">
               <h3>Reminiscence Collection</h3>
-              <p></p>
+              <p>This is a poster that depicts video game covers with it showing the front and the back of the covers. The posters was created using Adobe InDesign, some techniques I used was using a gradient to create the front, spine, and back of the cover. The left side are the games sorted by genres, features of the developers and publishers, of the game, and interesting details about everybody rating and barcode.</p>
 
             </div>
-            <div class="portfolio">
+
     <!-- Project with PDF -->
     <div class="project">
         <a href="mycellium.pdf" target="_blank">
             <img src="mycellium.jpg" alt="Thumbnail for Mycellium PDF">
         </a>
         <h3>Mycellium Project</h3>
-        <p>Description of the Mycellium project, its purpose, and any notable achievements or features.</p>
+        <p>This poster was created using Adobe Illustrator and illustrates the concept of Mycelium, showcasing its mushroom-like roots that intertwine with trees and spread extensively. It also symbolizes connections, represented by groups of people linked to the intertwining roots, highlighting the interconnected nature of both the natural world and human relationships.</p>
         <a href="mycellium.pdf" download>Download PDF</a>
     </div>
 
@@ -144,14 +145,14 @@
             <img src="scavengerhunt.jpg" alt="Thumbnail for Scavenger Hunt PDF">
         </a>
         <h3>Scavenger Hunt Design</h3>
-        <p>Description of the Scavenger Hunt design project, its objectives, and any unique design elements.</p>
+        <p> This design was created for a scavenger hunt, featuring 9 clues leading to the treasure's location. I used Adobe Photoshop for the design process, incorporating textures resembling wrapping paper. The color palette of orange, pink, and blue was chosen to give it the appearance of a candy wrapper. </p>
         <a href="scavengerhunt.pdf" download>Download PDF</a>
     </div>
-</div>
+
             <div class="project">
-              <img src="poster.jpg" alt="Three-Letter Word Assigner">
-              <h3>Three-Letter Word Assigner</h3>
-              <p></p>
+              <img src="poster.jpg" alt="Anxiety & Its Impact on School Systems">
+              <h3>Anxiety & Its Impact on School Systems</h3>
+              <p>This poster provides an overview of anxiety and its effects on educational systems. It explains what anxiety is, the different types of anxiety, and the causes of school-related anxiety. I chose to explore this topic because I experienced severe anxiety as a child, which made me too nervous to speak aloud and often led me to communicate in whispers. While I have made significant progress in managing my anxiety, I believe it's an important subject to discuss. The project was crafted using Adobe InDesign for layout purposes, and I used Adobe Photoshop to alter the colors in the images.</p>
 
             </div>
 </div>
@@ -173,16 +174,8 @@
 
 </script>
 
-<script>
-document.getElementById('viewWork').addEventListener('click', function() {
-    document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
-});
 
-document.getElementById('contactMe').addEventListener('click', function() {
-    // Replace the email below with your own
-    window.location.href = 'mailto:your.email@example.com';
-});
-</script>
+
 
 
     <script>
@@ -203,43 +196,6 @@ document.getElementById('contactMe').addEventListener('click', function() {
     </script>
 
 
-    <script>
-    const searchFunction = () => {
-        const input = document.getElementById('searchInput2').value.toLowerCase();
-        const resultsContainer = document.getElementById('searchResults2');
-
-        // Make the results container visible only if there's input
-        if (input) {
-            resultsContainer.style.display = 'block';
-        } else {
-            resultsContainer.style.display = 'none';
-            return; // Exit the function early if there's no input
-        }
-
-        resultsContainer.innerHTML = ''; // Clear previous results
-
-        const searchData = [
-            { name: 'About', url: '..//about/index.html' },
-          { name: 'Contact', url: '..//contact/index.html' },
-
-
-
-        ];
-
-        const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
-
-        filteredData.forEach(item => {
-            const div = document.createElement('div');
-            const a = document.createElement('a');
-            a.textContent = item.name;
-            a.href = item.url;
-
-            div.appendChild(a);
-            resultsContainer.appendChild(div);
-        });
-    };
-
-    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -352,52 +308,45 @@ document.getElementById('contactMe').addEventListener('click', function() {
           }
 
           function applyDefaultTheme() {
-              // Remove specific theme-related classes
-              document.body.classList.remove('dark-mode', 'light-mode');
+          document.body.classList.remove('dark-mode', 'light-mode');
+          updateStylesBasedOnTheme();
+      }
 
-              // Revert styles of elements affected by theme changes
-              var dropup = document.getElementById('accessibility-dropup');
-              if (dropup) {
-                  dropup.style.backgroundColor = ''; // Set this to your default background color
-                  dropup.style.color = ''; // Set this to your default text color
-              }
-
-              // Update the UI elements to reflect the default theme
-              updateStylesBasedOnTheme();
-          }
-        function updateStylesBasedOnTheme() {
+      function updateStylesBasedOnTheme() {
           var dropup = document.getElementById('accessibility-dropup');
-          if (document.body.classList.contains('light-mode')) {
-              dropup.style.backgroundColor = 'white';
-              dropup.style.color = 'black';
-          } else if (document.body.classList.contains('dark-mode')) {
-              dropup.style.backgroundColor = 'dodgerblue';
-              dropup.style.color = 'white';
-          } else {
-              // Handle the default theme's styles here
-              dropup.style.backgroundColor = ''; // Your site's default background color
-              dropup.style.color = ''; // Your site's default text color
+          if (dropup) {
+              if (document.body.classList.contains('light-mode')) {
+                  dropup.style.backgroundColor = 'white';
+                  dropup.style.color = 'black';
+              } else if (document.body.classList.contains('dark-mode')) {
+                  dropup.style.backgroundColor = 'dodgerblue';
+                  dropup.style.color = 'white';
+              } else {
+                  dropup.style.backgroundColor = ''; // Set to your default background color
+                  dropup.style.color = ''; // Set to your default text color
+              }
           }
-       }
+      }
 
-          // Applies the saved theme or sets to default if none is saved
-        function applySavedTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.body.classList.add('light-mode');
-                document.body.classList.remove('dark-mode');
-            } else if (savedTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-                document.body.classList.remove('light-mode');
-            } else {
-                // Apply a default theme here if no preference is saved
-                applyDefaultTheme();
-            }
-            updateStylesBasedOnTheme();
-        }
-        // Ensure the saved theme is applied as soon as the document is fully loaded
-          document.addEventListener('DOMContentLoaded', applySavedTheme);
+      // Applies the saved theme or sets to default if none is saved
+      function applySavedTheme() {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'light') {
+              document.body.classList.add('light-mode');
+              document.body.classList.remove('dark-mode');
+          } else if (savedTheme === 'dark') {
+              document.body.classList.add('dark-mode');
+              document.body.classList.remove('light-mode');
+          } else {
+              applyDefaultTheme();
+          }
+          updateStylesBasedOnTheme();
+      }
+
+      // Ensure the saved theme is applied as soon as the document is fully loaded
+      document.addEventListener('DOMContentLoaded', applySavedTheme);
         </script>
+
 
 
         <script>

@@ -54,6 +54,7 @@
          <!-- User Information Dropdown -->
          <input type="text" id="searchInput2" placeholder="Search.." onkeyup="searchFunction()">
          <button id="clearSearch" onclick="clearSearchFunction()">X</button>
+
            <!-- Other navigation items -->
 
 
@@ -123,7 +124,7 @@
           <div class="portfolio">
               <!-- Project with Video -->
               <div class="project">
-                  <video controls poster="path_to_thumbnail_reminiscence.jpg" alt="VCU Golden Rams">
+                  <video controls poster="goldenrams.jpg" alt="VCU Golden Rams">
                       <source src="goldenrams.mov" type="video/mp4">
                       Your browser does not support the video tag.
                   </video>
@@ -134,7 +135,7 @@
 
               <!-- Another Project with Video -->
               <div class="project">
-                  <video controls poster="path_to_thumbnail_threeletter.jpg" alt="500 Pictures Video">
+                  <video controls poster="500pictures.jpg" alt="500 Pictures Video">
                       <source src="500pictures.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                   </video>
@@ -161,16 +162,7 @@
 
 </script>
 
-<script>
-document.getElementById('viewWork').addEventListener('click', function() {
-    document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
-});
 
-document.getElementById('contactMe').addEventListener('click', function() {
-    // Replace the email below with your own
-    window.location.href = 'mailto:your.email@example.com';
-});
-</script>
 
 
     <script>
@@ -191,43 +183,7 @@ document.getElementById('contactMe').addEventListener('click', function() {
     </script>
 
 
-    <script>
-    const searchFunction = () => {
-        const input = document.getElementById('searchInput2').value.toLowerCase();
-        const resultsContainer = document.getElementById('searchResults2');
 
-        // Make the results container visible only if there's input
-        if (input) {
-            resultsContainer.style.display = 'block';
-        } else {
-            resultsContainer.style.display = 'none';
-            return; // Exit the function early if there's no input
-        }
-
-        resultsContainer.innerHTML = ''; // Clear previous results
-
-        const searchData = [
-            { name: 'About', url: '..//about/index.html' },
-          { name: 'Contact', url: '..//contact/index.html' },
-
-
-
-        ];
-
-        const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
-
-        filteredData.forEach(item => {
-            const div = document.createElement('div');
-            const a = document.createElement('a');
-            a.textContent = item.name;
-            a.href = item.url;
-
-            div.appendChild(a);
-            resultsContainer.appendChild(div);
-        });
-    };
-
-    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -340,51 +296,43 @@ document.getElementById('contactMe').addEventListener('click', function() {
           }
 
           function applyDefaultTheme() {
-              // Remove specific theme-related classes
-              document.body.classList.remove('dark-mode', 'light-mode');
+        document.body.classList.remove('dark-mode', 'light-mode');
+        updateStylesBasedOnTheme();
+    }
 
-              // Revert styles of elements affected by theme changes
-              var dropup = document.getElementById('accessibility-dropup');
-              if (dropup) {
-                  dropup.style.backgroundColor = ''; // Set this to your default background color
-                  dropup.style.color = ''; // Set this to your default text color
-              }
-
-              // Update the UI elements to reflect the default theme
-              updateStylesBasedOnTheme();
-          }
-        function updateStylesBasedOnTheme() {
-          var dropup = document.getElementById('accessibility-dropup');
-          if (document.body.classList.contains('light-mode')) {
-              dropup.style.backgroundColor = 'white';
-              dropup.style.color = 'black';
-          } else if (document.body.classList.contains('dark-mode')) {
-              dropup.style.backgroundColor = 'dodgerblue';
-              dropup.style.color = 'white';
-          } else {
-              // Handle the default theme's styles here
-              dropup.style.backgroundColor = ''; // Your site's default background color
-              dropup.style.color = ''; // Your site's default text color
-          }
-       }
-
-          // Applies the saved theme or sets to default if none is saved
-        function applySavedTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.body.classList.add('light-mode');
-                document.body.classList.remove('dark-mode');
-            } else if (savedTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-                document.body.classList.remove('light-mode');
+    function updateStylesBasedOnTheme() {
+        var dropup = document.getElementById('accessibility-dropup');
+        if (dropup) {
+            if (document.body.classList.contains('light-mode')) {
+                dropup.style.backgroundColor = 'white';
+                dropup.style.color = 'black';
+            } else if (document.body.classList.contains('dark-mode')) {
+                dropup.style.backgroundColor = 'dodgerblue';
+                dropup.style.color = 'white';
             } else {
-                // Apply a default theme here if no preference is saved
-                applyDefaultTheme();
+                dropup.style.backgroundColor = ''; // Set to your default background color
+                dropup.style.color = ''; // Set to your default text color
             }
-            updateStylesBasedOnTheme();
         }
-        // Ensure the saved theme is applied as soon as the document is fully loaded
-          document.addEventListener('DOMContentLoaded', applySavedTheme);
+    }
+
+    // Applies the saved theme or sets to default if none is saved
+    function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
+        } else if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+        } else {
+            applyDefaultTheme();
+        }
+        updateStylesBasedOnTheme();
+    }
+
+    // Ensure the saved theme is applied as soon as the document is fully loaded
+    document.addEventListener('DOMContentLoaded', applySavedTheme);
         </script>
 
 

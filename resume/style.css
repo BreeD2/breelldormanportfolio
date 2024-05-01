@@ -1108,7 +1108,7 @@ body {
 
 
 body {
-  background-color: ghostwhite;
+  background-color: white;
   font-family: 'arial', sans-serif;
   height:auto
 }
@@ -4900,7 +4900,7 @@ body {
 }
 
 .project p {
-    padding: 10px;
+    padding: 20px;
     margin: 0;
     background-color: #f9f9f9;
     text-align: center;
@@ -5076,4 +5076,156 @@ left:15px;
     iframe {
         height: 400px; /* Even smaller height for very small devices */
     }
+}
+
+
+.dark-mode .project a {
+  background-color:none
+}
+
+.light-mode .project a {
+  background-color:white
+}
+
+.light-mode .project a:hover {
+  background-color:darkgrey
+}
+
+.dark-mode .project a:hover {
+  background-color:grey
+}
+
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(4){
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+background-color: grey
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+background-color: lightgrey
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+background-color: dimgrey
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+background-color: grey
+}
+
+#main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+
+  background-color: grey;
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+
+  background-color: dimgrey;
+  color: white;
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover {
+
+  background-color: lightgrey;
+  color: white;
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover {
+
+  background-color: grey;
+  color: white;
+
+}
+.project a {
+  background: none
+}
+
+
+
+body.light-mode .topnav a.active:hover {
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+body.dark-mode .topnav a.active:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.dark-mode .project p {
+
+    color:white;
+    background-color: black
+}
+
+.light-mode .project p {
+  background-color: white;
+  color:black
+}
+
+.project p {
+  padding:20px;
+  text-align: left;
+  background-color: white
+}
+
+.project h3 {
+    margin: 0.5em 0;
+      padding:10px;
+}
+
+.dark-mode .project {
+  background-color: black
+}
+
+.dark-mode #main-content > div.portfolio {
+  background-color: #333;
+}
+
+.project {
+  background: white
+}
+
+.light-mode .project a:hover {
+  background: none
+}
+
+.light-mode body {
+  background: red
+}
+
+
+body.light-mode {
+  background-color: white
+}
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
 }

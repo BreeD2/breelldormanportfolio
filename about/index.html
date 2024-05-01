@@ -135,26 +135,27 @@
     <section id="skills">
         <h2>My Skills</h2>
         <div class="skill">
-            <label for="adobe">Adobe Creative Suite:</label>
+            <div class="skill-name">Adobe Creative Suite:</div>
             <div class="skill-bar" id="adobe" style="width: 90%;"></div>
         </div>
         <div class="skill">
-            <label for="webdesign">Web Design</label>
+            <div class="skill-name">Web Design</div>
             <div class="skill-bar" id="webdesign" style="width: 85%;"></div>
         </div>
         <div class="skill">
-            <label for="printdesign">Print Design:</label>
+            <div class="skill-name">Print Design:</div>
             <div class="skill-bar" id="printdesign" style="width: 60%;"></div>
         </div>
         <div class="skill">
-            <label for="colortheme">Color Theme</label>
+            <div class="skill-name">Color Theme</div>
             <div class="skill-bar" id="colortheme" style="width: 80%;"></div>
         </div>
         <div class="skill">
-            <label for="photography">Photography and Photo Editing</label>
+            <div class="skill-name">Photography and Photo Editing</div>
             <div class="skill-bar" id="photography" style="width: 60%;"></div>
         </div>
     </section>
+
 
 
 
@@ -401,21 +402,13 @@ function myFunction() {
       }
 
       function applyDefaultTheme() {
-          // Remove specific theme-related classes
-          document.body.classList.remove('dark-mode', 'light-mode');
+  document.body.classList.remove('dark-mode', 'light-mode');
+  updateStylesBasedOnTheme();
+}
 
-          // Revert styles of elements affected by theme changes
-          var dropup = document.getElementById('accessibility-dropup');
-          if (dropup) {
-              dropup.style.backgroundColor = ''; // Set this to your default background color
-              dropup.style.color = ''; // Set this to your default text color
-          }
-
-          // Update the UI elements to reflect the default theme
-          updateStylesBasedOnTheme();
-      }
-    function updateStylesBasedOnTheme() {
-      var dropup = document.getElementById('accessibility-dropup');
+function updateStylesBasedOnTheme() {
+  var dropup = document.getElementById('accessibility-dropup');
+  if (dropup) {
       if (document.body.classList.contains('light-mode')) {
           dropup.style.backgroundColor = 'white';
           dropup.style.color = 'black';
@@ -423,29 +416,29 @@ function myFunction() {
           dropup.style.backgroundColor = 'dodgerblue';
           dropup.style.color = 'white';
       } else {
-          // Handle the default theme's styles here
-          dropup.style.backgroundColor = ''; // Your site's default background color
-          dropup.style.color = ''; // Your site's default text color
+          dropup.style.backgroundColor = ''; // Set to your default background color
+          dropup.style.color = ''; // Set to your default text color
       }
-   }
+  }
+}
 
-      // Applies the saved theme or sets to default if none is saved
-    function applySavedTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            document.body.classList.add('light-mode');
-            document.body.classList.remove('dark-mode');
-        } else if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
-        } else {
-            // Apply a default theme here if no preference is saved
-            applyDefaultTheme();
-        }
-        updateStylesBasedOnTheme();
-    }
-    // Ensure the saved theme is applied as soon as the document is fully loaded
-      document.addEventListener('DOMContentLoaded', applySavedTheme);
+// Applies the saved theme or sets to default if none is saved
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+      document.body.classList.remove('dark-mode');
+  } else if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+  } else {
+      applyDefaultTheme();
+  }
+  updateStylesBasedOnTheme();
+}
+
+// Ensure the saved theme is applied as soon as the document is fully loaded
+document.addEventListener('DOMContentLoaded', applySavedTheme);
     </script>
 
    </body>

@@ -152,7 +152,7 @@
   <!-- Footer Section -->
   <div class="footer">
       <h3>© 2022-2024 Bree Dorman's Artistry</h3>
-      <img src="favicon.ico" alt="Bree's Logo">
+      <img src="..//favicon.ico" alt="Bree's Logo">
       <p>1-804-728-7493</p>
       <p><a href="mailto:brekd816@gmail.com">brekd816@gmail.com</a></p>
   </div>
@@ -392,50 +392,42 @@
         }
 
         function applyDefaultTheme() {
-            // Remove specific theme-related classes
-            document.body.classList.remove('dark-mode', 'light-mode');
+        document.body.classList.remove('dark-mode', 'light-mode');
+        updateStylesBasedOnTheme();
+    }
 
-            // Revert styles of elements affected by theme changes
-            var dropup = document.getElementById('accessibility-dropup');
-            if (dropup) {
-                dropup.style.backgroundColor = ''; // Set this to your default background color
-                dropup.style.color = ''; // Set this to your default text color
-            }
-
-            // Update the UI elements to reflect the default theme
-            updateStylesBasedOnTheme();
-        }
-      function updateStylesBasedOnTheme() {
+    function updateStylesBasedOnTheme() {
         var dropup = document.getElementById('accessibility-dropup');
-        if (document.body.classList.contains('light-mode')) {
-            dropup.style.backgroundColor = 'white';
-            dropup.style.color = 'black';
-        } else if (document.body.classList.contains('dark-mode')) {
-            dropup.style.backgroundColor = 'dodgerblue';
-            dropup.style.color = 'white';
-        } else {
-            // Handle the default theme's styles here
-            dropup.style.backgroundColor = ''; // Your site's default background color
-            dropup.style.color = ''; // Your site's default text color
+        if (dropup) {
+            if (document.body.classList.contains('light-mode')) {
+                dropup.style.backgroundColor = 'white';
+                dropup.style.color = 'black';
+            } else if (document.body.classList.contains('dark-mode')) {
+                dropup.style.backgroundColor = 'dodgerblue';
+                dropup.style.color = 'white';
+            } else {
+                dropup.style.backgroundColor = ''; // Set to your default background color
+                dropup.style.color = ''; // Set to your default text color
+            }
         }
-     }
+    }
 
-        // Applies the saved theme or sets to default if none is saved
-      function applySavedTheme() {
-          const savedTheme = localStorage.getItem('theme');
-          if (savedTheme === 'light') {
-              document.body.classList.add('light-mode');
-              document.body.classList.remove('dark-mode');
-          } else if (savedTheme === 'dark') {
-              document.body.classList.add('dark-mode');
-              document.body.classList.remove('light-mode');
-          } else {
-              // Apply a default theme here if no preference is saved
-              applyDefaultTheme();
-          }
-          updateStylesBasedOnTheme();
-      }
-      // Ensure the saved theme is applied as soon as the document is fully loaded
-        document.addEventListener('DOMContentLoaded', applySavedTheme);
+    // Applies the saved theme or sets to default if none is saved
+    function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
+        } else if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+        } else {
+            applyDefaultTheme();
+        }
+        updateStylesBasedOnTheme();
+    }
+
+    // Ensure the saved theme is applied as soon as the document is fully loaded
+    document.addEventListener('DOMContentLoaded', applySavedTheme);
       </script>
 </body>

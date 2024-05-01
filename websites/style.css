@@ -1108,7 +1108,7 @@ body {
 
 
 body {
-  background-color: ghostwhite;
+  background-color: white;
   font-family: 'arial', sans-serif;
   height:auto
 }
@@ -4899,7 +4899,7 @@ body {
 }
 
 .project p {
-    padding: 10px;
+    padding: 20px;
     margin: 0;
     background-color: #f9f9f9;
     text-align: center;
@@ -4988,20 +4988,6 @@ body {
   color: #666;
 }
 
-.project a {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.project a:hover {
-  background-color:dodgerblue;
-}
 
 .project:hover {
   transform: translateY(-5px);
@@ -5063,4 +5049,83 @@ left:15px;
     border-radius: 5px;
     top: 0px;
     }
+}
+
+.dark-mode .project a {
+  background-color:dimgrey
+}
+
+.light-mode .project a {
+  background-color:grey
+}
+
+.light-mode .project a:hover {
+  background-color:darkgrey
+}
+
+.dark-mode .project a:hover {
+  background-color:grey
+}
+
+
+.project a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project a:hover {
+  background-color:black;
+}
+
+
+body.light-mode .topnav a.active:hover {
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+body.dark-mode .topnav a.active:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.dark-mode .project p {
+
+    color:white;
+    background-color: black
+}
+
+.light-mode .project p {
+  background-color: white;
+  color:black
+}
+
+.project p {
+  padding:20px;
+  text-align: left
+}
+
+.project h3 {
+    margin: 0.5em 0;
+      padding:10px;
+}
+
+.dark-mode .project {
+  background-color: black
+}
+
+.dark-mode #main-content > div.portfolio {
+  background-color: #333;
+}
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
 }

@@ -1108,7 +1108,7 @@ body {
 
 
 body {
-  background-color: ghostwhite;
+  background-color: white;
   font-family: 'arial', sans-serif;
   height:auto
 }
@@ -4899,7 +4899,7 @@ body {
 }
 
 .project p {
-    padding: 10px;
+    padding: 20px;
     margin: 0;
     background-color: #f9f9f9;
     text-align: center;
@@ -5063,4 +5063,197 @@ left:15px;
     border-radius: 5px;
     top: 0px;
     }
+}
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+
+.dark-mode #main-content > header > p {
+  color:white
+}
+
+.light-mode #main-content > header > p {
+  color:white
+}
+
+.dark-mode #main-content > header > h1 {
+  color:white
+}
+
+.dark-mode #about > h2 {
+  color:white
+}
+
+.light-mode #about > h2 {
+  color:black
+}
+
+.dark-mode #main-content > header {
+  background-color: dimgrey
+}
+
+.dark-mode #work > div > div > p {
+  background-color: black;
+  color:white
+}
+
+.light-mode #work > div > div > p {
+  background-color: white;
+  color:black
+}
+
+.light-mode #work > div > div > a {
+  background-color: white;
+  color:black
+}
+
+.dark-mode #work > div > div > a {
+  background-color: black;
+  color:white
+}
+
+#main-content > header {
+  background-color: lightpink;
+  color:white
+}
+
+.light-mode #main-content > header {
+  background-color: lightgrey;
+  color:black
+}
+
+.light-mode #main-content > header > p {
+    color: black;
+}
+
+
+.dark-mode .project a {
+  background-color:dimgrey
+}
+
+.light-mode .project a {
+  background-color:grey
+}
+
+.light-mode .project a:hover {
+  background-color:darkgrey
+}
+
+.dark-mode .project a:hover {
+  background-color:grey
+}
+
+
+.project a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project a:hover {
+  background-color:black;
+}
+
+
+body.light-mode .topnav a.active:hover {
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+body.dark-mode .topnav a.active:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.dark-mode .project p {
+
+    color:white;
+    background-color: black
+}
+
+.light-mode .project p {
+  background-color: white;
+  color:black
+}
+
+.project p {
+  padding:20px;
+  text-align: left;
+}
+
+.project h3 {
+    margin: 0.5em 0;
+      padding:10px;
+}
+
+.dark-mode .project {
+  background-color: black
+}
+
+.dark-mode #main-content > div.portfolio {
+  background-color: #333;
+}
+
+.light-mode #work > div > div > a {
+  background-color: grey;
+  color:white;
+}
+
+.light-mode #work > div > div > a:hover {
+  background-color: lightgrey
+}
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.project {
+    width: 45%; /* Adjust width as necessary */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the content fits within the borders */
+}
+
+.project video {
+    width: 100%; /* Ensures the video fits the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the video */
+}
+
+.project h3 {
+
+    padding: 10px 15px; /* Padding inside the header */
+    margin: 0; /* Remove default margin */
+
+}
+
+.project p {
+    padding: 10px 15px; /* Padding around the text */
+    background: none;
+    line-height: 1.5; /* More readable line height */
+    margin: 0 0 10px 0; /* Spacing at the bottom */
 }
