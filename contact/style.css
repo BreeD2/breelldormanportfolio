@@ -938,7 +938,7 @@ body.invert-colors {
 
 
 :focus {
-    outline: 2px solid #0078d4; /* Add a focus indicator for keyboard users */
+    outline: 1px solid dodgerblue; /* Add a focus indicator for keyboard users */
 }
 
 }
@@ -5234,6 +5234,7 @@ color:white
 .text-center {
   text-align: center;
     border-radius: 8px;
+    background-color: white
 }
 
 .head {
@@ -5312,7 +5313,7 @@ input[type="submit"]:hover {
 
 #main-content > div.container {
     margin-top: 100px;
-    background-color: white;
+
     border-radius: 10px;
 color: black;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -5320,4 +5321,19 @@ color: black;
 
 .dark-mode .text-center {
   background-color: black
+}
+
+
+.head {
+    border-bottom: 2px solid #ccc; /* Solid grey line */
+    padding-bottom: 10px; /* Space between the text and the line */
+}
+.intro {
+    border-bottom: 1px solid #ccc; /* Solid grey line */
+    padding-bottom: 10px; /* Space between the text and the line */
+}
+
+#subject {
+  min-height: 100px;
+    min-width: 200px;
 }

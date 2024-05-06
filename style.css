@@ -5081,6 +5081,7 @@ left:15px;
 
 
 
+
 .light-mode #work > div > div > p {
   background-color: white;
   color:black
@@ -5167,7 +5168,8 @@ body.dark-mode .topnav a.active:hover {
 
 .project p {
   padding:10px;
-  text-align: left
+  text-align: left;
+
 }
 
 .project h3 {
@@ -5221,4 +5223,11 @@ body.dark-mode .topnav a.active:hover {
 .light-mode #viewWork {
     background: grey;
 
+}
+.project {
+  
+    margin: 20px;       /* Adds space around each project */
+    padding: 10px;      /* Padding inside each project box */
+    background-color: #ffffff;  /* Ensures the shadow has a light background to stand out against */
+    transition: box-shadow 0.3s ease-in-out; /* Optional: Adds a smooth transition for the shadow effect */
 }
