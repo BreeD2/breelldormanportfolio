@@ -641,7 +641,7 @@ body.light-mode .topnav a:hover {
   color:black
 }
 .light-mode .fas.fa-wheelchair:hover {
-  color:white
+  color:black
 }
 .light-mode .fa.fa-user{
   color:black
@@ -1102,7 +1102,7 @@ input[type=text] {
   padding: 5px; /* Add padding */
 
   border: 1px solid #ccc; /* Add border */
-  border-radius: 5px; /* Add border radius for rounded corners */
+  border-radius: 8px; /* Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
   outline: none; /* Remove default outline */;
   font-family: arial;
@@ -2478,10 +2478,13 @@ body.light-mode .what {
   background-color: white
 }
 body.light-mode #about h2 {
-  color: black; /* Slightly darker color for headings for emphasis */
+  color: white; /* Slightly darker color for headings for emphasis */
 }
 body.light-mode #about {
-  background-color: lightgrey; /* Slightly darker color for headings for emphasis */
+  background-color: grey; /* Slightly darker color for headings for emphasis */
+}
+body.light-mode #about p{
+  color: white; /* Slightly darker color for headings for emphasis */
 }
 
 body.dark-mode #about {
@@ -3070,13 +3073,13 @@ color:black;
 }
 
 .light-mode .menu-toggle.active {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
 
 .light-mode .menu-toggle:hover {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
@@ -4864,7 +4867,7 @@ margin-top: 100px; /* Space below the heading */;
 }
 
 .project {
-    border: 1px solid #ddd;
+
     border-radius: 5px;
     overflow: hidden;
 }
@@ -4947,7 +4950,7 @@ margin-top: 100px; /* Space below the heading */;
 }
 
 .project {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
   transition: transform 0.3s ease-in-out;
 }
 
@@ -5071,6 +5074,13 @@ left:15px;
   color:white
 }
 
+#work > div > div > p {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+
+
 .light-mode #work > div > div > p {
   background-color: white;
   color:black
@@ -5166,7 +5176,8 @@ body.dark-mode .topnav a.active:hover {
 }
 
 .dark-mode .project {
-  background-color: black
+  background-color: black;
+  border:none
 }
 
 .dark-mode #main-content > div.portfolio {

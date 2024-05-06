@@ -662,7 +662,7 @@ body.light-mode .topnav a:hover {
   color:black
 }
 .light-mode .fas.fa-wheelchair:hover {
-  color:white
+  color:black
 }
 .light-mode .fa.fa-user{
   color:black
@@ -1123,7 +1123,7 @@ input[type=text] {
   padding: 5px; /* Add padding */
 
   border: 1px solid #ccc; /* Add border */
-  border-radius: 5px; /* Add border radius for rounded corners */
+  border-radius: 8px; /* Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
   outline: none; /* Remove default outline */;
   font-family: arial;
@@ -1307,7 +1307,7 @@ body.dark-mode .cog-icon * {
     margin: 10px 0;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     outline: none;
 
 }
@@ -3093,13 +3093,13 @@ color:black;
 }
 
 .light-mode .menu-toggle.active {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
 
 .light-mode .menu-toggle:hover {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
@@ -4340,7 +4340,7 @@ form input[type="password"] {
   width: calc(100% - 22px);
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   color:grey;
   font-family:arial;
 
@@ -4355,7 +4355,7 @@ form input[type="text"] {
   width: calc(100% - 22px);
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   color:grey;
   font-family:arial
 }
@@ -4461,7 +4461,7 @@ form input[type="text"] {
        width: 100%;
        padding: 8px;
        border: 1px solid #ddd;
-       border-radius: 4px;
+       border-radius: 8px;
        box-sizing: border-box; /* Ensures padding doesn't affect the input's width */
      }
 
@@ -5073,7 +5073,7 @@ input[type="email"], input[type="text"], select,{
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: helvetica
 }
 
@@ -5127,7 +5127,7 @@ input[type="email"], input[type="text"], select, textarea {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius:8px;
     font-size: 16px; /* Larger text for better readability */
 }
 
@@ -5233,12 +5233,14 @@ color:white
 
 .text-center {
   text-align: center;
+    border-radius: 8px;
 }
 
 .head {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 
 .intro {
   font-size: 16px;

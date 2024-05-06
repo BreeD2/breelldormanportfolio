@@ -662,7 +662,7 @@ body.light-mode .topnav a:hover {
   color:black
 }
 .light-mode .fas.fa-wheelchair:hover {
-  color:white
+  color:black
 }
 .light-mode .fa.fa-user{
   color:black
@@ -1119,7 +1119,7 @@ input[type=text] {
   padding: 5px; /* Add padding */
 
   border: 1px solid #ccc; /* Add border */
-  border-radius: 5px; /* Add border radius for rounded corners */
+  border-radius: 8px; /* Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
   outline: none; /* Remove default outline */;
   font-family: arial;
@@ -3090,13 +3090,13 @@ color:black;
 }
 
 .light-mode .menu-toggle.active {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
 
 .light-mode .menu-toggle:hover {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
@@ -4885,7 +4885,7 @@ body {
 
 .project {
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -5064,19 +5064,19 @@ left:15px;
 
 
 .dark-mode .project a {
-  background-color:none
+  background:none
 }
 
 .light-mode .project a {
-  background-color:white
+  background:none
 }
 
 .light-mode .project a:hover {
-  background-color:darkgrey
+  background:none
 }
 
 .dark-mode .project a:hover {
-  background-color:grey
+  background:none
 }
 
 
@@ -5183,7 +5183,8 @@ body.dark-mode .topnav a.active:hover {
 }
 
 .dark-mode .project {
-  background-color: black
+  background-color: black;
+  border:none
 }
 
 .dark-mode #main-content > div.portfolio {

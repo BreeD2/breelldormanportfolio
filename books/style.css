@@ -664,7 +664,7 @@ body.light-mode .topnav a:hover {
   color:black
 }
 .light-mode .fas.fa-wheelchair:hover {
-  color:white
+  color:black
 }
 .light-mode .fa.fa-user{
   color:black
@@ -1125,7 +1125,7 @@ input[type=text] {
   padding: 5px; /* Add padding */
 
   border: 1px solid #ccc; /* Add border */
-  border-radius: 5px; /* Add border radius for rounded corners */
+  border-radius: 8px; /* Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
   outline: none; /* Remove default outline */;
   font-family: arial;
@@ -3084,14 +3084,16 @@ color:black;
 
 .light-mode .menu-toggle {
   background-color: whitesmoke;
-    box-shadow: 0px 2px 2px grey(19, 145, 237, 1);
+  box-shadow: 0px 2px 2px rgba(19, 145, 237, 1);
+
   color:black;
 }
 
 .dark-mode .menu-toggle {
   background-color: black;
   color:white;
-  box-shadow: 0px 2px 2px grey(19, 145, 237, 1);
+  box-shadow: 0px 2px 2px rgba(19, 145, 237, 1);
+
 }
 
 .light-mode .menu-toggle.active {
@@ -3101,10 +3103,11 @@ color:black;
 }
 
 .light-mode .menu-toggle:hover {
-  background-color: white;
+  background-color: whitesmoke;
   color:black;
 
 }
+
 @media screen and (max-width: 600px) {
   .accessibility-text {
     display: none; /* Hides the "Accessibility" text */;
@@ -4891,7 +4894,7 @@ body {
 
 .project {
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -5105,19 +5108,19 @@ label {
 
 
 .dark-mode .project a {
-  background-color:none
+  background:none
 }
 
 .light-mode .project a {
-  background-color:white
+  background:none
 }
 
 .light-mode .project a:hover {
-  background-color:darkgrey
+  background:none
 }
 
 .dark-mode .project a:hover {
-  background-color:grey
+  background:none
 }
 
 
@@ -5224,7 +5227,8 @@ body.dark-mode .topnav a.active:hover {
 }
 
 .dark-mode .project {
-  background-color: black
+  background-color: black;
+  border: none
 }
 
 .dark-mode #main-content > div.portfolio {
@@ -5257,4 +5261,45 @@ body.light-mode {
 
 .project a:hover {
     background: none;
+}
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover{
+  background-color: black
+}
+
+#main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover{
+  background-color: black
+}
+
+#main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover{
+  background-color: black
+}
+
+
+
+
+
+#main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: mediumpurple
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: dimgrey
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+  background-color: darkgrey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: grey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+  background-color: lightgrey
+
 }
