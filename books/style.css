@@ -5279,10 +5279,15 @@ body.light-mode {
 
 
 
-#main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+#main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
   background-color: mediumpurple
 
 }
+
+#main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover{
+  background-color: black
+}
+
 
 .dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
   background-color: dimgrey
@@ -5300,6 +5305,40 @@ body.light-mode {
 }
 
 .light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+  background-color: lightgrey
+
+}
+
+
+
+#main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: mediumpurple
+
+}
+
+
+#main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: mediumpurple
+
+}
+
+
+.dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: dimgrey
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover {
+  background-color: darkgrey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: grey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover {
   background-color: lightgrey
 
 }

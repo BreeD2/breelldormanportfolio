@@ -4881,7 +4881,7 @@ margin-top: 100px; /* Space below the heading */;
 .project p {
     padding: 20px;
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: none;
     text-align: center;
 }
 
@@ -4959,9 +4959,7 @@ margin-top: 100px; /* Space below the heading */;
   height: auto;
 }
 
-.project h3 {
-  margin: 0.5em 0;
-}
+
 
 .project p {
   font-size: 0.9em;
@@ -5074,12 +5072,16 @@ left:15px;
   color:white
 }
 
-#work > div > div > p {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  background-color: white;
+#work > div > div > h3 {
+
+
+  font-size: 20px;
+  padding: 10px
 }
 
-
+#work > div > div:nth-child(1) > p > a {
+  background: none
+}
 
 
 .light-mode #work > div > div > p {
@@ -5225,8 +5227,9 @@ body.dark-mode .topnav a.active:hover {
 
 }
 .project {
-  
-    margin: 20px;       /* Adds space around each project */
+
+    margin: 20px;       /* Adds space around each project */;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px;      /* Padding inside each project box */
     background-color: #ffffff;  /* Ensures the shadow has a light background to stand out against */
     transition: box-shadow 0.3s ease-in-out; /* Optional: Adds a smooth transition for the shadow effect */
