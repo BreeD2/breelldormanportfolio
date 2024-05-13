@@ -5337,3 +5337,79 @@ color: black;
   min-height: 100px;
     min-width: 200px;
 }
+
+
+  .footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background-color: black;
+    margin-top:190px;
+      color:white;
+  }
+
+      body.dark-mode #sort-section, body.sort-section * {
+
+    background-color: #f1f1f1; /* Light grey background for the footer */
+
+    color: black; /* Dark text color for readability */
+
+  }
+  body.dark-mode h2, body.sort-section h2 * {
+
+
+
+color: black; /* Dark text color for readability */
+
+}
+
+
+body.dark-mode #about h2 {
+  color: black; /* Slightly darker color for headings for emphasis */
+}
+
+body.dark-mode #about p {
+color: white;
+}
+body.light-mode #about p {
+  color: black; /* Slightly darker color for headings for emphasis */
+}
+.what {
+  color:white;
+  font-size:30px;
+  font-weight: 500; /* Bold font weight for emphasis */
+}
+body.light-mode .what {
+  color:black;
+  background-color: white
+}
+body.light-mode #about h2 {
+  color: black; /* Slightly darker color for headings for emphasis */
+}
+body.light-mode #about {
+  background-color: white; /* Slightly darker color for headings for emphasis */
+}
+
+
+body.dark-mode #about {
+background-color: black;
+}
+body.dark-mode .featured-games-title {
+background-color: black;
+color:white
+}
+body.light-mode .featured-games-title {
+background-color: grey;
+color:white
+}
+
+
+body.dark-mode h2, body.sort-section h2 * {
+
+
+
+color: white; /* Dark text color for readability */
+
+}
