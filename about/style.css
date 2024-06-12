@@ -15,6 +15,11 @@ body {
 
 }
 
+#contact > p {
+  color:black;
+  padding-left:20px;
+  padding-right:20px
+}
 
 .topnav a {
   float: left;
@@ -29,7 +34,18 @@ body {
 .active {
   background-color: black;
   color: white;
-}
+}    -webkit-text-size-adjust: 100%;
+    --dropup-bg-light: grey;
+    --dropup-bg-dark: grey;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: inherit;
+    color: #666;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 
 .topnav .icon {
   display: none;
@@ -4799,6 +4815,11 @@ section {
     flex-wrap: wrap;
 }
 
+#skills > div > div.skill-name {
+  font-size: 15px;
+  padding:5px;
+}
+
 .project {
     margin: 10px;
 }
@@ -4951,6 +4972,22 @@ body {
   padding: 5px;
   font-size: 14px
 }
+
+#contact > p {
+  padding: 5px;
+  font-size: 14px
+}
+
+#contact > a {
+  padding: 5px;
+  font-size: 14px
+}
+
+#skills > div > div.skill-name {
+  padding: 5px;
+  font-size: 14px
+}
+
 }
 @media screen and (max-width: 600px) {
 #main-content > header > h1{
@@ -5274,3 +5311,4 @@ body.light-mode {
  #contact > a:hover {
   color: mediumpurple
 }
+

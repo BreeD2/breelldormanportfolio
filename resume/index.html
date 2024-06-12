@@ -33,7 +33,7 @@
       <!-- Navigation Bar with Logo and Website Name -->
       <div class="topnav" id="myTopnav">
         <a href="..//index.html" class="logo">
-          <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Bree Dorman</span>
+          <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Breell Dorman</span>
 
      </a>
      <!-- User Information Dropdown -->
@@ -96,7 +96,7 @@
 </aside>
 
 <!--  Toggle Button -->
-<div class="menu-toggle" aria-label="Toggle Sidebar">
+
 <i class="fas fa-wheelchair"></i>
 
 
@@ -125,8 +125,9 @@
 
 
 
-<iframe src="breedormanresume.pdf" width="100%" height="1000px"download>
-                         </iframe>
+<iframe src="breelldormanresume.pdf" type="application/pdf">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="breelldormanresume.pdf">Download PDF</a>.
+</iframe>
 
 
 
@@ -135,8 +136,8 @@
 
 <!-- Footer Section -->
 <div class="footer">
-    <h3>© 2022-2024 Bree Dorman's Artistry</h3>
-    <img src="..//favicon.ico" alt="Bree's Logo">
+    <h3>© 2022-2024 Breell Dorman's Artistry</h3>
+    <img src="..//favicon.ico" alt="Breell's Logo">
 
     <p><a href="mailto:bdormandesigns@gmail.com">bdormandesigns@gmail.com</a></p>
 </div>
@@ -145,281 +146,275 @@
 
 
 
-<script>
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('sidebar-visible');
-});
-
-</script>
-
 
 
 <script>
-const searchFunction = () => {
-    const input = document.getElementById('searchInput2').value.toLowerCase();
-    const resultsContainer = document.getElementById('searchResults2');
-    const clearButton = document.getElementById('clearSearch');
-
-    // Toggle visibility of results container and clear button based on input
-    if (input) {
-        resultsContainer.style.display = 'block';
-        clearButton.style.display = 'inline'; // Show the clear button when there's input
-    } else {
-        resultsContainer.style.display = 'none';
-        clearButton.style.display = 'none'; // Hide the clear button when input is empty
-    }
-
-    resultsContainer.innerHTML = ''; // Clear previous results
-
-
-    const searchData = [
-        { name: 'About', url: '..//about/index.html' },
-          { name: 'Book', url: '..//books/index.html' },
-            { name: 'Contact', url: '..//contact/index.html' },
-              { name: 'Home', url: 'index.html' },
-                { name: 'Posters', url: '..//posters/index.html' },
-                { name: 'Resume', url: '..//resume/index.html' },
-                  { name: 'Videos', url: '..//videos/index.html' },
-                  { name: 'Websites', url: '..//websites/index.html' },
-
-
-        // Add more results as needed
-    ];
-
-    const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
-
-    filteredData.forEach(item => {
-        const div = document.createElement('div');
-        const a = document.createElement('a');
-        a.textContent = item.name;
-        a.href = item.url;
-
-        div.appendChild(a);
-        resultsContainer.appendChild(div);
-    });
-};
-
-const clearSearchFunction = () => {
-    document.getElementById('searchInput2').value = ''; // Clear input
-    document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
-    document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
-    document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
-};
-
-// Optionally, automatically trigger the search function when the input is cleared
-document.getElementById('searchInput2').addEventListener('input', searchFunction);
-
-</script>
-
-
-
-  <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
-
-
-
-
-<script>
-
-      function search() {
-          var searchInput = document.getElementById("searchInput").value;
-          var searchResults = document.getElementById("searchResults");
-
-          // Implement your search functionality here
-          // For simplicity, I'm just showing and hiding the search-results div in this example
-          if (searchInput.trim() !== "") {
-              searchResults.style.display = "block";
-              searchResults.innerHTML = "Search results for: " + searchInput;
-          } else {
-              searchResults.style.display = "none";
-          }
-      }
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.body.classList.toggle('sidebar-visible');
+  });
+  
   </script>
-
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  var searchResults = document.getElementById("searchResults2");
-
-  if (x.className === "topnav") {
-    x.className += " responsive";
-    // Show searchResults2 when opening the menu
-    searchResults.style.display = "block";
-  } else {
-    x.className = "topnav";
-    // Hide searchResults2 when closing the menu
-    searchResults.style.display = "none";
+  
+  
+  
+  <script>
+  const searchFunction = () => {
+      const input = document.getElementById('searchInput2').value.toLowerCase();
+      const resultsContainer = document.getElementById('searchResults2');
+      const clearButton = document.getElementById('clearSearch');
+  
+      // Toggle visibility of results container and clear button based on input
+      if (input) {
+          resultsContainer.style.display = 'block';
+          clearButton.style.display = 'inline'; // Show the clear button when there's input
+      } else {
+          resultsContainer.style.display = 'none';
+          clearButton.style.display = 'none'; // Hide the clear button when input is empty
+      }
+  
+      resultsContainer.innerHTML = ''; // Clear previous results
+  
+  
+      const searchData = [
+          { name: 'About', url: '..//about/index.html' },
+            { name: 'Book', url: '..//books/index.html' },
+              { name: 'Contact', url: '..//contact/index.html' },
+                { name: 'Home', url: 'index.html' },
+                  { name: 'Posters', url: '..//posters/index.html' },
+                  { name: 'Resume', url: '..//resume/index.html' },
+                    { name: 'Videos', url: '..//videos/index.html' },
+                    { name: 'Websites', url: '..//websites/index.html' },
+  
+  
+          // Add more results as needed
+      ];
+  
+      const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
+  
+      filteredData.forEach(item => {
+          const div = document.createElement('div');
+          const a = document.createElement('a');
+          a.textContent = item.name;
+          a.href = item.url;
+  
+          div.appendChild(a);
+          resultsContainer.appendChild(div);
+      });
+  };
+  
+  const clearSearchFunction = () => {
+      document.getElementById('searchInput2').value = ''; // Clear input
+      document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
+      document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
+      document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
+  };
+  
+  // Optionally, automatically trigger the search function when the input is cleared
+  document.getElementById('searchInput2').addEventListener('input', searchFunction);
+  
+  </script>
+  
+  
+  
+    <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
   }
-}
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        storeOriginalFontSizes(); // Store original font sizes for specified elements
-    });
-
-    // Store the original font sizes
-    function storeOriginalFontSizes() {
-        const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, button#signupButton, p, .featured-games, .featured-games-title, .footer, #game2-info > h3, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div,#featured-games > div.featured-games-title,#about > div, #main-content > div.opening-screen > div > div, #enter-site-button';
-        document.querySelectorAll(selector).forEach(element => {
-            element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
-        });
+  </script>
+  
+  
+  
+  
+  
+  <script>
+  
+        function search() {
+            var searchInput = document.getElementById("searchInput").value;
+            var searchResults = document.getElementById("searchResults");
+  
+            // Implement your search functionality here
+            // For simplicity, I'm just showing and hiding the search-results div in this example
+            if (searchInput.trim() !== "") {
+                searchResults.style.display = "block";
+                searchResults.innerHTML = "Search results for: " + searchInput;
+            } else {
+                searchResults.style.display = "none";
+            }
+        }
+    </script>
+  
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    var searchResults = document.getElementById("searchResults2");
+  
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      // Show searchResults2 when opening the menu
+      searchResults.style.display = "block";
+    } else {
+      x.className = "topnav";
+      // Hide searchResults2 when closing the menu
+      searchResults.style.display = "none";
     }
-
-    // Adjust the font size of elements
-    function adjustFontSize(factor, selector) {
-        document.querySelectorAll(selector).forEach(element => {
-            const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
-            element.style.fontSize = `${currentFontSize * factor}px`;
-        });
-    }
-
-    // Increase font size
-    function increaseFont() {
-        adjustFontSize(1.1, '.sidebar *, #signupContainer, .underwelcome, .opening-screen button, p, #game2-info > h3, .featured-games-title, .footer, .featured-games, #about > div, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div, #main-content > div.opening-screen > div > div, .dropdown-content, #featured-games > div.featured-games-title, #enter-site-button');
-    }
-
-    // Decrease font size
-    function decreaseFont() {
-        adjustFontSize(0.9, '.sidebar *, #signupContainer, .underwelcome, .dropdown-content, #about > div, #game1-info > h3, #game3-info > h3, .dropdown, #game2-info > h3, .opening-screen button, #main-content > div.opening-screen > div > div, .featured-games, #featured-games > div.featured-games-title, .featured-games-title, p, .footer, #main-content > div.opening-screen > div, #enter-site-button');
-    }
-
-    // Reset font sizes to their original values
-    function resetFont() {
-        const selector = '.sidebar *, #signupContainer, .underwelcome, .opening-screen button,  #about > div, #game1-info > h3, #game3-info > h3, .featured-games, #game2-info > h3,#featured-games > div.featured-games-title, #main-content > div.opening-screen > div, .featured-games-title, p, .footer, #enter-site-button';
-        document.querySelectorAll(selector).forEach(element => {
-            const originalFontSize = element.getAttribute('data-original-font-size');
-            if (originalFontSize) element.style.fontSize = originalFontSize;
-        });
-    }
-
-    // Inverts colors
-    function invertColors() {
-        document.body.classList.toggle('invert-colors');
-    }
-
-    // Cancels any ongoing speech synthesis
-    if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-    }
-
-    // Toggles light mode
-    function toggleLightMode() {
-        document.body.classList.add('light-mode');
-        document.body.classList.remove('dark-mode');
-    }
-
-    // Toggles dark mode
-    function toggleDarkMode() {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-    }
-
-
-    // Reset settings including font sizes and other visual modifications
-    function resetSettings() {
-        resetFont(); // Resets font sizes
-        // Add other reset actions here (e.g., removing classes, resetting filters)
+  }
+  </script>
+  
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          storeOriginalFontSizes(); // Store original font sizes for specified elements
+      });
+  
+      // Store the original font sizes
+      function storeOriginalFontSizes() {
+          const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a';
+          document.querySelectorAll(selector).forEach(element => {
+              element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
+          });
+      }
+  
+      // Adjust the font size of elements
+      function adjustFontSize(factor, selector) {
+          document.querySelectorAll(selector).forEach(element => {
+              const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+              element.style.fontSize = `${currentFontSize * factor}px`;
+          });
+      }
+  
+      // Increase font size
+      function increaseFont() {
+          adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a');
+      }
+  
+      // Decrease font size
+      function decreaseFont() {
+          adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a');
+      }
+  
+      // Reset font sizes to their original values
+      function resetFont() {
+          const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a';
+          document.querySelectorAll(selector).forEach(element => {
+              const originalFontSize = element.getAttribute('data-original-font-size');
+              if (originalFontSize) element.style.fontSize = originalFontSize;
+          });
+      }
+  
+      // Inverts colors
+      function invertColors() {
+          document.body.classList.toggle('invert-colors');
+      }
+  
+      // Cancels any ongoing speech synthesis
+      if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+      }
+  
+      // Toggles light mode
+      function toggleLightMode() {
+          document.body.classList.add('light-mode');
+          document.body.classList.remove('dark-mode');
+      }
+  
+      // Toggles dark mode
+      function toggleDarkMode() {
+          document.body.classList.add('dark-mode');
+          document.body.classList.remove('light-mode');
+      }
+  
+  
+      // Reset settings including font sizes and other visual modifications
+      function resetSettings() {
+          resetFont(); // Resets font sizes
+          // Add other reset actions here (e.g., removing classes, resetting filters)
+          document.body.style.filter = '';
+          document.body.style.webkitFilter = '';
+          document.body.classList.remove('dark-mode');
+          document.body.classList.remove('invert-colors');
+          document.body.classList.remove('light-mode');
+  
+      }
+      // Increase font size
+          function increaseFont() {
+              adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2');
+          }
+  
+          // Decrease font size
+          function decreaseFont() {
+              adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2');
+          }
+  
+          // Toggle Light Mode
+        function toggleLightMode() {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light'); // Persist theme choice
+            updateStylesBasedOnTheme();
+        }
+  
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark'); // Persist theme choice
+            updateStylesBasedOnTheme();
+        }
+  
+        // Resets settings to default and clears theme preference
+        function resetSettings() {
+          resetFont(); // Resets font sizes
         document.body.style.filter = '';
         document.body.style.webkitFilter = '';
-        document.body.classList.remove('dark-mode');
-        document.body.classList.remove('invert-colors');
-        document.body.classList.remove('light-mode');
-
-    }
-    // Increase font size
-        function increaseFont() {
-            adjustFontSize(1.1, '.sidebar *, .game-container, .game-info, #likeButton, #commentButton,#likesCount, #ratingDisplay, #rateButton, .game-title,#commentsSection > strong, .footer');
+        document.body.classList.remove('dark-mode', 'light-mode', 'invert-colors');
+        localStorage.removeItem('theme'); // Clear the stored theme preference
+  
         }
-
-        // Decrease font size
-        function decreaseFont() {
-            adjustFontSize(0.9, '.sidebar *, .game-container, .game-info, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
-        }
-
-        // Toggle Light Mode
-      function toggleLightMode() {
-          document.body.classList.remove('dark-mode');
-          document.body.classList.add('light-mode');
-          localStorage.setItem('theme', 'light'); // Persist theme choice
-          updateStylesBasedOnTheme();
-      }
-
-      // Toggle Dark Mode
-      function toggleDarkMode() {
-          document.body.classList.remove('light-mode');
-          document.body.classList.add('dark-mode');
-          localStorage.setItem('theme', 'dark'); // Persist theme choice
-          updateStylesBasedOnTheme();
-      }
-
-      // Resets settings to default and clears theme preference
-      function resetSettings() {
-        resetFont(); // Resets font sizes
-      document.body.style.filter = '';
-      document.body.style.webkitFilter = '';
-      document.body.classList.remove('dark-mode', 'light-mode', 'invert-colors');
-      localStorage.removeItem('theme'); // Clear the stored theme preference
-
-      }
-
-      function applyDefaultTheme() {
-          // Remove specific theme-related classes
-          document.body.classList.remove('dark-mode', 'light-mode');
-
-          // Revert styles of elements affected by theme changes
-          var dropup = document.getElementById('accessibility-dropup');
-          if (dropup) {
-              dropup.style.backgroundColor = ''; // Set this to your default background color
-              dropup.style.color = ''; // Set this to your default text color
-          }
-
-          // Update the UI elements to reflect the default theme
-          updateStylesBasedOnTheme();
-      }
-    function updateStylesBasedOnTheme() {
-      var dropup = document.getElementById('accessibility-dropup');
-      if (document.body.classList.contains('light-mode')) {
-          dropup.style.backgroundColor = 'white';
-          dropup.style.color = 'black';
-      } else if (document.body.classList.contains('dark-mode')) {
-          dropup.style.backgroundColor = 'dodgerblue';
-          dropup.style.color = 'white';
-      } else {
-          // Handle the default theme's styles here
-          dropup.style.backgroundColor = ''; // Your site's default background color
-          dropup.style.color = ''; // Your site's default text color
-      }
-   }
-
-      // Applies the saved theme or sets to default if none is saved
-    function applySavedTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            document.body.classList.add('light-mode');
-            document.body.classList.remove('dark-mode');
-        } else if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
+  
+        function applyDefaultTheme() {
+    document.body.classList.remove('dark-mode', 'light-mode');
+    updateStylesBasedOnTheme();
+  }
+  
+  function updateStylesBasedOnTheme() {
+    var dropup = document.getElementById('accessibility-dropup');
+    if (dropup) {
+        if (document.body.classList.contains('light-mode')) {
+            dropup.style.backgroundColor = 'white';
+            dropup.style.color = 'black';
+        } else if (document.body.classList.contains('dark-mode')) {
+            dropup.style.backgroundColor = 'dodgerblue';
+            dropup.style.color = 'white';
         } else {
-            // Apply a default theme here if no preference is saved
-            applyDefaultTheme();
+            dropup.style.backgroundColor = ''; // Set to your default background color
+            dropup.style.color = ''; // Set to your default text color
         }
-        updateStylesBasedOnTheme();
     }
-    // Ensure the saved theme is applied as soon as the document is fully loaded
-      document.addEventListener('DOMContentLoaded', applySavedTheme);
-    </script>
+  }
+  
+  // Applies the saved theme or sets to default if none is saved
+  function applySavedTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+    } else if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+    } else {
+        applyDefaultTheme();
+    }
+    updateStylesBasedOnTheme();
+  }
+  
+  // Ensure the saved theme is applied as soon as the document is fully loaded
+  document.addEventListener('DOMContentLoaded', applySavedTheme);
+      </script>
 </body>

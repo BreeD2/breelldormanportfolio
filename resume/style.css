@@ -1,14 +1,10 @@
 * {
   box-sizing: border-box;
 }
-body {
-    font-family: "Montserrat", sans-serif
 
-      height:auto
-}
 
 body {
-  background-color:white;
+  background-color:black;
   height:auto  !important;
 
 
@@ -968,11 +964,7 @@ body.sepia-effect {
 .decrease-contrast {
   filter: contrast(90%);
 }
-/* Light mode styles */
-body {
-  background-color: #fff; /* Light background color */
-  color: #000; /* Dark text color */
-}
+
 
 
 
@@ -1014,11 +1006,7 @@ body.dark-mode .topnav {
 }
 
 
-/* Normal mode styles */
-body {
-  background-color: gray; /* Red background for normal mode */
-  color: #000;
-}
+
 
 
 
@@ -1043,11 +1031,7 @@ body.dark-mode .topnav a {
 
 
 
-/* Normal mode styles */
-body {
-  background-color: gainsboro; /* Red background for normal mode */
-  color: #000;
-}
+
 
 body .topnav {
   background-color: mediumpurple; /* Red background for the navbar in normal mode */
@@ -1061,11 +1045,7 @@ body .topnav a {
 }
 
 
-/* Normal mode styles */
-body {
-  background-color: #ff0000;
-  color: #000;
-}
+
 
 
 
@@ -1075,7 +1055,7 @@ body {
 
   /* Normal mode styles */
   body {
-    background-color: white;
+    background-color:white;
     color: #000;
   }
 
@@ -1107,11 +1087,7 @@ body {
 
 
 
-body {
-  background-color: white;
-  font-family: 'arial', sans-serif;
-  height:auto
-}
+
 #searchResults {font-family: 'arial', sans-serif; /* Add the desired font-family */;
 color:red;
 font-size: 15px;
@@ -3315,7 +3291,7 @@ color:black;
     }
     .menu-toggle {
       left:12px;
-      top:70px
+      top:30px
     }
 
 
@@ -5229,3 +5205,10 @@ body.light-mode {
 
 
 }
+
+#main-content > iframe {
+  margin-top: 30px;
+  width:100%;
+  height:1000px
+}
+
