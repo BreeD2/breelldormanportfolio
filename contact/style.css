@@ -5413,3 +5413,248 @@ body.dark-mode h2, body.sort-section h2 * {
 color: white; /* Dark text color for readability */
 
 }
+
+body.light-mode .topnav a {
+  color: #000; /* Black font color for the links in the navbar */;
+
+}
+
+body.light-mode .topnav a:hover {
+  color: white; /* Black font color for the links in the navbar */;
+
+}
+/* Dark Mode styles for dropdown and its content */
+.dark-mode .dropdown-content,
+ {
+  background-color: dimgrey; /* Dark Mode background color */;
+  color:white
+}
+.dark-mode .dropdown-content2 a:hover {
+  background-color: black
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  color: white;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.dropdown a:hover{
+  background-color: red;
+  color: white;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
+  background-color: grey;
+  color: white;
+}
+.light-mode .fa.fa-user:active {
+
+}
+
+.light-mode  .dropdown2:hover .dropbtn2 {
+  background-color: grey;
+  color: white;
+}
+
+.light-mode  .dropdown2 .dropdown .dropbtn2 {
+  background-color: grey;
+  color: black;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown-content:hover .dropbtn .i{
+  background-color: darkgrey;
+  color: black;
+}
+ .dropdown-content button:hover{
+  background-color: grey;
+  color: white;
+      width: 100%;
+}
+
+
+.light-mode  .dropdown-content2 a .dropbtn2 {
+  background-color: lightgrey;
+  color: black;
+}
+.light-mode  .dropdown-content2 .dropdown-content2 a{
+  background-color: grey;
+  color: black;
+}
+
+.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
+  color:black
+}
+
+.dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
+  background-color: slategrey;
+  color: white;
+}
+.light-mode .fas.fa-wheelchair {
+  color:black
+}
+.light-mode .fas.fa-wheelchair:hover {
+  color:white
+}
+.light-mode .fa.fa-user{
+  color:black
+}
+.light-mode .fa.fa-user:hover{
+  color:white
+}
+.light-mode .dropdown2:hover{
+  color:white
+}
+.light-mode .dropdown {
+  color:red
+}
+
+.light-mode .dropdown .dropbtn {
+  color:black
+}
+.dropdown .dropbtn {
+  color:white
+}
+.light-mode .dropdown2 .dropbtn2 {
+  color:black
+}
+.light-mode .dropdown-content:hover{
+  color:red
+}
+.light-mode .dropdown-content button {
+  color:red
+}
+
+
+
+/* Light mode styles */
+.light-mode .dropdown-content2 {
+  background-color: #555; /* Light background */
+  color: white; /* Dark text */
+}
+.light-mode .dropdown-content {
+  background-color: darkgrey; /* Light background */
+  color: white; /* Dark text */
+}
+
+.light-mode .fa {
+  color:black
+}
+.light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+
+/* Dark mode styles */
+.dark-mode .dropdown-content2, .dark-mode .dropdown-content {
+  background-color: #555; /* Dark background */
+  color: white; /* Light text */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn {
+  background-color: darkgrey; /* Dark background for contrast */
+  color: white; /* White text for readability */
+}
+
+.light-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also turn white on hover */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn {
+  background-color: #555; /* Lighter dark background for contrast */
+  color: white; /* Darker text for readability */
+}
+
+.dark-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also change color appropriately on hover */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn,
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: darkgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: grey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+
+.light-mode .dropdown-content2 a:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown-content button:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown:hover .dropbtn i,
+.light-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also turn white on hover in light mode */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn,
+.dark-mode .dropdown2:hover .dropbtn2 {
+  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+/* Hover effects for .dropbtn in dark mode */
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: #555; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+
+.dark-mode .dropdown:hover .dropbtn i,
+.dark-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also change color appropriately on hover in dark mode */
+}
+
+
+
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+}
+.fa.fa-user {
+  color:white
+}
+.dark-mode  .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode .dropdown-content {
+  background-color: slategrey;
+  color: white;
+}
+.dark-mode .dropdown-content button:hover {
+  background-color: black;
+  color: white;
+}
+body.light-mode .dropdown-content2 a {
+    color: white; /* This will now take precedence over the .topnav a color */;
+    background-color: transparent
+
+}
+

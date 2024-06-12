@@ -1534,140 +1534,6 @@ body.dark-mode .cog-icon * {
           position: relative;
         }
 
-        /* Hide the images by default */
-        .mySlides {
-          display: none;
-        }
-
-        /* Add a pointer when hovering over the thumbnail images */
-        .cursor {
-          cursor: pointer;
-        }
-
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 40%;
-          width: auto;
-          padding: 16px;
-          margin-top: -50px;
-          color: white;
-
-          font-size: 20px;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-          -webkit-user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-
-        /* Container for image text */
-        .caption-container {
-          text-align: center;
-          background-color: #222;
-          padding: 2px 16px;
-          color: white;
-        }
-
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-
-        /* Six columns side by side */
-        .column {
-          float: left;
-          width: 16.66%;
-        }
-
-        /* Add a transparency effect for thumnbail images */
-        .demo {
-          opacity: 0.6;
-        }
-
-        .active,
-        .demo:hover {
-          opacity: 1;
-        }
-        select {
-  background-color: white;
-  color: black;
-  font-weight: normal;
-  width: 30%;
-  font-style: normal;
-
-
-}
-
-select:hover {
-  border-color: blue;
-  border: 2px solid blue
-}
-
-
-
-
-
-.opening-screen p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.opening-screen button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    background-color: grey;
-}
-#enter-site-button {
-    padding: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    margin-top: 3%;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-    background-color: red; /* Green background */
-    color: white; /* White text */
-    font-weight: bold; /* Make the text bold */;
-    border-color: #fff; /* White border on hover/focus */
-
-}
-
-#enter-site-button:hover, #enter-site-button:focus {
-    background-color: dodgerblue;
-    border-color: #fff; /* White border on hover/focus */
-}
-
-#enter-site-button:active {
-    background-color: #3e8e41; /* Even darker green when active/clicked */
-    transform: translateY(2px); /* Mimic button press */
-}
 
 
 
@@ -4812,13 +4678,10 @@ button {
   text-decoration: underline;
 }
 
-#main-content > header {
 
-  height: 400px;
-}
 
 #main-content > header > h1 {
-  margin-top: 100px
+  margin-top: 0px
 }
 
 #about {
@@ -5074,7 +4937,7 @@ left:15px;
 
 #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4){
   display: inline-block;
-  margin: 10px 0;
+  margin: 0px 0;
   padding: 10px 20px;
   background-color: mediumpurple;
   color: white;
@@ -5101,7 +4964,7 @@ background-color: grey
 
 #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
   display: inline-block;
-  margin: 10px 0;
+  margin: 0px 0;
   padding: 10px 20px;
   background-color: mediumpurple;
   color: white;
@@ -5207,8 +5070,254 @@ body.light-mode {
 }
 
 #main-content > iframe {
-  margin-top: 30px;
+
   width:100%;
-  height:1000px
+  height:1000px;
+  margin: -32px;
 }
 
+
+
+body.light-mode .topnav a {
+  color: #000; /* Black font color for the links in the navbar */;
+
+}
+
+body.light-mode .topnav a:hover {
+  color: white; /* Black font color for the links in the navbar */;
+
+}
+/* Dark Mode styles for dropdown and its content */
+.dark-mode .dropdown-content,
+ {
+  background-color: dimgrey; /* Dark Mode background color */;
+  color:white
+}
+.dark-mode .dropdown-content2 a:hover {
+  background-color: black
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  color: white;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.dropdown a:hover{
+  background-color: red;
+  color: white;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
+  background-color: grey;
+  color: white;
+}
+.light-mode .fa.fa-user:active {
+
+}
+
+.light-mode  .dropdown2:hover .dropbtn2 {
+  background-color: grey;
+  color: white;
+}
+
+.light-mode  .dropdown2 .dropdown .dropbtn2 {
+  background-color: grey;
+  color: black;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown-content:hover .dropbtn .i{
+  background-color: darkgrey;
+  color: black;
+}
+ .dropdown-content button:hover{
+  background-color: grey;
+  color: white;
+      width: 100%;
+}
+
+
+.light-mode  .dropdown-content2 a .dropbtn2 {
+  background-color: lightgrey;
+  color: black;
+}
+.light-mode  .dropdown-content2 .dropdown-content2 a{
+  background-color: grey;
+  color: black;
+}
+
+.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
+  color:black
+}
+
+.dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
+  background-color: slategrey;
+  color: white;
+}
+.light-mode .fas.fa-wheelchair {
+  color:black
+}
+.light-mode .fas.fa-wheelchair:hover {
+  color:white
+}
+.light-mode .fa.fa-user{
+  color:black
+}
+.light-mode .fa.fa-user:hover{
+  color:white
+}
+.light-mode .dropdown2:hover{
+  color:white
+}
+.light-mode .dropdown {
+  color:red
+}
+
+.light-mode .dropdown .dropbtn {
+  color:black
+}
+.dropdown .dropbtn {
+  color:white
+}
+.light-mode .dropdown2 .dropbtn2 {
+  color:black
+}
+.light-mode .dropdown-content:hover{
+  color:red
+}
+.light-mode .dropdown-content button {
+  color:red
+}
+
+
+
+/* Light mode styles */
+.light-mode .dropdown-content2 {
+  background-color: #555; /* Light background */
+  color: white; /* Dark text */
+}
+.light-mode .dropdown-content {
+  background-color: darkgrey; /* Light background */
+  color: white; /* Dark text */
+}
+
+.light-mode .fa {
+  color:black
+}
+.light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+
+/* Dark mode styles */
+.dark-mode .dropdown-content2, .dark-mode .dropdown-content {
+  background-color: #555; /* Dark background */
+  color: white; /* Light text */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn {
+  background-color: darkgrey; /* Dark background for contrast */
+  color: white; /* White text for readability */
+}
+
+.light-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also turn white on hover */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn {
+  background-color: #555; /* Lighter dark background for contrast */
+  color: white; /* Darker text for readability */
+}
+
+.dark-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also change color appropriately on hover */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn,
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: darkgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: grey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+
+.light-mode .dropdown-content2 a:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown-content button:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown:hover .dropbtn i,
+.light-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also turn white on hover in light mode */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn,
+.dark-mode .dropdown2:hover .dropbtn2 {
+  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+/* Hover effects for .dropbtn in dark mode */
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: #555; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+
+.dark-mode .dropdown:hover .dropbtn i,
+.dark-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also change color appropriately on hover in dark mode */
+}
+
+
+
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+}
+.fa.fa-user {
+  color:white
+}
+.dark-mode  .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode .dropdown-content {
+  background-color: slategrey;
+  color: white;
+}
+.dark-mode .dropdown-content button:hover {
+  background-color: black;
+  color: white;
+}
+body.light-mode .dropdown-content2 a {
+    color: white; /* This will now take precedence over the .topnav a color */;
+    background-color: transparent
+
+}

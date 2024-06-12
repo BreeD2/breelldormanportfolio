@@ -45,7 +45,27 @@
      <a href="..//about/index.html" aria-label="Learn more about me">About</a>
      <a href="..//contact/index.html" aria-label="Contact me">Contact</a>
      <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
+ 
+     <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fas fa-wheelchair"></i>
+ Accessibility<i class="fa fa-caret-down"></i>
 
+        </button>
+        <div class="dropdown-content">
+          <div id="google_translate_element"></div>
+          <button onclick="resetSettings()">Reset Settings</button>
+          <button onclick="increaseFont()">Increase Font Size</button>
+          <button onclick="decreaseFont()">Decrease Font Size</button>
+          <button onclick="toggleLightMode()">Toggle Light Mode</button>
+          <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button id="toggleTextToSpeech" aria-label="Toggle text to speech">Read Selected Text</button>
+
+
+
+
+        </div>
+      </div>
 
 
 
@@ -72,15 +92,6 @@
 
 
 
- <aside class="sidebar">
-     <h3>Accessibility</h3>
-     <div id="google_translate_element"></div>
-             <button onclick="resetSettings()">Reset Settings</button>
-             <button onclick="increaseFont()">Increase Font Size</button>
-             <button onclick="decreaseFont()">Decrease Font Size</button>
-             <button onclick="toggleLightMode()">Toggle Light Mode</button>
-             <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
 
 
 
@@ -95,13 +106,7 @@
 </div>
 </aside>
 
-<!--  Toggle Button -->
-<div class="menu-toggle" aria-label="Toggle Sidebar">
-<i class="fas fa-wheelchair"></i>
 
-
-
-</div>
 
 <div id="searchResults">
 
@@ -197,7 +202,7 @@
 
         // Store the original font sizes
         function storeOriginalFontSizes() {
-            const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, button#signupButton, p, .featured-games, .featured-games-title, .footer, #game2-info > h3, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div,#featured-games > div.featured-games-title,#about > div, #main-content > div.opening-screen > div > div, #enter-site-button';
+            const selector = '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer';
             document.querySelectorAll(selector).forEach(element => {
                 element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
             });
@@ -213,17 +218,17 @@
 
         // Increase font size
         function increaseFont() {
-            adjustFontSize(1.1, '.sidebar *, #signupContainer, .underwelcome, .opening-screen button, p, #game2-info > h3, .featured-games-title, .footer, .featured-games, #about > div, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div, #main-content > div.opening-screen > div > div, .dropdown-content, #featured-games > div.featured-games-title, #enter-site-button');
+            adjustFontSize(1.1, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
         }
 
         // Decrease font size
         function decreaseFont() {
-            adjustFontSize(0.9, '.sidebar *, #signupContainer, .underwelcome, .dropdown-content, #about > div, #game1-info > h3, #game3-info > h3, .dropdown, #game2-info > h3, .opening-screen button, #main-content > div.opening-screen > div > div, .featured-games, #featured-games > div.featured-games-title, .featured-games-title, p, .footer, #main-content > div.opening-screen > div, #enter-site-button');
+            adjustFontSize(0.9, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
         }
 
         // Reset font sizes to their original values
         function resetFont() {
-            const selector = '.sidebar *, #signupContainer, .underwelcome, .opening-screen button,  #about > div, #game1-info > h3, #game3-info > h3, .featured-games, #game2-info > h3,#featured-games > div.featured-games-title, #main-content > div.opening-screen > div, .featured-games-title, p, .footer, #enter-site-button';
+            const selector = '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer';
             document.querySelectorAll(selector).forEach(element => {
                 const originalFontSize = element.getAttribute('data-original-font-size');
                 if (originalFontSize) element.style.fontSize = originalFontSize;
@@ -266,12 +271,12 @@
         }
         // Increase font size
             function increaseFont() {
-                adjustFontSize(1.1, '.sidebar *, .game-container, .game-info, #likeButton, #commentButton,#likesCount, #ratingDisplay, #rateButton, .game-title,#commentsSection > strong, .footer');
+                adjustFontSize(1.1, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
             }
 
             // Decrease font size
             function decreaseFont() {
-                adjustFontSize(0.9, '.sidebar *, .game-container, .game-info, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+                adjustFontSize(0.9, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
             }
 
             // Toggle Light Mode

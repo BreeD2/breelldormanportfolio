@@ -3,6 +3,7 @@
 <html>
  <head>
    <title>Contact</title>
+   <script src="..//font.js"></script>
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -45,6 +46,26 @@
      <a href="..//about/index.html" aria-label="Learn more about me">About</a>
      <a href="index.html"class="active" aria-label="Contact me">Contact</a>
      <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
+     <div class="dropdown">
+      <button class="dropbtn">
+        <i class="fas fa-wheelchair"></i>
+Accessibility<i class="fa fa-caret-down"></i>
+
+      </button>
+      <div class="dropdown-content">
+        <div id="google_translate_element"></div>
+        <button onclick="resetSettings()">Reset Settings</button>
+        <button onclick="increaseFont()">Increase Font Size</button>
+        <button onclick="decreaseFont()">Decrease Font Size</button>
+        <button onclick="toggleLightMode()">Toggle Light Mode</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <button id="toggleTextToSpeech" aria-label="Toggle text to speech">Read Selected Text</button>
+
+
+
+
+      </div>
+    </div>
 
 
 
@@ -71,18 +92,6 @@
 
 
 
-      <aside class="sidebar">
-          <h3>Accessibility</h3>
-          <div id="google_translate_element"></div>
-                  <button onclick="resetSettings()">Reset Settings</button>
-                  <button onclick="increaseFont()">Increase Font Size</button>
-                  <button onclick="decreaseFont()">Decrease Font Size</button>
-                  <button onclick="toggleLightMode()">Toggle Light Mode</button>
-                  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-
-
-
 
 
 
@@ -94,13 +103,7 @@
      </div>
      </aside>
 
-     <!--  Toggle Button -->
-     <div class="menu-toggle" aria-label="Toggle Sidebar">
-     <i class="fas fa-wheelchair"></i>
-
-
-
-     </div>
+   
 
      <div id="searchResults">
 

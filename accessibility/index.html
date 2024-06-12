@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+ <head>
+   <title>Accessibility</title>
+   <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
+   <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="..//favicon-16x16.png">
+ <link rel="manifest" href="..//site.webmanifest">
+ <link rel="mask-icon" href="..//safari-pinned-tab.svg" color="#5bbad5">
+ <meta name="msapplication-TileColor" content="#da532c">
+ <meta name="theme-color" content="#ffffff">
+   <center>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet"href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+      <!-- Navigation Bar with Logo and Website Name -->
+      <div class="topnav" id="myTopnav">
+        <a href="..//index.html" class="logo">
+          <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Breell Dorman</span>
+
+     </a>
+     <!-- User Information Dropdown -->
+     <a href="..//index.html" aria-label="Home">Home</a>
+     <a href="..//websites/index.html" aria-label="View my website design projects">Websites</a>
+     <a href="..//posters/index.html" aria-label="View my poster design projects"  class="active">Posters</a>
+     <a href="..//videos/index.html" aria-label="View my video projects">Videos</a>
+     <a href="..//books/index.html" aria-label="View my book design projects">Books</a>
+     <a href="..//about/index.html" aria-label="Learn more about me">About</a>
+     <a href="..//contact/index.html" aria-label="Contact me">Contact</a>
+     <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
+     <a href="index.html" aria-label="View accessibility option">Accessibility</a>
+
+
+
+
+
+         <!-- Accessibility Button and Dropdown -->
+         <!-- User Information Dropdown -->
+         <input type="text" id="searchInput2" placeholder="Search.." onkeyup="searchFunction()">
+         <button id="clearSearch" onclick="clearSearchFunction()">X</button>
+
+           <!-- Other navigation items -->
+
+
+
+
+
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+
+
+   </div>
+   <!-- Moved searchResults outside the topnav -->
+   <div id="searchResults2" class="search-results2"></div>
+
+
+
+
+
+
+             
+
+
+
+<ul class="search-results" id="searchResults"></ul>
+<div id="game-list2">
+
+<br><br><br>
+</div>
+</aside>
+
+
+<div id="searchResults">
+
+
+
+    </div>
+
+
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;width:200px;" id="mySidebar">
+        <button onclick="toggleSidebar()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <!-- Add your sidebar content here -->
+    </div>
+
+    <div class="accessibility-container">
+        <h1>Accessibility Settings</h1>
+        <div class="accessibility-settings">
+            <label for="text-size">Text Size:</label>
+            <select id="text-size">
+                <option value="normal">Normal</option>
+                <option value="larger">Larger</option>
+            </select>
+    
+            <button onclick="saveSettings()">Save Settings</button>
+            <button onclick="resetSettings()">Reset Settings</button>
+            <button onclick="toggleLightMode()">Toggle Light Mode</button>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            <button onclick="toggleHighContrast()">Toggle High Contrast</button>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!-- Include your JavaScript file here -->
+<div class="footer">
+  <h3>© 2022-2024 Breell Dorman's Artistry</h3>
+
+  <img src="..//favicon.ico"><br>
+
+
+    <p><a href="mailto:bdormandesigns@gmail.com">bdormandesigns@gmail.com</a></p>
+
+
+</div></div>
+
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('sidebar-visible');
+});
+
+</script>
+
+
+
+
+
+    <script>
+  
+
+        resultsContainer.innerHTML = ''; // Clear previous results
+
+        const searchData = [
+            { name: 'About', url: '..//about/index.html' },
+            { name: 'Book', url: '..//books/index.html' },
+            { name: 'Contact', url: '..//contact/index.html' },
+            { name: 'Home', url: 'index.html' },
+            { name: 'Posters', url: '..//posters/index.html' },
+            { name: 'Resume', url: '..//resume/index.html' },
+            { name: 'Videos', url: '..//videos/index.html' },
+            { name: 'Websites', url: '..//websites/index.html' },
+            // Add more results as needed
+        ];
+
+        const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
+
+        filteredData.forEach(item => {
+            const div = document.createElement('div');
+            const a = document.createElement('a');
+            a.textContent = item.name;
+            a.href = item.url;
+
+            div.appendChild(a);
+            resultsContainer.appendChild(div);
+        });
+    };
+
+    const clearSearchFunction = () => {
+        document.getElementById('searchInput2').value = ''; // Clear input
+        document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
+        document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
+        document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
+    };
+
+    // Optionally, automatically trigger the search function when the input is cleared
+    document.getElementById('searchInput2').addEventListener('input', searchFunction);
+</script>
+<script src="settings.js"></script>
+
+
+</body>
+</html>
