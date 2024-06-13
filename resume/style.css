@@ -5321,3 +5321,7 @@ body.light-mode .dropdown-content2 a {
     background-color: transparent
 
 }
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
