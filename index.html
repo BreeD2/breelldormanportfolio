@@ -22,7 +22,7 @@
 
 <style>
 </style>
-<script src="settings.js"></script>
+
 </head>
 
 
@@ -33,68 +33,63 @@
 <body>
 
 
-      <!-- Navigation Bar with Logo and Website Name -->
-      <div class="read-aloud">
-      <div class="topnav" id="myTopnav">
+ <!-- Navigation Bar with Logo and Website Name -->
+ <div class="read-aloud">
+    <div class="topnav" id="myTopnav">
         <a href="index.html" class="logo">
-          <img src="favicon.ico" alt="Favicon: Computer" style="height: 23px;">&ensp;<span class="title-text">Breell Dorman</span>
-
-     </a>
-     <!-- User Information Dropdown -->
-     <a href="index.html"class="active" aria-label="Home">Home</a>
-     <a href="websites/index.html" aria-label="View my website design projects">Websites</a>
-     <a href="posters/index.html" aria-label="View my poster design projects">Posters</a>
-     <a href="videos/index.html" aria-label="View my video projects">Videos</a>
-     <a href="books/index.html" aria-label="View my book design projects">Books</a>
-     <a href="about/index.html" aria-label="Learn more about me">About</a>
-     <a href="contact/index.html" aria-label="Contact me">Contact</a>
-     <a href="resume/index.html" aria-label="View my resume">Resume</a>
-    
-
-
-     <div class="dropdown">
-        <button class="dropbtn">
-          <i class="fas fa-wheelchair"></i>
- Accessibility<i class="fa fa-caret-down"></i>
-
-        </button>
-        <div class="dropdown-content">
-          <div id="google_translate_element"></div>
-          <button onclick="resetSettings()">Reset Settings</button>
-          <button onclick="increaseFont()">Increase Font Size</button>
-          <button onclick="decreaseFont()">Decrease Font Size</button>
-          <button onclick="toggleLightMode()">Toggle Light Mode</button>
-          <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <button id="toggleTextToSpeech" aria-label="Toggle text to speech">Read Selected Text</button>
-
-
-
-
+            <img src="favicon.ico" alt="Favicon: Computer" style="height: 23px;">
+            <span class="title-text">Breell Dorman</span>
+        </a>
+        <!-- User Information Dropdown -->
+        <a href="index.html" class="active" aria-label="Home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fas fa-palette"></i> Graphic Design <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="posters/index.html" aria-label="View my poster design projects">Posters&nbsp;&nbsp;&nbsp;</a>
+                <a href="videos/index.html" aria-label="View my video projects">Videos</a>
+                <a href="websites/index.html" aria-label="View my website design projects">Websites</a>
+                <a href="books/index.html" aria-label="View my book design projects">&#8202;&#8202;&#8202;Books</a>
+            </div>
         </div>
-      </div>
-
-
-         <!-- Accessibility Button and Dropdown -->
-         <!-- User Information Dropdown -->
-         <input type="text" id="searchInput2" placeholder="Search.." onkeyup="searchFunction()">
-         <button id="clearSearch" onclick="clearSearchFunction()">X</button>
-
-           <!-- Other navigation items -->
-
-
-
-
-
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-           <i class="fa fa-bars"></i>
-         </a>
-
-
-   </div>
-   <!-- Moved searchResults outside the topnav -->
-   <div id="searchResults2" class="search-results2"></div>
-
-
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fas fa-pencil-alt"></i> UX Design <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="uxresearch/index.html" aria-label="View my UX research projects">UX Research</a>
+                <a href="wireframes/index.html" aria-label="View my wireframing projects">Wireframes</a>
+                <a href="prototypes/index.html" aria-label="View my prototyping projects">Prototypes</a>
+                <a href="user-testing/index.html" aria-label="View my user testing projects">User Testing</a>
+            </div>
+        </div>
+        <a href="about/index.html" aria-label="Learn more about me">About</a>
+        <a href="contact/index.html" aria-label="Contact me">Contact</a>
+        <a href="resume/index.html" aria-label="View my resume">Resume</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fas fa-wheelchair"></i> Accessibility <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div id="google_translate_element"></div>
+                <button onclick="resetSettings()">Reset Settings</button>
+                <button onclick="increaseFont()">Increase Font Size</button>
+                <button onclick="decreaseFont()">Decrease Font Size</button>
+                <button onclick="toggleLightMode()">Toggle Light Mode</button>
+                <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                <button id="toggleTextToSpeech" aria-label="Toggle text to speech">Read Selected Text</button>
+            </div>
+        </div>
+        
+    
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Moved searchResults outside the topnav -->
+    
 
 
  <aside class="sidebar">
@@ -109,20 +104,6 @@
 
 
 
-
-
-
-
-<ul class="search-results" id="searchResults"></ul>
-<div id="game-list2">
-
-<br><br><br>
-</div>
-</aside>
-
-
-
-<div id="searchResults">
 
 
 

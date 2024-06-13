@@ -1,16 +1,12 @@
 * {
   box-sizing: border-box;
 }
-body {
-    font-family: "Montserrat", sans-serif
 
-      height:auto
-}
 
 body {
   background-color:white;
   height:auto  !important;
-
+  font-family: "arial", !important;
 
 
 }
@@ -47,7 +43,7 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: arial;
   margin: 0;
 
 
@@ -94,7 +90,7 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: transparent;
-  font-family: inherit;
+  font-family: arial;
   margin: 0;
   cursor: pointer; /* Change cursor on hover */;
   outline: none
@@ -198,10 +194,28 @@ body {
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: arial;
   margin: 0;
 }
 
+/* Dropdown container - needed to position the dropdown content */
+.dropdown2 {
+  float: left;
+  overflow: hidden;
+  color:white
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown2 .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: arial;
+  margin: 0;
+}
 
 
 
@@ -241,7 +255,7 @@ width: 108px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1060px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn, .dropdown2 {
     display: none;
@@ -252,8 +266,90 @@ width: 108px;
   }
 }
 
+.light-mode #myTopnav > div:nth-child(3) > div {
+  background-color: #808080;
+}
+.light-mode #myTopnav > div:nth-child(3) > button:hover {
+  background-color: #808080;
+}
+
+.light-mode #myTopnav > div:nth-child(3) > button{
+  background-color: color:black;
+}
+
+.dark-mode #myTopnav > div:nth-child(3) > div {
+  background-color: #808080;
+}
+.dark-mode #myTopnav > div:nth-child(3) > button:hover {
+  background-color: #808080;
+}
+
+.dark-mode #myTopnav > div:nth-child(3) > button{
+  color:white;
+}
+
+
+
+
+.light-mode #myTopnav > div:nth-child(4) > div{
+  background-color: #808080;
+}
+.light-mode #myTopnav > div:nth-child(4) > button:hover {
+  background-color: #808080;
+}
+
+.light-mode #myTopnav > div:nth-child(4) > button{
+  background-color: color:black;
+}
+#myTopnav > div:nth-child(3) > button {
+  background-color: transparent;
+  
+}
+
+.dark-mode #myTopnav > div:nth-child(4) > div {
+  background-color: #808080;
+}
+.dark-mode #myTopnav > div:nth-child(4) > button:hover {
+  background-color: #808080;
+}
+
+.dark-mode #myTopnav > div:nth-child(4) > button:hover  {
+  background-color: #808080;
+}
+
+.dark-mode #myTopnav > div:nth-child(4) > button {
+  background:transparent
+}
+
+.dark-mode #myTopnav > div > div > a:hover {
+  background-color:black
+}
+.dark-mode #myTopnav > div:nth-child(4) > button{
+  color:white;
+}
+
+
+@media screen and (max-width: 1060px) 
+{
+  #myTopnav > div:nth-child(3) > div {
+  width:100%;
+  
+  background-color: purple;
+}
+}
+
+
+
+#myTopnav > div:nth-child(3) > button:hover {
+  background-color: grey;
+}
+
+.dark-mode  #myTopnav > div:nth-child(3) > div {
+ 
+  background-color: mediumgrey;
+}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1060px) {
   }
   .topnav.responsive a.icon {
     position: absolute;
@@ -282,6 +378,10 @@ width: 108px;
   }
 }
 
+
+
+
+
 /* Dropdown container - needed to position the dropdown content */
 .dropdown2 {
   float: left;
@@ -297,7 +397,7 @@ width: 108px;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: arial;
   margin: 0;
   display: block
 }
@@ -336,7 +436,7 @@ width: 108px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1060px) {
   .topnav a:not(:first-child), .dropdown .dropbtn2 {
     display: none;
   }
@@ -347,7 +447,7 @@ width: 108px;
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 100px) {
 
   .topnav.responsive a.icon {
     position: absolute;
@@ -367,9 +467,7 @@ width: 108px;
     width: 100%;
     text-align: left;
   }
-  .dropdown-content {
-    width: 40%
-  }
+  
 }
 /* Dropdown container - needed to position the dropdown content */
 .dropdown2 {
@@ -386,7 +484,7 @@ width: 108px;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: arial;
   margin: 0;
 }
 
@@ -440,7 +538,7 @@ width:100%;
   font-size: 15px;
   position: fixed;
   text-align: center;
-  width:168px;
+  width:160px;
     background-color: dodgerblue;
 
   }
@@ -457,62 +555,92 @@ body.light-mode .topnav a.active {
   background-color: grey;;
   color: #ffffff;
 }
+
 @media (min-width: 1060px) {
 
-.search-results2 {
-      width: 18%;
-    margin: 0 auto; /* Center the box */
-    padding: 10px;
-    border: 1px solid #ddd; /* Light grey border */
+#myTopnav > div:nth-child(3) > div {
+  width:185px;
+  
+  background-color: purple;
+}
+#myTopnav > div:nth-child(4) > div  {
+  width:150px;
 
-    background-color: #fff; /* White background */
-    position: fixed; /* Positions relative to the nearest positioned ancestor */
-    z-index: 5; /* Ensures it's above other content */
+}
+}
 
-    top: 100px; /* Positions the results directly below the search bar */
-    left: 50%;
-    float: right;
-    padding: 6px;
-    border: none;
-  top: 5.1%;
-margin-left:29.4%;
-    font-size: 10px;
-    border-radius: 5px
-}}
-
-.search-results2 {
-    display: none; /* Hide the container initially */
-    /* Other styles remain unchanged */;
-    text-align: left;
-    z-index: 5
+#myTopnav > div:nth-child(4) > div > a:hover {
+  background-color: grey;
 }
 
 
 
-.search-results2 div {
-    padding: 8px;
-    border-bottom: 1px solid #eee; /* Light line between results */
+#myTopnav > div:nth-child(4) > div {
+  background-color: orangered;
+}
+#myTopnav > div:nth-child(4) > button {
+  background-color: transparent;
 }
 
-.search-results2 div:last-child {
-    border-bottom: none; /* Removes border from the last result */
+
+
+#myTopnav > div:nth-child(4) > button:hover {
+  background-color: orangered;
 }
 
-.search-results2 a {
-    text-decoration: none;
-    color: #333; /* Dark grey text */
-    display: block; /* Makes the whole area clickable */
-}
-/* Default state, possibly hidden */
-.search-results2 {
-    display: none; /* Default to hidden */
-    /* Other styles */
+#myTopnav > div:nth-child(3) > button {
+  background: none;
 }
 
-/* Visible state */
-.search-results2.visible {
-    display: block; /* Make visible when needed */
+#myTopnav > div:nth-child(3) > button:hover {
+  background-color: purple;
 }
+
+#myTopnav > div:nth-child(4) > div > a:hover {
+  background-color: #696969;
+  width:100%;
+  
+}
+.dark-mode #myTopnav > div:nth-child(4) > button:active {
+  background-color: grey;
+  width:100%;
+  
+}
+.dark-mode #myTopnav > div:nth-child(3) > button:active {
+  background-color: grey;
+  width:100%;
+  
+}
+
+.light-mode #myTopnav > div:nth-child(4) > button:active {
+  background-color: grey;
+  width:100%;
+  
+}
+
+#myTopnav > div:nth-child(3) > div > a:hover {
+  background-color: grey;
+}
+.light-mode #myTopnav > div:nth-child(3) > button:active {
+  background-color: grey;
+  width:100%;
+  
+}
+
+.dark-mode #myTopnav > div:nth-child(3) > div > a:hover {
+  background-color:#696969;
+  
+  
+}
+
+
+.topnav input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
 @media screen and (min-width: 1060px) {
 
 #clearSearch {
@@ -527,6 +655,7 @@ margin-left:29.4%;
       font-size: 16px;
       color:black;
       z-index: 10;
+      display:none
   }
 }
 @media screen and (max-width: 1060px) {
@@ -1028,6 +1157,7 @@ body {
   color: #000;
 }
 
+
 body .topnav {
   background-color: mediumpurple; /* Red background for the navbar in normal mode */
   color: #fff; /* White font color for the navbar in normal mode */;
@@ -1091,12 +1221,9 @@ body {
   font-family: 'arial', sans-serif;
   height:auto
 }
-#searchResults {font-family: 'arial', sans-serif; /* Add the desired font-family */;
-color:red;
-font-size: 15px;
 
 
-}
+
 /* Style the search input */
 input[type=text] {
   padding: 5px; /* Add padding */
@@ -2834,10 +2961,33 @@ p {
   }
 }
 
+@media screen and (max-width: 1060px) {
+ 
+  .topnav input[type="text"] {
+   right: 100px;
+   position:absolute
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+ 
+  .topnav input[type="text"] {
+    display: none; /* Hide all a elements that are not the first child and the search input by default */
+  }
+}
+
 
 @media screen and (max-width: 1060px) {
-  .topnav a:not(:first-child), .topnav input[type="text"] {
+  .topnav a:not(:first-child){
     display: none; /* Hide all a elements that are not the first child and the search input by default */
+  }
+  .topnav input[type="text"] {
+   right: 100px;
+   position:absolute
   }
   .topnav a.icon {
     float: right;
@@ -3129,7 +3279,7 @@ color:black;
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 10px) {
     .topnav .search-input {
         float: none;
         width: 100%; /* Full width */
@@ -4281,7 +4431,7 @@ button#loginButton:hover {
     max-width:500px;
     margin-top: 100px;
     max-height: 600px;
-    font-family: Verdana, sans-serif;;
+    font-family: arial, sans-serif;;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -4673,15 +4823,22 @@ color: white;
   display: block;
   text-align: left;
 }
-/* General Body Styling */
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Segoe UI", Arial, sans-serif;
-}
+
 
 /* Header Styling */
 header#portfolio {
     background-color: #f1f1f1;
     padding-bottom: 20px;
+}
+
+#myTopnav > div > div > button {
+  font-family: arial;
+  font-size: 15px;
+}
+
+#myTopnav > div> div > a  {
+  font-family: arial;
+  font-size: 17px;
 }
 
 header#portfolio .w3-container {
@@ -4845,6 +5002,692 @@ button {
 
 .light-mode #main-content > div > p {
   color:black
+}
+
+
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#work h2 {
+    text-align: center;
+margin-top: 100px; /* Space below the heading */;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project {
+
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project p {
+    padding: 20px;
+    margin: 0;
+    background-color: none;
+    text-align: center;
+}
+
+.high-contrast {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.high-contrast a {
+  color: #FFD700; /* Gold links for better visibility */
+}
+
+.high-contrast button {
+  background-color: #333; /* Darker background for buttons */
+  color: #fff; /* White text for buttons */
+  border: 1px solid #fff; /* Adding a border to make buttons distinguishable */
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: white; /* Dark grey color for text */
+  font-size: 20px; /* Larger font size for visibility */
+}
+
+.sidebar button {
+  display: block; /* Make buttons span the width of the sidebar */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for easier interaction */
+  margin-top: 0px; /* Space between buttons */
+  background-color: transparent; /* Stylish blue background */
+  color: white; /* White text for high contrast */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates an interactive element */
+  font-size: 14px; /* Readable text size */
+}
+
+#main-content > div > h3 {
+  padding: 20px
+}
+
+@media screen and (max-width: 600px) {
+#main-content > div > h3 {
+  padding: 5px;
+  font-size: 14px
+}
+#work > div > div > p {
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 600px) {
+#main-content > header > h1{
+  font-size: 25px
+}
+}
+
+@media screen and (max-width: 600px) {
+
+#work > h2 {
+    font-size: 25px
+}
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.project p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.project a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio {
+  margin-top: 100px
+}
+
+@media (min-width: 1060px) {
+
+.search-results2 {
+      width: 18%;
+    margin: 0 auto; /* Center the box */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+
+    background-color: #fff; /* White background */
+    position: fixed; /* Positions relative to the nearest positioned ancestor */
+    z-index: 5; /* Ensures it's above other content */
+
+  
+    left: 50%;
+    float: right;
+    padding: 6px;
+    border: none;
+  top: 32px;
+margin-left:29.4%;
+    font-size: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 13px;
+   
+   
+}}
+
+
+
+
+
+
+
+.search-results2 div {
+    padding: 8px;
+    border-bottom: 1px solid #eee; /* Light line between results */
+}
+
+#searchResults2 > div > a {}
+
+.search-results2 div:last-child {
+    border-bottom: none; /* Removes border from the last result */
+}
+
+.search-results2 a {
+    text-decoration: none;
+    color: #333; /* Dark grey text */
+    display: block; /* Makes the whole area clickable */
+}
+
+
+/* Visible state */
+.search-results2.visible {
+    display: block; /* Make visible when needed */
+}
+
+
+
+@media (max-width: 1060px) {
+    .search-results2 {
+  width: calc(100% - 30px);
+    margin: 0 auto; /* Center the box */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+
+    background-color: #fff; /* White background */
+    position: fixed; /* Positions relative to the nearest positioned ancestor */
+    z-index: 3; /* Ensures it's above other content */
+
+
+    float: right;
+    padding: 6px;
+    border: none;
+  margin-top: 518px;
+left:15px;
+    font-size: 10px;
+    border-radius: 5px;
+    top: 0px;
+    }
+}
+
+
+.dark-mode #main-content > header > p {
+  color:white
+}
+
+.light-mode #main-content > header > p {
+  color:white
+}
+
+.dark-mode #main-content > header > h1 {
+  color:white
+}
+
+.dark-mode #about > h2 {
+  color:white
+}
+
+.light-mode #about > h2 {
+  color:black
+}
+
+.dark-mode #main-content > header {
+  background-color: dimgrey
+}
+
+.dark-mode #work > div > div > p {
+  background-color: black;
+  color:white
+}
+
+#work > div > div > h3 {
+
+
+  font-size: 20px;
+  padding: 10px
+}
+
+#work > div > div:nth-child(1) > p > a {
+  background: none
+}
+
+
+.light-mode #work > div > div > p {
+  background-color: white;
+  color:black
+}
+
+#about > p {
+  padding: 30px;
+}
+
+.light-mode #work > div > div > a {
+  background-color: white;
+  color:black
+}
+
+.dark-mode #work > div > div > a {
+  background-color: dimgrey;
+  color:white
+}
+
+.dark-mode #work > div > div > a:hover  {
+  background-color: grey;
+  color:white
+}
+
+#main-content > header {
+  background-color: lightpink;
+  color:white
+}
+
+.light-mode #main-content > header {
+  background-color: white;
+  color:black
+}
+
+.light-mode #main-content > header > p {
+    color: black;
+}
+
+
+.dark-mode .project a {
+  background-color:dimgrey
+}
+
+.light-mode .project a {
+  background-color:grey
+}
+
+.light-mode .project a:hover {
+  background-color:darkgrey
+}
+
+.dark-mode .project a:hover {
+  background-color:grey
+}
+
+
+.project a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project a:hover {
+  background-color:black;
+}
+
+
+body.light-mode .topnav a.active:hover {
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+body.dark-mode .topnav a.active:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.dark-mode .project p {
+
+    color:white;
+    background-color: black
+}
+
+.light-mode .project p {
+  background-color: white;
+  color:black
+}
+
+.project p {
+  padding:10px;
+  text-align: left;
+
+}
+
+.project h3 {
+    margin: 0.5em 0;
+      padding:10px;
+}
+
+.dark-mode .project {
+  background-color: black;
+  border:none
+}
+
+.dark-mode #main-content > div.portfolio {
+  background-color: #333;
+}
+
+.light-mode #work > div > div > a {
+  background-color: grey;
+  color:white;
+}
+
+.light-mode #work > div > div > a:hover {
+  background-color: lightgrey
+}
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#viewWork:hover {
+    background: grey;
+
+}
+.dark-mode #viewWork:hover {
+    background: grey;
+
+}
+.dark-mode #viewWork {
+    background: black;
+
+}
+
+.light-mode #viewWork:hover {
+    background: lightgrey;
+
+}
+.light-mode #viewWork {
+    background: grey;
+
+}
+.project {
+
+    margin: 20px;       /* Adds space around each project */;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;      /* Padding inside each project box */
+    background-color: #ffffff;  /* Ensures the shadow has a light background to stand out against */
+    transition: box-shadow 0.3s ease-in-out; /* Optional: Adds a smooth transition for the shadow effect */
+}
+
+
+body.light-mode .topnav a {
+  color: #000; /* Black font color for the links in the navbar */;
+
+}
+
+body.light-mode .topnav a:hover {
+  color: white; /* Black font color for the links in the navbar */;
+
+}
+/* Dark Mode styles for dropdown and its content */
+.dark-mode .dropdown-content,
+ {
+  background-color: dimgrey; /* Dark Mode background color */;
+  color:white
+}
+.dark-mode .dropdown-content2 a:hover {
+  background-color: black
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  color: white;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.dropdown a:hover{
+  background-color: red;
+  color: white;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
+  background-color: grey;
+  color: white;
+}
+.light-mode .fa.fa-user:active {
+
+}
+
+.light-mode  .dropdown2:hover .dropbtn2 {
+  background-color: grey;
+  color: white;
+}
+
+.light-mode  .dropdown2 .dropdown .dropbtn2 {
+  background-color: grey;
+  color: black;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown-content:hover .dropbtn .i{
+  background-color: darkgrey;
+  color: black;
+}
+ .dropdown-content button:hover{
+  background-color: grey;
+  color: white;
+      width: 100%;
+}
+
+
+.light-mode  .dropdown-content2 a .dropbtn2 {
+  background-color: lightgrey;
+  color: black;
+}
+.light-mode  .dropdown-content2 .dropdown-content2 a{
+  background-color: grey;
+  color: black;
+}
+
+.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
+  color:black
+}
+
+.dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
+  background-color: slategrey;
+  color: white;
+}
+.light-mode .fas.fa-wheelchair {
+  color:black
+}
+.light-mode .fas.fa-wheelchair:hover {
+  color:white
+}
+.light-mode .fa.fa-user{
+  color:black
+}
+.light-mode .fa.fa-user:hover{
+  color:white
+}
+.light-mode .dropdown2:hover{
+  color:white
+}
+.light-mode .dropdown {
+  color:red
+}
+
+.light-mode .dropdown .dropbtn {
+  color:black
+}
+.dropdown .dropbtn {
+  color:white
+}
+.light-mode .dropdown2 .dropbtn2 {
+  color:black
+}
+.light-mode .dropdown-content:hover{
+  color:red
+}
+.light-mode .dropdown-content button {
+  color:red
+}
+
+
+
+/* Light mode styles */
+.light-mode .dropdown-content2 {
+  background-color: #555; /* Light background */
+  color: white; /* Dark text */
+}
+.light-mode .dropdown-content {
+  background-color: darkgrey; /* Light background */
+  color: white; /* Dark text */
+}
+
+.light-mode .fa {
+  color:black
+}
+.light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+
+/* Dark mode styles */
+.dark-mode .dropdown-content2, .dark-mode .dropdown-content {
+  background-color: #555; /* Dark background */
+  color: white; /* Light text */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn {
+  background-color: darkgrey; /* Dark background for contrast */
+  color: white; /* White text for readability */
+}
+
+.light-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also turn white on hover */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn {
+  background-color: #555; /* Lighter dark background for contrast */
+  color: white; /* Darker text for readability */
+}
+
+.dark-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also change color appropriately on hover */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn,
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: darkgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: grey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+
+.light-mode .dropdown-content2 a:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown-content button:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown:hover .dropbtn i,
+.light-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also turn white on hover in light mode */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn,
+.dark-mode .dropdown2:hover .dropbtn2 {
+  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+/* Hover effects for .dropbtn in dark mode */
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: #555; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+
+.dark-mode .dropdown:hover .dropbtn i,
+.dark-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also change color appropriately on hover in dark mode */
+}
+
+
+
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+}
+.fa.fa-user {
+  color:white
+}
+.dark-mode  .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode .dropdown-content {
+  background-color: slategrey;
+  color: white;
+}
+.dark-mode .dropdown-content button:hover {
+  background-color: black;
+  color: white;
+}
+body.light-mode .dropdown-content2 a {
+    color: white; /* This will now take precedence over the .topnav a color */;
+    background-color: transparent
+
+}
+
+#myTopnav > div > div > a:hover {
+width:100%;
+text-align: left;
+}
+
+.light-mode #myTopnav > div > div > a:hover {
+ background-color: grey;
+  }
+
+.light-mode #myTopnav > div > div > a {
+  color:white
 }
 
 
