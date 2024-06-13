@@ -5092,13 +5092,22 @@ left:15px;
   color:black
 }
 
+#about > p {
+  padding: 30px;
+}
+
 .light-mode #work > div > div > a {
   background-color: white;
   color:black
 }
 
 .dark-mode #work > div > div > a {
-  background-color: black;
+  background-color: dimgrey;
+  color:white
+}
+
+.dark-mode #work > div > div > a:hover  {
+  background-color: grey;
   color:white
 }
 

@@ -403,5 +403,62 @@
 
         </script>
 
+
+<script>
+    // Get the toggle button by its ID
+    const toggleBtn = document.getElementById('toggleTextToSpeech');
+    
+    // Function to read the selected text
+    function speakSelectedText() {
+      if ('speechSynthesis' in window) {
+        // First, stop any ongoing speech
+        window.speechSynthesis.cancel();
+    
+        // Get the user's selected text
+        const selectedText = window.getSelection().toString();
+    
+        // Check if there is any text selected
+        if (selectedText.length > 0) {
+          // Create a new speech synthesis utterance instance with the selected text
+          const utterance = new SpeechSynthesisUtterance(selectedText);
+    
+          // Optionally, customize the utterance properties
+          utterance.rate = 1; // Speed of speech
+          utterance.pitch = 1; // Pitch of speech
+          utterance.volume = 1; // Volume
+    
+          // Speak the utterance
+          window.speechSynthesis.speak(utterance);
+        } else {
+          // Optional: Provide feedback when no text is selected
+          alert("Please select some text to read aloud.");
+        }
+      } else {
+        alert("Sorry, your browser doesn't support text to speech!");
+      }
+    }
+    
+    // Function to stop speech synthesis
+    function stopSpeaking() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+    
+    // Enhance the button to toggle speech synthesis
+    toggleBtn.addEventListener('click', () => {
+      if (window.speechSynthesis.speaking) {
+        stopSpeaking();
+        toggleBtn.textContent = 'Read Selected Text'; // Reset button text
+      } else {
+        speakSelectedText();
+        // Optional: Change button text to indicate speech is active
+        // Note: This text won't revert automatically when speech ends
+        toggleBtn.textContent = 'Stop Reading';
+      }
+    });
+    
+    </script>
+
 </body>
 </html>
