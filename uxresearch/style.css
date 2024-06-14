@@ -7411,3 +7411,76 @@ p:hover {
   
   
   
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(4){
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+background-color: grey
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+background-color: lightgrey
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+background-color: dimgrey
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+background-color: grey
+}
+
+#main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+
+  background-color: grey;
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+
+  background-color: dimgrey;
+  color: white;
+
+}
+
+.light-mode #main-content > div > div:nth-child(3) > a:nth-child(2):hover {
+
+  background-color: lightgrey;
+  color: white;
+
+}
+#main-content > div > div > a {
+  background-color: transparent;
+}
+
+.dark-mode #main-content > div > div:nth-child(3) > a:nth-child(2):hover {
+
+  background-color: grey;
+  color: white;
+
+}
+.project a {
+  background: none
+}
+
+
