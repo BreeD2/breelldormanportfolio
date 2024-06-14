@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en-US">
-
+<html>
  <head>
-   <title>Resume</title>
-   
+   <title>Wireframes</title>
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -22,13 +21,15 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </center>
+
+
 </head>
 
 
 
 <body>
 
+ 
 
  <!-- Navigation Bar with Logo and Website Name -->
  <div class="read-aloud">
@@ -46,7 +47,7 @@
             <div class="dropdown-content" tabindex="0">
                 <a href="..//posters/index.html"tabindex="0" aria-label="View my poster design projects"tabindex="0">Posters&nbsp;&nbsp;&nbsp;</a>
                 <a href="..//videos/index.html"tabindex="0" aria-label="View my video projects"tabindex="0">Videos</a>
-                <a href="..//websites/index.html"tabindex="0" aria-label="View my website design projects" tabindex="0">Websites</a>
+                <a href="..//websties/index.html"tabindex="0" aria-label="View my website design projects" tabindex="0" >Websites</a>
                 <a href="..//books/index.html" tabindex="0"aria-label="View my book design projects"tabindex="0">&#8202;&#8202;&#8202;Books</a>
             </div>
         </div>
@@ -56,14 +57,14 @@
             </button>
             <div class="dropdown-content"tabindex="0" >
                 <a href="..//uxresearch/index.html" tabindex="0" aria-label="View my UX research projects">UX Research</a>
-                <a href="..//wireframes/index.html" tabindex="0" aria-label="View my wireframing projects">Wireframes</a>
+                <a href="index.html" tabindex="0" aria-label="View my wireframing projects" class="active">Wireframes</a>
                 <a href="..//prototypes/index.html" tabindex="0" aria-label="View my prototyping projects">Prototypes</a>
                 <a href="..//user-testing/index.html" tabindex="0" aria-label="View my user testing projects">User Testing</a>
             </div>
         </div>
-        <a href="..//about/index.html" aria-label="Learn more about me">About</a>
+        <a href="..//about/index.html" aria-label="Learn more about me"  >About</a>
         <a href="..//contact/index.html" aria-label="Contact me" >Contact</a>
-        <a href="index.html" aria-label="View my resume"  class="active">Resume</a>
+        <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
         <div class="dropdown" tabindex="0">
             <button class="dropbtn">
                 <i class="fas fa-wheelchair" ></i> Accessibility <i class="fa fa-caret-down"></i>
@@ -85,58 +86,111 @@
             <i class="fa fa-bars" tabindex="0"></i>
         </a>
     </div>
-    <!-- Moved searchResults outside the topnav -->
+
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;width:200px;" id="mySidebar">
+        <button onclick="toggleSidebar()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <!-- Add your sidebar content here -->
+    </div>
     
 
+        <div id="main-content" class="content">
 
 
 
-    <div id="main-content" class="content">
+              <div class="portfolio"  tabindex="0">
+      <!-- Project with PDF -->
 
+    
+    <div class="project"target="_blank" tabindex="0">
+        
+            <img src="bigpicture.jpg" alt="Big Picture Storyboard"  tabindex="0">
+        </a>
+        <h3 tabindex="0">Big Picture Storyboard</h3>
+        <p tabindex="0">Lorem ipsum</p>
 
-
-        <div class="portfolio">
-<!-- Project with PDF -->
-<section id="work" tabindex="0">
-<div class="project"target="_blank" tabindex="0">
-    <a href="breelldormanresume.pdf" target="_blank" tabindex="0">
-        <img src="breelldormanresume.jpg" alt="Breell Dorman Resume"  tabindex="0">
+       
+    </div>
+    <div class="project"target="_blank" tabindex="0">
+        
+        <img src="closeup.jpg" alt="Close-Up Storyboard"  tabindex="0">
     </a>
-    <h3 tabindex="0">Breell Dorman's Resume</h3>
-    <p tabindex="0">A resume of my skills, work history, education, and certification.
+    <h3 tabindex="0">Close-Up Storyboard</h3>
+    <p tabindex="0">Lorem ipsum</p>
+
+   
+</div>
+<div class="project"  tabindex="0">
+       
+    <img src="paperwireframes.jpeg" alt="Paper Wireframes"  tabindex="0">
+
+<h3  tabindex="0">Paper Wireframes</h3>
+<p  tabindex="0">Lorem ipsum
 </p>
-    <a href="breelldormanresume.pdf" download tabindex="0">Download PDF</a>
-</div>
-
 
 </div>
-</section>
+   
 
-</div><div>
-
+</div></div></div>
 <!-- Footer Section -->
 <div class="footer" tabindex="0">
     <h3 target="_blank" tabindex="0">© 2022-2024 Breell Dorman's Artistry</h3>
     <img src="..//favicon.ico" alt="Breell's Logo" target="_blank" tabindex="0">
-
+  
     <p><a href="mailto:bdormandesigns@gmail.com" target="_blank" tabindex="0">bdormandesigns@gmail.com</a></p>
-</div>
-</div>
-
-
-
-
-
+  </div>
   
-  
- 
-  
-  
+
+
+
+
+
+
+
+
+
+
+    <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+
+
+
+
+  <script>
+
+        function search() {
+            var searchInput = document.getElementById("searchInput").value;
+            var searchResults = document.getElementById("searchResults");
+
+            // Implement your search functionality here
+            // For simplicity, I'm just showing and hiding the search-results div in this example
+            if (searchInput.trim() !== "") {
+                searchResults.style.display = "block";
+                searchResults.innerHTML = "Search results for: " + searchInput;
+            } else {
+                searchResults.style.display = "none";
+            }
+        }
+    </script>
+
+
+
   <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
     var searchResults = document.getElementById("searchResults2");
-  
+
     if (x.className === "topnav") {
       x.className += " responsive";
       // Show searchResults2 when opening the menu
@@ -148,10 +202,7 @@
     }
   }
   </script>
-  
-  
-
-  <script>
+   <script>
     document.addEventListener('DOMContentLoaded', function () {
         storeOriginalFontSizes(); // Store original font sizes for specified elements
     });
@@ -190,10 +241,6 @@
             if (originalFontSize) element.style.fontSize = originalFontSize;
         });
     }
-
-    function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
 
     // Inverts colors
     function invertColors() {
@@ -305,7 +352,7 @@ function applySavedTheme() {
 document.addEventListener('DOMContentLoaded', applySavedTheme);
     </script>
 
-    
+
 
 <script>
     // Get the toggle button by its ID
@@ -362,4 +409,5 @@ document.addEventListener('DOMContentLoaded', applySavedTheme);
     });
     
     </script>
+
 </body>
