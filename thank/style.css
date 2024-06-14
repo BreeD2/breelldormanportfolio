@@ -6214,3 +6214,88 @@ body.dark-mode .topnav a.active:hover {
 .light-mode .thank-you-container p {
   color:black
 }
+
+
+
+
+/* Focus styles for interactive elements */
+.topnav a,
+.topnav button,
+.topnav input[type="text"],
+.project,
+.project a,
+.project img,
+.project h3,
+.project p,
+.project a[href],
+form input,
+form button {
+    outline: none; /* Remove default focus outline */
+}
+
+.topnav a:hover,
+.topnav a:focus,
+.topnav button:hover,
+.topnav button:focus,
+.topnav input[type="text"]:hover,
+.topnav input[type="text"]:focus {
+    /* Example hover and focus styles for navigation links and input */
+    outline: 2px solid dodgerblue;
+  color:white
+}
+
+.project:focus,
+.project a:focus,
+.project img:focus {
+    /* Example focus style for project section and its links */
+    outline: 2px solid dodgerblue;
+}
+
+form input:focus,
+form button:focus {
+    /* Example focus style for form input and submit button */
+    border: 2px solid dodgerblue;
+    padding: 8px;
+    outline: none;
+}
+
+
+
+
+img:focus {
+  /* Example focus styles */
+  outline: 2px solid dodgerblue;
+}
+
+
+
+
+h3:focus {
+  /* Example focus styles */
+  outline: 2px solid dodgerblue;
+ 
+}
+p {
+  outline: none; /* Remove default focus outline */
+}
+
+p:focus, 
+p:hover {
+   
+}
+
+#main-content > div.portfolio > div> p:focus {
+ 
+    outline: 2px solid dodgerblue;
+}
+
+
+
+.dropdown:focus-within .dropdown-content:focus {
+  outline: 2px solid dodgerblue;
+}
+
+.dropdown-content a:focus,
+ {
+  outline: 2px solid dodgerblue;
+}

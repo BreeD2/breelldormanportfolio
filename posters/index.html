@@ -28,102 +28,64 @@
 
 
 <body>
-
  <!-- Navigation Bar with Logo and Website Name -->
  <div class="read-aloud">
-  <div class="topnav" id="myTopnav">
-      <a href="..//index.html" class="logo">
-          <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">
-          <span class="title-text">Breell Dorman</span>
-      </a>
-      <!-- User Information Dropdown -->
-      <a href="..//index.html" aria-label="Home">Home</a>
-      <div class="dropdown">
-          <button class="dropbtn">
-              <i class="fas fa-palette"></i> Graphic Design <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-              <a href="index.html" aria-label="View my poster design projects"  class="active">Posters&nbsp;&nbsp;&nbsp;</a>
-              <a href="..//videos/index.html" aria-label="View my video projects">Videos</a>
-              <a href="..//websites/index.html" aria-label="View my website design projects">Websites</a>
-              <a href="..//books/index.html" aria-label="View my book design projects">&#8202;&#8202;&#8202;Books</a>
-          </div>
-      </div>
-      <div class="dropdown">
-          <button class="dropbtn">
-              <i class="fas fa-pencil-alt"></i> UX Design <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-              <a href="..//uxresearch/index.html" aria-label="View my UX research projects">UX Research</a>
-              <a href="..//wireframes/index.html" aria-label="View my wireframing projects">Wireframes</a>
-              <a href="..//prototypes/index.html" aria-label="View my prototyping projects">Prototypes</a>
-              <a href="..//user-testing/index.html" aria-label="View my user testing projects">User Testing</a>
-          </div>
-      </div>
-      <a href="..//about/index.html" aria-label="Learn more about me" >About</a>
-      <a href="..//contact/index.html" aria-label="Contact me">Contact</a>
-      <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
-      <div class="dropdown">
-          <button class="dropbtn">
-              <i class="fas fa-wheelchair"></i> Accessibility <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-              <div id="google_translate_element"></div>
-              <button onclick="resetSettings()">Reset Settings</button>
-              <button onclick="increaseFont()">Increase Font Size</button>
-              <button onclick="decreaseFont()">Decrease Font Size</button>
-              <button onclick="toggleLightMode()">Toggle Light Mode</button>
-              <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-              <button id="toggleTextToSpeech" aria-label="Toggle text to speech">Read Selected Text</button>
-          </div>
-      </div>
-      
-  
-     
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-      </a>
-  </div>
-  <!-- Moved searchResults outside the topnav -->
-  
-
-
-<aside class="sidebar">
-   <h3>Accessibility</h3>
-   <div id="google_translate_element"></div>
-           <button onclick="resetSettings()">Reset Settings</button>
-           <button onclick="increaseFont()">Increase Font Size</button>
-           <button onclick="decreaseFont()">Decrease Font Size</button>
-           <button onclick="toggleLightMode()">Toggle Light Mode</button>
-           <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-
-
-
-
-
-
-  </div>
-
-
-
-             
-
-
-
-<ul class="search-results" id="searchResults"></ul>
-<div id="game-list2">
-
-<br><br><br>
-</div>
-</aside>
-
-
-<div id="searchResults">
-
-
-
+    <div class="topnav" id="myTopnav" tabindex="0">
+        <a href="..//index.html" class="logo">
+            <img src="..//favicon.ico"tabindex="0" alt="Favicon: Computer" style="height: 23px;">
+            <span class="title-text"tabindex="0">Breell Dorman</span>
+        </a>
+        <!-- User Information Dropdown -->
+        <a href="..//index.html" aria-label="Home" tabindex="0">Home</a>
+        <div class="dropdown" tabindex="0">
+            <button class="dropbtn active"tabindex="0" >
+                <i class="fas fa-palette"></i> Graphic Design <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" tabindex="0">
+                <a href="index.html"tabindex="0" aria-label="View my poster design projects"tabindex="0" class="active">Posters&nbsp;&nbsp;&nbsp;</a>
+                <a href="..//videos/index.html"tabindex="0" aria-label="View my video projects"tabindex="0">Videos</a>
+                <a href="..//websites/index.html"tabindex="0" aria-label="View my website design projects" tabindex="0">Websites</a>
+                <a href="..//books/index.html" tabindex="0"aria-label="View my book design projects"tabindex="0" >&#8202;&#8202;&#8202;Books</a>
+            </div>
+        </div>
+        <div class="dropdown" tabindex="0">
+            <button class="dropbtn" tabindex="0">
+                <i class="fas fa-pencil-alt"></i> UX Design <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content"tabindex="0" >
+                <a href="..//uxresearch/index.html" tabindex="0" aria-label="View my UX research projects">UX Research</a>
+                <a href="..//wireframes/index.html" tabindex="0" aria-label="View my wireframing projects">Wireframes</a>
+                <a href="..//prototypes/index.html" tabindex="0" aria-label="View my prototyping projects">Prototypes</a>
+                <a href="..//user-testing/index.html" tabindex="0" aria-label="View my user testing projects">User Testing</a>
+            </div>
+        </div>
+        <a href="..//about/index.html" aria-label="Learn more about me">About</a>
+        <a href="..//contact/index.html" aria-label="Contact me" >Contact</a>
+        <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
+        <div class="dropdown" tabindex="0">
+            <button class="dropbtn">
+                <i class="fas fa-wheelchair" ></i> Accessibility <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div id="google_translate_element"></div>
+                <button onclick="resetSettings()"tabindex="0" aria-label="Reset settings">Reset Settings</button>
+                <button onclick="increaseFont()"tabindex="0" aria-label="Increase font size">Increase Font Size</button>
+                <button onclick="decreaseFont()"tabindex="0" aria-label="Decrease font size">Decrease Font Size</button>
+                <button onclick="toggleLightMode()"tabindex="0" aria-label="Toggle light mode">Toggle Light Mode</button>
+                <button onclick="toggleDarkMode()"tabindex="0" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+                <button id="toggleTextToSpeech" aria-label="Toggle text to speech"tabindex="0">Read Selected Text</button>
+            </div>
+        </div>
+        
+    
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
+            <i class="fa fa-bars" tabindex="0"></i>
+        </a>
     </div>
+    <!-- Moved searchResults outside the topnav -->
+    
+
 
 
 
@@ -136,60 +98,49 @@
 
         <div id="main-content" class="content">
 
-          <div class="portfolio">
-            <div class="project">
-              <img src="reminiscencecollection.jpg" alt="Reminiscence Collection">
-              <h3>Reminiscence Collection</h3>
-              <p>This is a poster that depicts video game covers with it showing the front and the back of the covers. The posters was created using Adobe InDesign, some techniques I used was using a gradient to create the front, spine, and back of the cover. The left side are the games sorted by genres, features of the developers and publishers, of the game, and interesting details about everybody rating and barcode.</p>
+          <div class="portfolio" tabindex="0">
+            <div class="project" tabindex="0">
+              <img src="reminiscencecollection.jpg" alt="Reminiscence Collection" tabindex="0">
+              <h3 tabindex="0">Reminiscence Collection</h3>
+              <p tabindex="0">This is a poster that depicts video game covers with it showing the front and the back of the covers. The posters was created using Adobe InDesign, some techniques I used was using a gradient to create the front, spine, and back of the cover. The left side are the games sorted by genres, features of the developers and publishers, of the game, and interesting details about everybody rating and barcode.</p>
 
             </div>
 
     <!-- Project with PDF -->
-    <div class="project">
-        <a href="mycellium.pdf" target="_blank">
-            <img src="mycellium.jpg" alt="Thumbnail for Mycellium PDF">
+    <div class="project" tabindex="0">
+        <a href="mycellium.pdf" target="_blank" tabindex="0">
+            <img src="mycellium.jpg" alt="Thumbnail for Mycellium PDF" tabindex="0">
         </a>
-        <h3>Mycellium Project</h3>
-        <p>This poster was created using Adobe Illustrator and illustrates the concept of Mycelium, showcasing its mushroom-like roots that intertwine with trees and spread extensively. It also symbolizes connections, represented by groups of people linked to the intertwining roots, highlighting the interconnected nature of both the natural world and human relationships.</p>
-        <a href="mycellium.pdf" download>Download PDF</a>
+        <h3 tabindex="0">Mycellium Project</h3>
+        <p tabindex="0">This poster was created using Adobe Illustrator and illustrates the concept of Mycelium, showcasing its mushroom-like roots that intertwine with trees and spread extensively. It also symbolizes connections, represented by groups of people linked to the intertwining roots, highlighting the interconnected nature of both the natural world and human relationships.</p>
+        <a href="mycellium.pdf" download tabindex="0">Download PDF</a>
     </div>
 
     <!-- Another Project with PDF -->
-    <div class="project">
-        <a href="scavengerhunt.pdf" target="_blank">
-            <img src="scavengerhunt.jpg" alt="Thumbnail for Scavenger Hunt PDF">
+    <div class="project" tabindex="0">
+        <a href="scavengerhunt.pdf" target="_blank" tabindex="0">
+            <img src="scavengerhunt.jpg" alt="Thumbnail for Scavenger Hunt PDF" tabindex="0">
         </a>
-        <h3>Scavenger Hunt Design</h3>
-        <p> This design was created for a scavenger hunt, featuring 9 clues leading to the treasure's location. I used Adobe Photoshop for the design process, incorporating textures resembling wrapping paper. The color palette of orange, pink, and blue was chosen to give it the appearance of a candy wrapper. </p>
-        <a href="scavengerhunt.pdf" download>Download PDF</a>
+        <h3 tabindex="0">Scavenger Hunt Design</h3>
+        <p tabindex="0"> This design was created for a scavenger hunt, featuring 9 clues leading to the treasure's location. I used Adobe Photoshop for the design process, incorporating textures resembling wrapping paper. The color palette of orange, pink, and blue was chosen to give it the appearance of a candy wrapper. </p>
+        <a href="scavengerhunt.pdf" download tabindex="0">Download PDF</a>
     </div>
 
-            <div class="project">
-              <img src="poster.jpg" alt="Anxiety & Its Impact on School Systems">
-              <h3>Anxiety & Its Impact on School Systems</h3>
-              <p>This poster provides an overview of anxiety and its effects on educational systems. It explains what anxiety is, the different types of anxiety, and the causes of school-related anxiety. I chose to explore this topic because I experienced severe anxiety as a child, which made me too nervous to speak aloud and often led me to communicate in whispers. While I have made significant progress in managing my anxiety, I believe it's an important subject to discuss. The project was crafted using Adobe InDesign for layout purposes, and I used Adobe Photoshop to alter the colors in the images.</p>
+            <div class="project" tabindex="0">
+              <img src="poster.jpg" alt="Anxiety & Its Impact on School Systems" tabindex="0">
+              <h3 tabindex="0">Anxiety & Its Impact on School Systems</h3>
+              <p tabindex="0">This poster provides an overview of anxiety and its effects on educational systems. It explains what anxiety is, the different types of anxiety, and the causes of school-related anxiety. I chose to explore this topic because I experienced severe anxiety as a child, which made me too nervous to speak aloud and often led me to communicate in whispers. While I have made significant progress in managing my anxiety, I believe it's an important subject to discuss. The project was crafted using Adobe InDesign for layout purposes, and I used Adobe Photoshop to alter the colors in the images.</p>
 
             </div>
 </div>
-<div class="footer">
-  <h3>© 2022-2024 Breell Dorman's Artistry</h3>
 
-  <img src="..//favicon.ico"><br>
+<!-- Footer Section -->
+<div class="footer" tabindex="0">
+    <h3 target="_blank" tabindex="0">© 2022-2024 Breell Dorman's Artistry</h3>
+    <img src="..//favicon.ico" alt="Breell's Logo" target="_blank" tabindex="0">
 
-
-    <p><a href="mailto:bdormandesigns@gmail.com">bdormandesigns@gmail.com</a></p>
-
-
-</div></div>
-
-<script>
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('sidebar-visible');
-});
-
-</script>
-
-
+    <p><a href="mailto:bdormandesigns@gmail.com" target="_blank" tabindex="0">bdormandesigns@gmail.com</a></p>
+</div>
 
 
 
@@ -363,120 +314,6 @@ document.addEventListener('DOMContentLoaded', applySavedTheme);
     </script>
 
 
-    <script>
-    const searchFunction = () => {
-        const input = document.getElementById('searchInput2').value.toLowerCase();
-        const resultsContainer = document.getElementById('searchResults2');
-        const clearButton = document.getElementById('clearSearch');
-
-        // Toggle visibility of results container and clear button based on input
-        if (input) {
-            resultsContainer.style.display = 'block';
-            clearButton.style.display = 'inline'; // Show the clear button when there's input
-        } else {
-            resultsContainer.style.display = 'none';
-            clearButton.style.display = 'none'; // Hide the clear button when input is empty
-        }
-
-        resultsContainer.innerHTML = ''; // Clear previous results
-
-
-        const searchData = [
-            { name: 'About', url: '..//about/index.html' },
-              { name: 'Book', url: '..//books/index.html' },
-                { name: 'Contact', url: '..//contact/index.html' },
-                  { name: 'Home', url: 'index.html' },
-                    { name: 'Posters', url: '..//posters/index.html' },
-                    { name: 'Resume', url: '..//resume/index.html' },
-                      { name: 'Videos', url: '..//videos/index.html' },
-                      { name: 'Websites', url: '..//websites/index.html' },
-
-
-            // Add more results as needed
-        ];
-
-        const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
-
-        filteredData.forEach(item => {
-            const div = document.createElement('div');
-            const a = document.createElement('a');
-            a.textContent = item.name;
-            a.href = item.url;
-
-            div.appendChild(a);
-            resultsContainer.appendChild(div);
-        });
-    };
-
-    const clearSearchFunction = () => {
-        document.getElementById('searchInput2').value = ''; // Clear input
-        document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
-        document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
-        document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
-    };
-
-    // Optionally, automatically trigger the search function when the input is cleared
-    document.getElementById('searchInput2').addEventListener('input', searchFunction);
-
-    </script>
-
-        <script>
-        const searchFunction = () => {
-            const input = document.getElementById('searchInput2').value.toLowerCase();
-            const resultsContainer = document.getElementById('searchResults2');
-            const clearButton = document.getElementById('clearSearch');
-
-            // Toggle visibility of results container and clear button based on input
-            if (input) {
-                resultsContainer.style.display = 'block';
-                clearButton.style.display = 'inline'; // Show the clear button when there's input
-            } else {
-                resultsContainer.style.display = 'none';
-                clearButton.style.display = 'none'; // Hide the clear button when input is empty
-            }
-
-            resultsContainer.innerHTML = ''; // Clear previous results
-
-
-            const searchData = [
-                { name: 'About', url: '..//about/index.html' },
-                  { name: 'Book', url: '..//books/index.html' },
-                    { name: 'Contact', url: '..//contact/index.html' },
-                      { name: 'Home', url: 'index.html' },
-                        { name: 'Posters', url: '..//posters/index.html' },
-                        { name: 'Resume', url: '..//resume/index.html' },
-                          { name: 'Videos', url: '..//videos/index.html' },
-                          { name: 'Websites', url: '..//websites/index.html' },
-
-
-                // Add more results as needed
-            ];
-
-            const filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
-
-            filteredData.forEach(item => {
-                const div = document.createElement('div');
-                const a = document.createElement('a');
-                a.textContent = item.name;
-                a.href = item.url;
-
-                div.appendChild(a);
-                resultsContainer.appendChild(div);
-            });
-        };
-
-        const clearSearchFunction = () => {
-            document.getElementById('searchInput2').value = ''; // Clear input
-            document.getElementById('searchResults2').innerHTML = ''; // Clear previous results
-            document.getElementById('searchResults2').style.display = 'none'; // Optionally hide the results container
-            document.getElementById('clearSearch').style.display = 'none'; // Hide the clear button
-        };
-
-        // Optionally, automatically trigger the search function when the input is cleared
-        document.getElementById('searchInput2').addEventListener('input', searchFunction);
-
-        </script>
-
 
 <script>
     // Get the toggle button by its ID
@@ -534,6 +371,6 @@ document.addEventListener('DOMContentLoaded', applySavedTheme);
     
     </script>
 
-<script src="settings.js"></script>
+
 </body>
 </html>
