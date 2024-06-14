@@ -482,43 +482,22 @@ function myFunction() {
 
 
 
-
-
 <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+   
 
-      function search() {
-          var searchInput = document.getElementById("searchInput").value;
-          var searchResults = document.getElementById("searchResults");
-
-          // Implement your search functionality here
-          // For simplicity, I'm just showing and hiding the search-results div in this example
-          if (searchInput.trim() !== "") {
-              searchResults.style.display = "block";
-              searchResults.innerHTML = "Search results for: " + searchInput;
-          } else {
-              searchResults.style.display = "none";
-          }
-      }
-  </script>
-
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  var searchResults = document.getElementById("searchResults2");
-
-  if (x.className === "topnav") {
-    x.className += " responsive";
-    // Show searchResults2 when opening the menu
-    searchResults.style.display = "block";
-  } else {
-    x.className = "topnav";
-    // Hide searchResults2 when closing the menu
-    searchResults.style.display = "none";
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    
+     
+    } else {
+      x.className = "topnav";
+     
+    
+    }
   }
-}
-</script>
+  </script>
 
 
 

@@ -47,7 +47,7 @@
             <div class="dropdown-content" tabindex="0">
                 <a href="..//posters/index.html"tabindex="0" aria-label="View my poster design projects"tabindex="0">Posters&nbsp;&nbsp;&nbsp;</a>
                 <a href="..//videos/index.html"tabindex="0" aria-label="View my video projects"tabindex="0">Videos</a>
-                <a href="..//websties/index.html"tabindex="0" aria-label="View my website design projects" tabindex="0" >Websites</a>
+                <a href="..//websites/index.html"tabindex="0" aria-label="View my website design projects" tabindex="0" >Websites</a>
                 <a href="..//books/index.html" tabindex="0"aria-label="View my book design projects"tabindex="0">&#8202;&#8202;&#8202;Books</a>
             </div>
         </div>
@@ -179,22 +179,7 @@
 
 
 
-  <script>
-
-        function search() {
-            var searchInput = document.getElementById("searchInput").value;
-            var searchResults = document.getElementById("searchResults");
-
-            // Implement your search functionality here
-            // For simplicity, I'm just showing and hiding the search-results div in this example
-            if (searchInput.trim() !== "") {
-                searchResults.style.display = "block";
-                searchResults.innerHTML = "Search results for: " + searchInput;
-            } else {
-                searchResults.style.display = "none";
-            }
-        }
-    </script>
+  
 
 
 
@@ -205,11 +190,11 @@
 
     if (x.className === "topnav") {
       x.className += " responsive";
-      // Show searchResults2 when opening the menu
+    
      
     } else {
       x.className = "topnav";
-      // Hide searchResults2 when closing the menu
+     
     
     }
   }
