@@ -5079,14 +5079,29 @@ margin-top: 100px; /* Space below the heading */;
 #main-content > div > h3 {
   padding: 20px
 }
-
+@media screen and (max-width: 600px) {
+  #about > p > a {
+  font-size: 13.5px !important;
+}
+}
 @media screen and (max-width: 600px) {
 #main-content > div > h3 {
   padding: 5px;
   font-size: 14px
 }
+
+
+
+#about > p  {
+  font-size: 13.5px;
+}
+
 #work > div > div > p {
   font-size: 12px;
+}
+
+#main-content > header > p {
+  font-size: 13.5px;
 }
 }
 @media screen and (max-width: 600px) {
@@ -5772,3 +5787,16 @@ p:hover {
   outline: 2px solid dodgerblue;
 }
 
+
+
+
+#about > p > a {
+  font-size: 16px;
+  color:white;
+  text-decoration: underline;
+}
+
+
+#work > a > h2 {
+  text-decoration: none;
+}

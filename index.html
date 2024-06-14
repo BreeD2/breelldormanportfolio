@@ -121,14 +121,14 @@
         <div id="main-content" class="content">
 
           <header tabindex="0">
-          <h1 tabindex="0">Welcome to My Portfolio</h1>
-          <p tabindex="0">I design websites, posters, books, and videos.</p>
+          <h1 tabindex="0">Welcome to Breell Dorman's Artistry</h1>
+          <p tabindex="0">Welcome! I specialize in creating visually compelling graphic designs and intuitive UX solutions.</p>
           <button id="viewWork" tabindex="0">View My Work</button>
       </header>
 
       <section id="about" tabindex="0">
           <h2 tabindex="0">About Me</h2>
-          <p tabindex="0">Hello! I'm Breell Dorman, a graphic designer with a rich palette of expertise spanning Adobe Creative Suite, HTML, CSS, JavaScript, and Microsoft Office Suite. My professional journey is dedicated to blending creativity with technology to craft visually compelling narratives and innovative designs. I am currently pursuing a UX certification, which I began in May 2024 and expect to complete by August 2024. Let's collaborate to elevate your brand's digital presence to new heights!</p>
+          <p tabindex="0">Hello! I'm B Dorman, a graphic designer with a rich palette of expertise spanning Adobe Creative Suite, HTML, CSS, JavaScript, and Microsoft Office Suite. My professional journey is dedicated to blending creativity with technology to craft visually compelling narratives and innovative designs. I am currently pursuing a UX certification, which I began in May 2024 and expect to complete by August 2024. If you have any questions or would like to discuss a project, don't hesitate to <a href="contact/index.html" tabindex="0">contact me.</a></p>
 
       </section>
       <section id="work" tabindex="0">
@@ -139,6 +139,7 @@
                  <h3 tabindex="0">Newport Jazz Festival 65'</h3>
 
                  <p tabindex="0">This poster is a recreation of the iconic Newport Jazz Festival '65. Created using Adobe Photoshop and Illustrator, I chose to feature legendary jazz musicians Frank Sinatra and Count Basie, who performed at the festival. The color scheme is designed to evoke a vibrant, jazz-inspired atmosphere, while the font selection adds a celebratory touch. I experimented with various text placements, such as having text emerge from a trumpet, positioning the 'afternoon' and 'evening' texts oppositely, and placing concert details in the right corner. Additionally, I manipulated the background to give transparency to the instruments and music sheets, and I applied an inner glow effect to make certain texts pop.</p>
+
 
 
              </div>
@@ -353,7 +354,13 @@
         </script>
 
 
- 
+<script>
+    document.getElementById('viewWork').addEventListener('click', function() {
+        document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
+    });
+    
+    
+    </script>
 
 <script>
     // Get the toggle button by its ID

@@ -4,9 +4,10 @@
 
 
 body {
-  background-color:white;
+  background-color:#f4f4f4;;
   height:auto  !important;
-  font-family: "arial", !important;
+ 
+  font-family: Arial, Helvetica, sans-serif !important;
 
 
 }
@@ -1078,7 +1079,7 @@ body.sepia-effect {
 }
 /* Light mode styles */
 body {
-  background-color: #fff; /* Light background color */
+  background-color: #f4f4f4;; /* Light background color */
   color: #000; /* Dark text color */
 }
 
@@ -1153,7 +1154,7 @@ body.dark-mode .topnav a {
 
 /* Normal mode styles */
 body {
-  background-color: gainsboro; /* Red background for normal mode */
+  background-color: #f4f4f4;; /* Red background for normal mode */
   color: #000;
 }
 
@@ -1184,7 +1185,7 @@ body {
 
   /* Normal mode styles */
   body {
-    background-color: white;
+    background-color: #f4f4f4;;
     color: #000;
   }
 
@@ -1216,11 +1217,7 @@ body {
 
 
 
-body {
-  background-color: white;
-  font-family: 'arial', sans-serif;
-  height:auto
-}
+
 
 
 
@@ -1239,10 +1236,6 @@ input[type=text] {
 }
 
 
-/* Style the placeholder text */
-input[type=text]::placeholder {
-  color: #999; /* Set placeholder text color */
-}
 
 /* Optional: Style on focus */
 input[type=text]:focus {
@@ -2819,7 +2812,7 @@ body.dark-mode .next {
     line-height: 1.6;
     color: #666;
     background-color: white;
-    border-radius: 8px;
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     font-style: normal;
@@ -3766,6 +3759,7 @@ rgb(146, 172, 67)
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 50%;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 
 
@@ -4490,11 +4484,6 @@ form input[type="text"] {
   font-family:arial
 }
 
-/* Style placeholders */
-.form-group input::placeholder {
-    color: #888; /* Placeholder text color */
-    opacity: 1; /* Full opacity */
-}
 
 #loginForm {
   background-color: white;
@@ -5692,6 +5681,8 @@ text-align: left;
 
 
 
+
+
 #zoomOut {
   font-size: 10px;
 
@@ -5764,6 +5755,64 @@ margin-top: 20px;
        background-color: whitesmoke;
 
    }
+
+   #email {-webkit-text-size-adjust: 100%;
+   --dropup-bg-light: grey;
+   --dropup-bg-dark: grey;
+   font: inherit;
+   overflow: visible;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   outline: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 10px 0;
+   color: grey;
+   font-family: arial;
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 16px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;}
+
+   #country {-webkit-text-size-adjust: 100%;
+    --dropup-bg-light: grey;
+    --dropup-bg-dark: grey;
+    font: inherit;
+    overflow: visible;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    color: grey;
+    font-family: arial;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;}
+
+    #subject {-webkit-text-size-adjust: 100%;
+      --dropup-bg-light: grey;
+      --dropup-bg-dark: grey;
+      font: inherit;
+      overflow: visible;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      outline: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 0;
+      color: grey;
+      font-family: arial;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;}
 
    .game-cover {
        width: 100%;
@@ -5899,11 +5948,6 @@ form input[type="text"] {
   font-family:arial
 }
 
-/* Style placeholders */
-.form-group input::placeholder {
-    color: #888; /* Placeholder text color */
-    opacity: 1; /* Full opacity */
-}
 
 #loginForm {
   background-color: white;
@@ -6613,7 +6657,7 @@ input[type="email"], input[type="text"], select,{
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    font-family: helvetica
+    font-family: arial
 }
 
 input[type="submit"] {
@@ -6640,10 +6684,7 @@ font-family: helvetica;
 margin-top: 100px
 }
 
-#email::placeholder, #fname::placeholder, #lname::placeholder,#country, #subject::placeholder {
-color:black;
-font-size: 14px
-}
+
 
 /* Specific styling for form spacing and alignment */
 .form-container {
@@ -6801,9 +6842,20 @@ label {
 }
 
 input[type="email"],
-#lname,#fname,
+#lname, #fname,
 select,
-textarea {
+textarea, #country {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+
+#email {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
@@ -6863,12 +6915,13 @@ color: black;
 }
 
 
+
 .head {
     border-bottom: 2px solid #ccc; /* Solid grey line */
     padding-bottom: 10px; /* Space between the text and the line */
 }
 .intro {
-    border-bottom: 1px solid #ccc; /* Solid grey line */
+  border-bottom: 2px solid #ccc; /* Solid grey line */
     padding-bottom: 10px; /* Space between the text and the line */
 }
 
@@ -7034,4 +7087,46 @@ p:hover {
 .dropdown-content a:focus,
  {
   outline: 2px solid dodgerblue;
+}
+
+#main-content > div.container > div > div > form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], #country {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Placeholder text styles */
+input::placeholder {
+  font-family: Arial, sans-serif;
+  color: grey;
+}
+#main-content > div.container > div {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+/* Placeholder text styles */
+input::placeholder {
+ font-size: 13.5px;
+}
+#country {
+  font-size: 13.5px;
+ }
+ #subject {
+  font-size: 13.5px;
+ }
+
+ #main-content > div.container > div > p {
+  padding: 10px;
+  font-size: 13.5px;
+ }
+ 
 }
