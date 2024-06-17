@@ -5081,7 +5081,7 @@ margin-top: 100px; /* Space below the heading */;
 }
 @media screen and (max-width: 600px) {
   #about > p > a {
-  font-size: 13.5px !important;
+  font-size: 13.5px
 }
 }
 @media screen and (max-width: 600px) {
@@ -5799,4 +5799,8 @@ p:hover {
 
 #work > a > h2 {
   text-decoration: none;
+}
+
+#main-content > div > div> p {
+  font-size: 13.5px;
 }

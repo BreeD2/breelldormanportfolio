@@ -6152,3 +6152,8 @@ margin-top: 100px; /* Space below the heading */;
 #main-content > div > div:nth-child(1) > p {
   font-size: 13.5px;
 }
+
+#main-content > div > div> p {
+  font-size: 13.5px;
+  text-align: left;
+}
