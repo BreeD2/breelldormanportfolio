@@ -5938,7 +5938,7 @@ body {
 
 #skills > div > div.skill-name {
   padding: 5px;
-  font-size: 14px
+  font-size: 13.5px
 }
 
 }
@@ -6515,3 +6515,15 @@ body.light-mode .dropdown-content2 a {
 }
 
 
+#contact > p {
+  padding-right:100px;
+  padding-left:100px
+}
+
+
+@media screen and (max-width: 1060px) {
+#contact > p {
+  padding-right:20px;
+  padding-left:20px
+}
+}
