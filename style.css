@@ -5801,6 +5801,8 @@ p:hover {
   text-decoration: none;
 }
 
-#main-content > div > div> p {
-  font-size: 13.5px;
+@media screen and (max-width: 600px) {
+  body > center > header > h1 {
+  font-size: 25px;
+}
 }
