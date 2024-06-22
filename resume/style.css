@@ -4,7 +4,7 @@
 
 
 body {
-  background-color:white;
+  background-color:whitesmoke;
   height:auto  !important;
   font-family: "arial", !important;
 
@@ -1076,11 +1076,7 @@ body.sepia-effect {
 .decrease-contrast {
   filter: contrast(90%);
 }
-/* Light mode styles */
-body {
-  background-color: #fff; /* Light background color */
-  color: #000; /* Dark text color */
-}
+
 
 
 
@@ -1122,11 +1118,6 @@ body.dark-mode .topnav {
 }
 
 
-/* Normal mode styles */
-body {
-  background-color: gray; /* Red background for normal mode */
-  color: #000;
-}
 
 
 
@@ -1151,11 +1142,6 @@ body.dark-mode .topnav a {
 
 
 
-/* Normal mode styles */
-body {
-  background-color: gainsboro; /* Red background for normal mode */
-  color: #000;
-}
 
 
 body .topnav {
@@ -1170,23 +1156,12 @@ body .topnav a {
 }
 
 
-/* Normal mode styles */
-body {
-  background-color: #ff0000;
-  color: #000;
-}
 
 
 
 
 
 
-
-  /* Normal mode styles */
-  body {
-    background-color: white;
-    color: #000;
-  }
 
 
   .dropup-content {
@@ -1215,12 +1190,6 @@ body {
   }
 
 
-
-body {
-  background-color: white;
-  font-family: 'arial', sans-serif;
-  height:auto
-}
 
 
 
