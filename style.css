@@ -4960,7 +4960,8 @@ button {
     background: black;
     color: white;
     border: none;
-    margin-top: 20px
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 .footer p {
@@ -4978,7 +4979,8 @@ button {
 }
 
 #main-content > header > h1 {
-  margin-top: 100px
+  margin-top: 100px;
+  color:white
 }
 
 #about {
@@ -5100,9 +5102,7 @@ margin-top: 100px; /* Space below the heading */;
   font-size: 12px;
 }
 
-#main-content > header > p {
-  font-size: 13.5px;
-}
+
 }
 @media screen and (max-width: 600px) {
 #main-content > header > h1{
@@ -5115,6 +5115,18 @@ margin-top: 100px; /* Space below the heading */;
 #work > h2 {
     font-size: 25px
 }
+}
+
+#main-content > header > p {
+  font-size: 13.5px;
+ 
+  
+}
+
+#main-content > header > p {
+ color:white
+ 
+  
 }
 
 .portfolio {
@@ -5250,9 +5262,6 @@ left:15px;
   color:white
 }
 
-.light-mode #main-content > header > p {
-  color:white
-}
 
 .dark-mode #main-content > header > h1 {
   color:white
@@ -5312,7 +5321,7 @@ left:15px;
 }
 
 #main-content > header {
-  background-color: lightpink;
+  background-color: darkslategrey;
   color:white
 }
 
@@ -5801,8 +5810,3 @@ p:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-  body > center > header > h1 {
-  font-size: 25px;
-}
-}
