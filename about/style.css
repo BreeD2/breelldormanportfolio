@@ -1759,11 +1759,11 @@ select:hover {
 
 
 
-
-.opening-screen p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+#main-content > div.form-container > div > h2 {
+  font-size: 1.2rem;
 }
+
+
 
 .opening-screen button {
     padding: 10px 20px;
@@ -1939,12 +1939,6 @@ select:hover {
 }
 
 
-#about h2 {
-  margin-top: 0px; /* Space below the heading */;
-      color:white;
-    font-size: 28px; /* Slightly larger font size for headings */;
-
-}
 
 
 
@@ -2416,9 +2410,7 @@ select:hover {
 
 
   }
-  h2 {
-    color:white
-  }
+
 
   /* Style for select dropdowns */
   #mainCategory, #subCategory {
@@ -3861,10 +3853,7 @@ margin-left: -10px
 
 }
 
-h2 {
-    color: #333;
-    text-align: center;
-}
+
 
 form {
     margin-top: 20px;
@@ -4451,20 +4440,6 @@ button#loginButton:hover {
 }
 
 
-#loginSection h2 {
-    color: #333;
-    text-align: center;
-}
-
-.light-mode #loginSection h2 {
-    color: #333;
-
-}
-
-.dark-mode #loginSection h2 {
-    color: white;
-
-}
 
 form input[type="password"] {
   width: calc(100% - 22px);
@@ -5011,10 +4986,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#work h2 {
-    text-align: center;
-margin-top: 100px; /* Space below the heading */;
-}
+
 
 .gallery {
     display: grid;
@@ -5785,12 +5757,6 @@ button {
     margin-top: 20px;
 }
 
-#viewWork, #contactMe {
-    background: black;
-    color: white;
-    border: none;
-    margin-top: 20px
-}
 
 .footer p {
   color:white
@@ -5840,10 +5806,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#work h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .gallery {
     display: grid;
@@ -5915,6 +5877,8 @@ body {
   font-size: 14px
 }
 
+
+
 #contact > p {
   padding: 5px;
   font-size: 13.5px;
@@ -5930,9 +5894,10 @@ body {
 
 
 #contact > a {
-  padding: 5px;
+
   font-size: 13.5px;
   font-family: arial;
+  color:black
 
 }
 
@@ -5941,6 +5906,8 @@ body {
   font-size: 13.5px
 }
 
+
+
 }
 @media screen and (max-width: 600px) {
 #main-content > header > h1{
@@ -5948,12 +5915,6 @@ body {
 }
 }
 
-@media screen and (max-width: 600px) {
-
-#work > h2 {
-    font-size: 25px
-}
-}
 
 .portfolio {
   display: grid;
@@ -6036,9 +5997,6 @@ nav ul li a {
     padding: 10px 20px;
 }
 
-h1, h2 {
-    color: #555;
-}
 
 ul {
     list-style-type: none;
@@ -6101,6 +6059,12 @@ label {
 @media (max-width: 768px) {
     .skill-bar {
         transition: width 1s; /* Faster animation on smaller devices */
+    }
+    #contact > h2 {
+      font-size: 25px;
+    }
+    #skills > h2 {
+      font-size: 25px;
     }
 }
 
@@ -6517,7 +6481,8 @@ body.light-mode .dropdown-content2 a {
 
 #contact > p {
   padding-right:100px;
-  padding-left:100px
+  padding-left:100px;
+  color:black
 }
 
 
@@ -6526,4 +6491,46 @@ body.light-mode .dropdown-content2 a {
   padding-right:20px;
   padding-left:20px
 }
+}
+
+.form-container {
+
+  line-height: 1.5;
+  box-sizing: inherit;
+  mar
+  margin: 0px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+  background: white;
+  outline: none;
+  margin-top: 100px;
+  max-width: 1000px;
+
+}
+
+@media screen and (max-width: 1060px) {
+  .form-container {
+  
+ 
+  max-width: 800px;
+  
+}
+
+}
+
+#contact > h2 {
+  color:black;
+  margin-top: 50px;
+}
+
+.light-mode #contact > h2 {
+  color:black
+}
+
+.dark-mode #contact > h2 {
+  color:white;
+
 }

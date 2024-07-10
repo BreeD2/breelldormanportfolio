@@ -6126,3 +6126,9 @@ margin-top: 100px; /* Space below the heading */;
   font-size: 13.5px;
   text-align: left;
 }
+
+body.light-mode{
+  background-color: white;
+ 
+
+}

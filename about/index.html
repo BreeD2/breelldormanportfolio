@@ -103,6 +103,7 @@
 
 
 <!-- About Section -->
+<div class="form-container">
 
 <section id="contact" tabindex="0">
         <h2 tabindex="0">About</h2>
@@ -118,7 +119,7 @@
             <div class="skill-bar" tabindex="0" id="adobe" style="width: 90%;"></div>
         </div>
         <div class="skill">
-            <div class="skill-name" tabindex="0">Web Design</div>
+            <div class="skill-name" tabindex="0">Web Design:</div>
             <div class="skill-bar" tabindex="0"id="webdesign" style="width: 85%;"></div>
         </div>
         <div class="skill">
@@ -126,19 +127,19 @@
             <div class="skill-bar" tabindex="0" id="printdesign" style="width: 60%;"></div>
         </div>
         <div class="skill">
-            <div class="skill-name" tabindex="0">Color Theme</div>
+            <div class="skill-name" tabindex="0">Color Theme:</div>
             <div class="skill-bar" tabindex="0" id="colortheme" style="width: 80%;"></div>
         </div>
         <div class="skill">
-            <div class="skill-name" tabindex="0">Photography and Photo Editing</div>
+            <div class="skill-name" tabindex="0">Photography and Photo Editing:</div>
             <div class="skill-bar" tabindex="0" id="photography" style="width: 60%;"></div>
         </div>
         <div class="skill">
-            <div class="skill-name" tabindex="0">UX Design</div>
+            <div class="skill-name" tabindex="0">UX Design:</div>
             <div class="skill-bar" tabindex="0" id="uxdesign" style="width: 50%;"></div>
         </div>
     </section>
-
+</div>
 
 
 
@@ -180,13 +181,14 @@
         storeOriginalFontSizes(); // Store original font sizes for specified elements
     });
 
-    // Store the original font sizes
-    function storeOriginalFontSizes() {
-        const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a';
-        document.querySelectorAll(selector).forEach(element => {
-            element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
-        });
-    }
+   // Store the original font sizes
+function storeOriginalFontSizes() {
+    const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div > label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, .skill-bar, #skills > div:nth-child(2) > div.skill-name';
+    document.querySelectorAll(selector).forEach(element => {
+        element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
+    });
+}
+
 
     // Adjust the font size of elements
     function adjustFontSize(factor, selector) {
@@ -198,17 +200,17 @@
 
     // Increase font size
     function increaseFont() {
-        adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a');
+        adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div > label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, .skill-bar, #skills > div:nth-child(2) > div.skill-name');
     }
 
     // Decrease font size
     function decreaseFont() {
-        adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a');
+        adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, #contact > a, #skills > div > div.skill-name, .skill-bar,  #contact > a');
     }
 
     // Reset font sizes to their original values
     function resetFont() {
-        const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a';
+        const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, #contact > a,#skills > div > div.skill-name';
         document.querySelectorAll(selector).forEach(element => {
             const originalFontSize = element.getAttribute('data-original-font-size');
             if (originalFontSize) element.style.fontSize = originalFontSize;
