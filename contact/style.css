@@ -987,6 +987,7 @@ body.dark-mode .topnav a.active {
 
 #main-content > div.form-container > div > h2 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
@@ -3262,7 +3263,8 @@ color:black;
 }
 
 .title-text {
-  font-size: 16px; /* Default font size */
+  font-size: 16px; /* Default font size */;
+  font-weight: bolder;
 }
 
 .sort {
@@ -4976,7 +4978,8 @@ button {
 }
 
 #main-content > header > h1 {
-  margin-top: 100px
+  margin-top: 100px;
+  color:white
 }
 
 #about {
@@ -5241,6 +5244,8 @@ left:15px;
   color:white
 }
 
+
+
 .dark-mode #about > h2 {
   color:white
 }
@@ -5372,6 +5377,7 @@ body.dark-mode .topnav a.active:hover {
 .project h3 {
     margin: 0.5em 0;
       padding:10px;
+      font-weight: bold;
 }
 
 .dark-mode .project {
@@ -6728,9 +6734,31 @@ input[type="submit"] {
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
-    font-size: 18px; /* Larger font size for better visibility */
+    font-size: 18px; /* Larger font size for better visibility */;
+    font-weight: bold;
 }
 
+
+/* Style the submit button to stand out */
+.light-mode input[type="submit"] {
+  background-color: grey;
+  color:white
+
+}
+
+/* Style the submit button to stand out */
+.light-mode input[type="submit"]:hover {
+  background-color: lightgrey;
+  color:white
+
+}
+
+/* Style the submit button to stand out */
+.dark-mode input[type="submit"] {
+  background-color: #696969;
+  color:white
+
+}
 input[type="submit"]:hover {
     background-color: hotpink; /* Hover effect for interaction */
 }
@@ -6782,10 +6810,6 @@ color:white
 color:white
 }
 
-.dark-mode #main-content > div.container > div > div > form > input[type=submit]  {
-color:white;
-background-color: black
-}
 
 .light-mode #main-content > div.container > div > div > form > label {
 color:black
@@ -6799,6 +6823,12 @@ color:black
 color:black;
 background-color: whitesmoke
 }
+
+.dark-mode #main-content > div.container > div > div > form > input[type=submit]  {
+  color:white;
+  background-color: black
+  }
+  
 
 .light-mode #main-content > div.footer > p {
 color:black
@@ -6870,14 +6900,7 @@ textarea {
   height: 100px;
 }
 
-input[type="submit"] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 
 
 .dark-mode #main-content > div.container > div > div > form > input[type=submit] {
@@ -7163,6 +7186,7 @@ input::placeholder {
 #contact > h2 {
   color:black;
   margin-top: 50px;
+  font-weight: bold;
 }
 
 .light-mode #contact > h2 {
@@ -7178,4 +7202,7 @@ input::placeholder {
   color:white
 }
 
+#main-content > div.form-container > div > form > label {
+  font-weight: bold;
+}
 

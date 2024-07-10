@@ -3252,7 +3252,8 @@ color:black;
 }
 
 .title-text {
-  font-size: 16px; /* Default font size */
+  font-size: 16px; /* Default font size */;
+  font-weight: bolder;
 }
 
 .sort {
@@ -4845,10 +4846,7 @@ header#portfolio .w3-container {
     margin-top: 20px;
 }
 
-header#portfolio h1 {
-    font-size: 24px;
-    color: #000;
-}
+
 
 .w3-button {
     border: none;
@@ -4980,11 +4978,20 @@ button {
 
 #main-content > header > h1 {
   margin-top: 100px;
+  color:white;
+  font-weight: bold;
+}
+
+.dark-mode #main-content > header > h1 {
   color:white
 }
 
+.light-mode #main-content > header > h1 {
+  color:black
+}
+
 #about {
-  background-color: mediumpurple;
+  background-color: black;
   padding: 60px
 }
 
@@ -5115,6 +5122,10 @@ margin-top: 100px; /* Space below the heading */;
 #work > h2 {
     font-size: 25px
 }
+}
+
+#work > h2 {
+  font-weight: 600;
 }
 
 #main-content > header > p {
@@ -5262,10 +5273,11 @@ left:15px;
   color:white
 }
 
-
-.dark-mode #main-content > header > h1 {
-  color:white
+#about > h2 {
+  color:white;
+  font-weight:600
 }
+
 
 .dark-mode #about > h2 {
   color:white
@@ -5286,7 +5298,7 @@ left:15px;
 
 #work > div > div > h3 {
 
-
+font-weight: bold;
   font-size: 20px;
   padding: 10px
 }
@@ -5398,6 +5410,7 @@ body.dark-mode .topnav a.active:hover {
 .project h3 {
     margin: 0.5em 0;
       padding:10px;
+      font-weight: bold;
 }
 
 .dark-mode .project {
@@ -5809,4 +5822,5 @@ p:hover {
 #work > a > h2 {
   text-decoration: none;
 }
+
 

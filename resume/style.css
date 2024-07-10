@@ -3221,7 +3221,8 @@ color:black;
 }
 
 .title-text {
-  font-size: 16px; /* Default font size */
+  font-size: 16px; /* Default font size */;
+  font-weight: bolder;
 }
 
 .sort {
@@ -5337,12 +5338,17 @@ body.dark-mode .topnav a.active:hover {
 .project p {
   padding:10px;
   text-align: left;
-
+ 
 }
 
 .project h3 {
     margin: 0.5em 0;
       padding:10px;
+      font-weight: bold;
+      font-size: 1.2em;
+}
+#main-content > div > div > h3 {
+  font-size: 1.2em;
 }
 
 .dark-mode .project {
@@ -5659,6 +5665,10 @@ text-align: left;
   color:white
 }
 
+#main-content > div > div > h3 {
+  font-size: 24px;
+}
+
 /* Focus styles for interactive elements */
 .topnav a,
 .topnav button,
@@ -5789,12 +5799,14 @@ p:hover {
   padding: 10px 15px;
   text-decoration: none;
   color: white;
-  background-color: #007BFF;
+  background-color: mediumpurple;
   border-radius: 4px;
 }
 
+
+
 .project a:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
 
 /* Responsive styles */

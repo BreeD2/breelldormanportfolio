@@ -3253,7 +3253,8 @@ color:black;
 }
 
 .title-text {
-  font-size: 16px; /* Default font size */
+  font-size: 16px; /* Default font size */;
+  font-weight: bolder;
 }
 
 .sort {
@@ -5375,6 +5376,7 @@ body.dark-mode .topnav a.active:hover {
 .project h3 {
     margin: 0.5em 0;
       padding:10px;
+      font-weight: bold;
 }
 
 .dark-mode .project {

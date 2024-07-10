@@ -3244,7 +3244,8 @@ color:black;
 }
 
 .title-text {
-  font-size: 16px; /* Default font size */
+  font-size: 16px; /* Default font size */;
+  font-weight: bolder;
 }
 
 .sort {
@@ -5346,6 +5347,7 @@ body.dark-mode .topnav a.active:hover {
 .project h3 {
     margin: 0.5em 0;
       padding:10px;
+      font-weight: bold;
 }
 
 .dark-mode .project {
@@ -5901,6 +5903,15 @@ body {
 
 }
 
+
+.dark-mode #contact > a {
+
+  font-size: 13.5px;
+  font-family: arial;
+  color:white
+
+}
+
 #skills > div > div.skill-name {
   padding: 5px;
   font-size: 13.5px
@@ -6068,7 +6079,14 @@ label {
     }
 }
 
-
+#skills > h2 {
+  font-weight: bold;
+   font-family: Arial, sans-serif;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  
+}
 .dark-mode .project a {
   background-color:none
 }
@@ -6524,6 +6542,9 @@ body.light-mode .dropdown-content2 a {
 #contact > h2 {
   color:black;
   margin-top: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
 }
 
 .light-mode #contact > h2 {
@@ -6534,3 +6555,4 @@ body.light-mode .dropdown-content2 a {
   color:white;
 
 }
+
