@@ -9,7 +9,7 @@ body {
   font-family: "arial", !important;
 
 
-
+}
 
 
 .topnav a {
@@ -3255,7 +3255,6 @@ color:black;
   font-size: 16px; /* Default font size */;
   font-weight: bolder;
 }
-
 .sort {
   margin: 1%;
   font-size: 15px
@@ -5089,7 +5088,7 @@ margin-top: 100px; /* Space below the heading */;
 #work > div > div > p {
   font-size: 12px;
 }
-}x
+}
 @media screen and (max-width: 600px) {
 #main-content > header > h1{
   font-size: 25px
@@ -6357,6 +6356,978 @@ body.light-mode .dropdown-content2 a {
 
 
 
+
+.light-mode #loginForm a {
+
+  color:black
+}
+
+
+.dark-mode #loginForm a {
+
+  color:white
+}
+
+
+.dark-mode #loginForm {
+  background-color: dimgrey;
+  color:white;
+}
+
+.light-mode #loginForm {
+  background-color: white;
+  color:black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode #loginForm label {
+  color:white
+}
+
+.light-mode #loginForm label {
+  color:black
+}
+
+#loginForm label {
+  color:black
+}
+.dark-mode #loginForm a {
+    color: white;
+    text-decoration: underline;
+}
+
+.dark-mode .loginForm h2 {
+  color: white;
+}
+
+.light-mode .loginForm h2 {
+  color: black;
+}
+
+.loginForm h2 {
+  color: black;
+}
+#myTopnav > div.dropdown2 > div > a:hover {
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content2 button:hover{
+background-color: grey;
+color: white;
+  width: 100%;
+}
+
+.dropdown-content2 button{
+background-color: grey;
+color: white;
+  width: 100%;
+}
+
+
+
+
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* General Body Styling */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Header Styling */
+header#portfolio {
+    background-color: #f1f1f1;
+    padding-bottom: 20px;
+}
+
+header#portfolio .w3-container {
+    margin-top: 20px;
+}
+
+header#portfolio h1 {
+    font-size: 24px;
+    color: #000;
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.w3-button.w3-black, .w3-button.w3-black:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.w3-button.w3-white, .w3-button.w3-white:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: 0px 0px 2px #000;
+}
+
+/* Photo Grids Styling */
+.w3-row-padding, .w3-row-padding > .w3-container {
+    padding: 0 16px;
+}
+
+.w3-container {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.w3-hover-opacity:hover {
+    opacity: 0.8;
+}
+
+.w3-container.w3-white {
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design - Adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+    .w3-hide-small {
+        display: none;
+    }
+}
+
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: silver;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#about {
+    background: #f4f4f4;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 10px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+#viewWork, #contactMe {
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 20px
+}
+
+.footer p {
+  color:white
+}
+
+.footer a {
+  color:white;
+  text-decoration: underline;
+}
+
+#main-content > header {
+
+  height: 400px;
+}
+
+#main-content > header > h1 {
+  margin-top: 100px
+}
+
+#about {
+  background-color: purple;
+  padding: 60px
+}
+
+
+.light-mode #main-content > div {
+    background-color: white;
+    color:black
+}
+
+.dark-mode #main-content > div {
+    background-color: black;
+      color:white
+}
+.dark-mode #main-content > div > p {
+  color:white
+}
+
+.light-mode #main-content > div > p {
+  color:black
+}
+
+
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#work h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project p {
+    padding: 20px;
+    margin: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.high-contrast {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.high-contrast a {
+  color: #FFD700; /* Gold links for better visibility */
+}
+
+.high-contrast button {
+  background-color: #333; /* Darker background for buttons */
+  color: #fff; /* White text for buttons */
+  border: 1px solid #fff; /* Adding a border to make buttons distinguishable */
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: white; /* Dark grey color for text */
+  font-size: 20px; /* Larger font size for visibility */
+}
+
+.sidebar button {
+  display: block; /* Make buttons span the width of the sidebar */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for easier interaction */
+  margin-top: 0px; /* Space between buttons */
+  background-color: transparent; /* Stylish blue background */
+  color: white; /* White text for high contrast */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates an interactive element */
+  font-size: 14px; /* Readable text size */
+}
+
+#main-content > div > h3 {
+  padding: 20px
+}
+
+@media screen and (max-width: 600px) {
+#main-content > div > h3 {
+  padding: 5px;
+  font-size: 14px
+}
+}
+@media screen and (max-width: 600px) {
+#main-content > header > h1{
+  font-size: 25px
+}
+}
+
+@media screen and (max-width: 600px) {
+
+#work > h2 {
+    font-size: 25px
+}
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  margin: 0.5em 0;
+}
+
+.project p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.project a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project a:hover {
+  background-color:dodgerblue;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio {
+  margin-top: 100px
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+header, section {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: #333;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+h1, h2 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    header h1, section h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
+}
+
+#contact {
+  margin-top: 100px
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+.skill-bar {
+    height: 20px;
+    width: 0; /* Start width from 0 and animate if required */
+    background-color: mediumpurple;
+    text-align: right;
+    line-height: 20px; /* Keeps text vertically centered */
+    color: white;
+    transition: width 2s;
+}
+
+/* Add media queries for responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .skill-bar {
+        transition: width 1s; /* Faster animation on smaller devices */
+    }
+}
+
+
+.dark-mode .project a {
+  background:none
+}
+
+.light-mode .project a {
+  background:none
+}
+
+.light-mode .project a:hover {
+  background:none
+}
+
+.dark-mode .project a:hover {
+  background:none
+}
+
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(4){
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+background-color: grey
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+background-color: lightgrey
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+background-color: dimgrey
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+background-color: grey
+}
+
+#main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+
+  background-color: grey;
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+
+  background-color: dimgrey;
+  color: white;
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover {
+
+  background-color: lightgrey;
+  color: white;
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover {
+
+  background-color: grey;
+  color: white;
+
+}
+.project a {
+  background: none
+}
+
+
+
+body.light-mode .topnav a.active:hover {
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+body.dark-mode .topnav a.active:hover {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.dark-mode .project p {
+
+    color:white;
+    background-color: black
+}
+
+.light-mode .project p {
+  background-color: white;
+  color:black
+}
+
+.project p {
+  padding:20px;
+  text-align: left;
+  background-color: white
+}
+
+.project h3 {
+    margin: 0.5em 0;
+      padding:10px;
+}
+
+.dark-mode .project {
+  background-color: black;
+  border: none
+}
+
+.dark-mode #main-content > div.portfolio {
+  background-color: #333;
+}
+
+.project {
+  background: white
+}
+
+.light-mode .project a:hover {
+  background: none
+}
+
+.light-mode body {
+  background: red
+}
+
+
+body.light-mode {
+  background-color: white
+}
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+.project a:hover {
+    background: none;
+}
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover{
+  background-color: black
+}
+
+#main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover{
+  background-color: black
+}
+
+#main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover{
+  background-color: black
+}
+
+
+
+
+
+#main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: mediumpurple
+
+}
+
+#main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover{
+  background-color: black
+}
+
+
+.dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: dimgrey
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+  background-color: darkgrey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: grey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+  background-color: lightgrey
+
+}
+
+
+
+#main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+  background-color: mediumpurple
+
+}
+
+
+#main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: mediumpurple
+
+}
+
+
+.dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: dimgrey
+
+}
+
+.dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover {
+  background-color: darkgrey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+  background-color: grey
+
+}
+
+.light-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover {
+  background-color: lightgrey
+
+}
+
+body.light-mode .topnav a {
+  color: #000; /* Black font color for the links in the navbar */;
+
+}
+
+body.light-mode .topnav a:hover {
+  color: white; /* Black font color for the links in the navbar */;
+
+}
+/* Dark Mode styles for dropdown and its content */
+.dark-mode .dropdown-content,
+ {
+  background-color: dimgrey; /* Dark Mode background color */;
+  color:white
+}
+.dark-mode .dropdown-content2 a:hover {
+  background-color: black
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  color: white;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.dropdown a:hover{
+  background-color: red;
+  color: white;
+}
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
+  background-color: grey;
+  color: white;
+}
+.light-mode .fa.fa-user:active {
+
+}
+
+.light-mode  .dropdown2:hover .dropbtn2 {
+  background-color: grey;
+  color: white;
+}
+
+.light-mode  .dropdown2 .dropdown .dropbtn2 {
+  background-color: grey;
+  color: black;
+}
+
+.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown-content:hover .dropbtn .i{
+  background-color: darkgrey;
+  color: black;
+}
+ .dropdown-content button:hover{
+  background-color: grey;
+  color: white;
+      width: 100%;
+}
+
+
+.light-mode  .dropdown-content2 a .dropbtn2 {
+  background-color: lightgrey;
+  color: black;
+}
+.light-mode  .dropdown-content2 .dropdown-content2 a{
+  background-color: grey;
+  color: black;
+}
+
+.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
+  color:black
+}
+
+.dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
+  background-color: slategrey;
+  color: white;
+}
+.light-mode .fas.fa-wheelchair {
+  color:black
+}
+.light-mode .fas.fa-wheelchair:hover {
+  color:white
+}
+.light-mode .fa.fa-user{
+  color:black
+}
+.light-mode .fa.fa-user:hover{
+  color:white
+}
+.light-mode .dropdown2:hover{
+  color:white
+}
+.light-mode .dropdown {
+  color:red
+}
+
+.light-mode .dropdown .dropbtn {
+  color:black
+}
+.dropdown .dropbtn {
+  color:white
+}
+.light-mode .dropdown2 .dropbtn2 {
+  color:black
+}
+.light-mode .dropdown-content:hover{
+  color:red
+}
+.light-mode .dropdown-content button {
+  color:red
+}
+
+
+
+/* Light mode styles */
+.light-mode .dropdown-content2 {
+  background-color: #555; /* Light background */
+  color: white; /* Dark text */
+}
+.light-mode .dropdown-content {
+  background-color: darkgrey; /* Light background */
+  color: white; /* Dark text */
+}
+
+.light-mode .fa {
+  color:black
+}
+.light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+  background-color: transparent
+}
+
+/* Dark mode styles */
+.dark-mode .dropdown-content2, .dark-mode .dropdown-content {
+  background-color: #555; /* Dark background */
+  color: white; /* Light text */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn {
+  background-color: darkgrey; /* Dark background for contrast */
+  color: white; /* White text for readability */
+}
+
+.light-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also turn white on hover */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn {
+  background-color: #555; /* Lighter dark background for contrast */
+  color: white; /* Darker text for readability */
+}
+
+.dark-mode .dropdown:hover .dropbtn i {
+  color: white; /* Ensure icons also change color appropriately on hover */
+}
+/* Hover effects for .dropbtn in light mode */
+.light-mode .dropdown:hover .dropbtn,
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: darkgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: grey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+
+.light-mode .dropdown-content2 a:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown-content button:hover {
+  background-color: lightgrey; /* Dark background for contrast in light mode */
+  color: white; /* White text for readability in light mode */
+}
+
+.light-mode .dropdown:hover .dropbtn i,
+.light-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also turn white on hover in light mode */
+}
+
+/* Hover effects for .dropbtn in dark mode */
+.dark-mode .dropdown:hover .dropbtn,
+.dark-mode .dropdown2:hover .dropbtn2 {
+  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+/* Hover effects for .dropbtn in dark mode */
+
+.light-mode .dropdown2:hover .dropbtn2 {
+  background-color: #555; /* Lighter dark background for contrast in dark mode */
+  color: white; /* Darker text for readability in dark mode */
+}
+
+.dark-mode .dropdown:hover .dropbtn i,
+.dark-mode .dropdown2:hover .dropbtn2 i {
+  color: white; /* Ensure icons also change color appropriately on hover in dark mode */
+}
+
+
+
+.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+  color: white;
+}
+.fa.fa-user {
+  color:white
+}
+.dark-mode  .dropdown2:hover .dropbtn2 {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode .dropdown-content {
+  background-color: slategrey;
+  color: white;
+}
+.dark-mode .dropdown-content button:hover {
+  background-color: black;
+  color: white;
+}
+body.light-mode .dropdown-content2 a {
+    color: white; /* This will now take precedence over the .topnav a color */;
+    background-color: transparent
+
+}
+
+
+
 /* Focus styles for interactive elements */
 .topnav a,
 .topnav button,
@@ -6398,7 +7369,9 @@ form button:focus {
     outline: none;
 }
 
-
+img {
+  outline: 2px solid dodgerblue;
+}
 
 
 img:focus {
@@ -6406,7 +7379,9 @@ img:focus {
   outline: 2px solid dodgerblue;
 }
 
-
+h3 {
+  outline: 2px solid dodgerblue;
+}
 
 
 h3:focus {
@@ -6438,5 +7413,3 @@ p:hover {
  {
   outline: 2px solid dodgerblue;
 }
-
-

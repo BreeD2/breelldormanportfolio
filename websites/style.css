@@ -11,6 +11,21 @@ body {
 
 }
 
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  background-color: mediumpurple;
+  color:white;
+}
+
 
 .topnav a {
   float: left;
@@ -6949,6 +6964,7 @@ p:hover {
    
 }
 
+
 #main-content > div.portfolio > div> p:focus {
  
     outline: 2px solid dodgerblue;
@@ -6964,5 +6980,6 @@ p:hover {
  {
   outline: 2px solid dodgerblue;
 }
+
 
 
