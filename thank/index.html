@@ -83,9 +83,11 @@
   
      
       <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
-          <i class="fa fa-bars" tabindex="0"></i>
-      </a>
-  </div>
+        <i class="fa fa-bars" tabindex="0"></i>
+    </a>
+</div>
+
+
 
 
 
@@ -145,6 +147,7 @@
 
 
 
+
 <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
@@ -161,258 +164,218 @@
       }
     }
     </script>
-
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            storeOriginalFontSizes(); // Store original font sizes for specified elements
-        });
-
-        // Store the original font sizes
-        function storeOriginalFontSizes() {
-            const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, button#signupButton, p, .featured-games, .featured-games-title, .footer, #game2-info > h3, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div,#featured-games > div.featured-games-title,#about > div, #main-content > div.opening-screen > div > div, #enter-site-button';
-            document.querySelectorAll(selector).forEach(element => {
-                element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
-            });
-        }
-
-        // Adjust the font size of elements
-        function adjustFontSize(factor, selector) {
-            document.querySelectorAll(selector).forEach(element => {
-                const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
-                element.style.fontSize = `${currentFontSize * factor}px`;
-            });
-        }
-
-        // Increase font size
-        function increaseFont() {
-            adjustFontSize(1.1, '.sidebar *, #signupContainer, .underwelcome, .opening-screen button, p, #game2-info > h3, .featured-games-title, .footer, .featured-games, #about > div, #game1-info > h3, #game3-info > h3, #main-content > div.opening-screen > div, #main-content > div.opening-screen > div > div, .dropdown-content, #featured-games > div.featured-games-title, #enter-site-button');
-        }
-
-        // Decrease font size
-        function decreaseFont() {
-            adjustFontSize(0.9, '.sidebar *, #signupContainer, .underwelcome, .dropdown-content, #about > div, #game1-info > h3, #game3-info > h3, .dropdown, #game2-info > h3, .opening-screen button, #main-content > div.opening-screen > div > div, .featured-games, #featured-games > div.featured-games-title, .featured-games-title, p, .footer, #main-content > div.opening-screen > div, #enter-site-button');
-        }
-
-        // Reset font sizes to their original values
-        function resetFont() {
-            const selector = '.sidebar *, #signupContainer, .underwelcome, .opening-screen button,  #about > div, #game1-info > h3, #game3-info > h3, .featured-games, #game2-info > h3,#featured-games > div.featured-games-title, #main-content > div.opening-screen > div, .featured-games-title, p, .footer, #enter-site-button';
-            document.querySelectorAll(selector).forEach(element => {
-                const originalFontSize = element.getAttribute('data-original-font-size');
-                if (originalFontSize) element.style.fontSize = originalFontSize;
-            });
-        }
-
-        // Inverts colors
-        function invertColors() {
-            document.body.classList.toggle('invert-colors');
-        }
-
-        // Cancels any ongoing speech synthesis
-        if ('speechSynthesis' in window) {
-            window.speechSynthesis.cancel();
-        }
-
-        // Toggles light mode
-        function toggleLightMode() {
-            document.body.classList.add('light-mode');
-            document.body.classList.remove('dark-mode');
-        }
-
-        // Toggles dark mode
-        function toggleDarkMode() {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
-        }
-
-
-        // Reset settings including font sizes and other visual modifications
-        function resetSettings() {
-            resetFont(); // Resets font sizes
-            // Add other reset actions here (e.g., removing classes, resetting filters)
+  
+  
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              storeOriginalFontSizes(); // Store original font sizes for specified elements
+          });
+  
+          // Store the original font sizes
+          function storeOriginalFontSizes() {
+              const selector = '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer';
+              document.querySelectorAll(selector).forEach(element => {
+                  element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
+              });
+          }
+  
+          // Adjust the font size of elements
+          function adjustFontSize(factor, selector) {
+              document.querySelectorAll(selector).forEach(element => {
+                  const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+                  element.style.fontSize = `${currentFontSize * factor}px`;
+              });
+          }
+  
+          // Increase font size
+          function increaseFont() {
+              adjustFontSize(1.1, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+          }
+  
+          // Decrease font size
+          function decreaseFont() {
+              adjustFontSize(0.9, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+          }
+  
+          // Reset font sizes to their original values
+          function resetFont() {
+              const selector = '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer';
+              document.querySelectorAll(selector).forEach(element => {
+                  const originalFontSize = element.getAttribute('data-original-font-size');
+                  if (originalFontSize) element.style.fontSize = originalFontSize;
+              });
+          }
+  
+          // Inverts colors
+          function invertColors() {
+              document.body.classList.toggle('invert-colors');
+          }
+  
+          // Cancels any ongoing speech synthesis
+          if ('speechSynthesis' in window) {
+              window.speechSynthesis.cancel();
+          }
+  
+          // Toggles light mode
+          function toggleLightMode() {
+              document.body.classList.add('light-mode');
+              document.body.classList.remove('dark-mode');
+          }
+  
+          // Toggles dark mode
+          function toggleDarkMode() {
+              document.body.classList.add('dark-mode');
+              document.body.classList.remove('light-mode');
+          }
+  
+  
+          // Reset settings including font sizes and other visual modifications
+          function resetSettings() {
+              resetFont(); // Resets font sizes
+              // Add other reset actions here (e.g., removing classes, resetting filters)
+              document.body.style.filter = '';
+              document.body.style.webkitFilter = '';
+              document.body.classList.remove('dark-mode');
+              document.body.classList.remove('invert-colors');
+              document.body.classList.remove('light-mode');
+  
+          }
+          // Increase font size
+              function increaseFont() {
+                  adjustFontSize(1.1, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+              }
+  
+              // Decrease font size
+              function decreaseFont() {
+                  adjustFontSize(0.9, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+              }
+  
+              // Toggle Light Mode
+            function toggleLightMode() {
+                document.body.classList.remove('dark-mode');
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light'); // Persist theme choice
+                updateStylesBasedOnTheme();
+            }
+  
+            // Toggle Dark Mode
+            function toggleDarkMode() {
+                document.body.classList.remove('light-mode');
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark'); // Persist theme choice
+                updateStylesBasedOnTheme();
+            }
+  
+            // Resets settings to default and clears theme preference
+            function resetSettings() {
+              resetFont(); // Resets font sizes
             document.body.style.filter = '';
             document.body.style.webkitFilter = '';
+            document.body.classList.remove('dark-mode', 'light-mode', 'invert-colors');
+            localStorage.removeItem('theme'); // Clear the stored theme preference
+  
+            }
+  
+            function applyDefaultTheme() {
+        document.body.classList.remove('dark-mode', 'light-mode');
+        updateStylesBasedOnTheme();
+    }
+  
+    function updateStylesBasedOnTheme() {
+        var dropup = document.getElementById('accessibility-dropup');
+        if (dropup) {
+            if (document.body.classList.contains('light-mode')) {
+                dropup.style.backgroundColor = 'white';
+                dropup.style.color = 'black';
+            } else if (document.body.classList.contains('dark-mode')) {
+                dropup.style.backgroundColor = 'dodgerblue';
+                dropup.style.color = 'white';
+            } else {
+                dropup.style.backgroundColor = ''; // Set to your default background color
+                dropup.style.color = ''; // Set to your default text color
+            }
+        }
+    }
+  
+    // Applies the saved theme or sets to default if none is saved
+    function applySavedTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.body.classList.add('light-mode');
             document.body.classList.remove('dark-mode');
-            document.body.classList.remove('invert-colors');
+        } else if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
             document.body.classList.remove('light-mode');
-
-        }
-        // Increase font size
-            function increaseFont() {
-                adjustFontSize(1.1, '.sidebar *, .game-container, .game-info, #likeButton, #commentButton,#likesCount, #ratingDisplay, #rateButton, .game-title,#commentsSection > strong, .footer');
-            }
-
-            // Decrease font size
-            function decreaseFont() {
-                adjustFontSize(0.9, '.sidebar *, .game-container, .game-info, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
-            }
-
-            // Toggle Light Mode
-          function toggleLightMode() {
-              document.body.classList.remove('dark-mode');
-              document.body.classList.add('light-mode');
-              localStorage.setItem('theme', 'light'); // Persist theme choice
-              updateStylesBasedOnTheme();
-          }
-
-          // Toggle Dark Mode
-          function toggleDarkMode() {
-              document.body.classList.remove('light-mode');
-              document.body.classList.add('dark-mode');
-              localStorage.setItem('theme', 'dark'); // Persist theme choice
-              updateStylesBasedOnTheme();
-          }
-
-          // Resets settings to default and clears theme preference
-          function resetSettings() {
-            resetFont(); // Resets font sizes
-          document.body.style.filter = '';
-          document.body.style.webkitFilter = '';
-          document.body.classList.remove('dark-mode', 'light-mode', 'invert-colors');
-          localStorage.removeItem('theme'); // Clear the stored theme preference
-
-          }
-
-          function applyDefaultTheme() {
-      document.body.classList.remove('dark-mode', 'light-mode');
-      updateStylesBasedOnTheme();
-  }
-
-  function updateStylesBasedOnTheme() {
-      var dropup = document.getElementById('accessibility-dropup');
-      if (dropup) {
-          if (document.body.classList.contains('light-mode')) {
-              dropup.style.backgroundColor = 'white';
-              dropup.style.color = 'black';
-          } else if (document.body.classList.contains('dark-mode')) {
-              dropup.style.backgroundColor = 'dodgerblue';
-              dropup.style.color = 'white';
-          } else {
-              dropup.style.backgroundColor = ''; // Set to your default background color
-              dropup.style.color = ''; // Set to your default text color
-          }
-      }
-  }
-
-  // Applies the saved theme or sets to default if none is saved
-  function applySavedTheme() {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light') {
-          document.body.classList.add('light-mode');
-          document.body.classList.remove('dark-mode');
-      } else if (savedTheme === 'dark') {
-          document.body.classList.add('dark-mode');
-          document.body.classList.remove('light-mode');
-      } else {
-          applyDefaultTheme();
-      }
-      updateStylesBasedOnTheme();
-  }
-
-  // Ensure the saved theme is applied as soon as the document is fully loaded
-  document.addEventListener('DOMContentLoaded', applySavedTheme);
-        </script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const container = document.getElementById('fireworks-container');
-
-    function explode(x, y) {
-        let particles = 15;
-        let explosion = document.createElement('div');
-        explosion.className = 'explosion';
-        container.appendChild(explosion);
-        explosion.style.left = `${x}px`;
-        explosion.style.top = `${y}px`;
-
-        for (let i = 0; i < particles; i++) {
-            let particle = document.createElement('div');
-            particle.className = 'particle';
-            explosion.appendChild(particle);
-            particle.style.background = `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${Math.random() * 256})`;
-            particle.style.transform = `translate(${Math.random() * 200 - 100}px, ${Math.random() * 200 - 100}px)`;
-            particle.style.opacity = 0;
-            particle.style.transition = `all ${Math.random() * 0.5 + 0.5}s linear`;
-        }
-
-        setTimeout(() => {
-            explosion.childNodes.forEach(child => {
-                child.style.opacity = 1;
-                child.style.transform = `translate(${Math.random() * 200 - 100}px, ${Math.random() * 200 - 100}px) scale(${Math.random() + 0.5})`;
-            });
-        }, 10);
-
-        setTimeout(() => {
-            explosion.remove();
-        }, 1000);
-    }
-
-    setInterval(() => {
-        let x = Math.random() * window.innerWidth;
-        let y = Math.random() * window.innerHeight;
-        explode(x, y);
-    }, 500);
-});
-</script>
-
-
-<script>
-    // Get the toggle button by its ID
-    const toggleBtn = document.getElementById('toggleTextToSpeech');
-    
-    // Function to read the selected text
-    function speakSelectedText() {
-      if ('speechSynthesis' in window) {
-        // First, stop any ongoing speech
-        window.speechSynthesis.cancel();
-    
-        // Get the user's selected text
-        const selectedText = window.getSelection().toString();
-    
-        // Check if there is any text selected
-        if (selectedText.length > 0) {
-          // Create a new speech synthesis utterance instance with the selected text
-          const utterance = new SpeechSynthesisUtterance(selectedText);
-    
-          // Optionally, customize the utterance properties
-          utterance.rate = 1; // Speed of speech
-          utterance.pitch = 1; // Pitch of speech
-          utterance.volume = 1; // Volume
-    
-          // Speak the utterance
-          window.speechSynthesis.speak(utterance);
         } else {
-          // Optional: Provide feedback when no text is selected
-          alert("Please select some text to read aloud.");
+            applyDefaultTheme();
         }
-      } else {
-        alert("Sorry, your browser doesn't support text to speech!");
-      }
+        updateStylesBasedOnTheme();
     }
-    
-    // Function to stop speech synthesis
-    function stopSpeaking() {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
+  
+    // Ensure the saved theme is applied as soon as the document is fully loaded
+    document.addEventListener('DOMContentLoaded', applySavedTheme);
+          </script>
+  
+  
+       
+  
+  
+  <script>
+      // Get the toggle button by its ID
+      const toggleBtn = document.getElementById('toggleTextToSpeech');
+      
+      // Function to read the selected text
+      function speakSelectedText() {
+        if ('speechSynthesis' in window) {
+          // First, stop any ongoing speech
+          window.speechSynthesis.cancel();
+      
+          // Get the user's selected text
+          const selectedText = window.getSelection().toString();
+      
+          // Check if there is any text selected
+          if (selectedText.length > 0) {
+            // Create a new speech synthesis utterance instance with the selected text
+            const utterance = new SpeechSynthesisUtterance(selectedText);
+      
+            // Optionally, customize the utterance properties
+            utterance.rate = 1; // Speed of speech
+            utterance.pitch = 1; // Pitch of speech
+            utterance.volume = 1; // Volume
+      
+            // Speak the utterance
+            window.speechSynthesis.speak(utterance);
+          } else {
+            // Optional: Provide feedback when no text is selected
+            alert("Please select some text to read aloud.");
+          }
+        } else {
+          alert("Sorry, your browser doesn't support text to speech!");
+        }
       }
-    }
-    
-    // Enhance the button to toggle speech synthesis
-    toggleBtn.addEventListener('click', () => {
-      if (window.speechSynthesis.speaking) {
-        stopSpeaking();
-        toggleBtn.textContent = 'Read Selected Text'; // Reset button text
-      } else {
-        speakSelectedText();
-        // Optional: Change button text to indicate speech is active
-        // Note: This text won't revert automatically when speech ends
-        toggleBtn.textContent = 'Stop Reading';
+      
+      // Function to stop speech synthesis
+      function stopSpeaking() {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
       }
-    });
-    
-    </script>
-</body>
-</html>
+      
+      // Enhance the button to toggle speech synthesis
+      toggleBtn.addEventListener('click', () => {
+        if (window.speechSynthesis.speaking) {
+          stopSpeaking();
+          toggleBtn.textContent = 'Read Selected Text'; // Reset button text
+        } else {
+          speakSelectedText();
+          // Optional: Change button text to indicate speech is active
+          // Note: This text won't revert automatically when speech ends
+          toggleBtn.textContent = 'Stop Reading';
+        }
+      });
+      
+      </script>
+  
+  </body>
+  </html>
+  

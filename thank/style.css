@@ -6064,3 +6064,30 @@ p:hover {
 }
 
 
+#main-content > div > p {
+  font-size: 15px;
+ }
+ @media screen and (max-width: 768px)  {
+  #main-content > div > p {
+    font-size: 13.5px;
+   }
+
+   #work > div > div > h3 {
+    font-size: 20px;
+   }
+   #contact > h2{
+    font-size: 20px;
+   }
+ }
+
+ #main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+.title-text {
+  font-size: 16px; /* Default font size */;
+  font-weight: bolder;
+}
+
+
