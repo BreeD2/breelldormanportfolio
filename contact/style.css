@@ -489,6 +489,11 @@ width: 108px;
   margin: 0;
 }
 
+#main-content > div.footer > p > a {
+  color:white;
+  font-size: 15px;
+}
+
 /* Style the dropdown content (hidden by default) */
 .dropdown-content2 {
   display: none;
@@ -993,6 +998,11 @@ body.dark-mode .topnav a.active {
 @media screen and (max-width: 768px) {
   .topnav {
     flex-wrap: wrap;
+  }
+
+  #main-content > div.footer > p > a{
+
+    font-size: 13.5px;
   }
 
   #main-content > div.form-container > div > h2 {
@@ -2892,19 +2902,6 @@ p {
 
 
 
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-}
-
-#zoomOut {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-
-}
-}
 
 
 .dark-mode .game-card {
@@ -4283,10 +4280,7 @@ border:2px solid white;
       cursor: pointer;
       border:2px solid white
     }
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
 
-}
 
 #zoomOut {
   font-size: 10px;
@@ -6770,6 +6764,14 @@ input[type="submit"]:hover {
         padding: 10px;
     }
 
+    #main-content > div.footer > h3 {
+      font-size: 20px;
+    }
+
+    #main-content > div.portfolio > div > h3 {
+      font-size: 20px;
+    }
+
     .form-container {
         padding: 10px;
     }
@@ -7206,3 +7208,158 @@ input::placeholder {
   font-weight: bold;
 }
 
+
+
+
+
+
+/* Focus styles for interactive elements */
+.topnav a,
+.topnav button,
+.topnav input[type="text"],
+.project,
+.project a,
+.project img,
+.project h3,
+.project p,
+.project a[href],
+form input,
+form button {
+    outline: none; /* Remove default focus outline */
+}
+
+.topnav a:hover,
+.topnav a:focus,
+.topnav button:hover,
+.topnav button:focus,
+.topnav input[type="text"]:hover,
+.topnav input[type="text"]:focus {
+    /* Example hover and focus styles for navigation links and input */
+    outline: 2px solid dodgerblue;
+  color:white
+}
+
+.project:focus,
+.project a:focus,
+.project img:focus {
+    /* Example focus style for project section and its links */
+    outline: 2px solid dodgerblue;
+}
+
+form input:focus,
+form button:focus {
+    /* Example focus style for form input and submit button */
+    border: 2px solid dodgerblue;
+    padding: 8px;
+    outline: none;
+}
+
+
+
+img:focus {
+  /* Example focus styles */
+  outline: 2px solid dodgerblue;
+}
+
+
+
+h3:focus {
+  /* Example focus styles */
+  outline: 2px solid dodgerblue;
+ 
+}
+p {
+  outline: none; /* Remove default focus outline */
+}
+
+p:focus, 
+p:hover {
+   
+}
+
+#main-content > div.portfolio > div> p:focus {
+ 
+    outline: 2px solid dodgerblue;
+}
+
+
+
+.dropdown:focus-within .dropdown-content:focus {
+  outline: 2px solid dodgerblue;
+}
+
+.dropdown-content a:focus,
+ {
+  outline: 2px solid dodgerblue;
+}
+
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}

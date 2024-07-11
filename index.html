@@ -209,7 +209,7 @@
 
         // Store the original font sizes
         function storeOriginalFontSizes() {
-            const selector = '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p';
+            const selector = '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p, #about > p > a, #main-content > header > p, #work > div > div > h3, #main-content > div > h3';
             document.querySelectorAll(selector).forEach(element => {
                 element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
             });
@@ -225,17 +225,17 @@
 
         // Increase font size
         function increaseFont() {
-            adjustFontSize(1.1, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p');
+            adjustFontSize(1.1, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p, #about > p > a, #main-content > header > p, #work > div > div > h3, #main-content > div > h3');
         }
 
         // Decrease font size
         function decreaseFont() {
-            adjustFontSize(0.9, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p');
+            adjustFontSize(0.9, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p, #about > p > a, #main-content > header > p, #work > div > div > h3, #main-content > div > h3');
         }
 
         // Reset font sizes to their original values
         function resetFont() {
-            const selector = '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p';
+            const selector = '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p, #about > p > a, #main-content > header > p, #work > div > div > h3, #main-content > div > h3';
             document.querySelectorAll(selector).forEach(element => {
                 const originalFontSize = element.getAttribute('data-original-font-size');
                 if (originalFontSize) element.style.fontSize = originalFontSize;
@@ -278,12 +278,12 @@
         }
         // Increase font size
             function increaseFont() {
-                adjustFontSize(1.1, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p');
+                adjustFontSize(1.1, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p, #about > p > a, #main-content > header > p, #work > div > div > h3, #main-content > div > h3');
             }
 
             // Decrease font size
             function decreaseFont() {
-                adjustFontSize(0.9, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p');
+                adjustFontSize(0.9, '.sidebar *, #main-content > header, #about, #work > div, #work > div > div > p, #work > h2, #main-content > header > h1, #about > h2, #about > p, #main-content > div > p, #about > p > a, #main-content > header > p, #work > div > div > h3, #main-content > div > h3');
             }
 
             // Toggle Light Mode

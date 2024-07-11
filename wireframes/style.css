@@ -988,6 +988,8 @@
     .topnav {
       flex-wrap: wrap;
     }
+
+    
   
     .topnav .title, .topnav .icon {
       flex-basis: 100%;
@@ -1593,6 +1595,8 @@
               #mainContent {margin-left: 0;}
               .w3-sidebar.w3-bar-block {float: none;}
           }
+
+          
           body, html {
               height: 100%;
               margin: 0;
@@ -2767,6 +2771,8 @@
       font-size: 18px; /* Keeps the arrow size the same */
       padding: 12px; /* Slightly reduce padding for smaller screens if needed */
     }
+
+ 
   
     .next {
       right: 3.4%; /* Adjust if needed for very small screens */
@@ -2881,20 +2887,7 @@
   
   
   
-    @media screen and (max-width: 585px) {#zoomIn {
-    font-size: 10px;
-    top:37px;
-    padding: 5px
-  }
-  
-  #zoomOut {
-    font-size: 10px;
-    top:37px;
-    padding: 5px
-  
-  }
-  }
-  
+
   
   .dark-mode .game-card {
     background-color: black;
@@ -3423,6 +3416,10 @@
       .sidebar a {
          font-size: 13px;
   
+      }
+
+      body > center > div.footer > h3 {
+        font-size: 13.5px;
       }
   
      .sidebar input[type="text"], #mainCategory, #subCategory, #games-list,  label {
@@ -4279,16 +4276,9 @@
         cursor: pointer;
         border:2px solid white
       }
-    @media screen and (max-width: 585px) {#zoomIn {
-    font-size: 10px;
-  
-  }
-  
-  #zoomOut {
-    font-size: 10px;
   
   
-  }
+
   .close {
     font-size: 10px
   
@@ -7534,3 +7524,250 @@ left:15px;
   background:none
 }
 
+
+
+/* Focus styles for interactive elements */
+.topnav a,
+.topnav button,
+.topnav input[type="text"],
+.project,
+.project a,
+.project img,
+.project h3,
+.project p,
+.project a[href],
+form input,
+form button {
+    outline: none; /* Remove default focus outline */
+}
+
+.topnav a:hover,
+.topnav a:focus,
+.topnav button:hover,
+.topnav button:focus,
+.topnav input[type="text"]:hover,
+.topnav input[type="text"]:focus {
+    /* Example hover and focus styles for navigation links and input */
+    outline: 2px solid dodgerblue;
+  color:white
+}
+
+.project:focus,
+.project a:focus,
+.project img:focus {
+    /* Example focus style for project section and its links */
+    outline: 2px solid dodgerblue;
+}
+
+form input:focus,
+form button:focus {
+    /* Example focus style for form input and submit button */
+    border: 2px solid dodgerblue;
+    padding: 8px;
+    outline: none;
+}
+
+
+
+img:focus {
+  /* Example focus styles */
+  outline: 2px solid dodgerblue;
+}
+
+
+
+h3:focus {
+  /* Example focus styles */
+  outline: 2px solid dodgerblue;
+ 
+}
+p {
+  outline: none; /* Remove default focus outline */
+}
+
+p:focus, 
+p:hover {
+   
+}
+
+#main-content > div.portfolio > div> p:focus {
+ 
+    outline: 2px solid dodgerblue;
+}
+
+
+
+.dropdown:focus-within .dropdown-content:focus {
+  outline: 2px solid dodgerblue;
+}
+
+.dropdown-content a:focus,
+ {
+  outline: 2px solid dodgerblue;
+}
+
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}
+
+
+body.light-mode{
+  background-color: white;
+ 
+
+}
+
+
+
+
+body > center > div.footer {
+  background-color: mediumpurple;
+}
+
+body.light-mode > center > div.footer {
+  background-color: whitesmoke;
+}
+
+body.dark-mode > center > div.footer {
+  background-color: #222222;
+}
+
+
+body > center > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+body.dark-mode > center > div.footer > h3 {
+  color:white
+}
+
+
+body.light-mode > center > div.footer > h3 {
+  color:black
+}
+
+body > center > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+body.dark-mode > center > div.footer > p {
+  color:white
+}
+
+body.light-mode > center > div.footer > p {
+  color:black
+}
+
+body > center > div.footer > p > a {
+  color:white;
+}
+
+body.dark-mode > center > div.footer > p > a {
+  color:white;
+}
+
+body.light-mode > center > div.footer > p > a {
+  color:black;
+}
+
+body.light-mode > center > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+body.dark-mode > center > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+body > center > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+
+body > center > div.footer > p > a {
+  font-size: 15px;
+ }
+ @media screen and (max-width: 768px)  {
+  body > center > div.footer > p > a  {
+    font-size: 13.5px;
+   }
+
+   body > center > div.footer > h3 {
+    font-size: 20px;
+   }
+   #main-content > div > div > h3 {
+    font-size: 20px;
+   }
+   
+ }

@@ -2881,11 +2881,6 @@ p {
 
 
 
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-}
 
 #zoomOut {
   font-size: 10px;
@@ -4278,10 +4273,7 @@ border:2px solid white;
       cursor: pointer;
       border:2px solid white
     }
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
 
-}
 
 #zoomOut {
   font-size: 10px;
@@ -6801,6 +6793,14 @@ ul {
         font-size: 1.5rem;
     }
 
+    #main-content > div.footer > h3 {
+      font-size: 20px;
+    }
+
+    #main-content > div.portfolio > div > h3 {
+      font-size: 20px;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -7369,9 +7369,6 @@ form button:focus {
     outline: none;
 }
 
-img {
-  outline: 2px solid dodgerblue;
-}
 
 
 img:focus {
@@ -7379,9 +7376,6 @@ img:focus {
   outline: 2px solid dodgerblue;
 }
 
-h3 {
-  outline: 2px solid dodgerblue;
-}
 
 
 h3:focus {
@@ -7413,3 +7407,86 @@ p:hover {
  {
   outline: 2px solid dodgerblue;
 }
+
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}
+
+
+   #main-content > div > p {
+    font-size: 15px;
+   }
+   @media screen and (max-width: 768px)  {
+    #main-content > div > p {
+      font-size: 13.5px;
+     }
+   }

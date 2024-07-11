@@ -2873,11 +2873,7 @@ p {
 
 
 
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-}
+
 
 #zoomOut {
   font-size: 10px;
@@ -4268,10 +4264,7 @@ border:2px solid white;
       cursor: pointer;
       border:2px solid white
     }
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
 
-}
 
 #zoomOut {
   font-size: 10px;
@@ -5369,12 +5362,6 @@ body.dark-mode .topnav a.active:hover {
 }
 
 
-.light-mode #main-content > div.footer{
-
-  background-color: whitesmoke;
-
-
-}
 
 #viewWork:hover {
     background: grey;
@@ -5732,8 +5719,11 @@ section {
 }
 
 #skills > div > div.skill-name {
-  font-size: 15px;
+  font-size: 16px;
   padding:5px;
+}
+#contact > a {
+  font-family: arial;
 }
 
 .project {
@@ -5750,6 +5740,8 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    
+ 
 
 }
 
@@ -5761,7 +5753,9 @@ button {
 
 
 .footer p {
-  color:white
+  color:white;
+
+  
 }
 
 .footer a {
@@ -5775,7 +5769,8 @@ button {
 }
 
 #main-content > header > h1 {
-  margin-top: 100px
+  margin-top: 100px;
+  
 }
 
 #about {
@@ -5884,7 +5879,8 @@ body {
 #contact > p {
   padding: 5px;
   font-size: 13.5px;
-  color:black
+  color:black;
+ 
 }
 
 
@@ -5898,7 +5894,7 @@ body {
 #contact > a {
 
   font-size: 13.5px;
-  font-family: arial;
+  font-family: "arial", !important;
   color:black
 
 }
@@ -6017,6 +6013,13 @@ ul {
     header h1, section h2 {
         font-size: 1.5rem;
     }
+    #main-content > div.footer > h3 {
+      font-size: 20px;
+    }
+
+    #main-content > div.portfolio > div > h3 {
+      font-size: 20px;
+    }
 
     nav ul li {
         display: block;
@@ -6053,6 +6056,7 @@ label {
     line-height: 20px; /* Keeps text vertically centered */
     color: white;
     transition: width 2s;
+    border-radius: 8px;
 }
 .light-mode .skill-bar {
     background-color: black
@@ -6232,19 +6236,14 @@ body.light-mode {
   background-color: white
 }
 
-.light-mode #main-content > div.footer{
 
-  background-color: whitesmoke;
-
-
-}
 
 .light-mode #contact > a:hover {
-  color: lightgrey
+  color: darkgrey
 }
 
 .dark-mode #contact > a:hover {
-  color: darkgrey
+  color: aliceblue
 }
 
  #contact > a:hover {
@@ -6498,16 +6497,15 @@ body.light-mode .dropdown-content2 a {
 
 
 #contact > p {
-  padding-right:100px;
-  padding-left:100px;
-  color:black
+ margin-top: 30px;
+  color:black;
+
 }
 
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 768px) {
 #contact > p {
-  padding-right:20px;
-  padding-left:20px
+ font-size: 13.5px;
 }
 }
 
@@ -6556,3 +6554,94 @@ body.light-mode .dropdown-content2 a {
 
 }
 
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+#main-content > div > p {
+  font-size: 15px;
+ }
+ @media screen and (max-width: 768px)  {
+  #main-content > div > p {
+    font-size: 13.5px;
+   }
+
+   #work > div > div > h3 {
+    font-size: 20px;
+   }
+   #contact > h2{
+    font-size: 20px;
+   }
+ }
+ 

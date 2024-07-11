@@ -988,6 +988,14 @@
     .topnav {
       flex-wrap: wrap;
     }
+
+    body > center > div.footer > h3{
+      font-size: 20px;
+    }
+
+    #main-content > div.portfolio > div > h3 {
+      font-size: 20px;
+    }
   
     .topnav .title, .topnav .icon {
       flex-basis: 100%;
@@ -7413,3 +7421,240 @@ p:hover {
   
   
   
+
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}
+
+
+body.light-mode{
+  background-color: white;
+ 
+
+}
+
+
+
+
+body > center > div.footer {
+  background-color: mediumpurple;
+}
+
+body.light-mode > center > div.footer {
+  background-color: whitesmoke;
+}
+
+body.dark-mode > center > div.footer {
+  background-color: #222222;
+}
+
+
+body > center > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+body.dark-mode > center > div.footer > h3 {
+  color:white
+}
+
+
+body.light-mode > center > div.footer > h3 {
+  color:black
+}
+
+body > center > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+body.dark-mode > center > div.footer > p {
+  color:white
+}
+
+body.light-mode > center > div.footer > p {
+  color:black
+}
+
+body > center > div.footer > p > a {
+  color:white;
+}
+
+body.dark-mode > center > div.footer > p > a {
+  color:white;
+}
+
+body.light-mode > center > div.footer > p > a {
+  color:black;
+}
+
+body.light-mode > center > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+body.dark-mode > center > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+body > center > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+body > center > div.footer > p > a {
+  font-size: 15px;
+ }
+ @media screen and (max-width: 768px)  {
+  body > center > div.footer > p > a  {
+    font-size: 13.5px;
+   }
+
+   body > center > div.footer > h3 {
+    font-size: 20px;
+   }
+
+   
+ }
+ 

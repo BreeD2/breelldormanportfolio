@@ -1839,6 +1839,14 @@ select:hover {
         padding: 15px; /* Slightly less padding */
         margin: 15px 0; /* Adjusted margin */
     }
+
+    body > center > div > div.footer > h3 {
+      font-size: 20px;
+    }
+
+    #main-content > div.portfolio > div > h3 {
+      font-size: 20px;
+    }
 }
 
 /* Further adjustments for very small screens, like smartphones */
@@ -2850,19 +2858,6 @@ p {
 
 
 
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-}
-
-#zoomOut {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-
-}
-}
 
 
 .dark-mode .game-card {
@@ -4248,10 +4243,7 @@ border:2px solid white;
       cursor: pointer;
       border:2px solid white
     }
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
 
-}
 
 #zoomOut {
   font-size: 10px;
@@ -6144,3 +6136,95 @@ body.light-mode{
  
 
 }
+
+
+
+
+body > center > div > div.footer {
+  background-color: mediumpurple;
+}
+
+body.light-mode > center > div > div.footer {
+  background-color: whitesmoke;
+}
+
+body.dark-mode > center > div > div.footer {
+  background-color: #222222;
+}
+
+
+body > center > div > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+body.dark-mode > center > div > div.footer > h3 {
+  color:white
+}
+
+
+body.light-mode > center > div > div.footer > h3 {
+  color:black
+}
+
+body > center > div > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+body.dark-mode > center > div > div.footer > p {
+  color:white
+}
+
+body.light-mode > center > div > div.footer > p {
+  color:black
+}
+
+body > center > div > div.footer > p > a {
+  color:white;
+  font-size: 15px;
+}
+
+body.dark-mode > center > div > div.footer > p > a {
+  color:white;
+}
+
+body.light-mode > center > div > div.footer > p > a {
+  color:black;
+}
+
+body.light-mode > center > div > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+body.dark-mode > center > div > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+body > center > div > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+
+
+body > center > div > div.footer > p > a {
+  font-size: 15px;
+}
+
+#main-content > div > p {
+  font-size: 15px;
+ }
+ @media screen and (max-width: 768px)  {
+  body > center > div > div.footer > p > a  {
+    font-size: 13.5px;
+   }
+
+   #work > div > div > h3 {
+    font-size: 20px;
+   }
+
+   
+ }
+ 
+ 

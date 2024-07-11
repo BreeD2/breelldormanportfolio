@@ -989,6 +989,14 @@ body.dark-mode .topnav a.active {
     flex-wrap: wrap;
   }
 
+  #main-content > div.footer > h3 {
+    font-size: 20px;
+  }
+
+  #main-content > div.portfolio > div > h3 {
+    font-size: 20px;
+  }
+
   .topnav .title, .topnav .icon {
     flex-basis: 100%;
     text-align: center;
@@ -1475,14 +1483,24 @@ body.dark-mode .cog-icon * {
 
 
 
-
-
+   #main-content > div > p {
+    font-size: 15px;
+   }
+   @media screen and (max-width: 768px)  {
+    #main-content > div > p {
+      font-size: 13.5px;
+     }
+   }
 
 
 
    @media screen and (min-width: min-width: 768px) {
        .sidebar {
 
+       }
+
+       #main-content > div > p{
+        font-size: 13.5px;
        }
 
        main {
@@ -1889,15 +1907,7 @@ select:hover {
 
 }
 
-/* Further adjustments for very small screens, like smartphones */
-@media screen and (max-width: 780px) {
 
-    .what {
-      color:white;
-      font-size:10px
-    }
-
-}
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -2881,11 +2891,6 @@ p {
 
 
 
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
-  top:37px;
-  padding: 5px
-}
 
 #zoomOut {
   font-size: 10px;
@@ -4279,10 +4284,6 @@ border:2px solid white;
       cursor: pointer;
       border:2px solid white
     }
-  @media screen and (max-width: 585px) {#zoomIn {
-  font-size: 10px;
-
-}
 
 #zoomOut {
   font-size: 10px;
@@ -5818,9 +5819,98 @@ p:hover {
   text-decoration: underline;
 }
 
+#about > p > a:hover {
+  
+  color:lavenderblush;
+  
+}
+
+.dark-mode #about > p > a:hover {
+ 
+  color:aliceblue;
+ 
+}
+
+.light-mode #about > p > a:hover {
+ 
+  color:darkgrey;
+ 
+}
 
 #work > a > h2 {
   text-decoration: none;
 }
 
 
+
+
+.light-mode #main-content > div.footer{
+
+  background-color: whitesmoke;
+
+
+}
+
+#main-content > div.footer {
+  background-color: mediumpurple;
+}
+
+.dark-mode #main-content > div.footer{
+
+  background-color: #222222;
+
+
+}
+
+#main-content > div.footer > h3 {
+  color:white;
+  font-weight: bold;
+}
+
+
+.dark-mode #main-content > div.footer > h3 {
+  color:white
+}
+
+
+.light-mode #main-content > div.footer > h3 {
+  color:black
+}
+
+#main-content > div.footer > p {
+  color:white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.dark-mode #main-content > div.footer > p {
+  color:white
+}
+
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+
+
+.light-mode #main-content > div.footer > p > a {
+  color:black;
+}
+#main-content > div.footer > p > a:hover {
+  color:lavenderblush;
+}
+
+.light-mode #main-content > div.footer > p > a:hover {
+  color:darkgray;
+}
+
+.dark-mode #main-content > div.footer > p > a:hover {
+  color:aliceblue;
+}
+
+.dark-mode #main-content > div.footer > p > a {
+  color:white;
+}
