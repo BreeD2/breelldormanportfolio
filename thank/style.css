@@ -5908,7 +5908,7 @@ body.dark-mode .topnav a.active:hover {
 
 .btn {
     display: inline-block;
-    background-color: dodgerblue;
+    background-color: mediumpurple;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -5917,7 +5917,7 @@ body.dark-mode .topnav a.active:hover {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: black;
 }
 
 .dark-mode .btn {
