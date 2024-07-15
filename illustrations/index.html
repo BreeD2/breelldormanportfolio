@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+ <head>
+   <title>Illustrations</title>
+   <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
+   <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="..//favicon-16x16.png">
+ <link rel="manifest" href="..//site.webmanifest">
+ <link rel="mask-icon" href="..//safari-pinned-tab.svg" color="#5bbad5">
+ <meta name="msapplication-TileColor" content="#da532c">
+ <meta name="theme-color" content="#ffffff">
+   <center>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet"href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+
+<body>
+
+ 
+ <!-- Navigation Bar with Logo and Website Name -->
+ <div class="read-aloud">
+    <div class="topnav" id="myTopnav" tabindex="0">
+        <a href="..//index.html" class="logo"tabindex="0">
+            <img src="..//favicon.ico" alt="Favicon: Computer" style="height: 23px;">
+            <span class="title-text">Breell Dorman</span>
+        </a>
+        <!-- User Information Dropdown -->
+        <a href="..//index.html" aria-label="Home"tabindex="0">Home</a>
+        <div class="dropdown" tabindex="0">
+            <button class="dropbtn active" >
+                <i class="fas fa-palette"tabindex="0"></i> Graphic Design <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="..//posters/index.html"tabindex="0" aria-label="View my poster design projects"tabindex="0">Posters&nbsp;&nbsp;&nbsp;</a>
+                <a href="..//videos/index.html"tabindex="0" aria-label="View my video projects"tabindex="0">Videos</a>
+                <a href="..//websites/index.html"tabindex="0" aria-label="View my website design projects" tabindex="0">Websites</a>
+                <a href="..//books/index.html" tabindex="0"aria-label="View my book design projects"tabindex="0">&#8202;&#8202;&#8202;Books</a>
+                <a href="index.html" aria-label="View my illustrations"tabindex="0" class="active">&#8202;&#8202;&#8202;Illustrations</a>
+                <a href="..//photography/index.html" aria-label="View my photography"tabindex="0">&#8202;&#8202;&#8202;Photography</a>
+            </div>
+        </div>
+        <div class="dropdown" tabindex="0">
+            <button class="dropbtn" >
+                <i class="fas fa-pencil-alt"></i> UX Design <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" >
+                <a href="..//uxresearch/index.html" tabindex="0" aria-label="View my UX research projects">UX Research</a>
+                <a href="..//wireframes/index.html" tabindex="0" aria-label="View my wireframing projects">Wireframes</a>
+                <a href="..//prototypes/index.html" tabindex="0" aria-label="View my prototyping projects">Prototypes</a>
+                
+            </div>
+        </div>
+        <a href="..//about/index.html" aria-label="Learn more about me">About</a>
+        <a href="..//contact/index.html" aria-label="Contact me" >Contact</a>
+        <a href="..//resume/index.html" aria-label="View my resume">Resume</a>
+        <div class="dropdown" tabindex="0">
+            <button class="dropbtn">
+                <i class="fas fa-wheelchair"></i> Accessibility <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div id="google_translate_element"></div>
+                <button onclick="resetSettings()"tabindex="0" aria-label="Reset settings">Reset Settings</button>
+                <button onclick="increaseFont()"tabindex="0" aria-label="Increase font size">Increase Font Size</button>
+                <button onclick="decreaseFont()"tabindex="0" aria-label="Decrease font size">Decrease Font Size</button>
+                <button onclick="toggleLightMode()"tabindex="0" aria-label="Toggle light mode">Toggle Light Mode</button>
+                <button onclick="toggleDarkMode()"tabindex="0" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+                <button id="toggleTextToSpeech" aria-label="Toggle text to speech"tabindex="0">Read Selected Text</button>
+            </div>
+        </div>
+        
+    
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" tabindex="0">
+            <i class="fa fa-bars"target="_blank" tabindex="0"></i>
+        </a>
+    </div>
+    <!-- Moved searchResults outside the topnav -->
+    
+  
+
+
+<div id="searchResults">
+
+
+
+    </div>
+
+
+
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;width:200px;" id="mySidebar">
+        <button onclick="toggleSidebar()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <!-- Add your sidebar content here -->
+    </div>
+
+
+        <div id="main-content" class="content">
+
+
+
+              <div class="portfolio">
+      <!-- Project with PDF -->
+
+      <div class="project"target="_blank" tabindex="0">
+         
+              <img src="stilllife.jpg" alt="Still Life Drawing"  tabindex="0">
+          </a>
+          <h3 tabindex="0">Still Life</h3>
+          <p tabindex="0">An 18x24 inch still life drawing featuring shoes and bags.
+</p>
+         
+      </div>
+
+      <div class="project"target="_blank" tabindex="0">
+          
+              <img src="sightdrawing.jpg" alt="Sight Drawing"  tabindex="0">
+          </a>
+          <h3 tabindex="0">Sight Drawing</h3>
+          <p tabindex="0">An 18x24 inch drawing focusing on sighting, measuring, symmetry, and ellipses.</p>
+
+          
+      </div>
+      <div class="project"target="_blank" tabindex="0"> 
+      <img src="toneddrawing.jpg" alt="Tone Drawing"  tabindex="0">
+    </a>
+    <h3 tabindex="0">Tone Drawing</h3>
+    <p tabindex="0">An 18x24 inch landscape drawing using a toned ground and subtractive techniques.
+    </p>
+
+    
+</div>
+
+<div class="project"target="_blank" tabindex="0"> 
+    <img src="graphitetexturedrawing.jpg" alt="Graphite Textured Drawing"  tabindex="0">
+  </a>
+  <h3 tabindex="0">Graphite Textured Drawing</h3>
+  <p tabindex="0">An 18x24 inch landscape drawing featuring graphite textures.</p>
+
+  
+</div>
+
+      <!-- Another Project with PDF -->
+      <div class="project"target="_blank" tabindex="0">
+         
+            <img src="portraitoffather.jpg" alt="Portrait of My Father" tabindex="0">
+          </a>
+          <h3 tabindex="0">Portrait of My Father</h3>
+          <p tabindex="0">An 18*24 inch portrait of my father.</p>
+         
+      </div>
+
+  <!-- Another Project with PDF -->
+  <div class="project"target="_blank" tabindex="0">
+     
+          <img src="portraitofmother.jpg" alt="Portrait of Mother"  tabindex="0">
+      </a>
+      <h3 tabindex="0"> Portrait of My Mother</h3>
+      <p tabindex="0">An 40*60 inch portrait of my mother.</p>
+     
+  </div>
+</div>
+  <!-- Footer Section -->
+  <div class="footer"target="_blank" tabindex="0">
+      <h3 target="_blank" tabindex="0">© 2022-2024 Breell Dorman's Artistry</h3>
+      <img src="..//favicon.ico" alt="Breell's Logo" target="_blank" tabindex="0">
+
+      <p><a href="mailto:bdormandesigns@gmail.com"target="_blank" tabindex="0" >bdormandesigns@gmail.com</a></p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+
+
+
+
+  <script>
+
+        function search() {
+            var searchInput = document.getElementById("searchInput").value;
+            var searchResults = document.getElementById("searchResults");
+
+            // Implement your search functionality here
+            // For simplicity, I'm just showing and hiding the search-results div in this example
+            if (searchInput.trim() !== "") {
+                searchResults.style.display = "block";
+                searchResults.innerHTML = "Search results for: " + searchInput;
+            } else {
+                searchResults.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+   
+
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      // Show searchResults2 when opening the menu
+     
+    } else {
+      x.className = "topnav";
+      // Hide searchResults2 when closing the menu
+     
+    }
+  }
+  </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        storeOriginalFontSizes(); // Store original font sizes for specified elements
+    });
+
+    // Store the original font sizes
+    function storeOriginalFontSizes() {
+        const selector = '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer';
+        document.querySelectorAll(selector).forEach(element => {
+            element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
+        });
+    }
+
+    // Adjust the font size of elements
+    function adjustFontSize(factor, selector) {
+        document.querySelectorAll(selector).forEach(element => {
+            const currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+            element.style.fontSize = `${currentFontSize * factor}px`;
+        });
+    }
+
+    // Increase font size
+    function increaseFont() {
+        adjustFontSize(1.1, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+    }
+
+    // Decrease font size
+    function decreaseFont() {
+        adjustFontSize(0.9, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+    }
+
+    // Reset font sizes to their original values
+    function resetFont() {
+        const selector = '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer';
+        document.querySelectorAll(selector).forEach(element => {
+            const originalFontSize = element.getAttribute('data-original-font-size');
+            if (originalFontSize) element.style.fontSize = originalFontSize;
+        });
+    }
+
+    // Inverts colors
+    function invertColors() {
+        document.body.classList.toggle('invert-colors');
+    }
+
+    // Cancels any ongoing speech synthesis
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+    }
+
+    // Toggles light mode
+    function toggleLightMode() {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+    }
+
+    // Toggles dark mode
+    function toggleDarkMode() {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+    }
+
+
+    // Reset settings including font sizes and other visual modifications
+    function resetSettings() {
+        resetFont(); // Resets font sizes
+        // Add other reset actions here (e.g., removing classes, resetting filters)
+        document.body.style.filter = '';
+        document.body.style.webkitFilter = '';
+        document.body.classList.remove('dark-mode');
+        document.body.classList.remove('invert-colors');
+        document.body.classList.remove('light-mode');
+
+    }
+    // Increase font size
+        function increaseFont() {
+            adjustFontSize(1.1, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+        }
+
+        // Decrease font size
+        function decreaseFont() {
+            adjustFontSize(0.9, '.sidebar *, .game-container, #main-content > div.portfolio > div > h3, #main-content > div.portfolio > div > p, .game-info, #main-content > div.portfolio > div> a, #likeButton,#commentsSection > strong, #commentButton, #likesCount, #ratingDisplay, #rateButton, .game-title, .footer');
+        }
+
+        // Toggle Light Mode
+      function toggleLightMode() {
+          document.body.classList.remove('dark-mode');
+          document.body.classList.add('light-mode');
+          localStorage.setItem('theme', 'light'); // Persist theme choice
+          updateStylesBasedOnTheme();
+      }
+
+      // Toggle Dark Mode
+      function toggleDarkMode() {
+          document.body.classList.remove('light-mode');
+          document.body.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark'); // Persist theme choice
+          updateStylesBasedOnTheme();
+      }
+
+      // Resets settings to default and clears theme preference
+      function resetSettings() {
+        resetFont(); // Resets font sizes
+      document.body.style.filter = '';
+      document.body.style.webkitFilter = '';
+      document.body.classList.remove('dark-mode', 'light-mode', 'invert-colors');
+      localStorage.removeItem('theme'); // Clear the stored theme preference
+
+      }
+
+      function applyDefaultTheme() {
+  document.body.classList.remove('dark-mode', 'light-mode');
+  updateStylesBasedOnTheme();
+}
+
+function updateStylesBasedOnTheme() {
+  var dropup = document.getElementById('accessibility-dropup');
+  if (dropup) {
+      if (document.body.classList.contains('light-mode')) {
+          dropup.style.backgroundColor = 'white';
+          dropup.style.color = 'black';
+      } else if (document.body.classList.contains('dark-mode')) {
+          dropup.style.backgroundColor = 'dodgerblue';
+          dropup.style.color = 'white';
+      } else {
+          dropup.style.backgroundColor = ''; // Set to your default background color
+          dropup.style.color = ''; // Set to your default text color
+      }
+  }
+}
+
+// Applies the saved theme or sets to default if none is saved
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+      document.body.classList.remove('dark-mode');
+  } else if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+  } else {
+      applyDefaultTheme();
+  }
+  updateStylesBasedOnTheme();
+}
+
+// Ensure the saved theme is applied as soon as the document is fully loaded
+document.addEventListener('DOMContentLoaded', applySavedTheme);
+    </script>
+
+
+
+<script>
+    // Get the toggle button by its ID
+    const toggleBtn = document.getElementById('toggleTextToSpeech');
+    
+    // Function to read the selected text
+    function speakSelectedText() {
+      if ('speechSynthesis' in window) {
+        // First, stop any ongoing speech
+        window.speechSynthesis.cancel();
+    
+        // Get the user's selected text
+        const selectedText = window.getSelection().toString();
+    
+        // Check if there is any text selected
+        if (selectedText.length > 0) {
+          // Create a new speech synthesis utterance instance with the selected text
+          const utterance = new SpeechSynthesisUtterance(selectedText);
+    
+          // Optionally, customize the utterance properties
+          utterance.rate = 1; // Speed of speech
+          utterance.pitch = 1; // Pitch of speech
+          utterance.volume = 1; // Volume
+    
+          // Speak the utterance
+          window.speechSynthesis.speak(utterance);
+        } else {
+          // Optional: Provide feedback when no text is selected
+          alert("Please select some text to read aloud.");
+        }
+      } else {
+        alert("Sorry, your browser doesn't support text to speech!");
+      }
+    }
+    
+    // Function to stop speech synthesis
+    function stopSpeaking() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+    
+    // Enhance the button to toggle speech synthesis
+    toggleBtn.addEventListener('click', () => {
+      if (window.speechSynthesis.speaking) {
+        stopSpeaking();
+        toggleBtn.textContent = 'Read Selected Text'; // Reset button text
+      } else {
+        speakSelectedText();
+        // Optional: Change button text to indicate speech is active
+        // Note: This text won't revert automatically when speech ends
+        toggleBtn.textContent = 'Stop Reading';
+      }
+    });
+    
+    </script>
+
+</body>
