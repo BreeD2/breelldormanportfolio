@@ -5168,6 +5168,7 @@ margin-top: 100px; /* Space below the heading */;
 .project a {
   display: inline-block;
   margin: 10px 0;
+  padding: 10px 20px;
   background-color: #007BFF;
   color: white;
   text-decoration: none;
@@ -5364,7 +5365,16 @@ font-weight: bold;
 }
 
 
-
+.project a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
 
 .project a:hover {
   background-color:black;
