@@ -250,7 +250,7 @@ function myFunction() {
 
     // Store the original font sizes
     function storeOriginalFontSizes() {
-        const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label';
+        const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label, #main-content > div.form-container > div > form > input[type=submit]:nth-child(12)';
         document.querySelectorAll(selector).forEach(element => {
             element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
         });
@@ -266,17 +266,17 @@ function myFunction() {
 
     // Increase font size
     function increaseFont() {
-        adjustFontSize(1.1, '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label');
+        adjustFontSize(1.1, '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label, #main-content > div.form-container > div > form > input[type=submit]:nth-child(12)');
     }
 
     // Decrease font size
     function decreaseFont() {
-        adjustFontSize(0.9, '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label');
+        adjustFontSize(0.9, '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label, #main-content > div.form-container > div > form > input[type=submit]:nth-child(12)');
     }
 
     // Reset font sizes to their original values
     function resetFont() {
-        const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label';
+        const selector = '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label, #main-content > div.form-container > div > form > input[type=submit]:nth-child(12)';
         document.querySelectorAll(selector).forEach(element => {
             const originalFontSize = element.getAttribute('data-original-font-size');
             if (originalFontSize) element.style.fontSize = originalFontSize;
@@ -317,15 +317,7 @@ function myFunction() {
         document.body.classList.remove('light-mode');
 
     }
-    // Increase font size
-        function increaseFont() {
-            adjustFontSize(1.1, '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label');
-        }
-
-        // Decrease font size
-        function decreaseFont() {
-            adjustFontSize(0.9, '.sidebar *, #signupContainer, #signupContainer h2, .form-group label, p, #main-content > div.container > div > p, #lname, #fname, #email, #main-content > div.container > div > div > for, .footer, #main-content > div.container > div > div > form > input[type=submit]:nth-child(15), #main-content > div.container > div > div > form > label, #main-content > div.container > div > h2, #email, #subject, #main-content > div.form-container > div > h2, #main-content > div.form-container > div > form > label');
-        }
+   
 
         // Toggle Light Mode
       function toggleLightMode() {

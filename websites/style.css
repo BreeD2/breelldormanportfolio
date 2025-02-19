@@ -7076,3 +7076,13 @@ p:hover {
     font-size: 20px;
    }
  }
+
+ .light-mode  h3 {
+  color:black
+}
+
+
+main-content > div.footer > h3 {
+  color: white;
+  font-weight: bold;
+}

@@ -159,7 +159,7 @@
 
    // Store the original font sizes
 function storeOriginalFontSizes() {
-    const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div > label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, .skill-bar, #skills > div:nth-child(2) > div.skill-name';
+    const selector = '.sidebar *, #contact > p, #contact > a, #contact > h2, #skills > div > label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, .skill-bar, #skills > div:nth-child(2) > div.skill-name';
     document.querySelectorAll(selector).forEach(element => {
         element.setAttribute('data-original-font-size', window.getComputedStyle(element).fontSize);
     });
@@ -176,17 +176,17 @@ function storeOriginalFontSizes() {
 
     // Increase font size
     function increaseFont() {
-        adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div > label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, .skill-bar, #skills > div:nth-child(2) > div.skill-name');
+        adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div > label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, #contact > a, .skill-bar, #skills > div:nth-child(2) > div.skill-name');
     }
 
     // Decrease font size
     function decreaseFont() {
-        adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, #contact > a, #skills > div > div.skill-name, .skill-bar,  #contact > a');
+        adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, #contact > a, #contact > a, #skills > div > div.skill-name, .skill-bar,  #contact > a');
     }
 
     // Reset font sizes to their original values
     function resetFont() {
-        const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, #contact > a, #skills > div > div.skill-name, #contact > a,#skills > div > div.skill-name';
+        const selector = '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2, a, #contact > a, #skills > div > div.skill-name, #contact > a, #skills > div > div.skill-name';
         document.querySelectorAll(selector).forEach(element => {
             const originalFontSize = element.getAttribute('data-original-font-size');
             if (originalFontSize) element.style.fontSize = originalFontSize;
@@ -227,15 +227,7 @@ function storeOriginalFontSizes() {
         document.body.classList.remove('light-mode');
 
     }
-    // Increase font size
-        function increaseFont() {
-            adjustFontSize(1.1, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2');
-        }
-
-        // Decrease font size
-        function decreaseFont() {
-            adjustFontSize(0.9, '.sidebar *, #contact > p, #contact > h2, #skills > div> label, #adobe, #skills > h2');
-        }
+   
 
         // Toggle Light Mode
       function toggleLightMode() {

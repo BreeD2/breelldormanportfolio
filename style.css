@@ -4988,7 +4988,9 @@ button {
 .footer a {
   color:white;
   text-decoration: underline;
+  font-size: 15px;
 }
+
 
 #main-content > header {
 
@@ -5928,6 +5930,14 @@ p:hover {
   color:white;
 }
 
+body > center > div.footer > h3 {
+ 
+  font-weight: bold;
+}
+.light-mode  h3 {
+  color:black
+}
+
 
 
 .light-mode #main-content > div.footer > p > a {
@@ -6038,19 +6048,7 @@ body > center > div.hero > p {
   transition: transform 0.1s ease;
 }
 
- /* Fullscreen Hero Section */
- .hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  position: relative;
-  background: url('photography/observatory.jpeg') center/cover no-repeat; /* Replace with your design image */
-  background-size: cover;
-}
+
 
       /* Blur effect for the background */
       .hero::before {
@@ -6106,5 +6104,6 @@ body > center > div.hero > p {
   filter: blur(8px); /* Apply blur to the background */
   z-index: 1;
 }
+
 
 
