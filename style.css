@@ -7,6 +7,8 @@ body {
   background-color:white;
   height:auto  !important;
   font-family: "arial", !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,
+   !important;
 
 
 }
@@ -1224,11 +1226,7 @@ body {
 
 
 
-body {
-  background-color: white;
-  font-family: 'arial', sans-serif;
-  height:auto
-}
+
 
 
 
@@ -1642,11 +1640,7 @@ body.dark-mode .cog-icon * {
             background-color: #0056b3;
         }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+    
 
 
 
@@ -1655,11 +1649,6 @@ body.dark-mode .cog-icon * {
             margin-left: 0; /* Less margin when sidebar is collapsed */
         }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
 
 
         .content {
@@ -4956,12 +4945,39 @@ button {
 }
 
 #viewWork, #contactMe {
-    background: black;
-    color: white;
-    border: none;
-    margin-top: 20px;
-    border-radius: 5px;
+  background: mediumpurple; /* Base color */
+  color: white;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 12px 24px; /* Adds padding for better button size */
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for effects */
 }
+
+/* Hover Effect */
+#viewWork:hover, #contactMe:hover {
+  background: #9b4f96; /* Slightly darker shade for hover */
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow to emphasize the lift */
+  cursor: pointer; /* Change cursor to pointer to indicate clickable */
+}
+
+/* Focus Effect */
+#viewWork:focus, #contactMe:focus {
+  outline: none; /* Removes default outline */
+  border: 2px solid #6a0dad; /* Adds a focus border with accent color */
+}
+
+/* Active/Clicked Effect */
+#viewWork:active, #contactMe:active {
+  background: #7e1e9c; /* Even darker shade for when clicked */
+  transform: translateY(2px); /* Slight push-down effect */
+}
+
 
 .footer p {
   color:white
@@ -4992,7 +5008,7 @@ button {
 }
 
 #about {
-  background-color: black;
+  background-color: mediumpurple;
   padding: 60px
 }
 
@@ -5034,9 +5050,20 @@ margin-top: 100px; /* Space below the heading */;
 }
 
 .project {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3sease-in-out;
+}
+
+.project {
 
     border-radius: 5px;
     overflow: hidden;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .project img {
@@ -5165,15 +5192,20 @@ margin-top: 100px; /* Space below the heading */;
   color: #666;
 }
 
-.project a {
+project a {
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: dodgerblue;
   color: white;
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
+}
+
+.project {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3sease-in-out;
 }
 
 .project a:hover {
@@ -5334,7 +5366,7 @@ font-weight: bold;
 }
 
 #main-content > header {
-  background-color: darkslategrey;
+  background-color: palevioletred;
   color:white
 }
 
@@ -5914,3 +5946,163 @@ p:hover {
 .dark-mode #main-content > div.footer > p > a {
   color:white;
 }
+
+ 
+
+ /* Hero Section */
+ .hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #D83B77, #9B4F96, #6A0DAD);
+
+  background-size: 400% 400%;
+  animation: gradientMove 10s infinite alternate;
+}
+
+/* Smooth Animated Background */
+@keyframes gradientMove {
+  0% { background-position: left top; }
+  100% { background-position: right bottom; }
+}
+
+/* Text Styling */
+body > center > div.hero > h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  opacity: 1;
+  color:white;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease forwards;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+body > center > div.hero > p {
+  font-size: 1.4rem;
+  margin: 10px 0 20px;
+  opacity: 0.8;
+  opacity: 1;
+  color:white;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease forwards 0.3s;
+  z-index: 1;
+  font-weight: bold;
+}
+
+/* Call-to-Action Button */
+.cta {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: white;
+  background: #c94e28;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease forwards 0.6s;
+}
+
+.cta:hover {
+  transform: scale(1.1);
+  background: #ff5e42;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Custom Cursor Effect */
+.cursor {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+}
+
+ /* Fullscreen Hero Section */
+ .hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: relative;
+  background: url('photography/observatory.jpeg') center/cover no-repeat; /* Replace with your design image */
+  background-size: cover;
+}
+
+      /* Blur effect for the background */
+      .hero::before {
+        content: '';
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(216, 59, 119, 0.7), rgba(155, 79, 150, 0.7), rgba(106, 13, 173, 0.7)); /* Color gradient */
+        filter: blur(8px); /* Apply blur to the background */
+        z-index: 1;
+       
+    }
+
+    /* Content (text) */
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .cta:hover {
+      transform: scale(1.1);
+      background: #c94e28;
+  }
+
+  /* Fullscreen Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: relative;
+  background: url('photography/slantedtree.jpeg') center/cover no-repeat; /* Replace with your design image */
+  background-size: cover;
+}
+
+
+
+/* Color and Blur Overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(216, 59, 119, 0.7), rgba(155, 79, 150, 0.7), rgba(106, 13, 173, 0.7)); /* Color gradient */
+  filter: blur(8px); /* Apply blur to the background */
+  z-index: 1;
+}
+
+
