@@ -6645,3 +6645,68 @@ body.light-mode .dropdown-content2 a {
    }
  }
  
+/* Full-Width Background with Image */
+.form-container {
+  background: url('..//websites/reminiscencecollectionhome.jpg') center/cover no-repeat; /* Replace with your image */
+  position: relative;
+  padding: 80px 0; /* Space around the about section */
+  display: flex;
+  justify-content: center;
+
+}
+
+/* About Section (White Box) */
+#contact {
+  background: white; /* Keeps the About section white */
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+  position: relative;
+  z-index: 2;
+  top: -50px;
+}
+
+/* Title Styling */
+#contact h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Text Styling */
+#contact p {
+  
+  color: black;
+}
+
+/* About Section (White Box) */
+.dark-mode #contact {
+  
+  color: black;
+}
+
+/* Title Styling */
+.dark-mode #contact h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Text Styling */
+.dark-mode #contact p {
+  color: black;
+}
+
+
+/* Overlay Color */
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 105, 180, 0.3); /* Soft Pink Overlay */;
+  backdrop-filter: blur(1px); /* Blurs the background */;
+  z-index: 1;
+}
