@@ -2582,3 +2582,7 @@ body > center > div.hero > p {
 .light-mode body > center > div.footer > h3 {
   color:white
 }
+
+body > center > div.footer > h3 {
+  font-weight: bold;
+}
