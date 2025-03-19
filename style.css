@@ -518,11 +518,11 @@ body.light-mode .topnav a.active {
 }
 
 #myTopnav > button:hover {
-  background-color: rgb(147, 28, 119);;
+  background-color: rgb(147, 28, 119);
 }
 
 #myTopnav > button:active {
-  background-color: rgb(147, 28, 119);;
+  background-color: rgb(147, 28, 119);
 }
 
 #myTopnav > button {
@@ -1589,6 +1589,30 @@ button {
   z-index: 1;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
   transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+.dark-mode #viewWork, #contactMe {
+  background-color: dimgrey;
+  color: white;
+ 
+}
+
+.dark-mode #viewWork:hover, #contactMe:hover {
+  background-color: grey;
+  color: white;
+ 
+}
+
+.light-mode #viewWork, #contactMe {
+  background-color: grey;
+  color: white;
+ 
+}
+
+.light-mode #viewWork:hover, #contactMe:hover {
+  background-color: lightgrey;
+  color: white;
+ 
 }
 
 @media (min-width: 0px) and (max-width: 550px) {#viewWork, #contactMe
