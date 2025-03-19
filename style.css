@@ -293,7 +293,7 @@ width: 108px;
   #myTopnav > div:nth-child(3) > div {
   width:100%;
   
-  background-color: purple;
+  background-color: rgb(64, 3, 64);
 }
 }
 
@@ -511,7 +511,7 @@ body.light-mode .topnav a.active {
 #myTopnav > div:nth-child(3) > div {
   width:185px;
   
-  background-color: purple;
+  background-color: rgb(64, 3, 64);
 }
 #myTopnav > div:nth-child(4) > div  {
   width:150px;
@@ -1003,7 +1003,7 @@ body {
 
 
 body .topnav {
-  background-color: purple; /* Red background for the navbar in normal mode */
+  background-color: rgb(64, 3, 64);
   color: #fff; /* White font color for the navbar in normal mode */;
 
 
