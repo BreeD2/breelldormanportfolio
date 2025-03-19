@@ -293,7 +293,7 @@ width: 108px;
   #myTopnav > div:nth-child(3) > div {
   width:100%;
   
-  background-color: rgb(64, 3, 64);
+  background-color: rgb(7, 129, 54);
 }
 }
 
@@ -365,7 +365,7 @@ width: 108px;
 .dropdown-content2 {
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: rgb(7, 129, 54);
 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -511,7 +511,7 @@ body.light-mode .topnav a.active {
 #myTopnav > div:nth-child(3) > div {
   width:185px;
   
-  background-color: rgb(64, 3, 64);
+  background-color:rgb(7, 129, 54);
 }
 #myTopnav > div:nth-child(4) > div  {
   width:150px;
@@ -543,14 +543,11 @@ body.light-mode .topnav a.active {
 }
 
 #myTopnav > div:nth-child(3) > button:hover {
-  background-color: purple;
+  background-color: #078136;
 }
 
-#myTopnav > div:nth-child(4) > div > a:hover {
-  background-color: #696969;
-  width:100%;
-  
-}
+
+
 .dark-mode #myTopnav > div:nth-child(4) > button:active {
   background-color: grey;
   width:100%;
@@ -628,11 +625,7 @@ body.light-mode .topnav a:hover {
   background-color: black
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
-  color: white;
-}
+
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .dropdown:hover .dropbtn {
@@ -876,7 +869,7 @@ body.light-mode .dropdown-content2 a {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: grey;
+  background-color: black;
   color: white;
 
 
@@ -884,7 +877,7 @@ body.light-mode .dropdown-content2 a {
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #1a1a1a;;
+  background-color: rgb(147, 28, 119);
   color: white;
 }
 
@@ -1441,7 +1434,7 @@ header#portfolio {
 
 #myTopnav > div > div > button {
   font-family: arial;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 #myTopnav > div> div > a  {
@@ -1558,7 +1551,7 @@ button {
 }
 
 #viewWork, #contactMe {
-  background:purple; /* Base color */
+  background:rgb(147, 28, 119);
   color: white;
   border: none;
   margin-top: 20px;
@@ -1963,7 +1956,7 @@ body.light-mode .topnav a:hover {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color: black;
   color: white;
 }
 
