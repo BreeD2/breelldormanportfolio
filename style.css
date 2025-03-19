@@ -2536,7 +2536,7 @@ body > center > div.hero > p {
   text-align: center;
   color: white;
   position: relative;
-  background: url('photography/slantedtree.jpeg') center/cover no-repeat; /* Replace with your design image */
+  background: url('photography/slantedtree.webp') center/cover no-repeat; /* Replace with your design image */
   background-size: cover;
 }
 
