@@ -225,6 +225,19 @@ width: 108px;
   }
 }
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1060px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn, .dropdown2 {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
 .light-mode #myTopnav > div:nth-child(3) > div {
   background-color: #808080;
 }
@@ -778,6 +791,8 @@ body.light-mode .topnav a:hover {
   color: white; /* Ensure icons also turn white on hover in light mode */
 }
 
+
+
 /* Hover effects for .dropbtn in dark mode */
 .dark-mode .dropdown:hover .dropbtn,
 .dark-mode .dropdown2:hover .dropbtn2 {
@@ -809,6 +824,8 @@ body.light-mode .topnav a:hover {
   color: white;
 }
 
+
+
 .dark-mode .dropdown-content {
   background-color: slategrey;
   color: white;
@@ -836,6 +853,7 @@ body.light-mode .dropdown-content2 a {
 }
 
 
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -852,8 +870,6 @@ body.light-mode .dropdown-content2 a {
 
 
 }
-
-
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -1934,10 +1950,7 @@ body.dark-mode .topnav a.active:hover {
 .light-mode #main-content > div.footer{
 
   background-color: whitesmoke;
-
-
 }
-
 
 .project {
 
@@ -1947,6 +1960,8 @@ body.dark-mode .topnav a.active:hover {
     background-color: #ffffff;  /* Ensures the shadow has a light background to stand out against */
     transition: box-shadow 0.3s ease-in-out; /* Optional: Adds a smooth transition for the shadow effect */
 }
+
+
 
 
 body.light-mode .topnav a {
