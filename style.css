@@ -1564,6 +1564,20 @@ button {
   transition: all 0.3s ease; /* Smooth transition for effects */
 }
 
+@media (min-width: 0px) and (max-width: 550px) {#viewWork, #contactMe
+{
+  font-size: 0.8rem
+}
+}
+
+@media (min-width: 551px) and (max-width: 1060px){#viewWork, #contactMe { (min-width: 0px) and (max-width: 550px) }
+{
+  font-size: 2rem
+}
+}
+
+
+
 /* Hover Effect */
 #viewWork:hover, #contactMe:hover {
   background: #9b4f96; /* Slightly darker shade for hover */
@@ -2404,6 +2418,17 @@ body > center > div.hero > h1 {
   font-weight: bolder;
 }
 
+@media screen and (min-width: 0px) and (max-width: 550px)
+ {body > center > div.hero > h1 {
+  font-size: 2.5rem;
+}
+}
+
+@media screen and (min-width: 551px) and (max-width: 1060px)
+ {body > center > div.hero > h1 {
+  font-size: 3rem;
+}
+}
 body > center > div.hero > p {
   font-size: 1.4rem;
   margin: 10px 0 20px;
@@ -2416,6 +2441,15 @@ body > center > div.hero > p {
   font-weight: bold;
 }
 
+@media screen and (min-width: 0px) and (max-width: 550px) {body > center > div.hero > p {
+  font-size: 1rem;
+}
+}
+
+@media screen and  (min-width: 551px) and (max-width: 1060px) {body > center > div.hero > p {
+  font-size: 1.5rem;
+}
+}
 /* Call-to-Action Button */
 .cta {
   display: inline-block;
