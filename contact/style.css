@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -313,6 +314,7 @@ width: 108px;
 
 
 
+
 .dark-mode  #myTopnav > div:nth-child(3) > div {
  
   background-color: mediumgrey;
@@ -517,11 +519,11 @@ body.light-mode .topnav a.active {
 }
 
 #myTopnav > button:hover {
-  background-color: rgb(147, 28, 119);;
+  background-color: rgb(147, 28, 119);
 }
 
 #myTopnav > button:active {
-  background-color: rgb(147, 28, 119);;
+  background-color: rgb(147, 28, 119);
 }
 
 #myTopnav > button {
@@ -1590,6 +1592,30 @@ button {
   transition: all 0.3s ease; /* Smooth transition for effects */
 }
 
+.dark-mode #viewWork, #contactMe {
+  background-color: dimgrey;
+  color: white;
+ 
+}
+
+.dark-mode #viewWork:hover, #contactMe:hover {
+  background-color: grey;
+  color: white;
+ 
+}
+
+.light-mode #viewWork, #contactMe {
+  background-color: grey;
+  color: white;
+ 
+}
+
+.light-mode #viewWork:hover, #contactMe:hover {
+  background-color: lightgrey;
+  color: white;
+ 
+}
+
 @media (min-width: 0px) and (max-width: 550px) {#viewWork, #contactMe
 {
   font-size: 0.8rem
@@ -1712,7 +1738,8 @@ margin-top: 100px; /* Space below the heading */;
 
 
 #main-content > div > h3 {
-  padding: 20px
+  padding: 20px;
+  font-weight: bold;
 }
 @media screen and (max-width: 600px) {
   #about > p > a {
@@ -2350,9 +2377,7 @@ p:hover {
 }
 
 
-.light-mode #main-content > div.footer > h3 {
-  color:black
-}
+
 
 #main-content > div.footer > p {
   color:white;
@@ -2375,9 +2400,7 @@ body > center > div.footer > h3 {
  
   font-weight: bold;
 }
-.light-mode  h3 {
-  color:black
-}
+
 
 
 
@@ -2557,6 +2580,10 @@ body > center > div.hero > p {
 
 
 
+
+.light-mode body > center > div.footer > h3 {
+  color:white
+}
 
 
 
@@ -2742,6 +2769,7 @@ color:white
 .head {
   font-size: 24px;
   margin-bottom: 10px;
+  font-weight: bolder;
 }
 
 
@@ -3140,5 +3168,4 @@ form button:focus {
     padding: 8px;
     outline: none;
 }
-
 

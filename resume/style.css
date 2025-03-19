@@ -6007,18 +6007,6 @@ footer {
     text-align: center;
 }
 
-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-
-#viewWork, #contactMe {
-    background: black;
-    color: white;
-    border: none;
-    margin-top: 20px
-}
 
 .footer p {
   color:white

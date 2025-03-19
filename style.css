@@ -1737,7 +1737,7 @@ margin-top: 100px; /* Space below the heading */;
 
 
 #main-content > div > h3 {
-  padding: 20px
+  padding: 20px;
 }
 @media screen and (max-width: 600px) {
   #about > p > a {
@@ -2375,9 +2375,7 @@ p:hover {
 }
 
 
-.light-mode #main-content > div.footer > h3 {
-  color:black
-}
+
 
 #main-content > div.footer > p {
   color:white;
@@ -2400,9 +2398,7 @@ body > center > div.footer > h3 {
  
   font-weight: bold;
 }
-.light-mode  h3 {
-  color:black
-}
+
 
 
 
@@ -2581,3 +2577,8 @@ body > center > div.hero > p {
 
 
 
+
+
+.light-mode body > center > div.footer > h3 {
+  color:white
+}
