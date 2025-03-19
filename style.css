@@ -1003,7 +1003,7 @@ body {
 
 
 body .topnav {
-  background-color: mediumpurple; /* Red background for the navbar in normal mode */
+  background-color: purple; /* Red background for the navbar in normal mode */
   color: #fff; /* White font color for the navbar in normal mode */;
 
 
@@ -1198,7 +1198,7 @@ body.dark-mode .cog-icon * {
     border-color: dodgerblue;
 }
 
-
+#work > div > div:nth-child(3) > a
 
 
    .sidebar a:hover {
@@ -1558,7 +1558,7 @@ button {
 }
 
 #viewWork, #contactMe {
-  background: mediumpurple; /* Base color */
+  background:purple; /* Base color */
   color: white;
   border: none;
   margin-top: 20px;
@@ -1622,10 +1622,7 @@ button {
   color:black
 }
 
-#about {
-  background-color: mediumpurple;
-  padding: 60px
-}
+
 
 
 .light-mode #main-content > div {
@@ -1762,16 +1759,7 @@ margin-top: 100px; /* Space below the heading */;
   color: #666;
 }
 
-project a {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 10px 20px;
-  background-color: dodgerblue;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-}
+
 
 .dark-mode #main-content > header > p {
   color:white
@@ -1872,7 +1860,7 @@ font-weight: bold;
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: midnightblue;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -2327,28 +2315,8 @@ p:hover {
 
 
 
-.light-mode #main-content > div.footer{
-
-  background-color: whitesmoke;
 
 
-}
-
-#main-content > div.footer {
-  background-color: mediumpurple;
-}
-
-.dark-mode #main-content > div.footer{
-
-  background-color: #222222;
-
-
-}
-
-#main-content > div.footer > h3 {
-  color:white;
-  font-weight: bold;
-}
 
 
 .dark-mode #main-content > div.footer > h3 {
@@ -2497,19 +2465,7 @@ body > center > div.hero > p {
 
 
 
-      /* Blur effect for the background */
-      .hero::before {
-        content: '';
 
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, rgba(216, 59, 119, 0.7), rgba(155, 79, 150, 0.7), rgba(106, 13, 173, 0.7)); /* Color gradient */
-        filter: blur(8px); /* Apply blur to the background */
-        z-index: 1;
-       
-    }
 
     /* Content (text) */
     .hero-content {
@@ -2547,8 +2503,8 @@ body > center > div.hero > p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(216, 59, 119, 0.7), rgba(155, 79, 150, 0.7), rgba(106, 13, 173, 0.7)); /* Color gradient */
-  filter: blur(8px); /* Apply blur to the background */
+  background: linear-gradient(135deg, rgba(159, 42, 87, 0.7), rgba(93, 47, 90, 0.7), rgba(76, 9, 124, 0.7)); /* Color gradient */
+  filter: blur(0px); /* Apply blur to the background */
   z-index: 1;
 }
 
