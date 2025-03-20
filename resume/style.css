@@ -2543,19 +2543,7 @@ body > center > div.hero > p {
       background: #c94e28;
   }
 
-  /* Fullscreen Hero Section */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  position: relative;
-  background: url('photography/slantedtree.webp') center/cover no-repeat; /* Replace with your design image */
-  background-size: cover;
-}
+
 
 
 
@@ -2674,7 +2662,7 @@ body > center > div.hero > p {
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: mediumpurple;
+  background-color:rgb(147, 28, 119);
   color: white;
   text-decoration: none;
   text-align: center;
@@ -2682,7 +2670,7 @@ body > center > div.hero > p {
 }
 
 .project a:hover {
-  background-color:black;
+  background-color:#9b4f96;
 }
 
 
@@ -3144,21 +3132,7 @@ p:hover {
   margin: 10px 0;
 }
 
-.project a {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: white;
-  background-color: mediumpurple;
-  border-radius: 4px;
-}
 
-
-
-.project a:hover {
-  background-color: black;
-}
 
 /* Responsive styles */
 @media (max-width: 600px) {

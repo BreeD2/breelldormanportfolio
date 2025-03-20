@@ -2534,31 +2534,6 @@ body > center > div.hero > p {
 
 
 
-    /* Content (text) */
-    .hero-content {
-        position: relative;
-        z-index: 2;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    .cta:hover {
-      transform: scale(1.1);
-      background: #c94e28;
-  }
-
-  /* Fullscreen Hero Section */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  position: relative;
-  background: url('photography/slantedtree.webp') center/cover no-repeat; /* Replace with your design image */
-  background-size: cover;
-}
 
 
 
@@ -2775,6 +2750,11 @@ color:white
   font-size: 16px;
   margin-bottom: 0px;
   color:black
+}
+
+.dark-mode .intro {
+
+  color:white
 }
 
 

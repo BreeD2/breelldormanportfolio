@@ -2546,19 +2546,7 @@ body > center > div.hero > p {
       background: #c94e28;
   }
 
-  /* Fullscreen Hero Section */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  position: relative;
-  background: url('photography/slantedtree.webp') center/cover no-repeat; /* Replace with your design image */
-  background-size: cover;
-}
+
 
 
 
@@ -2659,7 +2647,7 @@ body > center > div.footer > h3 {
 
 /* Full-Width Background with Image */
 .form-container {
-  background: url('..//websites/reminiscencecollectionhome.jpg') center/cover no-repeat; /* Replace with your image */
+  background: url('..//reminiscencecollectionhome.webp') center/cover no-repeat; /* Replace with your image */
   position: relative;
   padding: 80px 0; /* Space around the about section */
   display: flex;
