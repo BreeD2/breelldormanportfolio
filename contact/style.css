@@ -1983,7 +1983,7 @@ body.dark-mode .topnav a.active:hover {
 
 .light-mode #main-content > div.footer{
 
-  background-color: whitesmoke;
+  background-color: black;
 
 
 }
@@ -2404,9 +2404,7 @@ body > center > div.footer > h3 {
 
 
 
-.light-mode #main-content > div.footer > p > a {
-  color:black;
-}
+
 #main-content > div.footer > p > a:hover {
   color:lavenderblush;
 }
@@ -2737,7 +2735,7 @@ color:black
 
 .light-mode #main-content > div.container > div > div > form > input[type=submit]  {
 color:black;
-background-color: whitesmoke
+background-color: black
 }
 
 .dark-mode #main-content > div.container > div > div > form > input[type=submit]  {
@@ -3100,6 +3098,26 @@ input::placeholder {
 
 }
 
+.light-mode #main-content > div.footer > p {
+  color:black
+}
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+body > center > div.footer > h3 {
+ 
+  font-weight: bold;
+}
+#main-content > div.footer > h3 {
+  color:white
+}
+
+
+#main-content > div.footer > p {
+  color:white
+}
 #contact > h2 {
   color:black;
   margin-top: 50px;
@@ -3123,6 +3141,16 @@ input::placeholder {
   font-weight: bold;
 }
 
+
+
+#main-content > div.footer > p > a {
+  color:white;
+}
+
+body > center > div.footer > h3 {
+ 
+  font-weight: bold;
+}
 
 
 

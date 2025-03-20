@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en-US">
-<html>
  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn more about me, my background in graphic design, and my passion for creativity. Explore my journey, skills, and design philosophy.">
    <title>About</title>
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
@@ -85,9 +86,9 @@
         
     
        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
-            <i class="fa fa-bars" tabindex="0"></i>
-        </a>
+        <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+            <i class="fa fa-bars"></i>
+        </button>
     </div>
     <!-- Moved searchResults outside the topnav -->
     
@@ -154,6 +155,24 @@
       }
     }
     </script>
+
+<script>
+    function myFunction() {
+  var nav = document.getElementById("myTopnav");
+  var button = document.querySelector(".icon");
+
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    button.classList.remove("active"); // Remove active class when closing
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    nav.classList.add("responsive");
+    button.classList.add("active"); // Add active class when opening
+    button.setAttribute("aria-expanded", "true");
+  }
+}
+
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
