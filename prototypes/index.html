@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en-US">
-<html>
  <head>
-   <title>Prototypes</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Breell Dorman | Prototypes</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Explore a portfolio of innovative UX prototypes that showcase user-centric design, interactive wireframes, and engaging digital experiences. Discover how these prototypes bring ideas to life." />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -84,11 +84,11 @@
             </div>
         </div>
         
-    
+        <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+            <i class="fa fa-bars"></i>
+        </button>
        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
-            <i class="fa fa-bars" tabindex="0"></i>
-        </a>
+       
     </div>
 
 
@@ -109,7 +109,7 @@
     
     <div class="project"target="_blank" tabindex="0">
         
-            <img src="lowfidelityprototype.png" alt="Low-Fidelity Prototypes"  tabindex="0">
+            <img src="lowfidelityprototype.webp" alt="Low-Fidelity Prototypes"  tabindex="0">
         </a>
         <h3 tabindex="0">Low-Fidelity Prototype</h3>
         <p tabindex="0">This low-fidelity prototype was designed using Figma. It includes navigational elements that demonstrate how users can navigate through different pages using interactive buttons.        </p>
@@ -120,7 +120,7 @@
 
     <div class="project"target="_blank" tabindex="0">
         
-        <img src="highfidelityprototype.png" alt="High-Fidelity Prototypes"  tabindex="0">
+        <img src="highfidelityprototype.webp" alt="High-Fidelity Prototypes"  tabindex="0">
     </a>
     <h3 tabindex="0">High-Fidelity Prototype</h3>
     <p tabindex="0">This high-fidelity prototype was designed using Figma. It includes navigational elements that demonstrate how users can navigate through different pages using interactive buttons.        </p>
@@ -130,7 +130,7 @@
 </div>
 <div class="project"target="_blank" tabindex="0">
         
-    <img src="highfidelityprototype2.jpg" alt="High-Fidelity Prototypes"  tabindex="0">
+    <img src="highfidelityprototype2.webp" alt="High-Fidelity Prototypes"  tabindex="0">
 </a>
 <h3 tabindex="0">High-Fidelity Prototype</h3>
 <p tabindex="0">This is another high-fidelity prototype was designed using Figma. It includes navigational elements that demonstrate how users can navigate through different pages using interactive buttons.        </p>
@@ -172,6 +172,23 @@
   }
   </script>
 
+<script>
+    function myFunction() {
+  var nav = document.getElementById("myTopnav");
+  var button = document.querySelector(".icon");
+  
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    button.classList.remove("active"); // Remove active class when closing
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    nav.classList.add("responsive");
+    button.classList.add("active"); // Add active class when opening
+    button.setAttribute("aria-expanded", "true");
+  }
+  }
+  
+  </script>
 
 
 

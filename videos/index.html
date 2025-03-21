@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en-US">
-<html>
  <head>
-   <title>Videos</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Breell Dorman | Videos</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Explore a dynamic collection of video projects that blend storytelling with visual creativity. Discover engaging content, motion graphics, and cinematic experiences that captivate and inspire." />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -81,14 +82,14 @@
               <button id="toggleTextToSpeech" aria-label="Toggle text to speech"tabindex="0">Read Selected Text</button>
           </div>
       </div>
-      
+      <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+        <i class="fa fa-bars"></i>
+    </button>
   
      
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
-          <i class="fa fa-bars" tabindex="0"></i>
-      </a>
+  
   </div>
-  <!-- Moved searchResults outside the topnav -->
+
   
 
 
@@ -104,7 +105,7 @@
           <div class="portfolio"  tabindex="0">
               <!-- Project with Video -->
               <div class="project"  tabindex="0">
-                  <video controls poster="goldenrams.jpg" alt="VCU Golden Rams"  tabindex="0">
+                  <video controls poster="goldenrams.webp" alt="VCU Golden Rams"  tabindex="0">
                       <source src="goldenrams.mov" type="video/mp4"  tabindex="0">
                       Your browser does not support the video tag.
                   </video>
@@ -115,7 +116,7 @@
 
               <!-- Another Project with Video -->
               <div class="project"  tabindex="0">
-                  <video controls poster="500pictures.jpg" alt="500 Pictures Video"  tabindex="0">
+                  <video controls poster="500pictures.web" alt="500 Pictures Video"  tabindex="0">
                       <source src="500pictures.mp4" type="video/mp4"  tabindex="0">
                       Your browser does not support the video tag.
                   </video>
@@ -153,7 +154,23 @@
   }
   </script>
 
-
+<script>
+    function myFunction() {
+  var nav = document.getElementById("myTopnav");
+  var button = document.querySelector(".icon");
+  
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    button.classList.remove("active"); // Remove active class when closing
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    nav.classList.add("responsive");
+    button.classList.add("active"); // Add active class when opening
+    button.setAttribute("aria-expanded", "true");
+  }
+  }
+  
+  </script>
 
 
 <script>

@@ -2,8 +2,9 @@
 <html lang="en-US">
 <html>
  <head>
-   <title>UX Research</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Breell Dorman | Prototypes</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Discover insightful UX research that enhances user experiences through data-driven analysis, usability testing, and user feedback. Explore case studies and research methods that inform design decisions." />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -86,9 +87,9 @@
         
     
        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
-            <i class="fa fa-bars" tabindex="0"></i>
-        </a>
+        <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+          <i class="fa fa-bars"></i>
+      </button>
     </div>
 
 
@@ -108,7 +109,7 @@
 
       <div class="project"target="_blank" tabindex="0">
         <a href="certificationpersona.pdf"  target="_blank" tabindex="0">
-            <img src="certificationpersona.jpg" alt="Certification Persona"  tabindex="0">
+            <img src="certificationpersona.webp" alt="Certification Persona"  tabindex="0">
         </a>
         <h3  tabindex="0">User Persona</h3>
         <p  tabindex="0">This is a user persona named Amelia, created specifically for my UX project focusing on designing an app and responsive website for an art museum. The project involves addressing various challenges, including complex navigation, information overload, usability issues, scheduling complexities, and ensuring accessibility for all users. I crafted a narrative that includes a quote from Amelia, outlining her goals, frustrations, and a scenario that illustrates her user journey. This narrative provides context to understand Amelia's objectives, challenges, and the overall user experience considerations for the project.</p>
@@ -123,7 +124,7 @@
     </div>
     <div class="project"target="_blank" tabindex="0">
         <a href="journeymap.pdf"  target="_blank" tabindex="0">
-            <img src="journeymap.jpg" alt="Journey Map"  tabindex="0">
+            <img src="journeymap.webp" alt="Journey Map"  tabindex="0">
         </a>
         <h3 tabindex="0">Journey Map</h3>
         <p tabindex="0">This is a user persona journey map I developed, detailing actions, tasks, user emotions, and opportunities for improvement. With this map, I aim to delve deeper into user actions, emotions, and potential areas for enhancement.
@@ -138,7 +139,7 @@
     </div>
     <div class="project"  tabindex="0">
         <a href="sheets.pdf"  target="_blank" tabindex="0">
-        <img src="sheets.png" alt="Competitive Audit"  tabindex="0">
+        <img src="sheets.webp" alt="Competitive Audit"  tabindex="0">
     </a>
     <h3  tabindex="0">Competitive Audit</h3>
     <p  tabindex="0">This paper wireframe showcases multiple iterations of the homepage layout, illustrating different arrangements of text, images, and buttons. Through experimentation, I aim to identify the most effective design for enhancing user experience.
@@ -159,8 +160,23 @@
   
 
 
-
-
+  <script>
+    function myFunction() {
+  var nav = document.getElementById("myTopnav");
+  var button = document.querySelector(".icon");
+  
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    button.classList.remove("active"); // Remove active class when closing
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    nav.classList.add("responsive");
+    button.classList.add("active"); // Add active class when opening
+    button.setAttribute("aria-expanded", "true");
+  }
+  }
+  
+  </script>
 
 
 
