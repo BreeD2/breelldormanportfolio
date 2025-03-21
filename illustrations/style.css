@@ -1685,7 +1685,7 @@ button {
 }
 
 .light-mode #main-content > header > h1 {
-  color:black
+  color:white
 }
 
 
@@ -1892,13 +1892,10 @@ font-weight: bold;
 
 
 
-.light-mode #main-content > header {
-  background-color: white;
-  color:black
-}
+
 
 .light-mode #main-content > header > p {
-    color: black;
+    color: white;
 }
 
 
@@ -3152,41 +3149,35 @@ body > center > div.footer > h3 {
     background-color: white
   }
   
-  .light-mode #main-content > div.footer{
-  
-    background-color: whitesmoke;
-  
-  
-  }
+
   
   .project a:hover {
       background: none;
   }
   
-  #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover{
-    background-color: black
+ 
+  #main-content > div.portfolio > div > a:nth-child(1) {
+    background: transparent;
   }
-  
-  #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover{
-    background-color: black
-  }
-  
-  #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover{
-    background-color: black
+
+  #main-content > div.portfolio > div > a:nth-child(1):hover {
+    background: transparent;
   }
   
   
-  
-  
-  
-  #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
-    background-color: mediumpurple
-  
+
+  #main-content > div.portfolio > div> a {
+      background-color:rgb(147, 28, 119);
   }
+
+
+  #main-content > div.portfolio > div > a:hover {
+    background-color: #9b4f96;
+}
   
-  #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover{
-    background-color: black
-  }
+ 
+  
+
   
   
   .dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
@@ -3210,17 +3201,9 @@ body > center > div.footer > h3 {
   }
   
   
+
   
-  #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
-    background-color: mediumpurple
-  
-  }
-  
-  
-  #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
-    background-color: mediumpurple
-  
-  }
+
   
   
   .dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
@@ -3658,7 +3641,7 @@ body > center > div.footer > h3 {
   
   .light-mode #main-content > div.footer{
   
-    background-color: whitesmoke;
+    background-color: black;
   
   
   }
@@ -3684,7 +3667,7 @@ body > center > div.footer > h3 {
   
   
   .light-mode #main-content > div.footer > h3 {
-    color:black
+    color:white
   }
   
   #main-content > div.footer > p {
@@ -3707,15 +3690,13 @@ body > center > div.footer > h3 {
   
   
   .light-mode #main-content > div.footer > p > a {
-    color:black;
+    color:white;
   }
   #main-content > div.footer > p > a:hover {
     color:lavenderblush;
   }
   
-  .light-mode #main-content > div.footer > p > a:hover {
-    color:darkgray;
-  }
+
   
   .dark-mode #main-content > div.footer > p > a:hover {
     color:aliceblue;

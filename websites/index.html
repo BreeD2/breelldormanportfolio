@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en-US">
-<html>
  <head>
-   <title>Websites</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Breell Dorman | Websites</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Explore a curated collection of innovative website designs that blend aesthetics and functionality. Discover responsive layouts and digital solutions that elevate your online presence." />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -85,11 +86,11 @@
       
   
      
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"tabindex="0" >
-          <i class="fa fa-bars" tabindex="0"></i>
-      </a>
+      <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+        <i class="fa fa-bars"></i>
+    </button>
   </div>
-  <!-- Moved searchResults outside the topnav -->
+
   
 
 
@@ -98,19 +99,19 @@
           <div class="portfolio" tabindex="0">
            
             <div class="project" tabindex="0">
-              <img src="reminiscencecollectionhome.jpg" alt="Reminiscence Collection" tabindex="0">
+              <img src="reminiscencecollectionhome.webp" alt="Reminiscence Collection" tabindex="0">
               <h3  tabindex="0">Reminiscence Collection</h3>
               <p tabindex="0">This project showcases a video game archive website that catalogues over 170 video games. It was inspired by my earlier work, the Reminiscence Collection, which is a poster and books detailing video game information. This website serves as my senior capstone project for Virginia Commonwealth University. It is designed to be responsive and accessible, featuring login and signup pages for enhanced user interaction.</p>
               <a href="https://breed2.github.io/reminiscencecollection/" target="_blank" tabindex="0">Visit Website</a>
             </div>
             <div class="project" tabindex="0">
-              <img src="threeletterwordassigner.jpeg" alt="Three-Letter Word Assigner" tabindex="0">
+              <img src="threeletterwordassigner.webp" alt="Three-Letter Word Assigner" tabindex="0">
               <h3 tabindex="0">Three-Letter Word Assigner</h3>
               <p tabindex="0">This project is a Three-Letter Word Assigner where you can can get a random word and have an option to listen through text-to-speech and you can change voice, pitch, rate, and volume, You can copy and paste the word too. You can also see the definition of the word, do a quiz, word playlist, and contact me if you want to. Also, the website change background based on time and it have accessibility options to change the appearance.</p>
               <a href="https://breed2.github.io/threeletterwordassigner/" target="_blank"  tabindex="0">Visit Website</a>
             </div>
             <div class="project" tabindex="0">
-              <img src="crystal&bites.jpg" alt="Crystal&Bites" tabindex="0">
+              <img src="crystal&bites.webp" alt="Crystal&Bites" tabindex="0">
               <h3 tabindex="0">Crystal&Bites</h3>
               <p tabindex="0">This website is for a fictional restaurant named Crystal&Bites, which includes features like a menu, login/signup, about, and contact sections. I created it in the summer of 2022 as part of my initial exploration into web design, during a web design class. Eager to challenge myself, I aimed to complete this project within two weeks, focusing on learning about responsive website design.
 
@@ -118,7 +119,7 @@
               <a href="https://breed2.github.io/bree-class-site.github.io//final/" target="_blank" tabindex="0">Visit Website</a>
             </div>
             <div class="project"  tabindex="0">
-              <img src="daydreamproject2.jpg" alt="Daydream Project"  tabindex="0">
+              <img src="daydreamproject2.webp" alt="Daydream Project"  tabindex="0">
               <h3  tabindex="0">Daydream Project</h3>
               <p  tabindex="0">This website is crafted to display my daydreams, which I've represented through tangible items like objects, papers, and posters, reflecting thoughts I've pondered for about 10-30 minutes each. The site features images and thumbnails that offer a closer look at the details, accompanied by descriptions of the scenarios. Additionally, I've documented the creation process through photographs, including close-up shots, all of which are accessible on the second page of the daydream tab.
 
@@ -126,7 +127,7 @@
               <a href="https://breed2.github.io/discussandconnect/" target="_blank"  tabindex="0">Visit Website</a>
             </div>
             <div class="project"  tabindex="0">
-              <img src="discuss&connect.jpg" alt="Discuss&Connect: Where Communities Unite"  tabindex="0">
+              <img src="discuss&connect.webp" alt="Discuss&Connect: Where Communities Unite"  tabindex="0">
               <h3  tabindex="0">Documentation of Discuss&Connect: Where Communities Unite</h3>
               <p  tabindex="0">In Fall 2023, for the Independent Studio class taught by VCU Graphic Arts Professor Roy McKelvey, I aimed to create a community forum. Initially, I considered coding it myself, but after discussing with Roy, I decided to make mockups using Adobe Photoshop. I experimented with different color schemes and settled on orange and blue. Weekly, I designed layouts for the homepage and discussion page, creating fictional posts and users for realism. In Spring 2024, I continued the project, following Roy's suggestion to use WordPress. I chose Siteground for hosting and a community forum template, adapting it to match my mockups while enhancing user experience.
 
@@ -177,6 +178,22 @@
   }
   </script>
 
+<script>
+
+  function search() {
+      var searchInput = document.getElementById("searchInput").value;
+      var searchResults = document.getElementById("searchResults");
+
+      // Implement your search functionality here
+      // For simplicity, I'm just showing and hiding the search-results div in this example
+      if (searchInput.trim() !== "") {
+          searchResults.style.display = "block";
+          searchResults.innerHTML = "Search results for: " + searchInput;
+      } else {
+          searchResults.style.display = "none";
+      }
+  }
+</script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
