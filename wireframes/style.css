@@ -245,9 +245,6 @@ width: 108px;
   background-color: #808080;
 }
 
-.light-mode #myTopnav > div:nth-child(3) > button{
-  background-color: color:black;
-}
 
 
 
@@ -534,15 +531,11 @@ body.light-mode .topnav a.active {
 
 
 
-#myTopnav > div:nth-child(4) > button:hover {
-  background-color: orangered;
-}
 
 
 
-#myTopnav > div:nth-child(3) > button:hover {
-  background-color: #078136;
-}
+
+
 
 
 
@@ -3207,10 +3200,7 @@ body > center > div.footer > h3 {
     color: white;
   }
   
-  .dropdown a:hover{
-    background-color: red;
-    color: white;
-  }
+ 
   
   
   /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
@@ -3687,8 +3677,15 @@ body > center > div.footer > h3 {
 background-color: grey;
        }
       
+      .fa-caret-down:before {
+        color:white
+       }
 
          .light-mode .fa-caret-down:before {
+          color:black
+         }
+
+         .light-mode #myTopnav > div:nth-child(4) > button > i.fa.fa-caret-down:before {
           color:white
          }
 
@@ -3727,12 +3724,76 @@ body.dark-mode .topnav a.active {
       #myTopnav > div:nth-child(3) > div {
         width:185px;
         
-        background-color:blue;
+       
       }
       
       #myTopnav > div:nth-child(3) > div:active {
         width:185px;
         
-        background-color:blue;
+       
       }
     }
+
+    #myTopnav > div:nth-child(3) > button:hover {
+      background-color: midnightblue;
+    }
+    
+    .light-mode #myTopnav > div:nth-child(3) > button:hover {
+      background-color: grey;
+      color:white
+    }
+
+    #myTopnav > div:nth-child(3) > div {
+background-color: midnightblue;
+    }
+
+    .light-mode #myTopnav > div:nth-child(3) > div {
+      background-color: grey;
+          }
+
+          
+
+    #myTopnav > div:nth-child(3):hover > div {
+      background-color: midnightblue;
+    }
+
+    .light-mode #myTopnav > div:nth-child(3):hover > div {
+      background-color: grey;
+      color:white
+    }
+
+    .light-mode #myTopnav > div:nth-child(3) > button {
+      background-color: white;
+      color:black
+    }
+
+    .light-mode .fa-palette:before:hover {
+      color: white;
+  }
+
+  .light-mode .fa-caret-down:before::hover {
+    color: white;
+    background-color: white;
+}
+ 
+
+    .dropdown a:hover{
+      background-color: grey;
+      color: white;
+    }
+
+    .light-mode .fa-palette:before{
+      color:black
+    }
+
+    .fa-caret-down:before {
+      color:white
+     }
+
+       .light-mode .fa-caret-down:before {
+        color:black
+       }
+
+       .light-mode #myTopnav > div:nth-child(4) > button > i.fa.fa-caret-down:before {
+        color:white
+       }
