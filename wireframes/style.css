@@ -249,12 +249,7 @@ width: 108px;
   background-color: color:black;
 }
 
-.dark-mode #myTopnav > div:nth-child(3) > div {
-  background-color: #808080;
-}
-.dark-mode #myTopnav > div:nth-child(3) > button:hover {
-  background-color: #808080;
-}
+
 
 .dark-mode #myTopnav > div:nth-child(3) > button{
   color:white;
@@ -278,12 +273,6 @@ width: 108px;
   
 }
 
-.dark-mode #myTopnav > div:nth-child(4) > div {
-  background-color: #808080;
-}
-.dark-mode #myTopnav > div:nth-child(4) > button:hover {
-  background-color: #808080;
-}
 
 .dark-mode #myTopnav > div:nth-child(4) > button:hover  {
   background-color: #808080;
@@ -306,7 +295,7 @@ width: 108px;
   #myTopnav > div:nth-child(3) > div {
   width:100%;
   
-  background-color: rgb(7, 129, 54);
+
 }
 }
 
@@ -372,16 +361,6 @@ width: 108px;
   display: block
 }
 
-/* Style the dropdown content (hidden by default) */
-.dropdown-content2 {
-  display: none;
-  position: absolute;
-  background-color: rgb(7, 129, 54);
-
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  color:white
-}
 
 /* Style the links inside the dropdown */
 .dropdown-content2 a {
@@ -533,19 +512,7 @@ body.light-mode .topnav a.active {
 
 
 
-@media (min-width: 1060px) {
 
-#myTopnav > div:nth-child(3) > div {
-  width:185px;
-  
-  background-color:rgb(7, 129, 54);
-}
-
-#myTopnav > div:nth-child(3) > div:active {
-  width:185px;
-  
-  background-color:rgb(7, 129, 54);
-}
 #myTopnav > div:nth-child(4) > div  {
   width:150px;
 
@@ -592,18 +559,10 @@ body.light-mode .topnav a.active {
   
 }
 
-.light-mode #myTopnav > div:nth-child(4) > button:active {
-  background-color: grey;
-  width:100%;
-  
-}
 
 
-.light-mode #myTopnav > div:nth-child(3) > button:active {
-  background-color: grey;
-  width:100%;
-  
-}
+
+
 
 .dark-mode #myTopnav > div:nth-child(3) > div > a:hover {
   background-color:#696969;
@@ -929,17 +888,8 @@ body.light-mode .dropdown-content2 a {
 
 
 
-/* Dark mode styles for the "active" element */
-body.light-mode .topnav a.active {
-  background-color: grey;;
-  color: #ffffff;
-}
 
-/* Dark mode styles for the "active" element */
-body.dark-mode .topnav a.active {
-  background-color: dimgrey;
-  color: #ffffff;
-}
+
 
 #main-content > div.footer > h3  {
   color:white;
@@ -3721,3 +3671,68 @@ body > center > div.footer > h3 {
      }
    }
    
+   #myTopnav > div:nth-child(4) > button {
+  background-color: orangered;
+   }
+
+   .dark-mode #myTopnav > div:nth-child(4) > button {
+    background-color: dimgrey;
+     }
+
+     .light-mode #myTopnav > div:nth-child(4) > button {
+      background-color: grey;
+      color:white
+       }
+       .light-mode #myTopnav > div:nth-child(4) > div:hover {
+background-color: grey;
+       }
+      
+
+         .light-mode .fa-caret-down:before {
+          color:white
+         }
+
+
+         
+body.light-mode .topnav a.active {
+  background: black;
+  color: white;
+}
+
+body.dark-mode .topnav a.active {
+  background: black;
+  color: white;
+}
+
+.dark-mode #myTopnav > div:nth-child(4) > button {
+  background-color: #696969;
+  color:white
+   }
+
+   .dark-mode #myTopnav > div:nth-child(4) > button:hover {
+    background-color: #696969;
+    color:white
+     }
+
+     .dark-mode #myTopnav > div:nth-child(4) > div {
+      background-color: #696969;
+    }
+    .dark-mode #myTopnav > div:nth-child(4) > button:hover {
+      background-color: #696969;
+    }
+  
+
+    @media (min-width: 1060px) {
+
+      #myTopnav > div:nth-child(3) > div {
+        width:185px;
+        
+        background-color:blue;
+      }
+      
+      #myTopnav > div:nth-child(3) > div:active {
+        width:185px;
+        
+        background-color:blue;
+      }
+    }
