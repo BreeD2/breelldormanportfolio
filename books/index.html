@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en-US">
-<html>
  <head>
-   <title>Books</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Breell Dorman | Books</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Dive into captivating stories and insightful reads. Browse books from different genres and find your next favorite book today." />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -85,15 +86,11 @@
         
     
        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" tabindex="0">
-            <i class="fa fa-bars"target="_blank" tabindex="0"></i>
-        </a>
-    </div>
-    <!-- Moved searchResults outside the topnav -->
-    
-  
+        <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+            <i class="fa fa-bars"></i>
+        </button>
 
-
+</div>
 <div id="searchResults">
 
 
@@ -118,17 +115,17 @@
 
       <div class="project"target="_blank" tabindex="0">
           <a href="reminiscencecollectionbook.pdf" target="_blank" tabindex="0">
-              <img src="reminiscencecollectionbook.jpg" alt="Reminiscence Collection"  tabindex="0">
+              <img src="reminiscencecollectionbook.webp" alt="Reminiscence Collection"  tabindex="0">
           </a>
           <h3 tabindex="0">Reminiscence Collection Book</h3>
           <p tabindex="0">This book features information about video games such as their covers, developers, publishers, and more. My inspiration for creating this project was to expand on the image of the book and also my interest in video games
 </p>
-          <a href="reminiscencecollectionbook.pdf" download tabindex="0">Download PDF</a>
+          <a href="reminiscencecollectionbook.webp" download tabindex="0">Download PDF</a>
       </div>
 
       <div class="project"target="_blank" tabindex="0">
           <a href="ecoairhumidiferthermostat.pdf"  target="_blank" tabindex="0">
-              <img src="ecoairhumidiferthermostat.jpg" alt="Eco Air Humidifer Thermostat"  tabindex="0">
+              <img src="ecoairhumidiferthermostat.webp" alt="Eco Air Humidifer Thermostat"  tabindex="0">
           </a>
           <h3 tabindex="0">Eco Air Humidifier Thermostat</h3>
           <p tabindex="0">This manual accompanies a thermostat that I designed, emphasizing the use of eco-friendly materials. It includes both written and visual instructions to cater to different preferences, as some users may favor one format over the other. Additionally, this manual was developed as a preliminary step to the creation of the "If Only The World" book.</p>
@@ -139,7 +136,7 @@
       <!-- Another Project with PDF -->
       <div class="project"target="_blank" tabindex="0">
           <a href="ifonlytheworld.pdf"  target="_blank" tabindex="0">
-            <img src="ifonlytheworld.jpg" alt="If Only The World" tabindex="0">
+            <img src="ifonlytheworld.webp" alt="If Only The World" tabindex="0">
           </a>
           <h3 tabindex="0">If Only The World</h3>
           <p tabindex="0">A 250 book about if only the world cared about climate change and wanting to make a change and then the next section is the reality of how we treat the world. The last section is making a call to change and how people are now treating the world. I feel that awareness of climate change is important because some people don't have the impact it have on our world.</p>
@@ -187,6 +184,23 @@
 
 
 
+<script>
+    function myFunction() {
+  var nav = document.getElementById("myTopnav");
+  var button = document.querySelector(".icon");
+  
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    button.classList.remove("active"); // Remove active class when closing
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    nav.classList.add("responsive");
+    button.classList.add("active"); // Add active class when opening
+    button.setAttribute("aria-expanded", "true");
+  }
+  }
+  
+  </script>
 
 
   <script>

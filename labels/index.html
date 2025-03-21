@@ -2,7 +2,7 @@
 <html lang="en-US">
 <html>
  <head>
-   <title>Photography</title>
+   <title>Breell Dorman | Labels</title>
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
@@ -85,11 +85,11 @@
         
     
        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" tabindex="0">
-            <i class="fa fa-bars"target="_blank" tabindex="0"></i>
-        </a>
+        <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+            <i class="fa fa-bars"></i>
+        </button>
     </div>
-    <!-- Moved searchResults outside the topnav -->
+  
     
   
 
@@ -118,7 +118,7 @@
 
       <div class="project" tabindex="0">
         <a href="wraparoundlabels.pdf" target="_blank" tabindex="0">
-            <img src="wraparoundlabels.jpg" alt="Thumbnail for Wraparound Labels PDF" tabindex="0">
+            <img src="wraparoundlabels.webp" alt="Thumbnail for Wraparound Labels PDF" tabindex="0">
         </a>
         <h3 tabindex="0">Johnson's Wraparound Wedding Labels</h3>
         <p tabindex="0">This is a collection of five custom wraparound label designs created for the Johnson couple's wedding. </p>
@@ -126,7 +126,7 @@
     </div>
     <div class="project" tabindex="0">
         <a href="ovallabels.pdf" target="_blank" tabindex="0">
-            <img src="ovallabels.jpg" alt="Thumbnail for Oval Labels PDF" tabindex="0">
+            <img src="ovallabels.webp" alt="Thumbnail for Oval Labels PDF" tabindex="0">
         </a>
         <h3 tabindex="0">Johnson's Oval Wedding Labels</h3>
         <p tabindex="0">These are a collection of eight oval label designs created for the wedding of the Johnson couple.</p>
@@ -184,6 +184,42 @@
     </script>
 
 
+
+<script>
+    function myFunction() {
+  var nav = document.getElementById("myTopnav");
+  var button = document.querySelector(".icon");
+  
+  if (nav.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
+    button.classList.remove("active"); // Remove active class when closing
+    button.setAttribute("aria-expanded", "false");
+  } else {
+    nav.classList.add("responsive");
+    button.classList.add("active"); // Add active class when opening
+    button.setAttribute("aria-expanded", "true");
+  }
+  }
+  
+  </script>
+
+
+  <script>
+
+        function search() {
+            var searchInput = document.getElementById("searchInput").value;
+            var searchResults = document.getElementById("searchResults");
+
+            // Implement your search functionality here
+            // For simplicity, I'm just showing and hiding the search-results div in this example
+            if (searchInput.trim() !== "") {
+                searchResults.style.display = "block";
+                searchResults.innerHTML = "Search results for: " + searchInput;
+            } else {
+                searchResults.style.display = "none";
+            }
+        }
+    </script>
 
   <script>
   function myFunction() {
