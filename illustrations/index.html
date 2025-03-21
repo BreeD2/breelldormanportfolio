@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en-US">
-<html>
  <head>
-   <title>Illustrations</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Breell Dorman | Illustrations</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Explore a collection of unique and creative illustrations. Specializing in digital art, character design, and editorial illustrations." />
    <link rel="icon" type="image/x-icon" href="..//favicon2.ico"/>
    <link rel="apple-touch-icon" sizes="76x76" href="..//apple-touch-icon.png">
  <link rel="icon" type="image/png" sizes="32x32" href="..//favicon-32x32.png">
@@ -85,9 +86,10 @@
         
     
        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" tabindex="0">
-            <i class="fa fa-bars"target="_blank" tabindex="0"></i>
-        </a>
+        <button class="icon" onclick="myFunction()" aria-expanded="false" aria-label="Toggle menu">
+          <i class="fa fa-bars"></i>
+      </button>
+  </div>
     </div>
     <!-- Moved searchResults outside the topnav -->
     
@@ -118,7 +120,7 @@
 
       <div class="project"target="_blank" tabindex="0">
          
-              <img src="stilllife.jpg" alt="Still Life Drawing"  tabindex="0">
+              <img src="stilllife.webp" alt="Still Life Drawing"  tabindex="0">
           </a>
           <h3 tabindex="0">Still Life</h3>
           <p tabindex="0">An 18x24 inch still life drawing featuring shoes and bags.
@@ -128,7 +130,7 @@
 
       <div class="project"target="_blank" tabindex="0">
           
-              <img src="sightdrawing.jpg" alt="Sight Drawing"  tabindex="0">
+              <img src="sightdrawing.webp" alt="Sight Drawing"  tabindex="0">
           </a>
           <h3 tabindex="0">Sight Drawing</h3>
           <p tabindex="0">An 18x24 inch drawing focusing on sighting, measuring, symmetry, and ellipses.</p>
@@ -136,7 +138,7 @@
           
       </div>
       <div class="project"target="_blank" tabindex="0"> 
-      <img src="toneddrawing.jpg" alt="Tone Drawing"  tabindex="0">
+      <img src="toneddrawing.webp" alt="Tone Drawing"  tabindex="0">
     </a>
     <h3 tabindex="0">Tone Drawing</h3>
     <p tabindex="0">An 18x24 inch landscape drawing using a toned ground and subtractive techniques.
@@ -146,7 +148,7 @@
 </div>
 
 <div class="project"target="_blank" tabindex="0"> 
-    <img src="graphitetexturedrawing.jpg" alt="Graphite Textured Drawing"  tabindex="0">
+    <img src="graphitetexturedrawing.webp" alt="Graphite Textured Drawing"  tabindex="0">
   </a>
   <h3 tabindex="0">Graphite Textured Drawing</h3>
   <p tabindex="0">An 18x24 inch landscape drawing featuring graphite textures.</p>
@@ -157,7 +159,7 @@
       <!-- Another Project with PDF -->
       <div class="project"target="_blank" tabindex="0">
          
-            <img src="portraitoffather.jpg" alt="Portrait of My Father" tabindex="0">
+            <img src="portraitoffather.webp" alt="Portrait of My Father" tabindex="0">
           </a>
           <h3 tabindex="0">Portrait of My Father</h3>
           <p tabindex="0">An 18*24 inch portrait of my father.</p>
@@ -167,7 +169,7 @@
   <!-- Another Project with PDF -->
   <div class="project"target="_blank" tabindex="0">
      
-          <img src="portraitofmother.jpg" alt="Portrait of Mother"  tabindex="0">
+          <img src="portraitofmother.webp" alt="Portrait of Mother"  tabindex="0">
       </a>
       <h3 tabindex="0"> Portrait of My Mother</h3>
       <p tabindex="0">An 40*60 inch portrait of my mother.</p>
@@ -242,6 +244,24 @@
     }
   }
   </script>
+
+<script>
+  function myFunction() {
+var nav = document.getElementById("myTopnav");
+var button = document.querySelector(".icon");
+
+if (nav.classList.contains("responsive")) {
+  nav.classList.remove("responsive");
+  button.classList.remove("active"); // Remove active class when closing
+  button.setAttribute("aria-expanded", "false");
+} else {
+  nav.classList.add("responsive");
+  button.classList.add("active"); // Add active class when opening
+  button.setAttribute("aria-expanded", "true");
+}
+}
+
+</script>
    <script>
     document.addEventListener('DOMContentLoaded', function () {
         storeOriginalFontSizes(); // Store original font sizes for specified elements
