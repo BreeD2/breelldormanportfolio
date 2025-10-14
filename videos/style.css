@@ -1,23 +1,21 @@
 * {
   box-sizing: border-box;
 }
+/* body */
 
 body {
   background-color:white;
   height:auto  !important;
   font-family: "arial", !important;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,
-   !important;
-
-
+s
 }
 
+/* dropdown contents*/
 
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
 
 .dropdown-content a {
   float: none;
@@ -26,10 +24,8 @@ body {
   text-decoration: none;
   display: block;
   text-align: left;
+ 
 }
-
-
-
 
 .dropdown-content button {
   float: none;
@@ -40,9 +36,6 @@ body {
   text-align: left;
   border: none;
   font-size: 15px
-
-
-
 
 }
 .
@@ -85,67 +78,11 @@ body {
 
 }
 
-.dropdown-content2 a, {
-  color: white
-}
-
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover, .dropdown-content2 a:hover {
   background-color: #ddd;
 }
 
 
-/* Responsive menu icon */
-.topnav .icon {
-  display: none;
-}
-
-
-  @media screen and (max-width: 1060px) {
-  .topnav .icon {
-    display: block; /* Ensure the menu icon is always visible */
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a,  .topnav.responsive .dropdown, .topnav.responsive .dropdown2 {
-    display: block; /* This shows the hidden elements when the menu icon is clicked */
-    float: none;
-    text-align: left;
-    
-  }
-
-}
-
-
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  overflow: hidden;
-  color:white
-}
-
-/* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
   font-size: 17px;
   border: none;
@@ -178,20 +115,7 @@ body {
 
 
 
-@media (min-width: 1068px) {
-/* Style the dropdown content (hidden by default) */
-.dropdown-content2 {
-  display: none;
-  position: absolute;
-  background-color: #555;
-width: 108px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  color:white
-}
 
-
-}
 /* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
@@ -209,69 +133,78 @@ width: 108px;
   display: block;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1060px) {
-  .topnav a:not(:first-child),
-  .dropdown .dropbtn, .dropdown2 {
-    display: none;
-  }
-   .topnav button.icon{
-    float: right;
-    display: block;
-  }
+/* topnav contents */
+.topnav .icon {
+  display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1060px) {
-  .topnav a:not(:first-child),
-  .dropdown .dropbtn, .dropdown2 {
-    display: none;
-  }
-  .topnav button.icon {
-    float: right;
-    display: block;
-  }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  color:white
 }
 
 
 .light-mode #myTopnav > div:nth-child(3) > div {
-  background-color: #808080;
+  background-color: #737373;
+
 }
 .light-mode #myTopnav > div:nth-child(3) > button:hover {
-  background-color: #808080;
+  background-color: #696565;
 }
 
 .light-mode #myTopnav > div:nth-child(3) > button{
-  background-color: color:black;
+  color:white;
 }
 
+/* important for dark-mode*/
 .dark-mode #myTopnav > div:nth-child(3) > div {
-  background-color: #808080;
+  background-color: #504f4f;;
 }
 .dark-mode #myTopnav > div:nth-child(3) > button:hover {
-  background-color: #808080;
+  background-color: #737373;
 }
 
 .dark-mode #myTopnav > div:nth-child(3) > button{
   color:white;
 }
 
-
-
-
 .light-mode #myTopnav > div:nth-child(4) > div{
-  background-color: #808080;
+  background-color: #928d8d;
+  color:white
 }
-.light-mode #myTopnav > div:nth-child(4) > button:hover {
-  background-color: #808080;
-}
+
 
 .light-mode #myTopnav > div:nth-child(4) > button{
-  background-color: color:black;
-}
-#myTopnav > div:nth-child(3) > button {
-  background-color: transparent;
+  color:black;
   
+}
+
+#myTopnav > a:hover {
+  background-color: black;
+}
+
+
+
+.light-mode #myTopnav > div:nth-child(4) > button:hover{
+ background-color: #928d8d;
+  color:white
 }
 
 .dark-mode #myTopnav > div:nth-child(4) > div {
@@ -281,55 +214,38 @@ width: 108px;
   background-color: #808080;
 }
 
-.dark-mode #myTopnav > div:nth-child(4) > button:hover  {
-  background-color: #808080;
-}
-
-.dark-mode #myTopnav > div:nth-child(4) > button {
-  background:transparent
-}
-
 .dark-mode #myTopnav > div > div > a:hover {
   background-color:black
 }
 .dark-mode #myTopnav > div:nth-child(4) > button{
   color:white;
+  background-color: transparent;
 }
 
 
-@media screen and (max-width: 1060px) 
-{
-  #myTopnav > div:nth-child(3) > div {
-  width:100%;
-  
-  background-color: rgb(7, 129, 54);
-}
+.dark-mode #myTopnav > div:nth-child(4) > button:active{
+  color:white;
+  background-color: transparent;
 }
 
 
+.dark-mode #myTopnav > div> button:hover{
+  color:white;
+  background-color: grey;
+}
 
 
+
+#myTopnav > div:nth-child(3) > div {
+
+  background-color: rgb(7, 129, 54);}
 
 .dark-mode  #myTopnav > div:nth-child(3) > div {
- 
+
   background-color: mediumgrey;
 }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1060px) {
-  }
-  .topnav.responsive button.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    outline: none;
-    background-color: transparent;
-    font-size: 17px;
-  }
+
+
   .topnav.responsive button {
     float: none;
     display: block;
@@ -342,12 +258,6 @@ width: 108px;
     width: 100%;
     text-align: left;
   }
-}
-
-
-
-
-
 /* Dropdown container - needed to position the dropdown content */
 .dropdown2 {
   float: left;
@@ -390,79 +300,9 @@ width: 108px;
 }
 
 
-/* Add a grey background to dropdown links on hover */
-.dropdown-content2 a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown2:hover .dropdown-content2 {
   display: block;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1060px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn2 {
-    display: none;
-  }
-  .topnav button.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 100px) {
-
-  .topnav.responsive button.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive  {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown2 {float: none;}
-    .topnav.responsive .dropdown2:hover {background-color: #555;}
-  .topnav.responsive .dropdown-content2 {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-  
-}
-/* Dropdown container - needed to position the dropdown content */
-.dropdown2 {
-  float: left;
-  overflow: hidden;
-  color:white
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown2 .dropbtn2 {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: arial;
-  margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content2 {
-  display: none;
-  position: absolute;
-  background-color: #555;
-
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  color:white
 }
 
 
@@ -484,34 +324,51 @@ width:100%;
     text-align: left;
 
 }
-
-
-
-@media (min-width: 1060px) {
-   .dropdown2 .dropbtn2  {
-     display:block
-}
 .dropdown-content {
   font-size: 15px;
   position: fixed;
   text-align: center;
   width:160px;
-    background-color: dodgerblue;
+    background-color: rgb(11, 116, 221);
 
   }
-}
- .dropdown-content2 {
-  font-size: 15px;
-  position: fixed;
+
+
+/* Project section */
+.project {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-
 }
 
-/* Dark mode styles for the "active" element */
-body.light-mode .topnav a.active {
-  background-color: grey;;
-  color: #ffffff;
+.project h2 {
+  font-size: 1.8rem; /* readable on video */
+  margin-bottom: 15px;
+  color: var(--text-color);
 }
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.project video {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Keeps consistent video height */
+  object-fit: cover;
+  background-color: #000; /* Placeholder background if no thumbnail */
+  display: block;
+  border-radius: 10px;
+}
+
+
+
+
+
 
 #myTopnav > button:hover {
   background-color: rgb(147, 28, 119);
@@ -529,38 +386,13 @@ body.light-mode .topnav a.active {
 
 
 
-@media (min-width: 1060px) {
-
-#myTopnav > div:nth-child(3) > div {
-  width:185px;
-  
-  background-color:rgb(7, 129, 54);
+#myTopnav > div:nth-child(4) > button {
+  background-color: transparent;
 }
-
-#myTopnav > div:nth-child(3) > div:active {
-  width:185px;
-  
-  background-color:rgb(7, 129, 54);
-}
-#myTopnav > div:nth-child(4) > div  {
-  width:150px;
-
-}
-}
-
-
-
-
-
-
-
-
 
 #myTopnav > div:nth-child(3) > button:hover {
   background-color: #078136;
 }
-
-
 
 .dark-mode #myTopnav > div:nth-child(4) > button:active {
   background-color: grey;
@@ -568,98 +400,69 @@ body.light-mode .topnav a.active {
   
 }
 
-
 .dark-mode #myTopnav > div:nth-child(3) > button:active {
-  background-color: grey;
+  background-color: #737373;
   width:100%;
-  
 }
 
-.light-mode #myTopnav > div:nth-child(4) > button:active {
-  background-color: grey;
+.dark-mode #myTopnav > div:nth-child(3) > button:active:hover {
+  background-color: #737373;
   width:100%;
-  
+}
+.light-mode #myTopnav > div:nth-child(3) > button:active:hover {
+  background-color: #737373;
+  width:100%;
+}
+
+
+
+.light-mode #myTopnav > div:nth-child(4) > button:active {
+
+  width:100%;
 }
 
 
 .light-mode #myTopnav > div:nth-child(3) > button:active {
   background-color: grey;
   width:100%;
-  
 }
+
+
+
+
 
 .dark-mode #myTopnav > div:nth-child(3) > div > a:hover {
-  background-color:#696969;
+  background-color:black;
   
-  
 }
 
-
-.topnav input[type="text"] {
-  width: 70%;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
+#myTopnav > div:nth-child(3) > div > a.active:hover  {
+  background-color:  rgb(147, 28, 119);;
 }
-
-@media screen and (min-width: 1060px) {
-
-#clearSearch {
-      display: none;
-      cursor: pointer;
-      /* Additional styling to position the X button appropriately */
-      position: absolute;
-      right: 35px;
-      top: 1px;
-      border: none;
-      background: transparent;
-      font-size: 16px;
-      color:black;
-      z-index: 10;
-      display:none
-  }
+.light-mode #myTopnav > div:nth-child(3) > div > a.active:hover  {
+  background-color: #494949;
 }
-
-body.light-mode .topnav a {
-  color: #000; /* Black font color for the links in the navbar */;
-
+.dark-mode #myTopnav > div:nth-child(3) > div > a.active:hover  {
+  background-color: #737373;
 }
-
 body.light-mode .topnav a:hover {
   color: white; /* Black font color for the links in the navbar */;
 
 }
-/* Dark Mode styles for dropdown and its content */
-.dark-mode .dropdown-content,
- {
-  background-color: dimgrey; /* Dark Mode background color */;
-  color:white
-}
+
 .dark-mode .dropdown-content2 a:hover {
   background-color: black
 }
 
-
-
 /* Add a dark background on topnav links and the dropdown button on hover */
 .dropdown:hover .dropbtn {
-  background-color: dodgerblue;
+  background-color: rgb(11, 116, 221);
   color: white;
 }
-
-
-
 .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
   background-color: grey;
   color: white;
 }
-
-
-.light-mode  .dropdown2:hover .dropbtn2 {
-  background-color: grey;
-  color: white;
-}
-
 .light-mode  .dropdown2 .dropdown .dropbtn2 {
   background-color: grey;
   color: black;
@@ -674,7 +477,6 @@ body.light-mode .topnav a:hover {
   color: white;
 }
 
-
 .light-mode  .dropdown-content2 a .dropbtn2 {
   background-color: lightgrey;
   color: black;
@@ -684,20 +486,7 @@ body.light-mode .topnav a:hover {
   color: black;
 }
 
-.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
-  color:black
-}
 
-.dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
-  background-color: slategrey;
-  color: white;
-}
-.light-mode .fas.fa-wheelchair {
-  color:black
-}
-.light-mode .fas.fa-wheelchair:hover {
-  color:black
-}
 .light-mode .fa.fa-user{
   color:black
 }
@@ -707,7 +496,6 @@ body.light-mode .topnav a:hover {
 .light-mode .dropdown2:hover{
   color:white
 }
-
 
 /* Light mode styles */
 .light-mode .dropdown-content2 {
@@ -726,10 +514,7 @@ body.light-mode .topnav a:hover {
   color: white;
   background-color: transparent
 }
-.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
-  color: white;
-  background-color: transparent
-}
+
 
 /* Dark mode styles */
 .dark-mode .dropdown-content2, .dark-mode .dropdown-content {
@@ -755,17 +540,7 @@ body.light-mode .topnav a:hover {
 .dark-mode .dropdown:hover .dropbtn i {
   color: white; /* Ensure icons also change color appropriately on hover */
 }
-/* Hover effects for .dropbtn in light mode */
-.light-mode .dropdown:hover .dropbtn,
-.light-mode .dropdown2:hover .dropbtn2 {
-  background-color: darkgrey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
 
-.light-mode .dropdown2:hover .dropbtn2 {
-  background-color: grey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
 
 
 .light-mode .dropdown-content2 a:hover {
@@ -782,41 +557,15 @@ body.light-mode .topnav a:hover {
 .light-mode .dropdown2:hover .dropbtn2 i {
   color: white; /* Ensure icons also turn white on hover in light mode */
 }
-
-
-
-/* Hover effects for .dropbtn in dark mode */
-.dark-mode .dropdown:hover .dropbtn,
-.dark-mode .dropdown2:hover .dropbtn2 {
-  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
-  color: white; /* Darker text for readability in dark mode */
-}
-/* Hover effects for .dropbtn in dark mode */
-
-.light-mode .dropdown2:hover .dropbtn2 {
-  background-color: #555; /* Lighter dark background for contrast in dark mode */
-  color: white; /* Darker text for readability in dark mode */
-}
-
 .dark-mode .dropdown:hover .dropbtn i,
 .dark-mode .dropdown2:hover .dropbtn2 i {
   color: white; /* Ensure icons also change color appropriately on hover in dark mode */
 }
 
 
-
-.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
-  color: white;
-}
 .fa.fa-user {
   color:white
 }
-.dark-mode  .dropdown2:hover .dropbtn2 {
-  background-color: #555;
-  color: white;
-}
-
-
 
 .dark-mode .dropdown-content {
   background-color: slategrey;
@@ -826,27 +575,22 @@ body.light-mode .topnav a:hover {
   background-color: black;
   color: white;
 }
+
 body.light-mode .dropdown-content2 a {
     color: white; /* This will now take precedence over the .topnav a color */;
     background-color: transparent
 
 }
 
-
-
 .topnav {
   overflow: hidden;
-
-  position: fixed; /* Make the navigation bar fixed */
-  top: 0;         /* Align the navigation bar at the top of the page */
+  position: fixed; 
+  top: 0;        
   width: 100%;    /* Make the navigation bar span the full width of the page */
   z-index: 3;     /* Ensure the navigation bar stays on top of other elements */;
   font-size: 15px
 }
 
-
-
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -858,14 +602,8 @@ body.light-mode .dropdown-content2 a {
   text-decoration: none;
   font-size: 17px;
   z-index: 3;
-
-
-
 }
 
-
-
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -881,8 +619,6 @@ body.light-mode .dropdown-content2 a {
 .topnav a:hover {
   background-color: black;
   color: white;
-
-
 }
 
 /* Style the "active" element to highlight the current page */
@@ -891,30 +627,58 @@ body.light-mode .dropdown-content2 a {
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 2%;
-
+.topnav a.active:hover {
+  background-color: rgb(147, 28, 119);
+  color: white;
 }
 
+.topnav a:hover {
+  background-color: rgb(147, 28, 119);
+  color: white;
+}
 
-
-/* Dark mode styles for the "active" element */
 body.light-mode .topnav a.active {
-  background-color: grey;;
+  background-color: #494949;
   color: #ffffff;
 }
 
 /* Dark mode styles for the "active" element */
 body.dark-mode .topnav a.active {
-  background-color: dimgrey;
+  background-color: #737373;
   color: #ffffff;
 }
 
+body.dark-mode .topnav a.active:hover {
+  background-color: #737373;
+  color: white;
+}
+
+body.light-mode .topnav a.active:hover {
+  background-color: #494949;
+  color: white;
+}
+
+body.dark-mode .topnav a:hover {
+  background-color: #737373;
+  color: white;
+}
+
+
+
+
+body.light-mode .topnav a.active {
+  background-color: #494949;
+  color: #ffffff;
+}
+
+#main-content > div.footer > h3  {
+  color:white;
+  font-weight: bold;
+}
+
+#main-content > div.footer > p  {
+  color:white;
+}
 @media screen and (max-width: 768px) {
   .topnav {
     flex-wrap: wrap;
@@ -933,61 +697,14 @@ body.dark-mode .topnav a.active {
     text-align: center;
   }
 
-
-  /* Additional adjustments for mobile view */
   .topnav .title {
     order: -2; /* Title comes first */
   }
 
-  .topnav .icon {
-    /* Last in order, no need to set explicitly */
-  }
-}
-
-
-
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 2.6%;
-
-  width: 18%;
-}
-
-
-
-
-
-
-
-.dark-mode {
-  /* Dark mode styles for the body */
-}
-
-.dark-mode .your-navbar-class {
-  /* Dark mode styles for the navbar */
-}
-
-
-:focus {
-    outline: 2px solid #0078d4; /* Add a focus indicator for keyboard users */
-}
-
-
-
-
-
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
 }
 
 body.dark-mode .topnav {
-  background-color: #222; /* Dark background for the navbar in dark mode */
+  background-color: #3c3c3c; /* Dark background for the navbar in dark mode */
   color: #fff; /* White font color for the navbar in dark mode */
 }
 
@@ -995,29 +712,14 @@ body.dark-mode .topnav a {
   color: #fff; /* White font color for the links in the navbar in dark mode */
 }
 
-
-
-
-
-
 body .topnav {
   background-color: rgb(64, 3, 64);
   color: #fff; /* White font color for the navbar in normal mode */;
-
-
 }
 
 body .topnav a {
   color: #fff; /* White font color for the links in the navbar in normal mode */
 }
-
-
-  /* Normal mode styles */
-  body {
-    background-color: white;
-    color: #000;
-  }
-
   button {
     color:white
   }
@@ -1026,198 +728,26 @@ body .topnav a {
   .fa {
       cursor: pointer;
       color: white; /* Change font color to white */;
-
   }
-
-
-/* Common styles for both light and dark modes */
-.dropup-content {
-    display: none;
-    position: absolute;
-    width: 18%;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 0%;
-    margin-left: 79.5%;
-    margin-top: 0%;
-}
-
-
-
 
 /* Dark mode styles */
 body.dark-mode .dropup-content,
-body.dark-mode .dropup-content * {
+ {
     color: white; /* Text color in dark mode */
     background-color: dimgrey; /* Background color in dark mode */
 }
 body.light-mode .topnav {
-  background-color: whitesmoke;
+  background-color: rgb(230, 230, 230);
   color: #fff; /* White font color for the navbar in normal mode */;
 
 }
 
-/* Dark mode styles for the "active" element */
-body.light-mode .topnav #button.active {
-  background-color: grey;;
-  color: #ffffff;
-}
-
-
 
 body.dark-mode .cog-icon,
-body.dark-mode .cog-icon * {
+ {
     color: white; /* Icon color in dark mode */
     background-color: dimgrey; /* Icon background color in dark mode */
 }
-
-
-
-
-/* Hide the welcome message by default */
-.hidden {
-    display: none;
-}
-
-
-
-/* Refined Sidebar Styles */
-.sidebar {
-    width: 200px; /* Sidebar width */
-    position: fixed; /* Sidebar position fixed to the viewport */
-    top: 50px; /* Distance from the top of the viewport */
-    left: -250px; /* Initially positioned off-screen to the left */
-    height: 100%; /* Full viewport height */
-    padding-top: 20px; /* Padding at the top inside the sidebar */
-    background-color: dodgerblue; /* Sidebar background color */
-    color: white; /* Text color */
-    overflow-x: hidden; /* Hide horizontal overflow */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    transition: left 0.5s; /* Smooth transition for toggling visibility */
-    z-index: 1; /* Ensure sidebar is above other content but below modals/popups */
-}
-
-.sidebar::-webkit-scrollbar {
-    width: 15px;
-    background: #e0e0e0;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-/* Light Mode Styles */
-.light-mode .sidebar {
-    background-color: #f0f0f0; /* Light background for light mode */
-}
-
-.light-mode .sidebar::-webkit-scrollbar {
-    width: 15px;
-    background: #e0e0e0;
-}
-
-.light-mode .sidebar::-webkit-scrollbar-thumb {
-    background: #a0a0a0;
-    border-radius: 5px;
-}
-
-.light-mode .sidebar::-webkit-scrollbar-thumb:hover {
-    background: #808080;
-}
-
-.light-mode .sidebar {
-    scrollbar-width: auto;
-    scrollbar-color: #a0a0a0 #e0e0e0;
-}
-
-/* Dark Mode Styles */
-.dark-mode .sidebar {
-    background-color: #1a1a1a; /* Dark background for dark mode */
-}
-
-.dark-mode .sidebar::-webkit-scrollbar {
-    width: 15px;
-    background: #2c2c2c;
-}
-
-.dark-mode .sidebar::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 5px;
-}
-
-.dark-mode .sidebar::-webkit-scrollbar-thumb:hover {
-    background: #888;
-}
-
-.dark-mode .sidebar {
-    scrollbar-width: auto;
-    scrollbar-color: #555 #2c2c2c;
-}
-
-
-   .sidebar a {
-       padding: 8px 8px 8px 16px;
-       text-decoration: none;
-       font-size: 14px;
-       color: white;
-       display: block;
-       font-size: 15px
-
-   }
-   .sidebar a:focus {
-    outline: 2px solid dimgrey; /* Customize as needed */
-}
-
-   /* Light mode styles */
-   body.light-mode .sidebar,
-   body.light-mode .sidebar * {
-       color: black; /* Text color in light mode */;
-       background-color: whitesmoke; /* Background color in light mode */;
-
-   }
-
-   /* Search Input Styles */
-.sidebar input[type="text"] {
-    width: 80%;
-    padding: 2px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-
-}
-
-.sidebar input[type="text"]:focus {
-    border-color: dodgerblue;
-}
-
-#work > div > div:nth-child(3) > a
-
-
-   .sidebar a:hover {
-       color: grey;
-   }
-
-
-
-
-
-   .sidebar h3 {
-       color: #f1f1f1;
-
-   }
-
-
-
-
-
-
-
   .footer {
     width: 100%;
     background-color: #f1f1f1;
@@ -1229,89 +759,6 @@ body.dark-mode .cog-icon * {
       color:white;
   }
 
-      body.dark-mode #sort-section, body.sort-section * {
-
-    background-color: #f1f1f1; /* Light grey background for the footer */
-
-    color: black; /* Dark text color for readability */
-
-  }
-  body.dark-mode h2, body.sort-section h2 * {
-
-
-
-color: black; /* Dark text color for readability */
-
-}
-
-
-
-
-
-@media screen and (max-width: 1060px) {
- 
-  .topnav input[type="text"] {
-   right: 100px;
-   position:absolute
-  }
-  button.icon{
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 400px) {
- 
-  .topnav input[type="text"] {
-    display: none; /* Hide all a elements that are not the first child and the search input by default */
-  }
-}
-
-
-@media screen and (max-width: 1060px) {
-  .topnav a:not(:first-child){
-    display: none; /* Hide all a elements that are not the first child and the search input by default */
-  }
-  .topnav input[type="text"] {
-   right: 100px;
-   position:absolute
-  }
-  button.icon {
-    float: right;
-    display: block;
-  }
-
-  .topnav.responsive a,
-  .topnav.responsive input[type="text"] { /* Display the links and search input when responsive */
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive input[type="text"] {
-    margin: 10px 15px; /* Add some margin for visual separation */;
-      z-index: 5;
-    width: calc(100% - 30px); /* Adjust width to fit inside the topnav container */;
-
-  }
-}
-
-
-.cog-icon {
-    cursor: pointer;
-    /* Additional styling */
-}
-
-.dropup-content {
-    display: none;
-    position: absolute;
-    right: 0; /* Adjust based on layout */
-    background-color: #f9f9f9;
-
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-}
-
 .dropup-content button {
     color: black;
     padding: 12px 16px;
@@ -1320,96 +767,10 @@ color: black; /* Dark text color for readability */
 }
 
 
-.accessibility-button {
-  cursor: pointer;
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: arial;
-  margin: 0;
-  position: sticky;
-  top:0px;
-
-}
-
-
-/* Styles for hover state */
-.accessibility-button:hover {
-  background-color: dodgerblue; /* Darken button slightly on hover */
-}
-
-/* Styles for active/clicked state */
-.accessibility-button.active {
-  background-color: dodgerblue; /* Darken button further when clicked */
-}
-
-/* Styles for hover state */
-.dark-mode .accessibility-button:hover {
-  background-color: dimgrey; /* Darken button slightly on hover */
-}
-
-/* Styles for active/clicked state */
-.dark-mode .accessibility-button.active {
-  background-color: dimgrey; /* Darken button further when clicked */
-}
-
-/* Styles for hover state */
-.light-mode .accessibility-button:hover {
-  background-color: grey; /* Darken button slightly on hover */;
-  color:white
-}
-
-/* Styles for active/clicked state */
-.light-mode .accessibility-button.active {
-  background-color: grey; /* Darken button further when clicked */;
-  color:white
-}
-
-
-
-h2 {
-    color: #333;
-    text-align: center;
-}
-
-
-
-p {
-    text-align: center;
-    margin-top: 20px;
-}
-
-p a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
-}
-
-
-
-  #zoomOut {
-    right: 0px; /* Adjust based on your layout */;
-      z-index:2;
-      top:600px;
-    position: sticky;
-      font-size: 15px;
-
-  }
-
-
 #myTopnav > div.dropdown2 > div > a:hover {
     width: 100%;
     text-align: left;
 }
-
-
-
 .dropdown-content2 button{
 background-color: grey;
 color: white;
@@ -1426,85 +787,10 @@ color: white;
   text-align: left;
 }
 
-
-/* Header Styling */
-header#portfolio {
-    background-color: #f1f1f1;
-    padding-bottom: 20px;
-}
-
-#myTopnav > div > div > button {
-  font-family: arial;
-  font-size: 17px;
-}
-
-#myTopnav > div> div > a  {
-  font-family: arial;
-  font-size: 17px;
-}
-
-
-header#portfolio .w3-container {
-    margin-top: 20px;
-}
-
-
-
-.w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.w3-button.w3-black, .w3-button.w3-black:hover {
-    background-color: #000 !important;
-    color: #fff !important;
-}
-
-.w3-button.w3-white, .w3-button.w3-white:hover {
-    background-color: #fff !important;
-    color: #000 !important;
-    box-shadow: 0px 0px 2px #000;
-}
-
-/* Photo Grids Styling */
-.w3-row-padding, .w3-row-padding > .w3-container {
-    padding: 0 16px;
-}
-
-.w3-container {
-    padding: 16px;
-    background-color: #fff;
-}
-
-.w3-hover-opacity:hover {
-    opacity: 0.8;
-}
-
-.w3-container.w3-white {
-    background-color: #fff;
-}
-
 img {
     max-width: 100%;
     height: auto;
 }
-
-/* Responsive Design - Adjustments for smaller screens */
-@media only screen and (max-width: 600px) {
-    .w3-hide-small {
-        display: none;
-    }
-}
-
 
 body, h1, h2, p {
     margin: 0;
@@ -1512,32 +798,8 @@ body, h1, h2, p {
     font-family: Arial, sans-serif;
 }
 
-header {
-    background: silver;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-}
-
-#about {
-    background: #f4f4f4;
-}
 
 
-
-.project {
-    margin: 10px;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-}
 
 footer {
     background: #333;
@@ -1552,57 +814,6 @@ button {
     margin-top: 20px;
 }
 
-#viewWork, #contactMe {
-  background:rgb(147, 28, 119);
-  color: white;
-  border: none;
-  margin-top: 20px;
-  border-radius: 5px;
-  padding: 12px 24px; /* Adds padding for better button size */
-  font-size: 1.2rem;
-  font-weight: bold;
-  z-index: 1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for effects */
-}
-
-
-
-@media (min-width: 0px) and (max-width: 550px) {#viewWork, #contactMe
-{
-  font-size: 0.8rem
-}
-}
-
-@media (min-width: 551px) and (max-width: 1060px){#viewWork, #contactMe { (min-width: 0px) and (max-width: 550px) }
-{
-  font-size: 2rem
-}
-}
-
-
-
-/* Hover Effect */
-#viewWork:hover, #contactMe:hover {
-  background: #9b4f96; /* Slightly darker shade for hover */
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Deeper shadow to emphasize the lift */
-  cursor: pointer; /* Change cursor to pointer to indicate clickable */
-}
-
-/* Focus Effect */
-#viewWork:focus, #contactMe:focus {
-  outline: none; /* Removes default outline */
-  border: 2px solid #6a0dad; /* Adds a focus border with accent color */
-}
-
-/* Active/Clicked Effect */
-#viewWork:active, #contactMe:active {
-  background: #7e1e9c; /* Even darker shade for when clicked */
-  transform: translateY(2px); /* Slight push-down effect */
-}
-
-
 .footer p {
   color:white
 }
@@ -1613,9 +824,7 @@ button {
   font-size: 15px;
 }
 
-
 #main-content > header {
-
   height: 400px;
 }
 
@@ -1630,11 +839,8 @@ button {
 }
 
 .light-mode #main-content > header > h1 {
-  color:black
+  color:white
 }
-
-
-
 
 .light-mode #main-content > div {
     background-color: white;
@@ -1653,8 +859,6 @@ button {
   color:black
 }
 
-
-
 #work h2 {
     text-align: center;
 margin-top: 100px; /* Space below the heading */;
@@ -1666,45 +870,18 @@ margin-top: 100px; /* Space below the heading */;
     gap: 20px;
     padding: 0 20px;
 }
-
-
 .project {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project p {
-    padding: 20px;
-    margin: 0;
-    background-color: none;
-    text-align: center;
-}
 
 
 
 #main-content > div > h3 {
   padding: 20px;
 }
-@media screen and (max-width: 600px) {
-  #about > p > a {
-  font-size: 13.5px
-}
-}
-@media screen and (max-width: 600px) {
-#main-content > div > h3 {
-  padding: 5px;
-  font-size: 14px
-}
-
-
-
 #about > p  {
   font-size: 13.5px;
 }
@@ -1713,42 +890,14 @@ margin-top: 100px; /* Space below the heading */;
   font-size: 12px;
 }
 
-
-}
-@media screen and (max-width: 600px) {
-#main-content > header > h1{
-  font-size: 25px
-}
 }
 
-@media screen and (max-width: 600px) {
-
-#work > h2 {
-    font-size: 25px
-}
-}
-
-#work > h2 {
-  font-weight: 600;
-}
-
-.light-mode #work > h2 {
-  color:black
-}
-
-.dark-mode #work > h2 {
-  color:white
-}
 #main-content > header > p {
-  font-size: 13.5px;
- 
-  
+  font-size: 13.5px; 
 }
 
 #main-content > header > p {
  color:white
- 
-  
 }
 
 .portfolio {
@@ -1758,20 +907,7 @@ margin-top: 100px; /* Space below the heading */;
   padding: 20px;
 }
 
-.project img {
-  width: 100%;
-  height: auto;
-}
-
-
-
-.project p {
-  font-size: 0.9em;
-  color: #666;
-}
-
-
-
+ 
 .dark-mode #main-content > header > p {
   color:white
 }
@@ -1835,17 +971,9 @@ font-weight: bold;
   color:white
 }
 
-
-
-.light-mode #main-content > header {
-  background-color: white;
-  color:black
-}
-
 .light-mode #main-content > header > p {
-    color: black;
+    color: white;
 }
-
 
 .dark-mode .project a {
   background-color:dimgrey
@@ -1864,24 +992,13 @@ font-weight: bold;
 }
 
 
-.project a {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 10px 20px;
-  background-color: midnightblue;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-}
 
 .project a:hover {
   background-color:black;
 }
 
-
 body.light-mode .topnav a.active:hover {
-  background-color: darkgrey;
+  background-color: #494949;
   color: #ffffff;
 }
 
@@ -1931,33 +1048,18 @@ body.dark-mode .topnav a.active:hover {
   background-color: lightgrey
 }
 
-
 .light-mode #main-content > div.footer{
-
   background-color: black;
-
-
 }
 
-
-.project {
-
-    margin: 20px;       /* Adds space around each project */;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px;      /* Padding inside each project box */
-    background-color: #ffffff;  /* Ensures the shadow has a light background to stand out against */
-    transition: box-shadow 0.3s ease-in-out; /* Optional: Adds a smooth transition for the shadow effect */
-}
 
 
 body.light-mode .topnav a {
   color: #000; /* Black font color for the links in the navbar */;
-
 }
 
 body.light-mode .topnav a:hover {
   color: white; /* Black font color for the links in the navbar */;
-
 }
 /* Dark Mode styles for dropdown and its content */
 .dark-mode .dropdown-content,
@@ -1970,30 +1072,27 @@ body.light-mode .topnav a:hover {
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: black;
+.topnav a:hover{
+  background-color: rgb(106, 106, 106);
   color: white;
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .dropdown:hover .dropbtn {
-  background-color: dodgerblue;
+  background-color: rgb(11, 116, 221);
   color: white;
 }
 
+/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
+  background-color: black;
+  color: white;
+}
 
 .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
   background-color: grey;
   color: white;
 }
-.light-mode .fa.fa-user:active {
 
-}
-
-.light-mode  .dropdown2:hover .dropbtn2 {
-  background-color: grey;
-  color: white;
-}
 
 .light-mode  .dropdown2 .dropdown .dropbtn2 {
   background-color: grey;
@@ -2010,7 +1109,6 @@ body.light-mode .topnav a:hover {
       width: 100%;
 }
 
-
 .light-mode  .dropdown-content2 a .dropbtn2 {
   background-color: lightgrey;
   color: black;
@@ -2018,10 +1116,6 @@ body.light-mode .topnav a:hover {
 .light-mode  .dropdown-content2 .dropdown-content2 a{
   background-color: grey;
   color: black;
-}
-
-.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
-  color:black
 }
 
 .dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
@@ -2055,8 +1149,6 @@ body.light-mode .topnav a:hover {
   color:black
 }
 
-
-
 /* Light mode styles */
 .light-mode .dropdown-content2 {
   background-color: #555; /* Light background */
@@ -2084,6 +1176,51 @@ body.light-mode .topnav a:hover {
   background-color: #555; /* Dark background */
   color: white; /* Light text */
 }
+
+.light-mode .dropdown-content {
+  background-color: white;
+}
+
+/* Default dark mode button */
+.dark-mode #myTopnav > div:nth-child(4) > button {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+/* Hover and keep button gray when dropdown is active */
+.dark-mode #myTopnav > div:nth-child(4):hover > button,
+.dark-mode #myTopnav > div:nth-child(4):focus-within > button {
+  background-color: #808080 ; /* gray hover color */
+  color: white;
+}
+
+
+/* Default dark mode button */
+.light-mode #myTopnav > div:nth-child(4) > button {
+  
+  background-color: transparent;
+  border: none;
+}
+
+/* Hover and keep button gray when dropdown is active */
+.light-mode #myTopnav > div:nth-child(4):hover > button,
+.light-mode #myTopnav > div:nth-child(4):focus-within > button {
+  background-color: #928d8d; /* gray hover color */
+  color: white;
+}
+
+
+
+
+/* Hover or focus (optional) */
+.dark-mode #myTopnav > div:nth-child(4) > button:hover,
+.dark-mode #myTopnav > div:nth-child(4) > button:focus {
+  background-color: #808080; /* lighter gray on hover */
+}
+
+
+
 /* Hover effects for .dropbtn in light mode */
 .light-mode .dropdown:hover .dropbtn {
   background-color: darkgrey; /* Dark background for contrast */
@@ -2115,7 +1252,6 @@ body.light-mode .topnav a:hover {
   color: white; /* White text for readability in light mode */
 }
 
-
 .light-mode .dropdown-content2 a:hover {
   background-color: lightgrey; /* Dark background for contrast in light mode */
   color: white; /* White text for readability in light mode */
@@ -2131,12 +1267,7 @@ body.light-mode .topnav a:hover {
   color: white; /* Ensure icons also turn white on hover in light mode */
 }
 
-/* Hover effects for .dropbtn in dark mode */
-.dark-mode .dropdown:hover .dropbtn,
-.dark-mode .dropdown2:hover .dropbtn2 {
-  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
-  color: white; /* Darker text for readability in dark mode */
-}
+
 /* Hover effects for .dropbtn in dark mode */
 
 .light-mode .dropdown2:hover .dropbtn2 {
@@ -2149,18 +1280,10 @@ body.light-mode .topnav a:hover {
   color: white; /* Ensure icons also change color appropriately on hover in dark mode */
 }
 
-
-
 .dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
   color: white;
 }
-.fa.fa-user {
-  color:white
-}
-.dark-mode  .dropdown2:hover .dropbtn2 {
-  background-color: #555;
-  color: white;
-}
+
 
 .dark-mode .dropdown-content {
   background-color: slategrey;
@@ -2180,99 +1303,36 @@ body.light-mode .dropdown-content2 a {
 width:100%;
 text-align: left;
 }
-
-.light-mode #myTopnav > div > div > a:hover {
- background-color: grey;
-  }
-
-.light-mode #myTopnav > div > div > a {
-  color:white
-}
-
-/* Focus styles for interactive elements */
-.topnav a,
-.topnav button,
-.topnav input[type="text"],
-.project,
-.project a,
-.project img,
-.project h3,
-.project p,
-.project a[href],
-form input,
-form button {
-    outline: none; /* Remove default focus outline */
-}
-
-.topnav a:hover,
-.topnav a:focus,
-.topnav button:hover,
-.topnav button:focus,
-.topnav input[type="text"]:hover,
-.topnav input[type="text"]:focus {
-    /* Example hover and focus styles for navigation links and input */
-    outline: 2px solid dodgerblue;
-  color:white
-}
-
-.project:focus,
-.project a:focus,
-.project img:focus {
-    /* Example focus style for project section and its links */
-    outline: 2px solid dodgerblue;
-}
-
-form input:focus,
-form button:focus {
-    /* Example focus style for form input and submit button */
-    border: 2px solid dodgerblue;
-    padding: 8px;
-    outline: none;
-}
-
-
-
-
 img:focus {
   /* Example focus styles */
-  outline: 2px solid dodgerblue;
+  outline: 2px solid rgb(11, 116, 221);
 }
-
-
-
 
 h3:focus {
   /* Example focus styles */
-  outline: 2px solid dodgerblue;
- 
+  outline: 2px solid rgb(11, 116, 221);
 }
+
 p {
   outline: none; /* Remove default focus outline */
 }
 
-p:focus, 
-p:hover {
-   
-}
-
 #main-content > div.portfolio > div> p:focus {
  
-    outline: 2px solid dodgerblue;
+    outline: 2px solid rgb(11, 116, 221);
 }
-
-
-
+ /*rgb(11, 116, 221) replacement */
 .dropdown:focus-within .dropdown-content:focus {
-  outline: 2px solid dodgerblue;
+  outline: 2px solid rgb(11, 116, 221) ;
 }
 
-.dropdown-content a:focus,
- {
-  outline: 2px solid dodgerblue;
+#myTopnav > div:nth-child(4) > div {
+  background-color: rgb(175, 13, 13);
 }
 
-
-
+#myTopnav > div:nth-child(4):hover {
+  background-color: rgb(175, 13, 13);
+}
 
 #about > p > a {
   font-size: 16px;
@@ -2281,9 +1341,7 @@ p:hover {
 }
 
 #about > p > a:hover {
-  
   color:lavenderblush;
-  
 }
 
 .dark-mode #about > p > a:hover {
@@ -2303,18 +1361,9 @@ p:hover {
 }
 
 
-
-
-
-
-
-
 .dark-mode #main-content > div.footer > h3 {
   color:white
 }
-
-
-
 
 #main-content > div.footer > p {
   color:white;
@@ -2337,186 +1386,13 @@ body > center > div.footer > h3 {
  
   font-weight: bold;
 }
-
-
-
-
-.light-mode #main-content > div.footer > p > a {
-  color:black;
-}
-#main-content > div.footer > p > a:hover {
-  color:lavenderblush;
+.light-mode body > center > div.footer > h3 {
+  color:white
 }
 
-.light-mode #main-content > div.footer > p > a:hover {
-  color:darkgray;
-}
-
-.dark-mode #main-content > div.footer > p > a:hover {
-  color:aliceblue;
-}
-
-.dark-mode #main-content > div.footer > p > a {
-  color:white;
-}
-
- 
-
- /* Hero Section */
- .hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(135deg, #D83B77, #9B4F96, #6A0DAD);
-
-  background-size: 400% 400%;
-  animation: gradientMove 10s infinite alternate;
-}
-
-/* Smooth Animated Background */
-@keyframes gradientMove {
-  0% { background-position: left top; }
-  100% { background-position: right bottom; }
-}
-
-/* Text Styling */
-body > center > div.hero > h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  opacity: 1;
-  color:white;
-  transform: translateY(30px);
-  animation: fadeInUp 1.5s ease forwards;
-  z-index: 1;
-  font-weight: bolder;
-}
-
-@media screen and (min-width: 0px) and (max-width: 550px)
- {body > center > div.hero > h1 {
-  font-size: 2.5rem;
-}
-}
-
-@media screen and (min-width: 551px) and (max-width: 1060px)
- {body > center > div.hero > h1 {
-  font-size: 3rem;
-}
-}
-body > center > div.hero > p {
-  font-size: 1.4rem;
-  margin: 10px 0 20px;
-  opacity: 0.8;
-  opacity: 1;
-  color:white;
-  transform: translateY(30px);
-  animation: fadeInUp 1.5s ease forwards 0.3s;
-  z-index: 1;
+body > center > div.footer > h3 {
   font-weight: bold;
 }
-
-@media screen and (min-width: 0px) and (max-width: 550px) {body > center > div.hero > p {
-  font-size: 1rem;
-}
-}
-
-@media screen and  (min-width: 551px) and (max-width: 1060px) {body > center > div.hero > p {
-  font-size: 1.5rem;
-}
-}
-/* Call-to-Action Button */
-.cta {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  color: white;
-  background: #c94e28;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: transform 0.3s ease, background 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 1.5s ease forwards 0.6s;
-}
-
-.cta:hover {
-  transform: scale(1.1);
-  background: #ff5e42;
-}
-
-/* Fade-in Animation */
-@keyframes fadeInUp {
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-/* Custom Cursor Effect */
-.cursor {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: white;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
-}
-
-
-
-
-
-    /* Content (text) */
-    .hero-content {
-        position: relative;
-        z-index: 2;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    .cta:hover {
-      transform: scale(1.1);
-      background: #c94e28;
-  }
-
-  /* Fullscreen Hero Section */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  position: relative;
-  background: url('photography/slantedtree.webp') center/cover no-repeat; /* Replace with your design image */
-  background-size: cover;
-}
-
-
-
-/* Color and Blur Overlay */
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(159, 42, 87, 0.7), rgba(93, 47, 90, 0.7), rgba(76, 9, 124, 0.7)); /* Color gradient */
-  filter: blur(0px); /* Apply blur to the background */
-  z-index: 1;
-}
-
-
-
-
 
 .light-mode body > center > div.footer > h3 {
   color:white
@@ -2525,6 +1401,983 @@ body > center > div.hero > p {
 body > center > div.footer > h3 {
   font-weight: bold;
 }
+  
+  body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+ 
+
+  
+  button {
+      cursor: pointer;
+      padding: 10px 20px;
+      margin-top: 20px;
+  }
+
+  
+  .footer p {
+    color:white
+  }
+  
+  .footer a {
+    color:white;
+    text-decoration: underline;
+  }
+  
+  #main-content > header {
+  
+    height: 400px;
+  }
+  
+  #main-content > header > h1 {
+    margin-top: 100px
+  }
+  
+ 
+  
+  .light-mode #main-content > div {
+      background-color: white;
+      color:black
+  }
+  
+  .dark-mode #main-content > div {
+      background-color: black;
+        color:white
+  }
+  .dark-mode #main-content > div > p {
+    color:white
+  }
+  
+  .light-mode #main-content > div > p {
+    color:black
+  }
+  
+  .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+  }
+ 
+
+  #main-content > div > h3 {
+    padding: 20px
+  }
+ 
+
+  
+  .project h3 {
+    margin: 0.5em 0;
+  }
+  
+  .project p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: rgb(11, 116, 221);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .project a:hover {
+    background-color:rgb(11, 116, 221);
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .portfolio {
+    margin-top: 100px
+  }
+  
+  
+  .dark-mode .project a {
+    background:none
+  }
+  
+  .light-mode .project a {
+    background:none
+  }
+  
+  .light-mode .project a:hover {
+    background:none
+  }
+  
+  .dark-mode .project a:hover {
+    background:none
+  }
+   /* Light/dark-mode portfolio */
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+  background-color: grey
+  }
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+  background-color: rgb(100, 95, 95)
+  }
+  
+ 
+  
+  .dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+  background-color: grey
+  }
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+    background-color: grey;
+  }
+  
+  .dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4){
+    background-color: dimgrey;
+    color: white;
+  }
+
+  .dark-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover{
+    background-color: grey;
+
+  }
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(2) > a:nth-child(4):hover {
+    background-color: rgb(100, 95, 95);
+    color: white;
+  }
+
+  .project a {
+    background: none
+  }
+  
+ 
+
+  body.dark-mode {
+    background-color: #333;
+    ;
+  }
+  
+  .dark-mode .project p {
+      color:white;
+      background-color: black
+  }
+  
+  .light-mode .project p {
+    background-color: white;
+    color:black
+  }
+
+  
+  .dark-mode .project {
+    background-color: black;
+    border: none
+  }
+  
+  .dark-mode #main-content > div.portfolio {
+    background-color: #333;
+  }
+  
+  .project {
+    background: white
+  }
+  
+  .light-mode .project a:hover {
+    background: none
+  }
+  
+  body.light-mode {
+    background-color: white
+  }
+  
+  .project a:hover {
+      background: none;
+  }
+  
+  /* main-content*/
+  #main-content > div.portfolio > div > a:nth-child(1) {
+    background: transparent;
+  }
+
+  #main-content > div.portfolio > div > a:nth-child(1):hover {
+    background: transparent;
+  }
+
+  #main-content > div.portfolio > div> a {
+      background-color:rgb(147, 28, 119);
+  }
+ #main-content > div.portfolio > div:nth-child(3) > a:nth-child(1) {
+    background-color:transparent;
+}
+.dark-mode #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4) {
+  background-color: Dimgrey;
+}
+
+
+
+
+  #main-content > div.portfolio > div > a:hover {
+    background-color: #9b4f96;
+}
+
+  .dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+    background-color: rgb(83, 79, 79)
+  }
+  
+  .dark-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+    background-color: darkgrey
+  }
+  #myTopnav > div:nth-child(8) > button:hover {
+    background-color: slategray;
+  }
+ 
+  .light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4) {
+    background-color: grey
+  }
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
+    background-color: lightgrey
+  }
+  
+  .dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+    background-color: dimgrey
+  }
+  
+  .dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover {
+    background-color: darkgrey
+  }
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
+    background-color: grey
+  }
+  
+  .light-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4):hover {
+    background-color: rgb(100, 95, 95)
+  }
+  
+  body.light-mode .topnav a {
+    color: #000;
+  }
+  
+  body.light-mode .topnav a:hover {
+    color: white; 
+  }
+  
+  #myTopnav > div> div > button:hover {
+    background-color:black;
+  }
+  .dark-mode .dropdown-content2 a:hover {
+    background-color: black
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .dropdown:hover .dropbtn {
+    background-color: rgb(11, 116, 221);
+    color: white;
+  }
+  
+  .dropdown a:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
+    background-color: grey;
+    color: white;
+  }
+  .light-mode  .dropdown2 .dropdown .dropbtn2 {
+    background-color: grey;
+    color: black;
+  }
+  
+  .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown-content:hover .dropbtn .i{
+    background-color: darkgrey;
+    color: black;
+  }
+   .dropdown-content button:hover{
+    background-color: grey;
+    color: white;
+        width: 100%;
+  }
+  
+  
+  .light-mode  .dropdown-content2 a .dropbtn2 {
+    background-color: lightgrey;
+    color: black;
+  }
+  .light-mode  .dropdown-content2 .dropdown-content2 a{
+    background-color: grey;
+    color: black;
+  }
+  
+  .dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
+    background-color: slategrey;
+    color: white;
+  }
+
+  .light-mode .fa.fa-user{
+    color:black
+  }
+  .light-mode .fa.fa-user:hover{
+    color:white
+  }
+  .light-mode .dropdown2:hover{
+    color:white
+  }
+ 
+  
+  .light-mode .dropdown .dropbtn {
+    color:black
+  }
+  .dropdown .dropbtn {
+    color:white
+  }
+  
+  .light-mode .dropdown-content {
+    background-color: rgb(101, 101, 101); /* Light background */
+    color: white; /* Dark text */
+  }
+  
+  .light-mode .fa {
+    color:black
+  }
+  .light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
+    color: white;
+    background-color: transparent
+  }
+  .dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+    color: white;
+    background-color: transparent
+  }
+
+  .light-mode #myTopnav > div:nth-child(3) > div > a {
+    color:white
+  }
+
+  .light-mode #myTopnav > div:nth-child(4) > div > a {
+    color:white
+  }
+  
+  /* Dark mode styles */
+  .dark-mode .dropdown-content2, .dark-mode .dropdown-content {
+    background-color: #555; /* Dark background */
+    color: white; /* Light text */
+  }
+  .light-mode #myTopnav > div:nth-child(3) > button > i.fa.fa-caret-down {
+    color:white
+  }
+
+  .light-mode .dropdown:hover .dropbtn {
+    background-color: rgb(101, 101, 101); /* Dark background for contrast */
+
+  }
+  .light-mode .dropdown {
+    background-color: transparent; /* Dark background for contrast */
+    color: black; 
+  }
+ 
+  /* Hover effects for .dropbtn in dark mode accessibility button*/ 
+  .dark-mode .dropdown:hover .dropbtn {
+    background-color: slategrey; 
+    color: white; }
+  
+  .dark-mode .dropdown:hover .dropbtn i {
+    color: white; 
+  }
+
+   /* Hover effects for .dropbtn in dark mode accessibility button*/ 
+   .light-mode .dropdown:hover .dropbtn {
+    background-color: rgb(101, 101, 101) ; 
+    color: white; }
+  
+  .light-mode .dropdown:hover .dropbtn i {
+    color: white; 
+  }
+
+  
+
+  
+  .light-mode .dropdown-content2 a:hover {
+    background-color: lightgrey; 
+    color: white; /* White text for readability in light mode */
+  }
+  
+
+  
+  .light-mode .dropdown:hover .dropbtn i,
+  .light-mode .dropdown2:hover .dropbtn2 i {
+    color: white; /* Ensure icons also turn white on hover in light mode */
+  }
+  
+  /* Hover effects for .dropbtn in dark mode */
+  .dark-mode .dropdown:hover .dropbtn,
+   {
+    background-color: slategrey; /* Lighter dark background for contrast in dark mode */
+    color: white; /* Darker text for readability in dark mode */
+  }
+
+
+
+
+  
+  .dark-mode .dropdown:hover .dropbtn i,
+  .dark-mode .dropdown2:hover .dropbtn2 i {
+    color: white; /* Ensure icons also change color appropriately on hover in dark mode */
+  }
+  
+  .dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
+    color: white;
+  }
+
+  .dark-mode .dropdown-content {
+    background-color: slategrey;
+    color: white;
+  }
+
+  .light-mode #myTopnav > div:nth-child(8):hover{
+    background-color: rgb(101, 101, 101);
+    color: white;
+  }
+  /* Default dark mode button */
+.light-mode #myTopnav > div:nth-child(8) > button {
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
+ #myTopnav > div:nth-child(8):hover{
+  background-color: rgb(101, 101, 101);
+  color: white;
+}
+
+
+/* Hover and keep button gray when dropdown is active */
+ #myTopnav > div:nth-child(8):hover > button,
+ #myTopnav > div:nth-child(8):focus-within > button {
+background-color: rgb(11, 116, 221);
+color: white;
+}
+
+
+.dark-mode #myTopnav > div:nth-child(8):hover{
+  background-color: slategrey(101, 101, 101);
+  color: white;
+}
+
+
+.dark-mode /* Hover and keep button gray when dropdown is active */
+ #myTopnav > div:nth-child(8):hover > button,
+ .dark-mode #myTopnav > div:nth-child(8):focus-within > button {
+background-color: slategrey;
+color: white;
+}
+
+.light-mode /* Hover and keep button gray when dropdown is active */
+ #myTopnav > div:nth-child(8):hover > button,
+ .light-mode #myTopnav > div:nth-child(8):focus-within > button {
+background-color: rgb(101, 101, 101);
+color: white;
+}
+
+
+  .dark-mode .dropdown-content button:hover {
+    background-color: black;
+    color: white;
+  }
+  body.light-mode .dropdown-content2 a {
+      color: white; /* This will now take precedence over the .topnav a color */;
+      background-color: transparent
+  
+  }
+  
+  
+  form input:focus,
+  form button:focus {
+      /* Example focus style for form input and submit button */
+      border: 2px solid rgb(11, 116, 221);
+      padding: 8px;
+      outline: none;
+  }
+  
+  
+  
+  
+  img:focus {
+    /* Example focus styles */
+    outline: 2px solid rgb(11, 116, 221);
+  }
+
+  
+  h3:focus {
+    /* Example focus styles */
+    outline: 2px solid rgb(11, 116, 221);
+   
+  }
+  p {
+    outline: none; /* Remove default focus outline */
+  }
+  
+
+  
+  #main-content > div.portfolio > div> p:focus {
+   
+      outline: 2px solid rgb(11, 116, 221);
+  }
+  
+  
+  
+  .dropdown:focus-within .dropdown-content:focus {
+    outline: 2px solid rgb(11, 116, 221);
+  }
+  
+ 
+  
+  
+  
+
+  
+  img:focus {
+    /* Example focus styles */
+    outline: 2px solid rgb(11, 116, 221);
+  }
+  
+  h3:focus {
+    /* Example focus styles */
+    outline: 2px solid rgb(11, 116, 221);
+   
+  }
+  p {
+    outline: none; /* Remove default focus outline */
+  }
+
+  #main-content > div.portfolio > div> p:focus {
+   
+      outline: 2px solid rgb(11, 116, 221);
+  }
+
+  .dropdown:focus-within .dropdown-content:focus {
+    outline: 2px solid rgb(11, 116, 221);
+  }
+
+  
+  .light-mode #main-content > div.footer{
+    background-color: black;
+  }
+  
+  .dark-mode #main-content > div.footer{
+    background-color: #222222;
+  }
+  
+  #main-content > div.footer > h3 {
+    color:white;
+    font-weight: bold;
+  }
+  
+  
+  .dark-mode #main-content > div.footer > h3 {
+    color:white
+  }
+  
+  .light-mode #main-content > div.footer > h3 {
+    color:white
+  }
+  
+  #main-content > div.footer > p {
+    color:white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .dark-mode #main-content > div.footer > p {
+    color:white
+  }
+  
+  .light-mode #main-content > div.footer > p {
+    color:black
+  }
+  
+  #main-content > div.footer > p > a {
+    color:white;
+  }
+  
+  .light-mode #main-content > div.footer > p > a {
+    color:white;
+  }
+  #main-content > div.footer > p > a:hover {
+    color:lavenderblush;
+  }
+  
+  .dark-mode #main-content > div.footer > p > a:hover {
+    color:aliceblue;
+  }
+  
+  .dark-mode #main-content > div.footer > p > a {
+    color:white;
+  }
+  
+  
+  
+  #main-content > div > p {
+    font-size: 15px;
+   }
+   @media screen and (max-width: 768px)  {
+    #main-content > div > p {
+      font-size: 13.5px;
+     }
+  
+     #work > div > div > h3 {
+      font-size: 20px;
+     }
+   }
+   
+   #myTopnav > div:nth-child(3) > button {
+    background-color: rgb(147, 28, 119);
+  }
+  .light-mode #myTopnav > div:nth-child(3) > button {
+    background-color: #494949;
+    color:white
+  }
+
+  .dark-mode #myTopnav > div:nth-child(3) > button {
+    background-color: #737373;
+  }
+  
+  #myTopnav > div:nth-child(3) > button:hover {
+    background-color: rgb(147, 28, 119);
+  }
+
+  .light-mode #myTopnav > div:nth-child(3) > button:hover {
+    background-color: #494949;
+    color:white
+  }
+
+#myTopnav > div:nth-child(4) > div > a:hover  {
+  background-color:black
+}
+
+
+/* responsiveness fix */
+@media screen and (max-width: 1060px) {
+  .topnav .icon {
+    display: block; /* Ensure the menu icon is always visible */
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a,  .topnav.responsive .dropdown, .topnav.responsive .dropdown2 {
+    display: block; /* This shows the hidden elements when the menu icon is clicked */
+    float: none;
+    text-align: left;
+    
+  }
+
+}
+
+
+
+@media (min-width: 1068px) {
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #555;
+  width: 108px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color:white
+  }
+}
+  
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1060px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn, .dropdown2 {
+    display: none;
+  }
+   .topnav button.icon{
+    float: right;
+    display: block;
+  }
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1060px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn, .dropdown2 {
+    display: none;
+  }
+  .topnav button.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 1060px) 
+{
+  #myTopnav > div:nth-child(3) > div {
+  width:100%;
+  
+  background-color: rgb(7, 129, 54);
+}
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1060px) {
+}
+.topnav.responsive button.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+  font-size: 17px;
+}
+.topnav.responsive button {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.topnav.responsive .dropdown {float: none;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1060px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn2 {
+    display: none;
+  }
+  .topnav button.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 100px) {
+
+  .topnav.responsive button.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown2 {float: none;}
+    .topnav.responsive .dropdown2:hover {background-color: #555;}
+  .topnav.responsive .dropdown-content2 {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+}
+
+
+@media (min-width: 1060px) {
+  .dropdown2 .dropbtn2  {
+    display:block
+} }
+
+
+
+@media (min-width: 1060px) {
+
+  #myTopnav > div:nth-child(3) > div {
+    width:185px;
+    
+ 
+  }
+  
+  #myTopnav > div:nth-child(3) > div:active {
+    width:185px;
+    
+    background-color:rgb(21, 65, 38);
+  }
+  #myTopnav > div:nth-child(4) > div  {
+    width:150px;
+  
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .topnav {
+    flex-wrap: wrap;
+  }
+
+  #main-content > div.footer > h3 {
+    font-size: 20px;
+  }
+
+  #main-content > div.portfolio > div > h3 {
+    font-size: 20px;
+  }
+
+  .topnav .title, .topnav .icon {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+
+  /* Additional adjustments for mobile view */
+  .topnav .title {
+    order: -2; /* Title comes first */
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1060px) {
+  .topnav a:not(:first-child){
+    display: none; /* Hide all a elements that are not the first child and the search input by default */
+  }
+  .topnav input[type="text"] {
+   right: 100px;
+   position:absolute
+  }
+  button.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive a,
+  .topnav.responsive input[type="text"] { /* Display the links and search input when responsive */
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive input[type="text"] {
+    margin: 10px 15px; /* Add some margin for visual separation */;
+      z-index: 5;
+    width: calc(100% - 30px); /* Adjust width to fit inside the topnav container */;
+
+  }
+}
+
+
+
+
+
+ 
+ 
+@media screen and (min-width: 0px) and (max-width: 550px)
+{body > center > div.hero > h1 {
+ font-size: 2.5rem;
+}
+}
+
+@media screen and (min-width: 551px) and (max-width: 1060px)
+{body > center > div.hero > h1 {
+ font-size: 3rem;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  #contact > p {
+   font-size: 13.5px;
+  }
+  }
+
+
+@media screen and (max-width: 1060px) {
+  .form-container {
+  
+ 
+  max-width: 800px;
+  
+}
+
+}
+
+/* Full-width on small screens */
+@media (max-width: 1060px) { /* adjust breakpoint as needed */
+  .dropdown-content {
+      position: relative;  /* so it flows naturally in the page */
+      width: 100%;         /* take full container width */
+      box-shadow: none;    /* optional: remove shadow for mobile */;
+      font-size: 17px;
+      font-family: arial;
+  }
+
+  .dropdown-content a,
+  .dropdown-content button, .dropdown-content2 a,
+  .dropdown-content button  {
+      width: 100%;   
+      font-size: 15px;     /* make links/buttons full-width */;
+      
+    
+  }
+  .dropdown-content a,
+  .dropdown-content button:hover {
+      width: 100%;   
+    
+    
+  }
+}.dropdown-content a,
+.dropdown-content button {
+    font-family: Arial, sans-serif; /* or your preferred font */
+    font-size: 16px; /* base size for desktop */
+    line-height: 1.5;
+}
+/* Full-width dropdown buttons and links on small screens */
+@media screen and (max-width: 1060px) {
+  /* Make dropdown buttons span full width */
+  .dropdown .dropbtn,
+  .dropdown2 .dropbtn2 {
+    width: 100%;
+    text-align: left; /* Keeps the text aligned nicely */
+  }
+
+  /* Make dropdown content links/buttons span full width */
+  .dropdown-content a,
+  .dropdown-content button,
+  .dropdown-content2 a,
+  .dropdown-content2 button {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't break width */
+    text-align: left;
+  }
+
+  /* Position dropdowns relative so they fit within the menu */
+  .dropdown-content,
+  .dropdown-content2 {
+    position: relative;
+  }
+}
+
 
 .portfolio {
     display: flex;
@@ -2543,18 +2396,9 @@ body > center > div.footer > h3 {
     overflow: hidden; /* Ensures the content fits within the borders */
 }
 
-.project video {
-    width: 100%; /* Ensures the video fits the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the video */
-}
 
-.project h3 {
 
-    padding: 10px 15px; /* Padding inside the header */
-    margin: 0; /* Remove default margin */
 
-}
 
 .project p {
     padding: 10px 15px; /* Padding around the text */
@@ -2564,531 +2408,15 @@ body > center > div.footer > h3 {
 }
 
 
-body.light-mode .topnav a {
-  color: #000; /* Black font color for the links in the navbar */;
 
-}
-
-body.light-mode .topnav a:hover {
-  color: white; /* Black font color for the links in the navbar */;
-
-}
-/* Dark Mode styles for dropdown and its content */
-.dark-mode .dropdown-content,
- {
-  background-color: dimgrey; /* Dark Mode background color */;
-  color:white
-}
-.dark-mode .dropdown-content2 a:hover {
-  background-color: black
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
-  color: white;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.dropdown:hover .dropbtn {
-  background-color: dodgerblue;
-  color: white;
-}
-
-.dropdown a:hover{
-  background-color: black;
-  color: white;
-}
-
-
-
-
-.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
-  background-color: grey;
-  color: white;
-}
-.light-mode .fa.fa-user:active {
-
-}
-
-.light-mode  .dropdown2:hover .dropbtn2 {
-  background-color: grey;
-  color: white;
-}
-
-.light-mode  .dropdown2 .dropdown .dropbtn2 {
-  background-color: grey;
-  color: black;
-}
-
-.light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown-content:hover .dropbtn .i{
-  background-color: darkgrey;
-  color: black;
-}
- .dropdown-content button:hover{
-  background-color: grey;
-  color: white;
-      width: 100%;
-}
-
-
-.light-mode  .dropdown-content2 a .dropbtn2 {
-  background-color: lightgrey;
-  color: black;
-}
-.light-mode  .dropdown-content2 .dropdown-content2 a{
-  background-color: grey;
-  color: black;
-}
-
-.light-mode .dropdown2 .dropbtn2 .fas.fa-wheelchair {
-  color:black
-}
-
-.dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
-  background-color: slategrey;
-  color: white;
-}
-.light-mode .fas.fa-wheelchair {
-  color:black
-}
-.light-mode .fas.fa-wheelchair:hover {
-  color:white
-}
-.light-mode .fa.fa-user{
-  color:black
-}
-.light-mode .fa.fa-user:hover{
-  color:white
-}
-.light-mode .dropdown2:hover{
-  color:white
-}
-.light-mode .dropdown {
-  color:red
-}
-
-.light-mode .dropdown .dropbtn {
-  color:black
-}
-.dropdown .dropbtn {
-  color:white
-}
-.light-mode .dropdown2 .dropbtn2 {
-  color:black
-}
-.light-mode .dropdown-content:hover{
-  color:red
-}
-.light-mode .dropdown-content button {
-  color:red
-}
-
-
-
-/* Light mode styles */
-.light-mode .dropdown-content2 {
-  background-color: #555; /* Light background */
-  color: white; /* Dark text */
-}
-.light-mode .dropdown-content {
-  background-color: darkgrey; /* Light background */
-  color: white; /* Dark text */
-}
-
-.light-mode .fa {
-  color:black
-}
-.light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
-  color: white;
-  background-color: transparent
-}
-.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
-  color: white;
-  background-color: transparent
-}
-
-/* Dark mode styles */
-.dark-mode .dropdown-content2, .dark-mode .dropdown-content {
-  background-color: #555; /* Dark background */
-  color: white; /* Light text */
-}
-/* Hover effects for .dropbtn in light mode */
-.light-mode .dropdown:hover .dropbtn {
-  background-color: darkgrey; /* Dark background for contrast */
-  color: white; /* White text for readability */
-}
-
-.light-mode .dropdown:hover .dropbtn i {
-  color: white; /* Ensure icons also turn white on hover */
-}
-
-/* Hover effects for .dropbtn in dark mode */
-.dark-mode .dropdown:hover .dropbtn {
-  background-color: #555; /* Lighter dark background for contrast */
-  color: white; /* Darker text for readability */
-}
-
-.dark-mode .dropdown:hover .dropbtn i {
-  color: white; /* Ensure icons also change color appropriately on hover */
-}
-/* Hover effects for .dropbtn in light mode */
-.light-mode .dropdown:hover .dropbtn,
-.light-mode .dropdown2:hover .dropbtn2 {
-  background-color: darkgrey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
-
-.light-mode .dropdown2:hover .dropbtn2 {
-  background-color: grey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
-
-
-.light-mode .dropdown-content2 a:hover {
-  background-color: lightgrey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
-
-.light-mode .dropdown-content button:hover {
-  background-color: lightgrey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
-
-.light-mode .dropdown:hover .dropbtn i,
-.light-mode .dropdown2:hover .dropbtn2 i {
-  color: white; /* Ensure icons also turn white on hover in light mode */
-}
-
-/* Hover effects for .dropbtn in dark mode */
-.dark-mode .dropdown:hover .dropbtn,
-.dark-mode .dropdown2:hover .dropbtn2 {
-  background-color: slategrey; /* Lighter dark background for contrast in dark mode */
-  color: white; /* Darker text for readability in dark mode */
-}
-/* Hover effects for .dropbtn in dark mode */
-
-.light-mode .dropdown2:hover .dropbtn2 {
-  background-color: #555; /* Lighter dark background for contrast in dark mode */
-  color: white; /* Darker text for readability in dark mode */
-}
-
-.dark-mode .dropdown:hover .dropbtn i,
-.dark-mode .dropdown2:hover .dropbtn2 i {
-  color: white; /* Ensure icons also change color appropriately on hover in dark mode */
-}
-
-
-
-.dark-mode .dropdown-content2 a, .dark-mode .dropdown-content button {
-  color: white;
-}
-.fa.fa-user {
-  color:white
-}
-.dark-mode  .dropdown2:hover .dropbtn2 {
-  background-color: #555;
-  color: white;
-}
-
-.dark-mode .dropdown-content {
-  background-color: slategrey;
-  color: white;
-}
-.dark-mode .dropdown-content button:hover {
-  background-color: black;
-  color: white;
-}
-body.light-mode .dropdown-content2 a {
-    color: white; /* This will now take precedence over the .topnav a color */;
-    background-color: transparent
-
-}
-
-
-
-
-
-/* Focus styles for interactive elements */
-.topnav a,
-.topnav button,
-.topnav input[type="text"],
-.project,
-.project a,
-.project img,
-.project h3,
-.project p,
-.project a[href],
-form input,
-form button {
-    outline: none; /* Remove default focus outline */
-}
-
-.topnav a:hover,
-.topnav a:focus,
-.topnav button:hover,
-.topnav button:focus,
-.topnav input[type="text"]:hover,
-.topnav input[type="text"]:focus {
-    /* Example hover and focus styles for navigation links and input */
-    outline: 2px solid dodgerblue;
-  color:white
-}
-
-.project:focus,
-.project a:focus,
-.project img:focus {
-    /* Example focus style for project section and its links */
-    outline: 2px solid dodgerblue;
-}
-
-form input:focus,
-form button:focus {
-    /* Example focus style for form input and submit button */
-    border: 2px solid dodgerblue;
-    padding: 8px;
-    outline: none;
-}
-
 
 
-
-img:focus {
-  /* Example focus styles */
-  outline: 2px solid dodgerblue;
-}
-
-
-
-
-h3:focus {
-  /* Example focus styles */
-  outline: 2px solid dodgerblue;
- 
-}
-p {
-  outline: none; /* Remove default focus outline */
-}
-
-p:focus, 
-p:hover {
-   
-}
-
-#main-content > div.portfolio > div> p:focus {
- 
-    outline: 2px solid dodgerblue;
-}
-
-
-
-.dropdown:focus-within .dropdown-content:focus {
-  outline: 2px solid dodgerblue;
-}
-
-.dropdown-content a:focus,
- {
-  outline: 2px solid dodgerblue;
-}
-
-
-
-
-
-
-/* Focus styles for interactive elements */
-.topnav a,
-.topnav button,
-.topnav input[type="text"],
-.project,
-.project a,
-.project img,
-.project h3,
-.project p,
-.project a[href],
-form input,
-form button {
-    outline: none; /* Remove default focus outline */
-}
-
-.topnav a:hover,
-.topnav a:focus,
-.topnav button:hover,
-.topnav button:focus,
-.topnav input[type="text"]:hover,
-.topnav input[type="text"]:focus {
-    /* Example hover and focus styles for navigation links and input */
-    outline: 2px solid dodgerblue;
-  color:white
-}
-
-.project:focus,
-.project a:focus,
-.project img:focus {
-    /* Example focus style for project section and its links */
-    outline: 2px solid dodgerblue;
-}
-
-form input:focus,
-form button:focus {
-    /* Example focus style for form input and submit button */
-    border: 2px solid dodgerblue;
-    padding: 8px;
-    outline: none;
-}
-
-
-
-img:focus {
-  /* Example focus styles */
-  outline: 2px solid dodgerblue;
-}
-
-
-
-h3:focus {
-  /* Example focus styles */
-  outline: 2px solid dodgerblue;
- 
-}
-p {
-  outline: none; /* Remove default focus outline */
-}
-
-p:focus, 
-p:hover {
-   
-}
-
-#main-content > div.portfolio > div> p:focus {
- 
-    outline: 2px solid dodgerblue;
-}
-
-
-
-.dropdown:focus-within .dropdown-content:focus {
-  outline: 2px solid dodgerblue;
-}
-
-.dropdown-content a:focus,
- {
-  outline: 2px solid dodgerblue;
-}
-
-
-
-.light-mode #main-content > div.footer{
-
-  background-color: whitesmoke;
-
-
-}
-
-#main-content > div.footer {
-  background-color: mediumpurple;
-}
-
-.dark-mode #main-content > div.footer{
-
-  background-color: #222222;
-
-
-}
-
-#main-content > div.footer > h3 {
-  color:white;
-  font-weight: bold;
-}
-
-
-.dark-mode #main-content > div.footer > h3 {
-  color:white
-}
-
-
-.light-mode #main-content > div.footer > h3 {
-  color:black
-}
-
-#main-content > div.footer > p {
-  color:white;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.dark-mode #main-content > div.footer > p {
-  color:white
-}
-
-.light-mode #main-content > div.footer > p {
-  color:black
-}
-
-#main-content > div.footer > p > a {
-  color:white;
+/* ✅ For tablets and small laptops (between 600px and 1060px) */
+@media (min-width: 0px) and (max-width: 1060px) {
+  .project {
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+  }
 }
-
-
-
-.light-mode #main-content > div.footer > p > a {
-  color:black;
-}
-#main-content > div.footer > p > a:hover {
-  color:lavenderblush;
-}
-
-.light-mode #main-content > div.footer > p > a:hover {
-  color:darkgray;
-}
-
-.dark-mode #main-content > div.footer > p > a:hover {
-  color:aliceblue;
-}
-
-.dark-mode #main-content > div.footer > p > a {
-  color:white;
-}
-
-
-
-
-#main-content > div > p {
-  font-size: 15px;
- }
- @media screen and (max-width: 768px)  {
-  #main-content > div > p {
-    font-size: 13.5px;
-   }
-
-   
-#main-content > div.portfolio > div> h3  {
-    font-size: 20px;
-   }
-
-   #main-content > div.footer > h3  {
-    font-size: 20px;
-   }
- }
- 
- #myTopnav > div:nth-child(3) > button {
-  background-color: rgb(147, 28, 119);
-  
-}
-
-#myTopnav > div:nth-child(3) > button:hover {
-  background-color: rgb(147, 28, 119);
-  
-}
-#myTopnav > div:nth-child(4) > div {
-  background-color: orangered;
-}
-
-
-#myTopnav > div:nth-child(4):hover {
-  background-color: orangered;
-}
-
-#myTopnav > div:nth-child(4) > button:hover {
-  background-color:orangered;
-}
-
