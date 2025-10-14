@@ -244,6 +244,11 @@ s
 
   background-color: mediumgrey;
 }
+#myTopnav > a.active:hover {
+  background-color: #b30000; /* slightly darker red for hover */
+  color: white;
+}
+
 
 
   .topnav.responsive button {
