@@ -202,11 +202,7 @@ width: 108px;
   text-align: left;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover {
-  background-color: #555;
-  color: white;
-}
+
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
@@ -552,24 +548,11 @@ body.light-mode .topnav a.active {
 }
 }
 
-#myTopnav > div:nth-child(4) > div > a:hover {
-  background-color: grey;
-}
 
 
 
-#myTopnav > div:nth-child(4) > div {
-  background-color: orangered;
-}
-#myTopnav > div:nth-child(4) > button {
-  background-color: transparent;
-}
 
 
-
-#myTopnav > div:nth-child(4) > button:hover {
-  background-color: orangered;
-}
 
 
 
@@ -664,16 +647,7 @@ body.light-mode .topnav a:hover {
   color: white;
 }
 
-.dropdown a:hover{
-  background-color: #555;
-  color: white;
-}
 
-
-/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
-  background-color: #555;
-  color: white;
-}
 
 .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
   background-color: grey;
@@ -1469,6 +1443,7 @@ header#portfolio {
   font-size: 17px;
 }
 
+
 header#portfolio .w3-container {
     margin-top: 20px;
 }
@@ -1591,29 +1566,7 @@ button {
   transition: all 0.3s ease; /* Smooth transition for effects */
 }
 
-.dark-mode #viewWork, #contactMe {
-  background-color: dimgrey;
-  color: white;
- 
-}
 
-.dark-mode #viewWork:hover, #contactMe:hover {
-  background-color: grey;
-  color: white;
- 
-}
-
-.light-mode #viewWork, #contactMe {
-  background-color: grey;
-  color: white;
- 
-}
-
-.light-mode #viewWork:hover, #contactMe:hover {
-  background-color: lightgrey;
-  color: white;
- 
-}
 
 @media (min-width: 0px) and (max-width: 550px) {#viewWork, #contactMe
 {
@@ -2029,12 +1982,6 @@ body.light-mode .topnav a:hover {
 }
 
 
-
-/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
-  background-color: #555;
-  color: white;
-}
-
 .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
   background-color: grey;
   color: white;
@@ -2096,9 +2043,7 @@ body.light-mode .topnav a:hover {
 .light-mode .dropdown2:hover{
   color:white
 }
-.light-mode .dropdown {
-  color:red
-}
+
 
 .light-mode .dropdown .dropbtn {
   color:black
@@ -2108,12 +2053,6 @@ body.light-mode .topnav a:hover {
 }
 .light-mode .dropdown2 .dropbtn2 {
   color:black
-}
-.light-mode .dropdown-content:hover{
-  color:red
-}
-.light-mode .dropdown-content button {
-  color:red
 }
 
 
@@ -2657,15 +2596,12 @@ body.light-mode .topnav a:hover {
 }
 
 .dropdown a:hover{
-  background-color: red;
+  background-color: black;
   color: white;
 }
 
 
-/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
-  background-color: #555;
-  color: white;
-}
+
 
 .light-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn  {
   background-color: grey;
@@ -3134,3 +3070,25 @@ p:hover {
    }
  }
  
+ #myTopnav > div:nth-child(3) > button {
+  background-color: rgb(147, 28, 119);
+  
+}
+
+#myTopnav > div:nth-child(3) > button:hover {
+  background-color: rgb(147, 28, 119);
+  
+}
+#myTopnav > div:nth-child(4) > div {
+  background-color: orangered;
+}
+
+
+#myTopnav > div:nth-child(4):hover {
+  background-color: orangered;
+}
+
+#myTopnav > div:nth-child(4) > button:hover {
+  background-color:orangered;
+}
+

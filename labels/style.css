@@ -558,18 +558,10 @@ body.light-mode .topnav a.active {
 
 
 
-#myTopnav > div:nth-child(4) > div {
-  background-color: orangered;
-}
-#myTopnav > div:nth-child(4) > button {
-  background-color: transparent;
-}
 
 
 
-#myTopnav > div:nth-child(4) > button:hover {
-  background-color: orangered;
-}
+
 
 
 
@@ -2101,9 +2093,7 @@ body.light-mode .topnav a:hover {
 .light-mode .dropdown2:hover{
   color:white
 }
-.light-mode .dropdown {
-  color:red
-}
+
 
 .light-mode .dropdown .dropbtn {
   color:black
@@ -2114,12 +2104,7 @@ body.light-mode .topnav a:hover {
 .light-mode .dropdown2 .dropbtn2 {
   color:black
 }
-.light-mode .dropdown-content:hover{
-  color:red
-}
-.light-mode .dropdown-content button {
-  color:red
-}
+
 
 
 
@@ -3139,10 +3124,7 @@ body > center > div.footer > h3 {
   .light-mode .project a:hover {
     background: none
   }
-  
-  .light-mode body {
-    background: red
-  }
+ 
   
   
   body.light-mode {
@@ -3258,7 +3240,7 @@ body > center > div.footer > h3 {
   }
   
   .dropdown a:hover{
-    background-color: red;
+    background-color: black;
     color: white;
   }
   
@@ -3329,9 +3311,7 @@ body > center > div.footer > h3 {
   .light-mode .dropdown2:hover{
     color:white
   }
-  .light-mode .dropdown {
-    color:red
-  }
+ 
   
   .light-mode .dropdown .dropbtn {
     color:black
@@ -3342,13 +3322,7 @@ body > center > div.footer > h3 {
   .light-mode .dropdown2 .dropbtn2 {
     color:black
   }
-  .light-mode .dropdown-content:hover{
-    color:red
-  }
-  .light-mode .dropdown-content button {
-    color:red
-  }
-  
+ 
   
   
   /* Light mode styles */
@@ -3721,3 +3695,14 @@ body > center > div.footer > h3 {
      }
    }
    
+   #myTopnav > div:nth-child(3) > button {
+    background-color: rgb(147, 28, 119);
+    
+  }
+  
+  #myTopnav > div:nth-child(3) > button:hover {
+    background-color: rgb(147, 28, 119);
+    
+  }
+
+  
