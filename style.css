@@ -614,11 +614,7 @@
     color: white;
    }
    
-   
-   .light-mode  .dropdown-content2 a .dropbtn2 {
-    background-color: lightgrey;
-    color: black;
-   }
+ 
    .light-mode  .dropdown-content2 .dropdown-content2 a{
     background-color: grey;
     color: black;
@@ -697,17 +693,6 @@
    
    
    
-   
-   .light-mode .dropdown-content2 a:hover {
-    background-color: lightgrey; /* Dark background for contrast in light mode */
-    color: white; /* White text for readability in light mode */
-   }
-   
-   
-   .light-mode .dropdown-content button:hover {
-    background-color: lightgrey; /* Dark background for contrast in light mode */
-    color: white; /* White text for readability in light mode */
-   }
    
    
    .light-mode .dropdown:hover .dropbtn i,
@@ -1180,17 +1165,7 @@
    }
    
    
-   .project a {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: midnightblue;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-   }
-   
+
    
    .project a:hover {
     background-color:black;
@@ -1239,7 +1214,7 @@
    
    
    .light-mode #work > div > div > a:hover {
-    background-color: lightgrey
+    background-color: rgb(101, 101, 101)
    }
    
    
@@ -1320,16 +1295,7 @@
         width: 100%;
    }
    
-   
-   .light-mode  .dropdown-content2 a .dropbtn2 {
-    background-color: lightgrey;
-    color: black;
-   }
-   .light-mode  .dropdown-content2 .dropdown-content2 a{
-    background-color: grey;
-    color: black;
-   }
-   
+ 
    
    .dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
     background-color: slategrey;
@@ -1482,16 +1448,7 @@
    }
    
    
-   .light-mode .dropdown-content2 a:hover {
-    background-color: lightgrey; /* Dark background for contrast in light mode */
-    color: white; /* White text for readability in light mode */
-   }
-   
-   
-   .light-mode .dropdown-content button:hover {
-    background-color: lightgrey; /* Dark background for contrast in light mode */
-    color: white; /* White text for readability in light mode */
-   }
+ 
    
    
    .light-mode .dropdown:hover .dropbtn i,
@@ -1743,7 +1700,7 @@
       background-color: grey
     }
      .light-mode #main-content > div.portfolio > div:nth-child(1) > a:nth-child(4):hover {
-      background-color: lightgrey
+      background-color: rgb(101, 101, 101)
     }
      .dark-mode #main-content > div.portfolio > div:nth-child(4) > a:nth-child(4) {
       background-color: dimgrey
@@ -1796,14 +1753,7 @@
           width: 100%;
     }
     
-    .light-mode  .dropdown-content2 a .dropbtn2 {
-      background-color: lightgrey;
-      color: black;
-    }
-    .light-mode  .dropdown-content2 .dropdown-content2 a{
-      background-color: grey;
-      color: black;
-    }
+   
      .dark-mode /* Add a dark background on topnav links and the dropdown button on hover */ .dropdown:hover .dropbtn {
       background-color: slategrey;
       color: white;
@@ -1850,6 +1800,9 @@
     .light-mode #myTopnav > div:nth-child(4) > div > a {
       color:white
     }
+    .light-mode #myTopnav > div:nth-child(4) > div > a:hover {
+     background-color:black
+    }
      /* Dark mode styles */
     .dark-mode .dropdown-content2, .dark-mode .dropdown-content {
       background-color: #555; /* Dark background */
@@ -1883,11 +1836,13 @@
       color: white;
     }
    
-   
+    .light-mode #myTopnav > div:nth-child(8) > div > button {
+      background-color:rgb(101, 101, 101)
+    }
    
    
      .light-mode .dropdown-content2 a:hover {
-      background-color: lightgrey;
+      background-color: rgb(101, 101, 101);
       color: white; /* White text for readability in light mode */
     }
    
@@ -3022,7 +2977,7 @@ button {
 }
 
 .light-mode #viewWork:hover, #contactMe:hover {
-  background-color: lightgrey;
+  background-color: rgb(100, 95, 95);
   color: white;
  
 }
@@ -3315,7 +3270,7 @@ font-weight: bold;
   display: inline-block;
   margin: 10px 0;
   padding: 10px 20px;
-  background-color: midnightblue;
+  background-color:  rgb(147, 28, 119);
   color: white;
   text-decoration: none;
   text-align: center;
@@ -3375,7 +3330,7 @@ body.dark-mode .topnav a.active:hover {
 }
 
 .light-mode #work > div > div > a:hover {
-  background-color: lightgrey
+  background-color:  rgb(100, 95, 95);;
 }
 
 
@@ -3465,11 +3420,11 @@ body.light-mode .topnav a:hover {
 
 
 .light-mode  .dropdown-content2 a .dropbtn2 {
-  background-color: lightgrey;
+  background-color: rgb(101, 101, 101);
   color: black;
 }
 .light-mode  .dropdown-content2 .dropdown-content2 a{
-  background-color: grey;
+  background-color: rgb(101, 101, 101);
   color: black;
 }
 
@@ -3524,7 +3479,7 @@ body.light-mode .topnav a:hover {
   color: white; /* Dark text */
 }
 .light-mode .dropdown-content {
-  background-color: darkgrey; /* Light background */
+  background-color: rgb(101, 101, 101); /* Light background */
   color: white; /* Dark text */
 }
 
@@ -3577,15 +3532,7 @@ body.light-mode .topnav a:hover {
 }
 
 
-.light-mode .dropdown-content2 a:hover {
-  background-color: lightgrey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
 
-.light-mode .dropdown-content button:hover {
-  background-color: lightgrey; /* Dark background for contrast in light mode */
-  color: white; /* White text for readability in light mode */
-}
 
 .light-mode .dropdown:hover .dropbtn i,
 .light-mode .dropdown2:hover .dropbtn2 i {
@@ -4024,4 +3971,12 @@ body > center > div > div.hero > p {
   #viewWork, #contactMe {
     font-size: 16px; /* Tap-friendly but not oversized */
   }
+}
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
+  background-color: #9b4f96;
+}
+
+#main-content > div.portfolio > div:nth-child(3) > a:nth-child(3):hover {
+  background-color: #9b4f96;
 }
