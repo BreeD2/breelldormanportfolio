@@ -221,25 +221,9 @@ s
 }
 
 
-/* Default button color in dark mode */
-.dark-mode #myTopnav > div:nth-child(3) > button:hover {
-  color: white;
-  background-color: #494949; /* dark gray */
-}
 
-/* Hover or focus (optional) */
-.dark-mode#myTopnav > div:nth-child(3) > button:hover,
-.dark-mode #myTopnav > div:nth-child(3) > button:focus {
-  color:white;
-  background-color: #494949 /* dark gray */
-}
 
-/* Active state (when clicked or current page) */
-.dark-mode #myTopnav > div:nth-child(3) > button:active,
-.dark-mode #myTopnav > div:nth-child(3) > button:focus-visible {
- color:white;
- background-color: #494949; /* dark gray */
-}
+
 
 
 
@@ -2601,6 +2585,42 @@ background-color:  rgb(147, 28, 119);;
     }
     
 
+   /* Hover and active states (including when hovering dropdown content) */
+   #myTopnav > div:nth-child(3):hover > button,
+   #myTopnav > div:nth-child(3) > button:hover,
+   #myTopnav > div:nth-child(3) > button:focus-visible,
+   #myTopnav > div:nth-child(3) > button:active {
+    background-color: rgb(175, 13, 13);
+    color: white;
+  }
+  
+  .dark-mode #myTopnav > div:nth-child(4) > button {
+    color: white;
+    background-color: transparent;
+  }
+  
+  /* Hover and active states (including when hovering dropdown content) */
+   .dark-mode #myTopnav > div:nth-child(3):hover > button,
+   .dark-mode #myTopnav > div:nth-child(3) > button:hover,
+   .dark-mode #myTopnav > div:nth-child(3) > button:focus-visible,
+   .dark-mode #myTopnav > div:nth-child(3) > button:active {
+    background-color: #504f4f;;
+    color: white;
+  }
+  .light-mode #myTopnav > div:nth-child(3) > button {
+    color: black;
+    background-color: transparent;
+  }
+  
+  /* Hover and active states (including when hovering dropdown content) */
+   .light-mode #myTopnav > div:nth-child(3):hover > button,
+   .light-mode #myTopnav > div:nth-child(3) > button:hover,
+   .light-mode #myTopnav > div:nth-child(3) > button:focus-visible,
+   .light-mode #myTopnav > div:nth-child(3) > button:active {
+    background-color: #737373 ;
+    color: white;
+  }
+  
 
 
 /* Default dark mode button */
@@ -2609,14 +2629,6 @@ background-color:  rgb(147, 28, 119);;
   background-color: transparent;
 }
 
-/* Hover and active states (including when hovering dropdown content) */
-.dark-mode #myTopnav > div:nth-child(3):hover > button,
-.dark-mode #myTopnav > div:nth-child(3) > button:hover,
-.dark-mode #myTopnav > div:nth-child(3) > button:focus-visible,
-.dark-mode #myTopnav > div:nth-child(3) > button:active {
-  background-color: #504f4f;
-  color: white;
-}
 
 /* Default dark mode button */
 .dark-mode #myTopnav > div:nth-child(3) > button {
