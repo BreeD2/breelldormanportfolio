@@ -244,11 +244,6 @@ s
 
   background-color: mediumgrey;
 }
-#myTopnav > a.active:hover {
-  background-color: #b30000; /* slightly darker red for hover */
-  color: white;
-}
-
 
 
   .topnav.responsive button {
@@ -422,17 +417,6 @@ body.light-mode .topnav a:hover {
   color: white; /* Black font color for the links in the navbar */;
 
 }
-
- 
-#myTopnav > div:nth-child(4) > div {
-  background-color: rgb(175, 13, 13);
- }
- 
- 
- #myTopnav > div:nth-child(4):hover {
-  background-color: rgb(175, 13, 13);
- }
- 
 
 .dark-mode .dropdown-content2 a:hover {
   background-color: black
