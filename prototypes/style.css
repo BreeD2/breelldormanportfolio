@@ -703,6 +703,12 @@ body.light-mode .dropdown-content2 a {
   text-decoration: none;
   font-size: 17px;
   z-index: 3;
+  
+}
+
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
 }
 
 .topnav a {
@@ -712,8 +718,7 @@ body.light-mode .dropdown-content2 a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
-  font-family: arial;
+ 
 }
 
 /* Change the color of links on hover */
@@ -2639,3 +2644,5 @@ x
   background-color: #808080;
   color: white;
 }
+
+

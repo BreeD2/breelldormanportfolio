@@ -705,6 +705,10 @@ body.light-mode .dropdown-content2 a {
   z-index: 3;
 }
 
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
+} 
 .topnav a {
   float: left;
   display: block;
@@ -712,7 +716,6 @@ body.light-mode .dropdown-content2 a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
   font-family: arial;
 }
 

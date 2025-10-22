@@ -2331,7 +2331,8 @@ color: white;
       font-size: 17px;
       font-family: arial;
   }
-
+  
+  
   .dropdown-content a,
   .dropdown-content button, .dropdown-content2 a,
   .dropdown-content button  {
@@ -2419,4 +2420,8 @@ color: white;
     padding: 16px;
     text-align: center;
   }
+}
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
 }

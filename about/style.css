@@ -2645,3 +2645,8 @@ background-color:  rgb(147, 28, 119);;
   color: white;
 }
 
+
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
+}

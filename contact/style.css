@@ -3129,3 +3129,9 @@ form button:focus {
 
 
 
+
+
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
+}

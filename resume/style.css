@@ -3478,3 +3478,8 @@ form button:focus {
   font-size: 20px;
  }
 }
+
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
+}

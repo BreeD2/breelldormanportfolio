@@ -500,13 +500,74 @@
    
    
    #myTopnav > button {
-    background-color: transparent;
-    box-sizing: none;
+    background-color: black;
+   outline: none;
+   z-index: 1;
+ 
    
    
    }
+
+
+   .dark-mode #myTopnav > button:hover {
+    background-color: #737373;;
+   }
    
    
+   .dark-mode #myTopnav > button:active {
+    background-color: #737373;
+   }
+   
+   
+   .dark-mode #myTopnav > button {
+    background-color: black;
+   }
+   
+   .light-mode #myTopnav > button:hover {
+    background-color: #494949 ;
+    color:white
+   }
+   
+   
+   .light-mode #myTopnav > button:active {
+    background-color: #494949 ;
+    color:white
+   }
+   
+   
+   .light-mode #myTopnav > button {
+    background-color: Grey ;
+    color:white
+   }
+
+   @media screen and (max-width: 1060px) {
+    .light-mode #myTopnav .fa {
+      color: white;
+    }
+  }
+  
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+ @media screen and (max-width: 1060px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn2 {
+    display: none;
+  }
+  .topnav button.icon {
+    float: right;
+    height: 54px;
+    display: block;
+  }
+
+  body > center > div > div.footer > h3 {
+    font-size:20px;
+    font-weight: 500px;
+  }
+  body > center > div > div.footer > p > a {
+    font-size:0.9em
+  }
+ }
+
+
+ 
    
    
    
@@ -536,14 +597,7 @@
     width:100%;
    }
    
-   
-   
-   
-   
-   
    .light-mode #myTopnav > div:nth-child(4) > button:active {
-   
-   
     width:100%;
    }
    
@@ -998,6 +1052,7 @@
       cursor: pointer;
       padding: 10px 20px;
       margin-top: 20px;
+
    }
    
    
@@ -1342,9 +1397,7 @@
    }
    
    
-   .light-mode .fa {
-    color:black
-   }
+  
    .light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
     color: white;
     background-color: transparent
@@ -1779,9 +1832,7 @@
       background-color: rgb(101, 101, 101); /* Light background */
       color: white; /* Dark text */
     }
-     .light-mode .fa {
-      color:black
-    }
+  
     .light-mode .dropdown-content2 a, .light-mode .dropdown-content button {
       color: white;
       background-color: transparent
@@ -2117,16 +2168,7 @@
  
  
  
- /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
- @media screen and (max-width: 1060px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn2 {
-    display: none;
-  }
-  .topnav button.icon {
-    float: right;
-    display: block;
-  }
- }
+
  
  
  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -2561,10 +2603,7 @@ body.dark-mode .cog-icon * {
        font-size: 15px
 
    }
-   .sidebar a:focus {
-    outline: 2px solid dimgrey; /* Customize as needed */
-}
-
+  
    /* Light mode styles */
    body.light-mode .sidebar,
    body.light-mode .sidebar * {
@@ -2938,11 +2977,7 @@ footer {
     text-align: center;
 }
 
-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
+
 
 #viewWork, #contactMe {
   background:rgb(147, 28, 119);
@@ -3958,6 +3993,10 @@ body > center > div > div.hero > p {
   font-size: 20px;
 }
 
+
+body > center > div > div.hero > p  {
+  font-size: 20px;
+}
 /* Mobile screens: 0–600px */
 @media screen and (min-width: 0px) and (max-width: 600px) {
   body > center > div > div.hero > h1 {
@@ -3965,12 +4004,15 @@ body > center > div > div.hero > p {
   }
 
   body > center > div > div.hero > p {
-    font-size: 14px; /* Clean and readable on small screens */
+    font-size: 14px; /* Clean and readable on small screens */;
   }
 
   #viewWork, #contactMe {
-    font-size: 16px; /* Tap-friendly but not oversized */
+    font-size: 16px; /* Tap-friendly but not oversized */;
+    padding:10px 20px
   }
+
+  
 }
 
 #main-content > div.portfolio > div:nth-child(3) > a:nth-child(4):hover {
@@ -3979,4 +4021,9 @@ body > center > div > div.hero > p {
 
 #main-content > div.portfolio > div:nth-child(3) > a:nth-child(3):hover {
   background-color: #9b4f96;
+}
+
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
 }
