@@ -1734,6 +1734,14 @@ body > center > div.footer > h3 {
     background-color: rgb(11, 116, 221);
     color: white;
   }
+
+  body > center > div > div.footer > h3 {
+    font-weight: 600;
+  }
+
+  body > center > div > div.footer > h3 {
+    font-weight: 600;
+  }
   
   .dropdown a:hover{
     background-color: black;

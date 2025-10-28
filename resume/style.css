@@ -1271,6 +1271,7 @@
     background-color: dimgrey; /* Dark Mode background color */;
     color:white
    }
+
    .dark-mode .dropdown-content2 a:hover {
     background-color: black
    }
@@ -1282,6 +1283,9 @@
     color: white;
    }
    
+   #main-content > div > div > h3 {
+    font-weight:700;
+   }
    
    /* Add a dark background on topnav links and the dropdown button on hover */
    .dropdown:hover .dropbtn {
@@ -1464,6 +1468,17 @@
     color: white; /* Darker text for readability */
    }
    
+   body > center > div > div.footer > h3 {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 1060px) 
+{.topnav.responsive .dropdown-content {
+  width:100%}
+  #myTopnav > div {
+    width:100%
+  }
+}
    
    .dark-mode .dropdown:hover .dropbtn i {
     color: white; /* Ensure icons also change color appropriately on hover */
@@ -2482,12 +2497,6 @@
   }
  }
  
- 
- 
- 
- 
- 
- 
  .light-mode body > center > div.footer > h3 {
    color:white
  }
@@ -3261,8 +3270,7 @@ p:hover {
 }
 
 .dropdown-content a:focus,
- {
-  outline: 2px solid dodgerblue;
+ { outline: 2px solid dodgerblue;
 }
 
 #main-content > div.container > div > div > form {

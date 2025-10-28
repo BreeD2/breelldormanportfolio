@@ -545,7 +545,9 @@
       color: white;
     }
   }
-  
+  body > center > div > div.footer > h3 {
+    font-weight: 600;
+  }
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
  @media screen and (max-width: 1060px) {
   .topnav a:not(:first-child), .dropdown .dropbtn2 {
@@ -559,13 +561,12 @@
 
   body > center > div > div.footer > h3 {
     font-size:20px;
-    font-weight: 500px;
+    
   }
   body > center > div > div.footer > p > a {
     font-size:0.9em
   }
  }
-
 
  
    

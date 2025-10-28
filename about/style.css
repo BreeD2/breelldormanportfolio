@@ -2484,6 +2484,11 @@ body > center > div.footer > h3 {
 
 }
 
+body > center > div > div.footer > h3 {
+  font-size:20px;
+  
+}
+
 #contact > h2 {
   color:black;
   margin-top: 50px;

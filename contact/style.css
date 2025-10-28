@@ -1196,7 +1196,9 @@
     border-radius: 5px;
    }
    
-   
+   body > center > div > div.footer > h3 {
+    font-weight: 600;
+  }
    .project a:hover {
     background-color:black;
    }
@@ -2551,6 +2553,7 @@ textarea {
 input[type="submit"] {
     background-color: rgb(147, 28, 119) ;
     color: white;
+    font-family: arial;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -2728,6 +2731,7 @@ textarea, #country {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  font-size: 15px;
 }
 
 
@@ -2798,6 +2802,8 @@ color: black;
 #subject {
   min-height: 100px;
     min-width: 200px;
+    font-family: arial;
+    font-size: 15px;
 }
 
 
@@ -3069,6 +3075,7 @@ body > center > div.footer > h3 {
 
 #main-content > div.form-container > div > form > label {
   font-weight: bold;
+  font-family: arial;
 }
 
 

@@ -17,6 +17,12 @@ s
   overflow: hidden;
 }
 
+#myTopnav > a.logo > span {
+  font-weight:700;
+  letter-spacing: 0.5px;
+}
+
+
 .dropdown-content a {
   float: none;
   color: white;
@@ -2641,8 +2647,8 @@ x
 }
 
 
-#myTopnav > a.logo > span {
-  font-weight:700;
-  letter-spacing: 0.5px;
-}
 
+
+body > center > div > div.footer > h3 {
+  font-weight: 600;
+}
