@@ -1266,7 +1266,7 @@
     color: white; /* Black font color for the links in the navbar */;
    }
    /* Dark Mode styles for dropdown and its content */
-   .dark-mode .dropdown-content,
+   .dark-mode .dropdown-content
    {
     background-color: dimgrey; /* Dark Mode background color */;
     color:white
@@ -1275,7 +1275,11 @@
    .dark-mode .dropdown-content2 a:hover {
     background-color: black
    }
-   
+
+
+   .light-mode #myTopnav > button {
+    background-color: red;
+   }
    
    /* Add a dark background on topnav links and the dropdown button on hover */
    .topnav a:hover{
