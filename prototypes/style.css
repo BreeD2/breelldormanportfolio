@@ -7,7 +7,6 @@ body {
   background-color:white;
   height:auto  !important;
   font-family: "arial", !important;
-s
 }
 
 /* dropdown contents*/
@@ -45,7 +44,7 @@ s
   font-size: 15px
 
 }
-.
+
 /* Style for the dropdown buttons */
 .dropdown .dropbtn, .dropdown2 .dropbtn2 {
   font-size: 17px;

@@ -1,18 +1,14 @@
 * {
  box-sizing: border-box;
 }
-/* body */
 
 
 body {
  background-color:white;
  height:auto  !important;
  font-family: "arial", !important;
-s
 }
 
-
-/* dropdown contents*/
 
 
 .dropdown {
@@ -43,7 +39,7 @@ s
 
 
 }
-.
+
 /* Style for the dropdown buttons */
 .dropdown .dropbtn, .dropdown2 .dropbtn2 {
  font-size: 17px;
@@ -865,8 +861,7 @@ body .topnav a {
 
 
 /* Dark mode styles */
-body.dark-mode .dropup-content,
-{
+body.dark-mode .dropup-content {
    color: white; /* Text color in dark mode */
    background-color: dimgrey; /* Background color in dark mode */
 }
@@ -880,8 +875,7 @@ body.light-mode .topnav {
 
 
 
-body.dark-mode .cog-icon,
-{
+body.dark-mode .cog-icon {
    color: white; /* Icon color in dark mode */
    background-color: dimgrey; /* Icon background color in dark mode */
 }
@@ -1206,7 +1200,7 @@ body.light-mode .topnav a:hover {
  color: white; /* Black font color for the links in the navbar */;
 }
 /* Dark Mode styles for dropdown and its content */
-.dark-mode .dropdown-content,
+.dark-mode .dropdown-content
 {
  background-color: dimgrey; /* Dark Mode background color */;
  color:white
@@ -1837,8 +1831,7 @@ body > center > div.footer > h3 {
    color: white; /* Ensure icons also turn white on hover in light mode */
  }
   /* Hover effects for .dropbtn in dark mode */
- .dark-mode .dropdown:hover .dropbtn,
-  {
+ .dark-mode .dropdown:hover .dropbtn {
    background-color: slategrey; /* Lighter dark background for contrast in dark mode */
    color: white; /* Darker text for readability in dark mode */
  }
@@ -2460,11 +2453,7 @@ body > center > div.footer > h3 {
 
   line-height: 1.5;
   box-sizing: inherit;
-  mar
   margin: 0px;
-
-  border-radius: 8px;
-
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease-in-out;
   background: white;
@@ -2476,10 +2465,7 @@ body > center > div.footer > h3 {
 
 @media screen and (max-width: 1060px) {
   .form-container {
-  
- 
   max-width: 800px;
-  
 }
 
 }
@@ -2571,8 +2557,7 @@ body > center > div > div.footer > h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 105, 180, 0.3); /* Soft Pink Overlay */;
-  backdrop-filter: blur(1px); /* Blurs the background */;
+  background: rgba(255, 105, 180, 0.3);
   z-index: 1;
 }
 
@@ -2634,6 +2619,13 @@ background-color:  rgb(147, 28, 119);;
   background-color: transparent;
 }
 
+body > div > h3 {
+    font-weight: bold;
+}
+
+#contact > a {
+  font-weight: bold;
+}
 
 /* Default dark mode button */
 .dark-mode #myTopnav > div:nth-child(3) > button {

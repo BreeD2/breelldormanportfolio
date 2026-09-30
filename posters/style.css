@@ -7,7 +7,7 @@ body {
   background-color:white;
   height:auto  !important;
   font-family: "arial", !important;
-s
+
 }
 
 #myTopnav > a.logo > span {
@@ -19,7 +19,6 @@ s
     font-weight: 600;
   }
 
-/* dropdown contents*/
 
 .dropdown {
   float: left;
@@ -48,7 +47,7 @@ s
 
 }
 .
-/* Style for the dropdown buttons */
+
 .dropdown .dropbtn, .dropdown2 .dropbtn2 {
   font-size: 17px;
   border: none;
@@ -62,13 +61,11 @@ s
   outline: none
 }
 
-/* Container for  content */
 .dropdown-content, .dropdown-content2 {
   display: none;
   position: absolute;
-  background-color: transparent; /* Light background for dropdown */
-
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow for dropdown */
+  background-color: transparent; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
   z-index: 1;
   outline:none
 }
@@ -267,14 +264,14 @@ s
     width: 100%;
     text-align: left;
   }
-/* Dropdown container - needed to position the dropdown content */
+
 .dropdown2 {
   float: left;
   overflow: hidden;
   color:white
 }
 
-/* Style the dropdown button to fit inside the topnav */
+
 .dropdown2 .dropbtn2 {
   font-size: 17px;
   border: none;
@@ -360,8 +357,6 @@ width:100%;
   box-sizing: none;
 
 }
-
-
 
 #myTopnav > div:nth-child(4) > button {
   background-color: transparent;
@@ -708,20 +703,18 @@ body .topnav a {
   }
 
 /* Dark mode styles */
-body.dark-mode .dropup-content,
- {
+body.dark-mode .dropup-content {
     color: white; /* Text color in dark mode */
     background-color: dimgrey; /* Background color in dark mode */
 }
+
 body.light-mode .topnav {
   background-color: rgb(230, 230, 230);
-  color: #fff; /* White font color for the navbar in normal mode */;
-
+  color: #fff; 
 }
 
 
-body.dark-mode .cog-icon,
- {
+body.dark-mode .cog-icon {
     color: white; /* Icon color in dark mode */
     background-color: dimgrey; /* Icon background color in dark mode */
 }
@@ -754,7 +747,6 @@ color: white;
   width: 100%;
 }
 
-/* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -843,7 +835,7 @@ button {
 
 #work h2 {
     text-align: center;
-margin-top: 100px; /* Space below the heading */;
+margin-top: 100px;
 }
 
 .gallery {
@@ -884,7 +876,6 @@ margin-top: 100px; /* Space below the heading */;
   font-size: 12px;
 }
 
-}
 
 #main-content > header > p {
   font-size: 13.5px; 
@@ -1063,43 +1054,41 @@ body.dark-mode .topnav a.active:hover {
 }
 
 .project {
-    margin: 20px;       /* Adds space around each project */;
+    margin: 20px;       
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px;      /* Padding inside each project box */
-    background-color: #ffffff;  /* Ensures the shadow has a light background to stand out against */
-    transition: box-shadow 0.3s ease-in-out; /* Optional: Adds a smooth transition for the shadow effect */
+    padding: 10px; 
+    background-color: #ffffff;  
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 body.light-mode .topnav a {
-  color: #000; /* Black font color for the links in the navbar */;
+  color: #000;
 }
 
 body.light-mode .topnav a:hover {
-  color: white; /* Black font color for the links in the navbar */;
+  color: white;
 }
-/* Dark Mode styles for dropdown and its content */
-.dark-mode .dropdown-content,
- {
-  background-color: dimgrey; /* Dark Mode background color */;
+.dark-mode .dropdown-content {
+  background-color: dimgrey;
   color:white
 }
+
 .dark-mode .dropdown-content2 a:hover {
   background-color: black
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover{
   background-color: rgb(106, 106, 106);
   color: white;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
+
 .dropdown:hover .dropbtn {
   background-color: rgb(11, 116, 221);
   color: white;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */ .dropdown2:hover .dropbtn2 {
+ .dropdown2:hover .dropbtn2 {
   background-color: black;
   color: white;
 }
@@ -1873,8 +1862,7 @@ body > center > div.footer > h3 {
   }
   
   /* Hover effects for .dropbtn in dark mode */
-  .dark-mode .dropdown:hover .dropbtn,
-   {
+  .dark-mode .dropdown:hover .dropbtn {
     background-color: slategrey; /* Lighter dark background for contrast in dark mode */
     color: white; /* Darker text for readability in dark mode */
   }
@@ -2357,13 +2345,12 @@ color: white;
 
 
 
-x
-
   @media screen and (max-width: 600px) {
     #about > p > a {
     font-size: 13.5px
   }
-  }
+  
+ 
   @media screen and (max-width: 600px) {
   #main-content > div > h3 {
     padding: 5px;
@@ -2485,5 +2472,3 @@ x
   .dropdown-content2 {
     position: relative;
   }
-}
-

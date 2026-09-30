@@ -3706,7 +3706,9 @@ body > center > div.footer > h3 {
     color:white;
   }
   
-  
+  #myTopnav > a.logo > img {
+    height: 23px
+  }
   
   #main-content > div > p {
     font-size: 15px;
