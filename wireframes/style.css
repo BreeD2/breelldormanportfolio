@@ -1,16 +1,13 @@
 * {
   box-sizing: border-box;
 }
-/* body */
 
 body {
   background-color:white;
   height:auto  !important;
   font-family: "arial", !important;
-s
 }
 
-/* dropdown contents*/
 
 .dropdown {
   float: left;
@@ -44,8 +41,7 @@ s
   font-size: 15px
 
 }
-.
-/* Style for the dropdown buttons */
+
 .dropdown .dropbtn, .dropdown2 .dropbtn2 {
   font-size: 17px;
   border: none;
@@ -386,7 +382,7 @@ s
   outline: 2px solid dodgerblue;
 }
 
-.dropdown-content a:focus,
+.dropdown-content a:focus
  {
   outline: 2px solid dodgerblue;
 }
@@ -831,7 +827,7 @@ body .topnav a {
   }
 
 /* Dark mode styles */
-body.dark-mode .dropup-content,
+body.dark-mode .dropup-content
  {
     color: white; /* Text color in dark mode */
     background-color: dimgrey; /* Background color in dark mode */
@@ -843,7 +839,7 @@ body.light-mode .topnav {
 }
 
 
-body.dark-mode .cog-icon,
+body.dark-mode .cog-icon
  {
     color: white; /* Icon color in dark mode */
     background-color: dimgrey; /* Icon background color in dark mode */
@@ -1007,6 +1003,8 @@ margin-top: 100px; /* Space below the heading */;
   font-size: 12px;
 }
 
+#myTopnav > a.logo > img {
+  height: 23px;
 }
 
 #main-content > header > p {
@@ -1201,7 +1199,7 @@ body.light-mode .topnav a:hover {
   color: white; /* Black font color for the links in the navbar */;
 }
 /* Dark Mode styles for dropdown and its content */
-.dark-mode .dropdown-content,
+.dark-mode .dropdown-content
  {
   background-color: dimgrey; /* Dark Mode background color */;
   color:white
@@ -2005,7 +2003,7 @@ body > center > div.footer > h3 {
   }
   
   /* Hover effects for .dropbtn in dark mode */
-  .dark-mode .dropdown:hover .dropbtn,
+  .dark-mode .dropdown:hover .dropbtn
    {
     background-color: slategrey; /* Lighter dark background for contrast in dark mode */
     color: white; /* Darker text for readability in dark mode */
@@ -2489,11 +2487,6 @@ color: white;
       display: none;
   }
 }
-
-
-
-x
-
   @media screen and (max-width: 600px) {
     #about > p > a {
     font-size: 13.5px
@@ -2504,7 +2497,6 @@ x
     padding: 5px;
     font-size: 14px
   }
-  
 
   
 @media screen and (max-width: 600px) {
@@ -2646,9 +2638,9 @@ x
   color: white;
 }
 
+  }
 
 
-
-body > center > div > div.footer > h3 {
-  font-weight: 600;
+body > div.footer > h3 {
+  font-weight: bold;
 }

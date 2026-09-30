@@ -46,7 +46,6 @@ body {
   font-size: 15px
 
 }
-.
 
 .dropdown .dropbtn, .dropdown2 .dropbtn2 {
   font-size: 17px;
@@ -2214,7 +2213,9 @@ color: white;
   text-align: left;
 }
 
-
+ #myTopnav > a.logo > img {
+  height: 23px;
+}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1060px) {
   .topnav a:not(:first-child), .dropdown .dropbtn2 {
@@ -2467,8 +2468,7 @@ color: white;
     text-align: left;
   }
 
-  /* Position dropdowns relative so they fit within the menu */
-  .dropdown-content,
-  .dropdown-content2 {
+  .dropdown-content, .dropdown-content2 {
     position: relative;
-  }
+
+  }}}}

@@ -55,7 +55,7 @@
     background-color:white;
     height:auto  !important;
     font-family: "arial", !important;
-   s
+   
    }
    
    
@@ -90,7 +90,7 @@
    
    
    }
-   .
+   
    /* Style for the dropdown buttons */
    .dropdown .dropbtn, .dropdown2 .dropbtn2 {
     font-size: 17px;
@@ -963,7 +963,7 @@
    
    
    /* Dark mode styles */
-   body.dark-mode .dropup-content,
+   body.dark-mode .dropup-content
    {
       color: white; /* Text color in dark mode */
       background-color: dimgrey; /* Background color in dark mode */
@@ -978,7 +978,7 @@
    
    
    
-   body.dark-mode .cog-icon,
+   body.dark-mode .cog-icon
    {
       color: white; /* Icon color in dark mode */
       background-color: dimgrey; /* Icon background color in dark mode */
@@ -1297,7 +1297,7 @@
     color: white; /* Black font color for the links in the navbar */;
    }
    /* Dark Mode styles for dropdown and its content */
-   .dark-mode .dropdown-content,
+   .dark-mode .dropdown-content
    {
     background-color: dimgrey; /* Dark Mode background color */;
     color:white
@@ -1904,7 +1904,7 @@
       color: white; /* Ensure icons also turn white on hover in light mode */
     }
      /* Hover effects for .dropbtn in dark mode */
-    .dark-mode .dropdown:hover .dropbtn,
+    .dark-mode .dropdown:hover .dropbtn
      {
       background-color: slategrey; /* Lighter dark background for contrast in dark mode */
       color: white; /* Darker text for readability in dark mode */
@@ -2070,12 +2070,7 @@
    #myTopnav > div:nth-child(3) > button:hover {
     background-color: #fff(147, 28, 119);
   }
- 
- 
-  .light-mode #myTopnav > div:nth-child(3) > button:hover {
-    background-colorred;
-    color:white
-  }
+
  
  
  #myTopnav > div:nth-child(4) > div > a:hover  {
@@ -2565,10 +2560,7 @@ body.dark-mode .cog-icon * {
     background: #808080;
 }
 
-.light-mode .sidebar {
-    scrollbar-width: auto;
-    scrollbar-color: #a0a0a0 #e0e0e0;
-}
+
 
 /* Dark Mode Styles */
 .dark-mode .sidebar {
@@ -2589,10 +2581,6 @@ body.dark-mode .cog-icon * {
     background: #888;
 }
 
-.dark-mode .sidebar {
-    scrollbar-width: auto;
-    scrollbar-color: #555 #2c2c2c;
-}
 
 
    .sidebar a {
@@ -3398,7 +3386,7 @@ body.light-mode .topnav a:hover {
 
 }
 /* Dark Mode styles for dropdown and its content */
-.dark-mode .dropdown-content,
+.dark-mode .dropdown-content
  {
   background-color: dimgrey; /* Dark Mode background color */;
   color:white
@@ -3430,9 +3418,7 @@ body.light-mode .topnav a:hover {
   background-color: grey;
   color: white;
 }
-.light-mode .fa.fa-user:active {
 
-}
 
 .light-mode  .dropdown2:hover .dropbtn2 {
   background-color: grey;
@@ -3694,11 +3680,6 @@ p {
   outline: none; /* Remove default focus outline */
 }
 
-p:focus, 
-p:hover {
-   
-}
-
 #main-content > div.portfolio > div> p:focus {
  
     outline: 2px solid dodgerblue;
@@ -3710,7 +3691,7 @@ p:hover {
   outline: 2px solid dodgerblue;
 }
 
-.dropdown-content a:focus,
+.dropdown-content a:focus
  {
   outline: 2px solid dodgerblue;
 }
@@ -4027,4 +4008,7 @@ body > center > div > div.hero > p  {
 #myTopnav > a.logo > span {
   font-weight:700;
   letter-spacing: 0.5px;
+}
+#myTopnav > a.logo > img {
+ height: 23px;
 }
